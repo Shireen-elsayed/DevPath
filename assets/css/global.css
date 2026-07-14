@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Global Reset & Base Styles
+   ========================================================================== */
+
+/*
+   This file contains the project's global reset
+   and base styles shared across all pages.
+*/
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
