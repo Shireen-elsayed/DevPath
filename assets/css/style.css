@@ -1,0 +1,150 @@
+/* ========================================
+   Global Styles
+======================================== */
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+   line-height: 1.6;
+}
+
+ul,
+ol {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+   font: inherit;
+}
+
+
+/* ========================================
+   Variables
+======================================== */
+
+:root {
+
+   /* Spacing */
+
+   --half-rem: 0.5rem;
+   --one-rem: 1rem;
+   --one-half-rem: 1.5rem;
+   --two-rem: 2rem;
+   --two-half-rem: 2.5rem;
+   --three-rem: 3rem;
+
+   /* Font Sizes */
+
+   --fz-8: 8px;
+   --fz-10: 10px;
+   --fz-12: 12px;
+   --fz-14: 14px;
+   --fz-16: 16px;
+   --fz-18: 18px;
+   --fz-20: 20px;
+   --fz-24: 24px;
+   --fz-30: 30px;
+   --fz-35: 35px;
+   --fz-36: 36px;
+   --fz-40: 40px;
+   --fz-48: 48px;
+   --fz-60: 60px;
+   --fz-72: 72px;
+
+   /* Font Weight */
+
+   --fw-400: 400;
+   --fw-500: 500;
+   --fw-600: 600;
+   --fw-700: 700;
+
+   /* Colors */
+
+   --bg-primary: #090B18;
+   --bg-secondary: #13162F;
+   --card-bg: #1E293B;
+
+   --primary: #7C3AED;
+   --secondary: #3B82F6;
+   --accent: #22D3EE;
+
+   --text: #FFFFFF;
+   --text-secondary: #CBD5E1;
+   --text-muted: #94A3B8;
+
+   --border: #334155;
+
+
+   /* Gradients */
+
+   --gradient: linear-gradient(135deg,
+         #8B5CF6,
+         #4F46E5,
+         #22D3EE);
+
+   --gradient-primary: linear-gradient(90deg,
+         #7C3AED,
+         #3B82F6);
+
+   --gradient-background: linear-gradient(135deg,
+         #090B18,
+         #13162F,
+         #1F1745);
+
+   /* Border Radius */
+
+   /* Shadows */
+
+   /* Z-index */
+   
+}
+
+
+
+
+/* ========================================
+   Components
+======================================== */
+
+/* Buttons */
+
+
+/* Cards */
+
+
+/* Forms */
+
+
+/* Navbar */
+
+
+/* Sidebar */
+
+
+/* Footer */
