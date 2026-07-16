@@ -27,76 +27,70 @@
       "id": 1,
       "track": "Frontend",
       "skills": [
-        {
-          "id": 1,
-          "name": "HTML"
-        },
-        {
-          "id": 2,
-          "name": "CSS"
-        },
-        {
-          "id": 3,
-          "name": "Responsive Design"
-        },
-        {
-          "id": 4,
-          "name": "JavaScript"
-        },
-        {
-          "id": 5,
-          "name": "Git & GitHub"
-        },
-        {
-          "id": 6,
-          "name": "Bootstrap"
-        },
-        {
-          "id": 7,
-          "name": "React"
-        },
-        {
-          "id": 8,
-          "name": "REST API"
-        }
+        { "id": 1, "name": "HTML" },
+        { "id": 2, "name": "CSS" },
+        { "id": 3, "name": "Responsive Design" },
+        { "id": 4, "name": "JavaScript" },
+        { "id": 5, "name": "Git & GitHub" },
+        { "id": 6, "name": "Bootstrap" },
+        { "id": 7, "name": "React" },
+        { "id": 8, "name": "REST API" }
       ]
     },
     {
       "id": 2,
       "track": "Backend",
       "skills": [
-        {
-          "id": 1,
-          "name": "Programming Basics"
-        },
-        {
-          "id": 2,
-          "name": "Node.js"
-        },
-        {
-          "id": 3,
-          "name": "Express.js"
-        },
-        {
-          "id": 4,
-          "name": "REST API"
-        },
-        {
-          "id": 5,
-          "name": "SQL"
-        },
-        {
-          "id": 6,
-          "name": "MongoDB"
-        },
-        {
-          "id": 7,
-          "name": "Authentication"
-        },
-        {
-          "id": 8,
-          "name": "Deployment"
-        }
+        { "id": 1, "name": "Programming Basics" },
+        { "id": 2, "name": "Node.js" },
+        { "id": 3, "name": "Express.js" },
+        { "id": 4, "name": "REST API" },
+        { "id": 5, "name": "SQL" },
+        { "id": 6, "name": "MongoDB" },
+        { "id": 7, "name": "Authentication" },
+        { "id": 8, "name": "Deployment" }
+      ]
+    },
+    {
+      "id": 3,
+      "track": "UI/UX",
+      "skills": [
+        { "id": 1, "name": "Design Principles" },
+        { "id": 2, "name": "Color Theory" },
+        { "id": 3, "name": "Typography" },
+        { "id": 4, "name": "Wireframing" },
+        { "id": 5, "name": "Prototyping" },
+        { "id": 6, "name": "Figma" },
+        { "id": 7, "name": "User Research" },
+        { "id": 8, "name": "Usability Testing" }
+      ]
+    },
+    {
+      "id": 4,
+      "track": "Flutter",
+      "skills": [
+        { "id": 1, "name": "Dart" },
+        { "id": 2, "name": "Flutter Basics" },
+        { "id": 3, "name": "Widgets" },
+        { "id": 4, "name": "Layouts" },
+        { "id": 5, "name": "State Management" },
+        { "id": 6, "name": "Firebase" },
+        { "id": 7, "name": "REST API" },
+        { "id": 8, "name": "App Deployment" }
+      ]
+    },
+    {
+      "id": 5,
+      "track": "Data Analysis",
+      "skills": [
+        { "id": 1, "name": "Python" },
+        { "id": 2, "name": "Statistics" },
+        { "id": 3, "name": "NumPy" },
+        { "id": 4, "name": "Pandas" },
+        { "id": 5, "name": "Data Visualization" },
+        { "id": 6, "name": "SQL" },
+        { "id": 7, "name": "Excel" },
+        { "id": 8, "name": "Power BI" }
       ]
     }
   ],
