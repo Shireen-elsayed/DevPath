@@ -63,15 +63,6 @@ function renderStreakDays(streakWeek) {
 }
 
 
-
-
-
-
-
-
-
-
-// 1. ننشئ الـ Chart فاضي الأول (بقيمة 0 مؤقتة)
 const ctx = document.getElementById('progressChart');
 const progressChart = new Chart(ctx, {
   type: 'doughnut',
@@ -89,18 +80,17 @@ const progressChart = new Chart(ctx, {
   }
 });
 
-// 2. نجيب البيانات من ملف الـ JSON
+
 async function loadDashboardData() {
   const response = await fetch("../data/db.json");
   const data = await response.json();
   return data;
 }
 
-// 3. نحدث الدايرة بالبيانات اللي جت
 async function initDashboard() {
   const data = await loadDashboardData();
 
-  // بنوصل لأول يوزر جوه array الـ users
+
   const currentUser = data.users[0];
   const percent = currentUser.overallScore;
 
@@ -112,7 +102,6 @@ async function initDashboard() {
    renderStreakDays(currentUser.streakWeek);
 }
 
-// 4. ننادي الفانكشن أول ما الصفحة تحمل
 initDashboard();
 
 
