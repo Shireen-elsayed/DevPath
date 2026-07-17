@@ -4,64 +4,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>DevPath | Dashboard</title>
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- SweetAlert2  #if needed# -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
 </head>
 
 <body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="logo-sidebar">
+                <img src="../assets/images/logo.jpg" alt="" class="logo">
+            </div>
+            <div class="links-sidebar">
+                <nav>
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i><a href="#">Dashboard</a></li>
+                        <li><i class="fa-solid fa-book-open"></i><a href="#">Roadmap</a></li>
+                        <li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#">Projects</a></li>
+                        <li><i class="fa-regular fa-file-lines"></i><a href="#">Assessments</a></li>
+                        <li><i class="fa-solid fa-user"></i><a href="#">Profile</a></li>
+                        <li><i class="fa-solid fa-briefcase"></i><a href="#">Career Match</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="upgrade-pro">
+                <i class="fa-solid fa-crown"></i>
+                <span>Upgrade to pro</span>
+                <p>Unlock all features and get unlimited access.</p>
+                <button class="pro-btn">Upgrade Now</button>
+            </div>
+            <div class="log-out">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <a href="#">Log out</a>
+            </div>
+        </aside>
+        <section class="dashbord">
+            <div class="header">
+                <div class="name-user">
+                    <h2 class="clock"> </h2>
+                    <p>Keep learning, keep growing</p>
+                </div>
+                <div class="right-user">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="image-user">
+                        <div class="text">
+                            <p>Naema Sayed</p>
+                            <span>Frontend Devaloper</span>
+                        </div>
+                        <img src="../assets/images/icons8-user-60.png" alt="" class="prof" width="35px">
+                    </div>
+                </div>
+            </div>
+            <div class="top-card">
+                <div id="progress" class="circle-wrapper" style="position: relative;">
+                    <p class="progress-title">Overall Progress</p>
+                    <canvas id="progressChart" width="140" height="140"></canvas>
+                    <span class="percent-text"
+                        style="position:absolute; top:60%; left:50%; transform:translate(-50%,-50%); font-size:24px; font-weight:bold; color: white;">30%</span>
+                </div>
+                <div id="level">
+                    <div class="level-all">
+                        <span class="level-title">Current Level</span>
+                        <div class="big">
+                            <i class="fa-solid fa-clover"></i>
+                            <div class="text-big">
+                                <p>Beginner</p>
+                                <span>Keep Learning and level up!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<aside class="sidebar">
-    <div class="logo-sidebar">
-        <img src="../assets/images/logo.jpg" alt="" class="logo">
+
+                <div id="modules">
+                    <div class="module-one">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span class="module-title">Modules Completed</span>
+                    </div>
+                    <div class="module-two">
+                        <i class="fa-solid fa-list"></i>
+                        <div class="number-module">
+                            <p>18/40</p>
+                            <span>You're ahead of 32% of learners</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="xp">
+                    <div class="xp-one">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="xp-title">Modules Completed</span>
+                    </div>
+                    <div class="xp-two">
+                        <i class="fa-solid fa-star"></i>
+                        <div class="number-xp">
+                            <p>18/40</p>
+                            <span>You're ahead of 32% of learners</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="streak">
+                    <div class="streak-one">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                        <span class="xp-title">Streak</span>
+                    </div>
+                    <div class="streak-two">
+                        <p>12 Days</p>
+                    </div>
+                    <div class="streak-days" id="streakDaysContainer"></div>
+                </div>
+
+
+
+                <div id="weeklygoal">
+                    <div class="weak-one">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <span class="weak-title">Modules Completed</span>
+                    </div>
+                    <div class="weak-two">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <div class="number-weak">
+                            <p>18/40</p>
+                            <span>You're ahead of 32% of learners</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="middle-cart">
+                <div class="middle-la">
+                </div>
+                <div class="middle-sm">
+                </div>
+            </div>
+            <div class="end-cart">
+                <div class="start"></div>
+                <div class="middle"></div>
+                <div class="end"></div>
+            </div>
+        </section>
     </div>
-    <div class="links-sidebar">
-        <nav>
-            <ul>
-                <li class="active"><i class="fa-solid fa-house"></i><a href="#">Dashboard</a></li>
-                <li><i class="fa-solid fa-book-open"></i><a href="#">Roadmap</a></li>
-                <li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#">Projects</a></li>
-                <li><i class="fa-regular fa-file-lines"></i><a href="#">Assessments</a></li>
-                <li><i class="fa-solid fa-user"></i><a href="#">Profile</a></li>
-                <li><i class="fa-solid fa-briefcase"></i><a href="#">Career Match</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="upgrade-pro">
-        <i class="fa-solid fa-crown"></i>
-        <span>Upgrade to pro</span>
-        <p>Unlock all features and get unlimited access.</p>
-        <button class="pro-btn">Upgrade Now</button>
-    </div>
-    <div class="log-out">
-        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-        <a href="#">Log out</a>
-    </div>
-</aside>
-
-
-
-
-
-
-
-
-    <script src="../js/dashboard.js"></script>
-    <script src="../js/helpers.js"></script>
-
+    <script src="../js/dashboard.js" type="module"></script>
+    <script src="../js/helpers.js" type="module"></script>
 
 </body>
 

@@ -1,17 +1,19 @@
-/* ==========================================================================
-   Dashboard Page
-   ========================================================================== */
-
-/* Page Styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 body {
-  background-color: #080B1E;  
+  background-color: #080B1E; 
+  height: 70vh; 
 }
 aside {
    background-color: #070a19; 
+   /* background-color: red; */
    width: 17%;
    color: white;
    padding: 30px;
-   min-height: 300px;
+   height: 60rem;
    border-right: 1px solid rgb(27, 26, 26);
    box-shadow: 0 0 10px 10px rgba(41, 40, 40, 0.044);
 }
@@ -29,9 +31,13 @@ aside {
    padding-left: 17px;
    border-radius: 10px;
    text-align: start;
+   font-size: 15px !important;
+   transition: 0.3s ;
 }
 .active {
    background-color: rgb(49, 34, 113);
+   border-right: 2px solid rgb(102, 80, 129);
+   transform: translateX(10px);
 }
 .links-sidebar nav ul li i {
    margin-right: 15px;
@@ -58,32 +64,322 @@ aside {
    border-radius: 7px;
    color: white;
    cursor: pointer;
+   font-size: 0.9em !important;
+}
+.pro-btn:hover {
+   background-color: rgb(70, 50, 160);
 }
 .upgrade-pro {
    text-align: center;
 }
 .upgrade-pro i {
-   color: rgb(255, 213, 0);
-   margin-right: 5px;
+   color: rgb(235, 196, 4);
+   margin-right: 15px;
 }
 .upgrade-pro span {
-   font-size: 1.1em !important;
+   font-size: 1em ;
    font-family: 'Times New Roman', Times, serif !important;
+   text-align: center;
+   margin-right: 10px;
 }
 .upgrade-pro p {
    text-align: start;
    color: rgb(207, 207, 207);
+   font-size: 0.9em !important;
+   padding: 10px 0;
 }
 .log-out {
    /* background-color: red; */
    padding: 20px;
    margin-top: 20px;
    color: rgb(205, 205, 205);
+   font-size: 0.9em  !important;
 }
 .log-out i {
 margin-right: 15px;
 }
+.wrapper {
+   display: flex;
+   gap: 20px;
+}
 
+section {
+   /* background-color: green; */
+   width: 100%;
+   height: 100vh;
+   background-color: #080B1E;  
+}
+.header {
+   display: flex;
+   justify-content: space-between;
+   padding: 15px;
+   align-items: center;
+    background-color: #08071e27;
+    color: white;
+    /* background-color: red; */
+    width: 100%;
+    
+}
+.right-user {
+   display: flex;
+   justify-content: space-between;
+   align-items: start;
+   gap: 20px;
+}
+.image-user {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   background-color: rgba(83, 83, 83, 0.039);
+   padding: 10px;
+   border-radius: 29px;
+}
+.text {
+   line-height: 1;
+}
+.text span {
+   font-size: 0.7em;
+}
+.fa-bell {
+   font-size: 1.3em;
+   padding-top: 19px;
+   color: #f8cb01;
+   position: relative;
+}
+.fa-bell::after {
+   content: "";
+   position: absolute;
+   width: 7px;
+   height: 7px;
+   border-radius: 50%;
+   background-color: rgb(233, 63, 21);
+   right: 1px;
+   top: 14px;
+}
+.log {
+   color: #7e2cd6;
+}
+.prof {
+   background-color: rgba(114, 114, 114, 0.363);
+   border-radius: 50%;
+}
+.text span {
+   color: rgb(203, 203, 203);
+   font-size: 0.7em;
+}
+.name-user p {
+   color: rgb(203, 203, 203);
+   font-size: 0.9em;
+}
+.top-card{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(200px ,1fr));
+   padding:20px 10px;
+   gap: 6px;
+
+}
+.top-card #progress,#level,#modules,#xp,#streak,#weeklygoal {
+   background: linear-gradient(to bottom, rgb(23, 14, 71),rgb(20, 14, 56),rgb(27, 21, 74));
+   width: 200px;
+   height: 170px;
+   border-radius: 20px;
+   box-shadow: 0 0 3px 1px rgba(221, 221, 221, 0.072);
+}
+ .middle-cart {
+   display: grid;
+   grid-template-columns: 850px 380px;
+   padding:20px 10px;
+   gap: 50px;
+}
+.middle-cart div {
+   background: linear-gradient(to left, rgb(23, 14, 71),rgb(17, 10, 55),rgb(27, 21, 74));
+   /* width: 200px; */
+   height: 280px;
+   border-radius: 20px;
+   box-shadow: 0 0 3px 1px rgba(221, 221, 221, 0.072);
+}
+.end-cart {
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+   padding:20px 10px;
+   gap: 6px;
+   /* gap: 50px; */
+}
+.end-cart div {
+   background: linear-gradient(to left, rgb(18, 12, 56),rgb(17, 10, 53),rgb(21, 16, 61));
+   width: 400px;
+   height: 280px;
+   border-radius: 20px;
+   box-shadow: 0 0 3px 1px rgba(221, 221, 221, 0.072);
+}
+.emo {
+   font-size: 1.3em;
+}
+/* cards */
+#progressChart {
+  max-width: 100px;
+  max-height: 100px;
+}
+#progress {
+  width: 170px;    
+  height: 170px;    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+#level {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px;
+}
+.big {
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   padding: 10px;
+   text-align: center;
+   margin: auto;
+   gap: 10px;
+   color: white;
+}
+.big i {
+   font-size: 2.6em;
+   color: #24cf06;
+}
+.progress-title,.level-title,.weak-title {
+   color: rgb(199, 198, 198);
+   font-size: 0.8em;
+   
+}
+.level-title {
+   padding-left: 17px;
+   font-size: 0.8em;
+}
+
+.text-big p,span {
+   text-align: center;
+}
+.text-big span,.number-module span,.number-xp span,.number-weak span {
+   font-size: 0.8em;
+   color: rgb(203, 203, 203);
+}
+.text-big p,.number-module p,.number-xp p,.streak-two p,.number-weak p {
+   font-size: 1.2em;
+   font-weight: bold;
+   color: white;
+   text-align: center;
+}
+#modules,#xp,#weeklygoal {
+   color: white;
+   padding: 10px;
+   
+}
+.module-two,.xp-two,.weak-two{
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   text-align: start;
+   gap: 10px;
+   padding: 2px 20px;
+}
+.module-one,.xp-one,.weak-one {
+   padding: 10px 0;
+}
+.module-one i{
+   color: rgb(144, 64, 214);
+   font-size: 1.4em;
+   margin-right: 5px;
+
+}
+.weak-one i{
+   color: rgb(12, 186, 230);
+   font-size: 1.4em;
+   margin-right: 5px;
+
+}
+.xp-one i{
+   color: rgb(243, 202, 20);
+   font-size: 1.4em;
+   margin-right: 5px;
+
+}
+.streak-one i {
+   padding-top: 10px;
+   font-size: 1.5em;
+   color: #ed7c2c;
+   margin-right: 10px;
+}
+.weak-two i {
+   color: rgb(16, 199, 215);
+}
+.module-two i{
+   padding-top: 1px;
+   font-size: 1.5em;
+   color: #7c59e8;
+}
+.xp-two i{
+   padding-top: 1px;
+   font-size: 1.3em;
+   color: #edda09;
+}
+.module-title,.xp-title,.weak-title {
+font-size: 0.8em;
+color: rgb(199, 198, 198);
+
+}
+.number-module,.number-xp,.number-weak {
+   text-align: start;
+}
+#streak {
+  padding: 7px;
+}
+
+/* streak day */
+.streak-days {
+  display: flex;
+  justify-content: start;
+  gap: 3px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.streak-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.streak-day .day-letter {
+  font-size: 12px;
+  color: #a0a0b8;
+}
+
+.streak-day .day-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  background-color: #2a2a3d;
+}
+
+.streak-day.completed .day-circle {
+  background-color: #6b46c1;
+  color: white;
+}
+
+.streak-day.today .day-circle {
+  background-color: #8b5cf6;
+  box-shadow: 0 0 0 2px #8b5cf6;
+}
 
 
 
