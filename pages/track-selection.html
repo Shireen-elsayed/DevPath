@@ -7,6 +7,9 @@
 
     <title>DevPath | Choose Track</title>
 
+    <!-- Icon -->
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -22,10 +25,310 @@
     <link rel="stylesheet" href="../assets/css/track-selection.css">
 </head>
 
-<body>
+<body class="container">
+
+    <header class="navbar-placeholder"></header>
+
+    <main class="track-page">
+        <section style="text-align: center;">
+            <div class="avialable-tracks badge">
+                <i class="fa-solid fa-circle fa-2xs fa-fade" style="color: #9eadf7; margin-right:5px;"></i>
+                <strong>5 Learning Tracks Available</strong>
+            </div>
+            <h1>Choose Your <span class="learning-span">Learning Path</span></h1>
+            <p class="learning-prg">Select the track that matches your interests. We'll assess your current skills and
+                build a
+                personalized roadmap to help
+                you grow step by step.</p>
+
+            <div class="features-badges">
+                <div class="badge">
+                    <span class="true-icon"><i class="fa-solid fa-check" style="color: #18a474;"></i></span>
+                    Personalized Roadmap
+                </div>
+                <div class="badge">
+                    <span class="true-icon"><i class="fa-solid fa-check" style="color: #18a474;"></i></span>
+                    Placement Quiz
+                </div>
+                <div class="badge">
+                    <span class="true-icon"><i class="fa-solid fa-check" style="color: #18a474;"></i></span>
+                    Hands-on Projects
+                </div>
+                <div class="badge">
+                    <span class="true-icon"><i class="fa-solid fa-check" style="color: #18a474;"></i></span>
+                    Career Guidance
+                </div>
+            </div>
+        </section>
+
+        <section class="track-cards">
+            <div class="front-card track-card badge">
+                <div class="track-header">
+                    <div class="front-icon track-icon"><i class="fa-solid fa-code fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="track-header-dtls">
+                        <h3>Front-End Development</h3>
+                        <p>Build beautiful, responsive, and interactive websites.</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <p style="margin-block:20px 10px;">What You'll Learn</p>
+                <div class="skills">
+                    <span class="front-skills skill">HTML</span>
+                    <span class="front-skills skill">CSS</span>
+                    <span class="front-skills skill">Responsive Design</span>
+                    <span class="front-skills skill">JavaScript</span>
+                    <span class="front-skills skill">Git & GitHub</span>
+                    <span class="front-skills skill">Bootstrap</span>
+                    <span class="front-skills skill">React</span>
+                    <span class="front-skills skill">REST API</span>
+                </div>
+                <p style="margin-block:20px 5px;">BEGINNER PROJECTS</p>
+                <div class="badge" style="border-color: transparent; padding:0;">
+                    <i class="fa-solid fa-circle fa-2xs" style="color: #9eadf7; margin-right:5px;"></i>
+                    <span style="color:var(--text-secondary)">Landing Page</span>
+                </div>
+                <div class="badge" style="border-color: transparent; padding:0;">
+                    <i class="fa-solid fa-circle fa-2xs" style="color: #9eadf7; margin-right:5px;"></i>
+                    <span style="color:var(--text-secondary)">Portfolio Website</span>
+                </div>
+
+                <p style="margin-block:20px 5px;">CAREER GOAL</p>
+                <h4>Junior Front-End Developer</h4>
+
+                <div
+                    style="margin-block:30px; position: relative; display: flex; justify-content: space-between; align-items: center;">
+                    <div class="skills">
+                        <span class=" skill" style="color:#18a474; background-color:#002C22; margin-right:10px;">
+                            <i class="fa-solid fa-star" style="color: #e2bd38;"></i>
+                            <strong>Beginner</strong>
+                        </span>
+                        <span class=" skill" style="background-color:#1D293D; color:var(--text-secondary);">
+                            <span>⏱ 2–3 Months</span>
+                        </span>
+                    </div>
+                    <div class="arrow" style="display: inline-block;"><i class="fa-solid fa-angle-right fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back-card track-card badge">
+                <div class="track-header">
+                    <div class="back-icon track-icon"><i class="fa-solid fa-server fa-xl"
+                            style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="track-header-dtls">
+                        <h3>Back-End Development</h3>
+                        <p>Build powerful server-side applications and APIs.</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <p style="margin-block:20px 10px;">What You'll Learn</p>
+                <div class="skills">
+                    <span class="back-skills skill">Programming Basics</span>
+                    <span class="back-skills skill">Node.js</span>
+                    <span class="back-skills skill">Express.js</span>
+                    <span class="back-skills skill">REST API</span>
+                    <span class="back-skills skill">SQL</span>
+                    <span class="back-skills skill">MongoDB</span>
+                    <span class="back-skills skill">Authentication</span>
+                    <span class="back-skills skill">Deployment</span>
+                </div>
+                <p style="margin-block:20px 5px;">BEGINNER PROJECTS</p>
+                <div class="badge" style="border-color: transparent; padding:0;">
+                    <i class="fa-solid fa-circle fa-2xs" style="color: #9eadf7; margin-right:5px;"></i>
+                    <span style="color:var(--text-secondary)">Authentication System</span>
+                </div>
+                <div class="badge" style="border-color: transparent; padding:0;">
+                    <i class="fa-solid fa-circle fa-2xs" style="color: #9eadf7; margin-right:5px;"></i>
+                    <span style="color:var(--text-secondary)">Blog API</span>
+                </div>
+
+                <p style="margin-block:20px 5px;">CAREER GOAL</p>
+                <h4>Back-End Developer</h4>
+
+                <div
+                    style="margin-block:30px; position: relative; display: flex; justify-content: space-between; align-items: center;">
+                    <div class="skills">
+                        <span class=" skill" style="color:#18a474; background-color:#002C22; margin-right:10px;">
+                            <i class="fa-solid fa-star" style="color: #e2bd38;"></i>
+                            <i class="fa-solid fa-star" style="color: #e2bd38;"></i>
+                            <strong>Intermediate</strong>
+                        </span>
+                        <span class=" skill" style="background-color:#1D293D; color:var(--text-secondary);">
+                            <span>⏱ 3–4 Months</span>
+                        </span>
+                    </div>
+                    <div class="arrow" style="display: inline-block;"><i class="fa-solid fa-angle-right fa-lg"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="ui-ux-card track-card badge">
+                <div class="track-header">
+                    <div class="UI-UX-icon track-icon"><i class="fa-solid fa-pen fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="track-header-dtls">
+                        <h3>UI/UX Design</h3>
+                        <p>Design intuitive and beautiful digital experiences.</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <p style="margin-block:20px 10px;">What You'll Learn</p>
+                <div class="skills">
+                    <span class="ui-ux-skills skill">Design Principles</span>
+                    <span class="ui-ux-skills skill">Color Theory</span>
+                    <span class="ui-ux-skills skill">Typography</span>
+                    <span class="ui-ux-skills skill">Wireframing</span>
+                    <span class="ui-ux-skills skill">Prototyping</span>
+                    <span class="ui-ux-skills skill">Figma</span>
+                    <span class="ui-ux-skills skill">User Research</span>
+                    <span class="ui-ux-skills skill">Usability Testing</span>
+                </div>
+                <p style="margin-block:20px 5px;">BEGINNER PROJECTS</p>
+                <div class="badge" style="border-color: transparent; padding:0;">
+                    <i class="fa-solid fa-circle fa-2xs" style="color: #9eadf7; margin-right:5px;"></i>
+                    <span style="color:var(--text-secondary)">Mobile App Design</span>
+                </div>
+                <div class="badge" style="border-color: transparent; padding:0;">
+                    <i class="fa-solid fa-circle fa-2xs" style="color: #9eadf7; margin-right:5px;"></i>
+                    <span style="color:var(--text-secondary)">Dashboard UI</span>
+                </div>
+
+                <p style="margin-block:20px 5px;">CAREER GOAL</p>
+                <h4>UI\UX Designer</h4>
+
+                <div
+                    style="margin-block:30px; position: relative; display: flex; justify-content: space-between; align-items: center;">
+                    <div class="skills">
+                        <span class=" skill" style="color:#18a474; background-color:#002C22; margin-right:10px;">
+                            <i class="fa-solid fa-star" style="color: #e2bd38;"></i>
+                            <strong>Beginner</strong>
+                        </span>
+                        <span class=" skill" style="background-color:#1D293D; color:var(--text-secondary);">
+                            <span>⏱ 6–8 Weeks</span>
+                        </span>
+                    </div>
+                    <div class="arrow" style="display: inline-block;"><i class="fa-solid fa-angle-right fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flutter-card track-card badge">
+                <div class="track-header">
+                    <div class="flutter-icon track-icon"><i class="fa-solid fa-mobile-screen-button fa-xl"
+                            style="color: #ffffff;"></i></div>
+                    <div class="track-header-dtls">
+                        <h3>Flutter Development</h3>
+                        <p>Develop Android and iOS applications using one codebase.</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <p style="margin-block:20px 10px;">What You'll Learn</p>
+                <div class="skills">
+                    <span class="flutter-skills skill">Dart</span>
+                    <span class="flutter-skills skill">Flutter Basics</span>
+                    <span class="flutter-skills skill">Widgets</span>
+                    <span class="flutter-skills skill">Layouts</span>
+                    <span class="flutter-skills skill">State Management</span>
+                    <span class="flutter-skills skill">Firebase</span>
+                    <span class="flutter-skills skill">REST API Integration</span>
+                    <span class="flutter-skills skill">App Deployment</span>
+                </div>
+                <p style="margin-block:20px 5px;">BEGINNER PROJECTS</p>
+                <div class="badge" datatyle="border-color: transparent; padding:0;">
+                    <i class="fa-solid fa-circle fa-2xs" style="color: #9eadf7; margin-right:5px;"></i>
+                    <span style="color:var(--text-secondary)">Chat App</span>
+                </div>
+                <div class="badge" style="border-color: transparent; padding:0;">
+                    <i class="fa-solid fa-circle fa-2xs" style="color: #9eadf7; margin-right:5px;"></i>
+                    <span style="color:var(--text-secondary)">E-Commerce App</span>
+                </div>
+
+                <p style="margin-block:20px 5px;">CAREER GOAL</p>
+                <h4>Junior Flutter Developer</h4>
+
+                <div
+                    style="margin-block:30px; position: relative; display: flex; justify-content: space-between; align-items: center;">
+                    <div class="skills">
+                        <span class=" skill" style="color:#18a474; background-color:#002C22; margin-right:10px;">
+                            <i class="fa-solid fa-star" style="color: #e2bd38;"></i>
+                            <i class="fa-solid fa-star" style="color: #e2bd38;"></i>
+                            <strong>Intermediate</strong>
+                        </span>
+                        <span class=" skill" style="background-color:#1D293D; color:var(--text-secondary);">
+                            <span>⏱ 3 Months</span>
+                        </span>
+                    </div>
+                    <div class="arrow" style="display: inline-block;"><i class="fa-solid fa-angle-right fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-card track-card badge">
+                <div class="track-header">
+                    <div class="data-icon track-icon"><i class="fa-solid fa-chart-simple fa-xl"
+                            style="color: #ffffff;"></i></div>
+                    <div class="track-header-dtls">
+                        <h3>Data Analysis</h3>
+                        <p>Turn raw data into valuable insights using Python, SQL, and visualization tools.</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <p style="margin-block:20px 10px;">What You'll Learn</p>
+                <div class="skills">
+                    <span class="data-skills skill">Python</span>
+                    <span class="data-skills skill">Statistics</span>
+                    <span class="data-skills skill">NumPy</span>
+                    <span class="data-skills skill">Pandas</span>
+                    <span class="data-skills skill">Data Cleaning</span>
+                    <span class="data-skills skill">Data Visualization</span>
+                    <span class="data-skills skill">SQL</span>
+                    <span class="data-skills skill">Power BI</span>
+                </div>
+                <p style="margin-block:20px 5px;">BEGINNER PROJECTS</p>
+                <div class="badge" style="border-color: transparent; padding:0;">
+                    <i class="fa-solid fa-circle fa-2xs" style="color: #9eadf7; margin-right:5px;"></i>
+                    <span style="color:var(--text-secondary)">Sales Dashboard</span>
+                </div>
+                <div class="badge" style="border-color: transparent; padding:0;">
+                    <i class="fa-solid fa-circle fa-2xs" style="color: #9eadf7; margin-right:5px;"></i>
+                    <span style="color:var(--text-secondary)">Data Visualization</span>
+                </div>
+
+                <p style="margin-block:20px 5px;">CAREER GOAL</p>
+                <h4>Data Analyst</h4>
 
 
+                <div
+                    style="margin-block:30px; position: relative; display: flex; justify-content: space-between; align-items: center;">
+                    <div class="skills">
+                        <span class=" skill" style="color:#18a474; background-color:#002C22; margin-right:10px;">
+                            <i class="fa-solid fa-star" style="color: #e2bd38;"></i>
+                            <strong>Beginner</strong>
+                        </span>
+                        <span class=" skill" style="background-color:#1D293D; color:var(--text-secondary);">
+                            <span>⏱ 2–3 Months</span>
+                        </span>
+                    </div>
+                    <div class="arrow" style="display: inline-block;"><i class="fa-solid fa-angle-right fa-lg"></i>
+                    </div>
+                </div>
+            </div>
 
+        </section>
+
+        <section style="display:flex; align-items:center; justify-content: center;">
+            <div class="not-sure-card">
+                <div class="bolt-icon"><i class="fa-solid fa-bolt fa-xl" style="color: rgb(255, 255, 255);"></i></div>
+                <h2>Not Sure Which Track Fits You?</h2>
+                <p>Choose the track that interests you most. After selecting it, you'll take a short placement quiz that
+                    evaluates your
+                    current knowledge and generates a personalized learning roadmap.</p>
+            </div>
+        </section>
+    </main>
 
     <script src="../js/track-selection.js"></script>
     <script src="../js/helpers.js"></script>

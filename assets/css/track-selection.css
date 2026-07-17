@@ -3,18 +3,276 @@
    ========================================================================== */
 
 /* Page Styles */
+body {
+   background-color: var(--bg-primary);
+   color: var(--text);
 
+   p {
+      color: var(--text-muted);
+   }
+}
+
+.navbar-placeholder {
+   padding-top: 80px;
+}
+
+
+.badge {
+   border-radius: 20px;
+   border: 1px solid var(--border);
+   width: fit-content;
+   padding: 5px 15px;
+   background-color: var(--card-bg);
+
+}
+
+.avialable-tracks {
+   color: #9EADF7;
+   border: 1px solid #3529A8;
+   margin: 30px auto;
+   font-size: 12px;
+   background-color: #161433;
+}
+
+.learning-span {
+   background: var(--gradient);
+   color: transparent;
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.learning-prg {
+   color: var(--text-muted);
+   margin: 20px 10px;
+}
+
+.true-icon i {
+   border-radius: 50%;
+   padding: 5px;
+   background-color: #0D3335;
+   margin-right: 5px;
+}
+
+.features-badges {
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.track-cards {
+   display: grid;
+   gap: 20px;
+   grid-template-columns: 1fr;
+   padding-block: 30px;
+}
+
+.track-card {
+   cursor: pointer;
+   border-width: 3px;
+   transition: all 0.3s ease;
+}
+
+.arrow i {
+   color: var(--text-secondary);
+   transition: all 0.3s ease;
+}
+
+.track-card:hover {
+   transform: translateY(-10px);
+}
+
+.front-card:hover {
+   border-color: #7C86FF;
+}
+
+.back-card:hover {
+   border-color: #C27AFF;
+}
+
+.flutter-card:hover {
+   border-color: #05ADCB;
+}
+
+.data-card:hover {
+   border-color: #01D0BA;
+}
+
+.ui-ux-card:hover {
+   border-color: #FB64B6;
+}
+
+.track-card:hover .track-icon {
+   transform: scale(1.1);
+}
+
+.track-card:hover .arrow i {
+   color: #615FFF;
+   transform: translateX(5px);
+}
+
+.track-header {
+   margin: 10px 0;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 15px;
+}
+
+.track-icon {
+   border-radius: 15px;
+   padding: 18px 15px;
+   text-align: center;
+   width: 60px;
+   height: 60px;
+   transition: all 0.3s ease;
+}
+
+.front-icon {
+   background-color: #3C6DFF;
+}
+
+.back-icon {
+   background-color: #8727E9;
+}
+
+.flutter-icon {
+   background-color: #0090D3;
+}
+
+.UI-UX-icon {
+   background-color: #EF0060;
+}
+
+.data-icon {
+   background-color: #00A379;
+}
+
+.track-header-dtls {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+
+   p {
+      color: var(--text-muted)
+   }
+}
+
+.line {
+   background-color: var(--border);
+   width: 100%;
+   height: 1px;
+   margin-block: 20px;
+}
+
+.skills {
+   font-size: 14px;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   gap: 10px;
+   flex-wrap: wrap;
+}
+
+.skill {
+   border-radius: 15px;
+   border-color: transparent;
+   padding: 3px 7px;
+}
+
+.front-skills {
+   color: #8EC5FF;
+   background-color: #162556;
+}
+
+.back-skills {
+   color: #BBAAF6;
+   background-color: #2F0D68;
+}
+
+.flutter-skills {
+   color: #4EDFF2;
+   background-color: #053345;
+}
+
+.data-skills {
+   color: #45EBD3;
+   background-color: #022F2E;
+}
+
+.ui-ux-skills {
+   color: #F39BCA;
+   background-color: #510424;
+}
+
+.not-sure-card {
+   border-radius: 15px;
+   border: 3px solid #372AAC;
+   background-color: var(--card-bg);
+   padding-block: 30px;
+   margin-block: 50px 100px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   text-align: center;
+
+   p {
+      margin: 0 30px;
+   }
+}
+
+.bolt-icon {
+   width: 50px;
+   height: 50px;
+   padding: 10px;
+   border-radius: 15px;
+   background: var(--gradient);
+}
 
 
 /* ==========================================================================
    Responsive Design
    ========================================================================== */
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+   .avialable-tracks {
+      font-size: 16px;
+   }
 
-@media (min-width: 768px) {}
+   h1 {
+      font-size: 40px;
+   }
 
-@media (min-width: 992px) {}
+   .learning-prg {
+      margin: 20px 40px;
+   }
+}
+
+@media (min-width: 768px) {
+   .track-cards {
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+   }
+
+   .not-sure-card {
+      width: 750px;
+
+      p {
+         margin: 0 70px;
+      }
+   }
+}
+
+@media (min-width: 992px) {
+   .track-cards {
+      grid-template-columns: repeat(3, minmax(320px, 1fr));
+   }
+}
 
 @media (min-width: 1200px) {}
 

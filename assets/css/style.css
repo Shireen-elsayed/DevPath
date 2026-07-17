@@ -88,8 +88,8 @@ select {
 
    --bg-primary: #090B18;
    --bg-secondary: #13162F;
-   --card-bg: #1E293B;
-
+   /* --card-bg: #1E293B; */
+   --card-bg: #1A1830;
    --primary: #7C3AED;
    --secondary: #3B82F6;
    --accent: #22D3EE;
@@ -122,7 +122,7 @@ select {
    /* Shadows */
 
    /* Z-index */
-   
+
 }
 
 
@@ -148,3 +148,10 @@ select {
 
 
 /* Footer */
+
+/* container */
+
+.container {
+   width: 90%;
+   margin: auto;
+}
