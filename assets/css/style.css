@@ -17,7 +17,7 @@ html {
 }
 
 body {
-   font-family: "Poppins", sans-serif;
+   /* font-family: "Poppins", sans-serif; */
    line-height: 1.6;
 }
 
@@ -61,7 +61,7 @@ select {
 
    /* Font Sizes */
 
-   --fz-8: 8px;
+    --fz-8: 8px;
    --fz-10: 10px;
    --fz-12: 12px;
    --fz-14: 14px;
@@ -82,7 +82,7 @@ select {
    --fw-400: 400;
    --fw-500: 500;
    --fw-600: 600;
-   --fw-700: 700;
+   --fw-700: 700; 
 
    /* Colors */
 

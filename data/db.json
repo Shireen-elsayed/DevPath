@@ -5,11 +5,60 @@
       "username": "Manar",
       "email": "manar@gmail.com",
       "password": "123456",
-      "track": "",
+
+      "track": "Frontend",
+      "level": "Beginner",
+      "avatar": "",
+
       "overallScore": 0,
-      "skills": []
+      "skills": [],
+      "completedSkillIds": [],
+
+      "xpEarned": 0,
+      "xpNextReward": 3000,
+
+      "streakDays": 0,
+      "streakWeek": [
+        { "day": "Mon", "done": false },
+        { "day": "Tue", "done": false },
+        { "day": "Wed", "done": false },
+        { "day": "Thu", "done": false },
+        { "day": "Fri", "done": false },
+        { "day": "Sat", "done": false },
+        { "day": "Sun", "done": false }
+      ],
+
+      "weeklyGoalDone": 0,
+      "weeklyGoalTotal": 7,
+
+      "dailyGoalMinutesDone": 0,
+      "dailyGoalMinutesTotal": 30,
+
+      "quizProgress": {
+        "questionsDoneToday": 0,
+        "questionsTotalToday": 5
+      },
+      "codePracticeProgress": {
+        "problemsDoneToday": 0,
+        "problemsTotalToday": 2
+      },
+
+      "currentModule": {
+        "skillId": 1,
+        "skillName": "HTML",
+        "progressPercent": 0,
+        "nextLesson": {
+          "title": "",
+          "durationMinutes": 0
+        },
+        "upNext": {
+          "title": "",
+          "durationMinutes": 0
+        }
+      }
     }
   ],
+
   "tracks": [
     {
       "id": 1,
@@ -22,6 +71,7 @@
       "description": "Learn to build server-side applications and APIs."
     }
   ],
+
   "roadmaps": [
     {
       "id": 1,
@@ -94,258 +144,40 @@
       ]
     }
   ],
+
   "questions": [
-    {
-      "id": 1,
-      "trackId": 1,
-      "skill": "HTML",
-      "question": "What does HTML stand for?",
-      "options": [
-        "Hyper Text Markup Language",
-        "Home Tool Markup Language",
-        "Hyperlinks and Text Markup Language",
-        "Hyper Transfer Markup Language"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": 2,
-      "trackId": 1,
-      "skill": "HTML",
-      "question": "Which HTML tag is used to create a hyperlink?",
-      "options": ["<a>", "<link>", "<href>", "<url>"],
-      "correctAnswer": 0
-    },
-    {
-      "id": 3,
-      "trackId": 1,
-      "skill": "HTML",
-      "question": "Which HTML tag is used to insert an image?",
-      "options": ["<image>", "<img>", "<picture>", "<src>"],
-      "correctAnswer": 1
-    },
-    {
-      "id": 4,
-      "trackId": 1,
-      "skill": "HTML",
-      "question": "Which HTML element is used for the largest heading?",
-      "options": ["<heading>", "<head>", "<h6>", "<h1>"],
-      "correctAnswer": 3
-    },
-    {
-      "id": 5,
-      "trackId": 1,
-      "skill": "HTML",
-      "question": "Which tag is used to create an unordered list?",
-      "options": ["<ol>", "<ul>", "<li>", "<list>"],
-      "correctAnswer": 1
-    },
-    {
-      "id": 6,
-      "trackId": 1,
-      "skill": "CSS",
-      "question": "Which CSS property changes the text color?",
-      "options": ["font-color", "text-color", "color", "background-color"],
-      "correctAnswer": 2
-    },
-    {
-      "id": 7,
-      "trackId": 1,
-      "skill": "CSS",
-      "question": "Which property is used to change the background color?",
-      "options": ["background-color", "bg-color", "color", "background"],
-      "correctAnswer": 0
-    },
-    {
-      "id": 8,
-      "trackId": 1,
-      "skill": "CSS",
-      "question": "Which CSS layout is one-dimensional?",
-      "options": ["Grid", "Flexbox", "Table", "Float"],
-      "correctAnswer": 1
-    },
-    {
-      "id": 9,
-      "trackId": 1,
-      "skill": "CSS",
-      "question": "Which property controls the space outside an element?",
-      "options": ["padding", "border", "margin", "spacing"],
-      "correctAnswer": 2
-    },
-    {
-      "id": 10,
-      "trackId": 1,
-      "skill": "CSS",
-      "question": "Which property makes text bold?",
-      "options": ["font-style", "font-weight", "text-weight", "font-size"],
-      "correctAnswer": 1
-    },
-    {
-      "id": 11,
-      "trackId": 1,
-      "skill": "JavaScript",
-      "question": "Which keyword is used to declare a variable?",
-      "options": ["var", "let", "const", "All of the above"],
-      "correctAnswer": 3
-    },
-    {
-      "id": 12,
-      "trackId": 1,
-      "skill": "JavaScript",
-      "question": "Which method is used to print data in the console?",
-      "options": ["console.log()", "print()", "alert()", "document.write()"],
-      "correctAnswer": 0
-    },
-    {
-      "id": 13,
-      "trackId": 1,
-      "skill": "JavaScript",
-      "question": "Which symbol is used for single-line comments?",
-      "options": ["/* */", "//", "<!-- -->", "#"],
-      "correctAnswer": 1
-    },
-    {
-      "id": 14,
-      "trackId": 1,
-      "skill": "JavaScript",
-      "question": "Which statement is used to make decisions in JavaScript?",
-      "options": ["for", "switch", "if", "while"],
-      "correctAnswer": 2
-    },
-    {
-      "id": 15,
-      "trackId": 1,
-      "skill": "JavaScript",
-      "question": "Which function displays a popup message?",
-      "options": ["prompt()", "confirm()", "alert()", "console.log()"],
-      "correctAnswer": 2
-    },
-    {
-      "id": 16,
-      "trackId": 2,
-      "skill": "Programming Basics",
-      "question": "Which language is commonly used with Node.js?",
-      "options": ["Python", "Java", "JavaScript", "C#"],
-      "correctAnswer": 2
-    },
-    {
-      "id": 17,
-      "trackId": 2,
-      "skill": "Programming Basics",
-      "question": "Which statement is used for decision making?",
-      "options": ["for", "while", "if", "switch"],
-      "correctAnswer": 2
-    },
-    {
-      "id": 18,
-      "trackId": 2,
-      "skill": "Programming Basics",
-      "question": "Which data structure stores key-value pairs?",
-      "options": ["Array", "Object", "String", "Number"],
-      "correctAnswer": 1
-    },
-    {
-      "id": 19,
-      "trackId": 2,
-      "skill": "Programming Basics",
-      "question": "Which loop always executes at least once?",
-      "options": ["for", "while", "do...while", "foreach"],
-      "correctAnswer": 2
-    },
-    {
-      "id": 20,
-      "trackId": 2,
-      "skill": "Programming Basics",
-      "question": "Which keyword is used to declare a constant in JavaScript?",
-      "options": ["var", "const", "let", "static"],
-      "correctAnswer": 1
-    },
-    {
-      "id": 21,
-      "trackId": 2,
-      "skill": "Node.js",
-      "question": "What is Node.js mainly used for?",
-      "options": [
-        "Building server-side applications",
-        "Editing images",
-        "Creating databases",
-        "Designing websites"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": 22,
-      "trackId": 2,
-      "skill": "Node.js",
-      "question": "Which command initializes a Node.js project?",
-      "options": ["npm init", "node start", "npm install", "node init"],
-      "correctAnswer": 0
-    },
-    {
-      "id": 23,
-      "trackId": 2,
-      "skill": "Node.js",
-      "question": "Which file contains project information and dependencies?",
-      "options": ["index.js", "package.json", "server.js", "node_modules"],
-      "correctAnswer": 1
-    },
-    {
-      "id": 24,
-      "trackId": 2,
-      "skill": "Node.js",
-      "question": "Which command installs all project dependencies?",
-      "options": ["npm start", "npm install", "npm init", "node install"],
-      "correctAnswer": 1
-    },
-    {
-      "id": 25,
-      "trackId": 2,
-      "skill": "Node.js",
-      "question": "Which object is used to create a web server in Node.js?",
-      "options": ["http", "server", "web", "app"],
-      "correctAnswer": 0
-    },
-    {
-      "id": 26,
-      "trackId": 2,
-      "skill": "SQL",
-      "question": "Which SQL statement is used to retrieve data?",
-      "options": ["GET", "SELECT", "FETCH", "SHOW"],
-      "correctAnswer": 1
-    },
-    {
-      "id": 27,
-      "trackId": 2,
-      "skill": "SQL",
-      "question": "Which SQL statement is used to insert new data?",
-      "options": ["ADD", "INSERT INTO", "UPDATE", "CREATE"],
-      "correctAnswer": 1
-    },
-    {
-      "id": 28,
-      "trackId": 2,
-      "skill": "SQL",
-      "question": "Which clause is used to filter records?",
-      "options": ["ORDER BY", "WHERE", "GROUP BY", "HAVING"],
-      "correctAnswer": 1
-    },
-    {
-      "id": 29,
-      "trackId": 2,
-      "skill": "SQL",
-      "question": "Which SQL statement is used to modify existing data?",
-      "options": ["CHANGE", "UPDATE", "MODIFY", "ALTER"],
-      "correctAnswer": 1
-    },
-    {
-      "id": 30,
-      "trackId": 2,
-      "skill": "SQL",
-      "question": "Which SQL statement is used to delete records?",
-      "options": ["REMOVE", "DELETE", "DROP", "CLEAR"],
-      "correctAnswer": 1
-    }
+    { "id": 1, "trackId": 1, "skill": "HTML", "question": "What does HTML stand for?", "options": ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyper Transfer Markup Language"], "correctAnswer": 0 },
+    { "id": 2, "trackId": 1, "skill": "HTML", "question": "Which HTML tag is used to create a hyperlink?", "options": ["<a>", "<link>", "<href>", "<url>"], "correctAnswer": 0 },
+    { "id": 3, "trackId": 1, "skill": "HTML", "question": "Which HTML tag is used to insert an image?", "options": ["<image>", "<img>", "<picture>", "<src>"], "correctAnswer": 1 },
+    { "id": 4, "trackId": 1, "skill": "HTML", "question": "Which HTML element is used for the largest heading?", "options": ["<heading>", "<head>", "<h6>", "<h1>"], "correctAnswer": 3 },
+    { "id": 5, "trackId": 1, "skill": "HTML", "question": "Which tag is used to create an unordered list?", "options": ["<ol>", "<ul>", "<li>", "<list>"], "correctAnswer": 1 },
+    { "id": 6, "trackId": 1, "skill": "CSS", "question": "Which CSS property changes the text color?", "options": ["font-color", "text-color", "color", "background-color"], "correctAnswer": 2 },
+    { "id": 7, "trackId": 1, "skill": "CSS", "question": "Which property is used to change the background color?", "options": ["background-color", "bg-color", "color", "background"], "correctAnswer": 0 },
+    { "id": 8, "trackId": 1, "skill": "CSS", "question": "Which CSS layout is one-dimensional?", "options": ["Grid", "Flexbox", "Table", "Float"], "correctAnswer": 1 },
+    { "id": 9, "trackId": 1, "skill": "CSS", "question": "Which property controls the space outside an element?", "options": ["padding", "border", "margin", "spacing"], "correctAnswer": 2 },
+    { "id": 10, "trackId": 1, "skill": "CSS", "question": "Which property makes text bold?", "options": ["font-style", "font-weight", "text-weight", "font-size"], "correctAnswer": 1 },
+    { "id": 11, "trackId": 1, "skill": "JavaScript", "question": "Which keyword is used to declare a variable?", "options": ["var", "let", "const", "All of the above"], "correctAnswer": 3 },
+    { "id": 12, "trackId": 1, "skill": "JavaScript", "question": "Which method is used to print data in the console?", "options": ["console.log()", "print()", "alert()", "document.write()"], "correctAnswer": 0 },
+    { "id": 13, "trackId": 1, "skill": "JavaScript", "question": "Which symbol is used for single-line comments?", "options": ["/* */", "//", "<!-- -->", "#"], "correctAnswer": 1 },
+    { "id": 14, "trackId": 1, "skill": "JavaScript", "question": "Which statement is used to make decisions in JavaScript?", "options": ["for", "switch", "if", "while"], "correctAnswer": 2 },
+    { "id": 15, "trackId": 1, "skill": "JavaScript", "question": "Which function displays a popup message?", "options": ["prompt()", "confirm()", "alert()", "console.log()"], "correctAnswer": 2 },
+    { "id": 16, "trackId": 2, "skill": "Programming Basics", "question": "Which language is commonly used with Node.js?", "options": ["Python", "Java", "JavaScript", "C#"], "correctAnswer": 2 },
+    { "id": 17, "trackId": 2, "skill": "Programming Basics", "question": "Which statement is used for decision making?", "options": ["for", "while", "if", "switch"], "correctAnswer": 2 },
+    { "id": 18, "trackId": 2, "skill": "Programming Basics", "question": "Which data structure stores key-value pairs?", "options": ["Array", "Object", "String", "Number"], "correctAnswer": 1 },
+    { "id": 19, "trackId": 2, "skill": "Programming Basics", "question": "Which loop always executes at least once?", "options": ["for", "while", "do...while", "foreach"], "correctAnswer": 2 },
+    { "id": 20, "trackId": 2, "skill": "Programming Basics", "question": "Which keyword is used to declare a constant in JavaScript?", "options": ["var", "const", "let", "static"], "correctAnswer": 1 },
+    { "id": 21, "trackId": 2, "skill": "Node.js", "question": "What is Node.js mainly used for?", "options": ["Building server-side applications", "Editing images", "Creating databases", "Designing websites"], "correctAnswer": 0 },
+    { "id": 22, "trackId": 2, "skill": "Node.js", "question": "Which command initializes a Node.js project?", "options": ["npm init", "node start", "npm install", "node init"], "correctAnswer": 0 },
+    { "id": 23, "trackId": 2, "skill": "Node.js", "question": "Which file contains project information and dependencies?", "options": ["index.js", "package.json", "server.js", "node_modules"], "correctAnswer": 1 },
+    { "id": 24, "trackId": 2, "skill": "Node.js", "question": "Which command installs all project dependencies?", "options": ["npm start", "npm install", "npm init", "node install"], "correctAnswer": 1 },
+    { "id": 25, "trackId": 2, "skill": "Node.js", "question": "Which object is used to create a web server in Node.js?", "options": ["http", "server", "web", "app"], "correctAnswer": 0 },
+    { "id": 26, "trackId": 2, "skill": "SQL", "question": "Which SQL statement is used to retrieve data?", "options": ["GET", "SELECT", "FETCH", "SHOW"], "correctAnswer": 1 },
+    { "id": 27, "trackId": 2, "skill": "SQL", "question": "Which SQL statement is used to insert new data?", "options": ["ADD", "INSERT INTO", "UPDATE", "CREATE"], "correctAnswer": 1 },
+    { "id": 28, "trackId": 2, "skill": "SQL", "question": "Which clause is used to filter records?", "options": ["ORDER BY", "WHERE", "GROUP BY", "HAVING"], "correctAnswer": 1 },
+    { "id": 29, "trackId": 2, "skill": "SQL", "question": "Which SQL statement is used to modify existing data?", "options": ["CHANGE", "UPDATE", "MODIFY", "ALTER"], "correctAnswer": 1 },
+    { "id": 30, "trackId": 2, "skill": "SQL", "question": "Which SQL statement is used to delete records?", "options": ["REMOVE", "DELETE", "DROP", "CLEAR"], "correctAnswer": 1 }
   ],
+
   "jobs": [
     {
       "id": 1,
@@ -368,13 +200,7 @@
       "title": "Node.js Backend Developer",
       "company": "DataFlow",
       "track": "Backend",
-      "requiredSkills": [
-        "Programming Basics",
-        "Node.js",
-        "Express.js",
-        "REST API",
-        "MongoDB"
-      ],
+      "requiredSkills": ["Programming Basics", "Node.js", "Express.js", "REST API", "MongoDB"],
       "description": "Build high-performance, secure backend services and APIs using Node.js and Express."
     },
     {
@@ -382,14 +208,26 @@
       "title": "Full-Stack Engineer (Backend Focused)",
       "company": "CloudSystems",
       "track": "Backend",
-      "requiredSkills": [
-        "Node.js",
-        "REST API",
-        "SQL",
-        "Authentication",
-        "Deployment"
-      ],
+      "requiredSkills": ["Node.js", "REST API", "SQL", "Authentication", "Deployment"],
       "description": "Looking for a backend-heavy engineer to maintain databases and scale server infrastructure."
     }
+  ],
+
+  "recommended": [
+    { "id": "rec-1", "icon": "css", "title": "CSS Flexbox Guide", "type": "Article", "meta": "20 min", "link": "#" },
+    { "id": "rec-2", "icon": "js", "title": "JavaScript Practice Set", "type": "Practice", "meta": "10 Problems", "link": "#" },
+    { "id": "rec-3", "icon": "code", "title": "Build a To-Do App", "type": "Project", "meta": "Beginner", "link": "#" }
+  ],
+
+  "upcomingProjects": [
+    { "id": "proj-1", "icon": "weather", "title": "Weather App", "tags": ["HTML", "CSS", "JavaScript"], "level": "Beginner" },
+    { "id": "proj-2", "icon": "portfolio", "title": "Portfolio Website", "tags": ["HTML", "CSS", "JavaScript"], "level": "Intermediate" },
+    { "id": "proj-3", "icon": "ecommerce", "title": "E-commerce Website", "tags": ["React", "Node.js", "MongoDB"], "level": "Advanced" }
+  ],
+
+  "motivationMessages": [
+    "Great job! You're making steady progress. Stay consistent and you'll achieve your goals soon!",
+    "Keep learning, keep growing. You're doing great!",
+    "One step at a time — you're closer to your goal than yesterday."
   ]
 }
