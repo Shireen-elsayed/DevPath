@@ -50,9 +50,14 @@
         </aside>
         <section class="dashbord">
             <div class="header">
-                <div class="name-user">
-                    <h2 class="clock"> </h2>
-                    <p>Keep learning, keep growing</p>
+                <div class="header-left">
+                    <button class="mobile-menu-toggle" type="button" aria-label="Toggle sidebar">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="name-user">
+                        <h2 class="clock"> </h2>
+                        <p>Keep learning, keep growing</p>
+                    </div>
                 </div>
                 <div class="right-user">
                     <i class="fa-solid fa-bell"></i>
@@ -66,11 +71,10 @@
                 </div>
             </div>
             <div class="top-card">
-                <div id="progress" class="circle-wrapper" style="position: relative;">
+                <div id="progress" class="circle-wrapper">
                     <p class="progress-title">Overall Progress</p>
                     <canvas id="progressChart" width="140" height="140"></canvas>
-                    <span class="percent-text"
-                        style="position:absolute; top:60%; left:50%; transform:translate(-50%,-50%); font-size:24px; font-weight:bold; color: white;">30%</span>
+                    <span class="percent-text">30%</span>
                 </div>
                 <div id="level">
                     <div class="level-all">
@@ -104,13 +108,13 @@
                 <div id="xp">
                     <div class="xp-one">
                         <i class="fa-solid fa-star"></i>
-                        <span class="xp-title">Modules Completed</span>
+                        <span class="xp-title">XP Earned</span>
                     </div>
                     <div class="xp-two">
                         <i class="fa-solid fa-star"></i>
                         <div class="number-xp">
-                            <p>18/40</p>
-                            <span>You're ahead of 32% of learners</span>
+                            <p>2,450 XP</p>
+                            <span>Next reward at 3,000 XP</span>
                         </div>
                     </div>
                 </div>
@@ -131,13 +135,13 @@
                 <div id="weeklygoal">
                     <div class="weak-one">
                         <i class="fa-solid fa-bullseye"></i>
-                        <span class="weak-title">Modules Completed</span>
+                        <span class="weak-title">Weekly Goal</span>
                     </div>
                     <div class="weak-two">
                         <i class="fa-solid fa-chalkboard-user"></i>
                         <div class="number-weak">
-                            <p>18/40</p>
-                            <span>You're ahead of 32% of learners</span>
+                            <p>4/7</p>
+                            <span>Learn 30 mins everyday to complete your goal</span>
                         </div>
                     </div>
 
@@ -145,14 +149,185 @@
             </div>
             <div class="middle-cart">
                 <div class="middle-la">
+                    <!-- Continue Learning -->
+                    <div class="continue-learning-container">
+                        <h3 class="cart-title">Continue Learning</h3>
+                        <div class="current-course-card">
+                            <div class="course-header">
+                                <div class="course-badge">JS</div>
+                                <span class="progress-indicator">Module 1 - In Progress</span>
+                            </div>
+                            <div class="course-body">
+                                <h4>JavaScript Basics</h4>
+                                <p class="course-track">Frontend Development Track</p>
+                                <div class="progress-section">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill progress-65"></div>
+                                    </div>
+                                    <span class="progress-percent">65%</span>
+                                </div>
+                            </div>
+                            <button class="continue-btn">
+                                <i class="fa-solid fa-play"></i>
+                                Continue Module
+                            </button>
+                        </div>
+
+                        <!-- Next Lessons -->
+                        <div class="next-lessons-card">
+                            <h4 class="card-subtitle">Next Lesson</h4>
+                            <div class="lessons-stack">
+                                <div class="lesson-item">
+                                    <div class="lesson-number">1</div>
+                                    <div class="lesson-info">
+                                        <span class="lesson-name">Variables and Data Types</span>
+                                        <span class="lesson-duration">15 min</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="lesson-item">
+                                    <div class="lesson-number">2</div>
+                                    <div class="lesson-info">
+                                        <span class="lesson-name">Operators and Expressions</span>
+                                        <span class="lesson-duration">18 min</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="middle-sm">
+                    <!-- Recommended & Calendar -->
+                    <div class="recommended-learning">
+                        <h3 class="cart-title">Recommended For You</h3>
+                        <div class="rec-cards-container">
+                            <div class="rec-card">
+                                <div class="rec-card-icon css-icon">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </div>
+                                <h5>CSS Advanced</h5>
+                                <p class="rec-meta">Article • 12 min read</p>
+                                <div class="rec-tag">CSS</div>
+                            </div>
+                            <div class="rec-card">
+                                <div class="rec-card-icon html-icon">
+                                    <i class="fa-brands fa-html5"></i>
+                                </div>
+                                <h5>HTML Forms</h5>
+                                <p class="rec-meta">Tutorial • 8 min</p>
+                                <div class="rec-tag">HTML</div>
+                            </div>
+                            <div class="rec-card">
+                                <div class="rec-card-icon js-icon">
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                                <h5>DOM Methods</h5>
+                                <p class="rec-meta">Practice • 10 problems</p>
+                                <div class="rec-tag">JavaScript</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learning Calendar -->
+                    <div class="calendar-widget">
+                        <h3 class="cart-title">This Week</h3>
+                        <div class="week-calendar">
+                            <div class="week-day completed">
+                                <span class="day-name">Mon</span>
+                                <span class="day-date">20</span>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="week-day completed">
+                                <span class="day-name">Tue</span>
+                                <span class="day-date">21</span>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="week-day completed">
+                                <span class="day-name">Wed</span>
+                                <span class="day-date">22</span>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="week-day today">
+                                <span class="day-name">Thu</span>
+                                <span class="day-date">23</span>
+                                <i class="fa-solid fa-circle-dot"></i>
+                            </div>
+                            <div class="week-day">
+                                <span class="day-name">Fri</span>
+                                <span class="day-date">24</span>
+                                <i class="fa-regular fa-circle"></i>
+                            </div>
+                            <div class="week-day">
+                                <span class="day-name">Sat</span>
+                                <span class="day-date">25</span>
+                                <i class="fa-regular fa-circle"></i>
+                            </div>
+                            <div class="week-day">
+                                <span class="day-name">Sun</span>
+                                <span class="day-date">26</span>
+                                <i class="fa-regular fa-circle"></i>
+                            </div>
+                        </div>
+
+                        <div class="daily-goals">
+                            <div class="goal daily-goal">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Daily Goal: Learn 30 mins</span>
+                            </div>
+                            <div class="goal quiz-goal">
+                                <i class="fa-regular fa-circle"></i>
+                                <span>Quiz: Complete 5 questions</span>
+                            </div>
+                            <div class="goal practice-goal">
+                                <i class="fa-regular fa-circle"></i>
+                                <span>Code Practice: 1/2</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="end-cart">
-                <div class="start"></div>
-                <div class="middle"></div>
-                <div class="end"></div>
+                <div class="upcoming-projects">
+                    <h3 class="cart-title">Upcoming Projects</h3>
+                    <div class="projects-showcase">
+                        <div class="project-showcase-card">
+                            <div class="project-badge weather">
+                                <i class="fa-solid fa-cloud-sun"></i>
+                            </div>
+                            <h5>Weather App</h5>
+                            <p class="project-stack">HTML • CSS • JavaScript</p>
+                            <span class="difficulty-badge beginner">
+                                <i class="fa-solid fa-leaf"></i>
+                                Beginner
+                            </span>
+                        </div>
+                        <div class="project-showcase-card">
+                            <div class="project-badge ecommerce">
+                                <i class="fa-solid fa-shopping-bag"></i>
+                            </div>
+                            <h5>E-commerce Store</h5>
+                            <p class="project-stack">React • Node.js • MongoDB</p>
+                            <span class="difficulty-badge advanced">
+                                <i class="fa-solid fa-star"></i>
+                                Advanced
+                            </span>
+                        </div>
+                        <div class="project-showcase-card">
+                            <div class="project-badge portfolio">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <h5>Portfolio Website</h5>
+                            <p class="project-stack">React • Tailwind CSS</p>
+                            <span class="difficulty-badge intermediate">
+                                <i class="fa-solid fa-circle-half-stroke"></i>
+                                Intermediate
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

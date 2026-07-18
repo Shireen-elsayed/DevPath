@@ -1,50 +1,79 @@
+const links = document.querySelectorAll(".links-sidebar nav ul li");
+const clock = document.querySelector(".clock");
+const sidebar = document.querySelector(".sidebar");
+const menuToggle = document.querySelector(".mobile-menu-toggle");
 
-async function getData(){
-    let response=await fetch("../data/db.json")
-    let data=await response.json()
-    console.log(data);
+if (menuToggle && sidebar) {
+  const syncMenuState = () => {
+    if (window.innerWidth > 992) {
+      menuToggle.classList.remove("hidden");
+    } else {
+      menuToggle.classList.remove("hidden");
+    }
+  };
+
+  menuToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+  });
+
+  window.addEventListener("resize", syncMenuState);
+  syncMenuState();
 }
 
-getData()
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    links.forEach((item) => item.classList.remove("active"));
+    this.classList.add("active");
 
+    if (window.innerWidth <= 992 && sidebar) {
+      sidebar.classList.remove("open");
+    }
+  });
+});
 
-let links=document.querySelectorAll(".links-sidebar nav ul li")
-let clock=document.querySelector(".clock")
-console.log(clock);
-console.log(links);
+if (sidebar) {
+  document.addEventListener("click", (event) => {
+    if (window.innerWidth > 992) return;
 
-links.forEach((link)=>{
-    link.addEventListener("click",function(){
-        links.forEach((e)=>{
-            e.classList.remove("active")
-        })
-        this.classList.add("active")
-    })
-    
-})
-const now = new Date();
-const hour = now.getHours(); 
-console.log(hour); 
+    const clickedInsideSidebar = sidebar.contains(event.target);
+    const clickedToggle = menuToggle && menuToggle.contains(event.target);
 
-let greeting;
-
-if (hour < 12) {
-  greeting = "Good morning";
-} else if (hour < 18) {
-  greeting = "Good afternoon";
-} else {
-  greeting = "Good evening";
+    if (
+      !clickedInsideSidebar &&
+      !clickedToggle &&
+      sidebar.classList.contains("open")
+    ) {
+      sidebar.classList.remove("open");
+    }
+  });
 }
-clock.innerHTML=`${greeting}, <span class="log">naema <span class="emo">👋</span></span> `
 
-// streak 
-function renderStreakDays(streakWeek) {
+function setGreeting() {
+  if (!clock) return;
+
+  const hour = new Date().getHours();
+  let greeting;
+
+  if (hour < 12) {
+    greeting = "Good morning";
+  } else if (hour < 18) {
+    greeting = "Good afternoon";
+  } else {
+    greeting = "Good evening";
+  }
+
+  clock.innerHTML = `${greeting}, <span class="log">naema <span class="emo">👋</span></span>`;
+}
+
+function renderStreakDays(streakWeek = []) {
   const container = document.getElementById("streakDaysContainer");
+  if (!container) return;
+
   container.innerHTML = "";
 
-  const today = new Date().toLocaleDateString('en-US', { weekday: 'short' });
+  const today = new Date().toLocaleDateString("en-US", { weekday: "short" });
 
-  streakWeek.forEach(dayData => {
+  streakWeek.forEach((dayData) => {
     const dayLetter = dayData.day[0];
     const isToday = dayData.day.startsWith(today.slice(0, 3));
 
@@ -62,53 +91,84 @@ function renderStreakDays(streakWeek) {
   });
 }
 
+let progressChart = null;
 
-const ctx = document.getElementById('progressChart');
-const progressChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    datasets: [{
-      data: [0, 100],
-      backgroundColor: ['#8b5cf6', '#2a2a3d'],
-      borderWidth: 0
-    }]
-  },
-  options: {
-    cutout: '75%',
-    rotation: -90,
-    plugins: { legend: { display: false }, tooltip: { enabled: false } }
-  }
-});
+function initChart() {
+  const ctx = document.getElementById("progressChart");
+  if (!ctx || typeof Chart === "undefined") return null;
 
+  progressChart = new Chart(ctx, {
+    type: "doughnut",
+    data: {
+      datasets: [
+        {
+          data: [0, 100],
+          backgroundColor: ["#8b5cf6", "#2a2a3d"],
+          borderWidth: 0,
+        },
+      ],
+    },
+    options: {
+      cutout: "75%",
+      rotation: -90,
+      plugins: { legend: { display: false }, tooltip: { enabled: false } },
+    },
+  });
+
+  return progressChart;
+}
 
 async function loadDashboardData() {
   const response = await fetch("../data/db.json");
-  const data = await response.json();
-  return data;
+  if (!response.ok) {
+    throw new Error("Unable to load dashboard data");
+  }
+  return response.json();
 }
+
+
+
+
+
+
+
+
+
+
 
 async function initDashboard() {
-  const data = await loadDashboardData();
+  try {
+    const data = await loadDashboardData();
+    const currentUser = data?.users?.[0];
 
+    if (!currentUser) {
+      return;
+    }
 
-  const currentUser = data.users[0];
-  const percent = currentUser.overallScore;
+    const percent = Number(currentUser.overallScore ?? 0);
+    const chart = progressChart || initChart();
 
-  progressChart.data.datasets[0].data = [percent, 100 - percent];
-  progressChart.update();
+    if (chart) {
+      chart.data.datasets[0].data = [percent, Math.max(0, 100 - percent)];
+      chart.update();
+    }
 
-  document.querySelector(".percent-text").textContent = percent + "%";
+    const percentText = document.querySelector(".percent-text");
+    if (percentText) {
+      percentText.textContent = `${percent}%`;
+    }
 
-   renderStreakDays(currentUser.streakWeek);
+    renderStreakDays(currentUser.streakWeek || []);
+  } catch (error) {
+    console.error("Dashboard loading error:", error);
+    const percentText = document.querySelector(".percent-text");
+    if (percentText) {
+      percentText.textContent = "0%";
+    }
+    renderStreakDays([]);
+  }
 }
 
+setGreeting();
+initChart();
 initDashboard();
-
-
-
-
-
-
-
-
-
