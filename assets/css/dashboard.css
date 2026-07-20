@@ -3,6 +3,113 @@
    ========================================================================== */
 
 /* Page Styles */
+body {
+  background-color: #080B1E;  
+}
+aside {
+   background-color: #070a19; 
+   width: 17%;
+   color: white;
+   padding: 30px;
+   min-height: 300px;
+   border-right: 1px solid rgb(27, 26, 26);
+   box-shadow: 0 0 10px 10px rgba(41, 40, 40, 0.044);
+}
+.logo-sidebar img {
+   width: 180px;
+   /* margin: auto; */
+}
+.links-sidebar {
+   margin-top: 30px;
+}
+.links-sidebar nav ul li {
+   margin-top: 7px;
+   /* background-color: rgb(49, 34, 113); */
+   padding: 10px;
+   padding-left: 17px;
+   border-radius: 10px;
+   text-align: start;
+}
+.active {
+   background-color: rgb(49, 34, 113);
+}
+.links-sidebar nav ul li i {
+   margin-right: 15px;
+   color: rgb(245, 241, 241);
+   
+}
+.links-sidebar nav ul li a {
+   font-size: 1.1em !important;
+   
+}
+.upgrade-pro {
+   background-color: rgb(20, 14, 49);
+   padding: 15px;
+   margin-top: 23px;
+   border-radius: 7px;
+}
+.pro-btn {
+   padding: 10px;
+   text-align: center;
+   background-color: rgb(61, 43, 141);
+   margin-top: 5px;
+   width: 100%;
+   border: none;
+   border-radius: 7px;
+   color: white;
+   cursor: pointer;
+}
+.upgrade-pro {
+   text-align: center;
+}
+.upgrade-pro i {
+   color: rgb(255, 213, 0);
+   margin-right: 5px;
+}
+.upgrade-pro span {
+   font-size: 1.1em !important;
+   font-family: 'Times New Roman', Times, serif !important;
+}
+.upgrade-pro p {
+   text-align: start;
+   color: rgb(207, 207, 207);
+}
+.log-out {
+   /* background-color: red; */
+   padding: 20px;
+   margin-top: 20px;
+   color: rgb(205, 205, 205);
+}
+.log-out i {
+margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
