@@ -5,92 +5,258 @@
       "username": "Manar",
       "email": "manar@gmail.com",
       "password": "123456",
-      "track": "",
-      "overallScore": 0,
-      "skills": []
+
+      "track": "Backend",
+      "level": "Beginner",
+      "avatar": "",
+
+      "overallScore": 30,
+      "skills": [],
+      "completedSkillIds": [
+        "Programming Basics",
+        "Node.js",
+        "Express.js",
+        "REST API",
+        "MongoDB"
+      ],
+
+      "xpEarned": 0,
+      "xpNextReward": 3000,
+
+      "streakDays": 0,
+      "streakWeek": [
+        { "day": "Mon", "done": false },
+        { "day": "Tue", "done": false },
+        { "day": "Wed", "done": false },
+        { "day": "Thu", "done": false },
+        { "day": "Fri", "done": false },
+        { "day": "Sat", "done": false },
+        { "day": "Sun", "done": false }
+      ],
+
+      "weeklyGoalDone": 0,
+      "weeklyGoalTotal": 7,
+
+      "dailyGoalMinutesDone": 0,
+      "dailyGoalMinutesTotal": 30,
+
+      "quizProgress": {
+        "questionsDoneToday": 0,
+        "questionsTotalToday": 5
+      },
+      "codePracticeProgress": {
+        "problemsDoneToday": 0,
+        "problemsTotalToday": 2
+      },
+
+      "currentModule": {
+        "skillId": 1,
+        "skillName": "HTML",
+        "progressPercent": 0,
+        "nextLesson": {
+          "title": "",
+          "durationMinutes": 0
+        },
+        "upNext": {
+          "title": "",
+          "durationMinutes": 0
+        }
+      }
     }
   ],
   "tracks": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Frontend",
       "description": "Learn to build responsive and interactive web applications."
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Backend",
       "description": "Learn to build server-side applications and APIs."
     }
   ],
   "roadmaps": [
     {
-      "id": 1,
-      "track": "Frontend",
+      "id": "Frontend",
+      "title": "Front-End Development",
       "skills": [
-        { "id": 1, "name": "HTML" },
-        { "id": 2, "name": "CSS" },
-        { "id": 3, "name": "Responsive Design" },
-        { "id": 4, "name": "JavaScript" },
-        { "id": 5, "name": "Git & GitHub" },
-        { "id": 6, "name": "Bootstrap" },
-        { "id": 7, "name": "React" },
-        { "id": 8, "name": "REST API" }
+        {
+          "title": "HTML",
+          "duration": "1 week",
+          "lessons": [
+            {
+              "title": "HTML Introduction",
+              "resource": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            },
+            {
+              "title": "HTML Element & Tags",
+              "resource": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements"
+            }
+          ]
+        },
+        {
+          "title": "CSS",
+          "duration": "2 week",
+          "lessons": [
+            {
+              "title": "CSS Selectors & Specificity",
+              "resource": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors"
+            },
+            {
+              "title": "Box Model",
+              "resource": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_model"
+            }
+          ]
+        }
       ]
     },
     {
-      "id": 2,
-      "track": "Backend",
+      "id": "Backend",
       "skills": [
-        { "id": 1, "name": "Programming Basics" },
-        { "id": 2, "name": "Node.js" },
-        { "id": 3, "name": "Express.js" },
-        { "id": 4, "name": "REST API" },
-        { "id": 5, "name": "SQL" },
-        { "id": 6, "name": "MongoDB" },
-        { "id": 7, "name": "Authentication" },
-        { "id": 8, "name": "Deployment" }
+        {
+          "id": 1,
+          "name": "Programming Basics"
+        },
+        {
+          "id": 2,
+          "name": "Node.js"
+        },
+        {
+          "id": 3,
+          "name": "Express.js"
+        },
+        {
+          "id": 4,
+          "name": "REST API"
+        },
+        {
+          "id": 5,
+          "name": "SQL"
+        },
+        {
+          "id": 6,
+          "name": "MongoDB"
+        },
+        {
+          "id": 7,
+          "name": "Authentication"
+        },
+        {
+          "id": 8,
+          "name": "Deployment"
+        }
       ]
     },
     {
-      "id": 3,
-      "track": "UI/UX",
+      "id": "UI/UX",
       "skills": [
-        { "id": 1, "name": "Design Principles" },
-        { "id": 2, "name": "Color Theory" },
-        { "id": 3, "name": "Typography" },
-        { "id": 4, "name": "Wireframing" },
-        { "id": 5, "name": "Prototyping" },
-        { "id": 6, "name": "Figma" },
-        { "id": 7, "name": "User Research" },
-        { "id": 8, "name": "Usability Testing" }
+        {
+          "id": 1,
+          "name": "Design Principles"
+        },
+        {
+          "id": 2,
+          "name": "Color Theory"
+        },
+        {
+          "id": 3,
+          "name": "Typography"
+        },
+        {
+          "id": 4,
+          "name": "Wireframing"
+        },
+        {
+          "id": 5,
+          "name": "Prototyping"
+        },
+        {
+          "id": 6,
+          "name": "Figma"
+        },
+        {
+          "id": 7,
+          "name": "User Research"
+        },
+        {
+          "id": 8,
+          "name": "Usability Testing"
+        }
       ]
     },
     {
-      "id": 4,
-      "track": "Flutter",
+      "id": "Flutter",
       "skills": [
-        { "id": 1, "name": "Dart" },
-        { "id": 2, "name": "Flutter Basics" },
-        { "id": 3, "name": "Widgets" },
-        { "id": 4, "name": "Layouts" },
-        { "id": 5, "name": "State Management" },
-        { "id": 6, "name": "Firebase" },
-        { "id": 7, "name": "REST API" },
-        { "id": 8, "name": "App Deployment" }
+        {
+          "id": 1,
+          "name": "Dart"
+        },
+        {
+          "id": 2,
+          "name": "Flutter Basics"
+        },
+        {
+          "id": 3,
+          "name": "Widgets"
+        },
+        {
+          "id": 4,
+          "name": "Layouts"
+        },
+        {
+          "id": 5,
+          "name": "State Management"
+        },
+        {
+          "id": 6,
+          "name": "Firebase"
+        },
+        {
+          "id": 7,
+          "name": "REST API"
+        },
+        {
+          "id": 8,
+          "name": "App Deployment"
+        }
       ]
     },
     {
-      "id": 5,
-      "track": "Data Analysis",
+      "id": "Data Analysis",
       "skills": [
-        { "id": 1, "name": "Python" },
-        { "id": 2, "name": "Statistics" },
-        { "id": 3, "name": "NumPy" },
-        { "id": 4, "name": "Pandas" },
-        { "id": 5, "name": "Data Visualization" },
-        { "id": 6, "name": "SQL" },
-        { "id": 7, "name": "Excel" },
-        { "id": 8, "name": "Power BI" }
+        {
+          "id": 1,
+          "name": "Python"
+        },
+        {
+          "id": 2,
+          "name": "Statistics"
+        },
+        {
+          "id": 3,
+          "name": "NumPy"
+        },
+        {
+          "id": 4,
+          "name": "Pandas"
+        },
+        {
+          "id": 5,
+          "name": "Data Visualization"
+        },
+        {
+          "id": 6,
+          "name": "SQL"
+        },
+        {
+          "id": 7,
+          "name": "Excel"
+        },
+        {
+          "id": 8,
+          "name": "Power BI"
+        }
       ]
     }
   ],
@@ -352,6 +518,8 @@
       "title": "Junior Frontend Developer",
       "company": "TechSolutions",
       "track": "Frontend",
+      "salary": "$900 - $1300",
+      "type": "Remote",
       "requiredSkills": ["HTML", "CSS", "Responsive Design", "JavaScript"],
       "description": "We are looking for a Junior Frontend Developer to build clean and responsive user interfaces."
     },
@@ -360,14 +528,34 @@
       "title": "React Developer",
       "company": "WebCraft",
       "track": "Frontend",
+      "salary": "$1300 - $1900",
+      "type": "Hybrid",
       "requiredSkills": ["HTML", "CSS", "JavaScript", "React", "Git & GitHub"],
       "description": "Join our team to develop scalable single-page applications using React.js."
     },
     {
       "id": 3,
+      "title": "UI/UX Frontend Developer",
+      "company": "PixelPerfect",
+      "track": "Frontend",
+      "salary": "$1100 - $1700",
+      "type": "On-site",
+      "requiredSkills": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript",
+        "Responsive Design"
+      ],
+      "description": "We need a frontend developer with an eye for UI/UX to convert design mockups into pixel-perfect responsive web pages."
+    },
+    {
+      "id": 4,
       "title": "Node.js Backend Developer",
       "company": "DataFlow",
       "track": "Backend",
+      "salary": "$1700 - $2100",
+      "type": "Remote",
       "requiredSkills": [
         "Programming Basics",
         "Node.js",
@@ -378,10 +566,12 @@
       "description": "Build high-performance, secure backend services and APIs using Node.js and Express."
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Full-Stack Engineer (Backend Focused)",
       "company": "CloudSystems",
       "track": "Backend",
+      "type": "Hybrid",
+      "salary": "$1300 - $1900",
       "requiredSkills": [
         "Node.js",
         "REST API",
@@ -390,6 +580,88 @@
         "Deployment"
       ],
       "description": "Looking for a backend-heavy engineer to maintain databases and scale server infrastructure."
+    },
+    {
+      "id": 6,
+      "title": "Backend Security Engineer",
+      "company": "SecureNet",
+      "track": "Backend",
+      "salary": "$2000 - $3000",
+      "type": "On-site",
+      "requiredSkills": [
+        "Programming Basics",
+        "Node.js",
+        "REST API",
+        "Authentication",
+        "SQL"
+      ],
+      "description": "Focus on building secure APIs, managing user authorization systems, and protecting application endpoints from vulnerabilities."
+    }
+  ],
+
+  "recommended": [
+    {
+      "id": "rec-1",
+      "icon": "css",
+      "title": "CSS Flexbox Guide",
+      "type": "Article",
+      "meta": "20 min",
+      "link": "#"
+    },
+    {
+      "id": "rec-2",
+      "icon": "js",
+      "title": "JavaScript Practice Set",
+      "type": "Practice",
+      "meta": "10 Problems",
+      "link": "#"
+    },
+    {
+      "id": "rec-3",
+      "icon": "code",
+      "title": "Build a To-Do App",
+      "type": "Project",
+      "meta": "Beginner",
+      "link": "#"
+    }
+  ],
+
+  "upcomingProjects": [
+    {
+      "id": "proj-1",
+      "icon": "weather",
+      "title": "Weather App",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "level": "Beginner"
+    },
+    {
+      "id": "proj-2",
+      "icon": "portfolio",
+      "title": "Portfolio Website",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "level": "Intermediate"
+    },
+    {
+      "id": "proj-3",
+      "icon": "ecommerce",
+      "title": "E-commerce Website",
+      "tags": ["React", "Node.js", "MongoDB"],
+      "level": "Advanced"
+    }
+  ],
+
+  "motivationMessages": [
+    {
+      "id": 1,
+      "message": "Great job! You're making steady progress. Stay consistent and you'll achieve your goals soon!"
+    },
+    {
+      "id": 2,
+      "message": "Keep learning, keep growing. You're doing great!"
+    },
+    {
+      "id": 3,
+      "message": "One step at a time — you're closer to your goal than yesterday."
     }
   ]
 }

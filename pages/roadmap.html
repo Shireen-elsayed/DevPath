@@ -24,9 +24,264 @@
 
 <body>
 
+    <header>
+        <nav class="navbar">
+            <btn class="bars-icon" aria-label="Open menu"><i class="fa-solid fa-bars"></i></btn>
+            <h3>DevPath</h3>
+        </nav>
+    </header>
 
+    <div class="overlay"></div>
+    <div class="layout">
+        <aside class="sidebar">
 
+            <div class="logo-sidebar">
+                <img src="../assets/images/logo.jpg" alt="" class="logo">
+            </div>
+            <div class="links-sidebar">
+                <nav>
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i><a href="#">Dashboard</a></li>
+                        <li class="active"><i class="fa-solid fa-book-open"></i><a href="#">Roadmap</a></li>
+                        <li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#">Projects</a></li>
+                        <li><i class="fa-regular fa-file-lines"></i><a href="#">Assessments</a></li>
+                        <li><i class="fa-solid fa-user"></i><a href="#">Profile</a></li>
+                        <li><i class="fa-solid fa-briefcase"></i><a href="#">Career Match</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="upgrade-pro">
+                <i class="fa-solid fa-crown"></i>
+                <span>Upgrade to pro</span>
+                <p>Unlock all features and get unlimited access.</p>
+                <button class="pro-btn">Upgrade Now</button>
+            </div>
+            <div class="log-out">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <a href="#">Log out</a>
+            </div>
+        </aside>
 
+        <main class="roadmap-content">
+
+            <section class="roadmap-content-header">
+                <span class="your-map">Personalized Roadmap</span>
+                <h1>Front-End Development Roadmap</h1>
+                <p style="color:var(--text-secondary)">Continue your personalized learning journey. Complete every
+                    learning module, finish the final
+                    assessment,
+                    and become
+                    job-ready.</p>
+
+                <div class="card-dtls"
+                    style="color: var(--text-muted); width:100%; display: grid; gap:20px; grid-template-columns: auto 1fr; align-items: center ;">
+                    <div style="color: #5047E5;"><i class="fa-solid fa-arrow-trend-up fa-xl"></i></div>
+                    <div style="display: flex; flex-direction:column;">
+                        <span>Overall Progress</span>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span
+                                style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#fff;">43%</span>
+                            <span>Complete</span>
+                        </div>
+                        <div
+                            style="width: 100%; height: 8px; background-color: var(--text-muted); border-radius: 5px; position: relative; overflow: hidden;">
+                            <div
+                                style="position: absolute; background:var(--gradient); width:43%; height: 8px; border-radius: 5px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-dtls" style="display: flex; align-items: center; gap:20px">
+                        <div><i class="fa-solid fa-layer-group" style="color: #c0a1f6;"></i></div>
+                        <div style="display: flex; flex-direction:column;">
+                            <span>Completed Modules</span>
+                            <span
+                                style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#fff;">3
+                                / 8</span>
+                            <span>6 remaining</span>
+                        </div>
+                    </div>
+
+                    <div class="card-dtls" style="display: flex; align-items: center; gap:20px">
+                        <div><i class="fa-regular fa-circle-check fa-lg" style="color: #00d492;"></i></div>
+                        <div style="display: flex; flex-direction:column;">
+                            <span>Current Module</span>
+                            <span
+                                style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#fff;">Responsive
+                                Design</span>
+                            <span style="color:#7C86F3">In Progress</span>
+                        </div>
+                    </div>
+
+                    <div class="card-dtls lessons-done" style="display: flex; align-items: center; gap:20px">
+                        <div><i class="fa-brands fa-leanpub" style="color: #1BBCD8;"></i></div>
+                        <div style="display: flex; flex-direction:column;">
+                            <span>Lessons Done</span>
+                            <span
+                                style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#fff;">12
+                                / 37</span>
+                            <span>25 lessons left</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="roadmap-levels">
+                <h3 style=" margin-bottom: 20px;">Learning Journey<span style="color:var(--text-muted);"> — 8
+                        milestones</span></h3>
+
+                <div class="timeline">
+                    <article class="timeline-item finished">
+                        <div class="timeline-item-header">
+                            <div class="timeline-icon finished">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <div class="timeline-card">
+                                <div class="level-card-header">
+                                    <div class="timeline-card-dtls">
+                                        <div class="timeline-card-icon"
+                                            style="background-color:#302C39; border:1px solid #523335"><span>🌐</span>
+                                        </div>
+                                        <div class="lvl">
+                                            <div style="display: flex; gap:20px;">
+                                                <h4>HTML</h4>
+                                            </div>
+                                            <div class="lvl-dtls">
+                                                <strong class="beginner">Beginner</strong>
+                                                <span class="statics"><i class="fa-regular fa-clock"></i> <span>4</span>
+                                                    hrs</span>
+                                                <span class="statics"><i class="fa-brands fa-leanpub"></i>
+                                                    <span>6</span>
+                                                    lessons</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drop-down-arrow">
+                                        <div class="completed">
+                                            <p class="beginner" style="width:fit-content; margin:0 auto;">Completed</p>
+                                            <div style="display: flex; align-items:center; gap:10px;">
+                                                <div
+                                                    style="width:100px; height: 5px; border-radius:5px; background-color: #00D492;">
+                                                </div>
+                                                <span style="color:var(--text-muted)">100%</span>
+                                            </div>
+                                        </div>
+                                        <div class="arrow-icon">
+                                            <i class="fa-solid fa-angle-down" style="color:var(--text-muted)"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-level open">
+                                    <div class="line"></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, illo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-item-header">
+                            <div class="timeline-icon current">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <div class="timeline-card">
+                                <div class="level-card-header">
+                                    <div class="timeline-card-dtls">
+                                        <div class="timeline-card-icon"
+                                            style="background-color:#1F2C4A; border:1px solid #20305C"><span>🎨</span>
+                                        </div>
+                                        <div class="lvl">
+                                            <div style="display: flex; gap:20px;">
+                                                <h4>CSS</h4>
+                                                <span class="current bdg">Current</span>
+                                            </div>
+                                            <div class="lvl-dtls">
+                                                <strong class="beginner">Beginner</strong>
+                                                <span class="statics"><i class="fa-regular fa-clock"></i> <span>6</span>
+                                                    hrs</span>
+                                                <span class="statics"><i class="fa-brands fa-leanpub"></i>
+                                                    <span>6</span>
+                                                    lessons</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drop-down-arrow">
+                                        <div class="completed">
+                                            <p class="beginner" style="width:fit-content; margin:0 auto;">Completed</p>
+                                            <div style="display: flex; align-items:center; gap:10px;">
+                                                <div
+                                                    style="width:100px; height: 5px; border-radius:5px; background-color: #00D492;">
+                                                </div>
+                                                <span style="color:var(--text-muted)">100%</span>
+                                            </div>
+                                        </div>
+                                        <div class="arrow-icon">
+                                            <i class="fa-solid fa-angle-down" style="color:var(--text-muted)"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-level open">
+                                    <div class="line"></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, illo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-item-header">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <div class="timeline-card locked">
+                                <div class="level-card-header">
+                                    <div class="timeline-card-dtls">
+                                        <div class="timeline-card-icon"
+                                            style="background-color:#302C39; border:1px solid #523335"><span>🌐</span>
+                                        </div>
+                                        <div class="lvl">
+                                            <div style="display: flex; gap:20px;">
+                                                <h4>HTML</h4>
+                                            </div>
+                                            <div class="lvl-dtls">
+                                                <strong class="intermdiate">Intermdiate</strong>
+                                                <span class="statics"><i class="fa-regular fa-clock"></i> <span>4</span>
+                                                    hrs</span>
+                                                <span class="statics"><i class="fa-brands fa-leanpub"></i>
+                                                    <span>6</span>
+                                                    lessons</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="drop-down-arrow locked">
+                                        <span class="level-icon">locked</span>
+                                        <div class="arrow-icon">
+                                            <i class="fa-solid fa-angle-down" style="color:var(--text-muted)"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-level open">
+                                    <div class="line"></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, illo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="final-ass">
+                <h3>Final Assessment</h3>
+                <div class="card-dtls" style="display: flex; align-items: center; gap:20px; justify-content:left;">
+                    <div class="lock-icon"><span>🔒</span></div>
+
+                    <div style="display: flex; flex-direction:column;">
+                        <strong>Final Assessment</strong>
+                        <p>Complete all modules to unlock the final assessment.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <script src="../js/roadmap.js"></script>
     <script src="../js/helpers.js"></script>
