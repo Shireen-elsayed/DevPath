@@ -1,14 +1,35 @@
 //display correct roadmap
-const selectedTrack = window.localStorage.getItem("selectedTrack");
+// const selectedTrack = window.localStorage.getItem("selectedTrack");
 
-fetch("http://localhost:3000/roadmaps")
-  .then((res) => res.json())
-  .then((roadmaps) => {
-    const roadmap = roadmaps.find((track) => track.id === selectedTrack);
+// fetch("http://localhost:3000/roadmaps")
+//   .then((res) => res.json())
+//   .then((roadmaps) => {
+//     const roadmap = roadmaps.find((track) => track.id === selectedTrack);
 
-    console.log(roadmap);
+//     console.log(roadmap);
 
-  });
+//   });
+
+async function loadRoadmap() {
+  const userId = 1;
+  // const userId = localStorage.getItem("userId"); // Saved after login
+  const user = await fetch(`http://localhost:3000/users/${userId}`).then(
+    (res) => res.json(),
+  );
+  console.log("User:", user);
+  const selectedTrack = user.track;
+  console.log("Selected Track:", selectedTrack);
+  const roadmaps = await fetch(
+    `http://localhost:3000/roadmaps?id=${selectedTrack}`,
+  ).then((res) => res.json());
+  console.log("Roadmaps:", roadmaps);
+  const roadmap = roadmaps[0];
+
+  document.getElementById("roadmap-title").textContent =
+    `${roadmap.title} Roadmap`;
+}
+
+loadRoadmap();
 
 // sidebar
 const barsIcon = document.querySelector(".bars-icon");

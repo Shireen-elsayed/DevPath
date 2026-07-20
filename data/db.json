@@ -1,15 +1,13 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "Manar",
       "email": "manar@gmail.com",
       "password": "123456",
-
-      "track": "Backend",
+      "track": "UI/UX",
       "level": "Beginner",
       "avatar": "",
-
       "overallScore": 30,
       "skills": [],
       "completedSkillIds": [
@@ -19,27 +17,43 @@
         "REST API",
         "MongoDB"
       ],
-
       "xpEarned": 0,
       "xpNextReward": 3000,
-
       "streakDays": 0,
       "streakWeek": [
-        { "day": "Mon", "done": false },
-        { "day": "Tue", "done": false },
-        { "day": "Wed", "done": false },
-        { "day": "Thu", "done": false },
-        { "day": "Fri", "done": false },
-        { "day": "Sat", "done": false },
-        { "day": "Sun", "done": false }
+        {
+          "day": "Mon",
+          "done": false
+        },
+        {
+          "day": "Tue",
+          "done": false
+        },
+        {
+          "day": "Wed",
+          "done": false
+        },
+        {
+          "day": "Thu",
+          "done": false
+        },
+        {
+          "day": "Fri",
+          "done": false
+        },
+        {
+          "day": "Sat",
+          "done": false
+        },
+        {
+          "day": "Sun",
+          "done": false
+        }
       ],
-
       "weeklyGoalDone": 0,
       "weeklyGoalTotal": 7,
-
       "dailyGoalMinutesDone": 0,
       "dailyGoalMinutesTotal": 30,
-
       "quizProgress": {
         "questionsDoneToday": 0,
         "questionsTotalToday": 5
@@ -48,7 +62,6 @@
         "problemsDoneToday": 0,
         "problemsTotalToday": 2
       },
-
       "currentModule": {
         "skillId": 1,
         "skillName": "HTML",
@@ -113,156 +126,192 @@
     },
     {
       "id": "Backend",
+      "title": "Back-End Development",
       "skills": [
         {
-          "id": 1,
-          "name": "Programming Basics"
+          "title": "Programming Basics",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 2,
-          "name": "Node.js"
+          "title": "Node.js",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 3,
-          "name": "Express.js"
+          "title": "Express.js",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 4,
-          "name": "REST API"
+          "title": "REST API",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 5,
-          "name": "SQL"
+          "title": "SQL",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 6,
-          "name": "MongoDB"
+          "title": "MongoDB",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 7,
-          "name": "Authentication"
+          "title": "Authentication",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 8,
-          "name": "Deployment"
+          "title": "Deployment",
+          "duration": "1 week",
+          "lessons": []
         }
       ]
     },
     {
       "id": "UI/UX",
+      "title": "UI/UX Design",
       "skills": [
         {
-          "id": 1,
-          "name": "Design Principles"
+          "title": "Design Principles",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 2,
-          "name": "Color Theory"
+          "title": "Color Theory",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 3,
-          "name": "Typography"
+          "title": "Typography",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 4,
-          "name": "Wireframing"
+          "title": "Wireframing",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 5,
-          "name": "Prototyping"
+          "title": "Prototyping",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 6,
-          "name": "Figma"
+          "title": "Figma",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 7,
-          "name": "User Research"
+          "title": "User Research",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 8,
-          "name": "Usability Testing"
+          "title": "Usability Testing",
+          "duration": "1 week",
+          "lessons": []
         }
       ]
     },
     {
       "id": "Flutter",
+      "title": "Flutter Development",
       "skills": [
         {
-          "id": 1,
-          "name": "Dart"
+          "title": "Dart",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 2,
-          "name": "Flutter Basics"
+          "title": "Flutter Basics",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 3,
-          "name": "Widgets"
+          "title": "Widgets",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 4,
-          "name": "Layouts"
+          "title": "Layouts",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 5,
-          "name": "State Management"
+          "title": "State Management",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 6,
-          "name": "Firebase"
+          "title": "Firebase",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 7,
-          "name": "REST API"
+          "title": "REST API",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 8,
-          "name": "App Deployment"
+          "title": "App Deployment",
+          "duration": "1 week",
+          "lessons": []
         }
       ]
     },
     {
       "id": "Data Analysis",
+      "title": "Data Analysis",
       "skills": [
         {
-          "id": 1,
-          "name": "Python"
+          "title": "Python",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 2,
-          "name": "Statistics"
+          "title": "Statistics",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 3,
-          "name": "NumPy"
+          "title": "NumPy",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 4,
-          "name": "Pandas"
+          "title": "Pandas",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 5,
-          "name": "Data Visualization"
+          "title": "Data Visualization",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 6,
-          "name": "SQL"
+          "title": "SQL",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 7,
-          "name": "Excel"
+          "title": "Excel",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 8,
-          "name": "Power BI"
+          "title": "Power BI",
+          "duration": "2 weeks",
+          "lessons": []
         }
       ]
     }
   ],
   "questions": [
     {
-      "id": 1,
+      "id": "1",
       "trackId": 1,
       "skill": "HTML",
       "question": "What does HTML stand for?",
@@ -275,7 +324,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 2,
+      "id": "2",
       "trackId": 1,
       "skill": "HTML",
       "question": "Which HTML tag is used to create a hyperlink?",
@@ -283,7 +332,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 3,
+      "id": "3",
       "trackId": 1,
       "skill": "HTML",
       "question": "Which HTML tag is used to insert an image?",
@@ -291,7 +340,7 @@
       "correctAnswer": 1
     },
     {
-      "id": 4,
+      "id": "4",
       "trackId": 1,
       "skill": "HTML",
       "question": "Which HTML element is used for the largest heading?",
@@ -299,7 +348,7 @@
       "correctAnswer": 3
     },
     {
-      "id": 5,
+      "id": "5",
       "trackId": 1,
       "skill": "HTML",
       "question": "Which tag is used to create an unordered list?",
@@ -307,7 +356,7 @@
       "correctAnswer": 1
     },
     {
-      "id": 6,
+      "id": "6",
       "trackId": 1,
       "skill": "CSS",
       "question": "Which CSS property changes the text color?",
@@ -315,7 +364,7 @@
       "correctAnswer": 2
     },
     {
-      "id": 7,
+      "id": "7",
       "trackId": 1,
       "skill": "CSS",
       "question": "Which property is used to change the background color?",
@@ -323,7 +372,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 8,
+      "id": "8",
       "trackId": 1,
       "skill": "CSS",
       "question": "Which CSS layout is one-dimensional?",
@@ -331,7 +380,7 @@
       "correctAnswer": 1
     },
     {
-      "id": 9,
+      "id": "9",
       "trackId": 1,
       "skill": "CSS",
       "question": "Which property controls the space outside an element?",
@@ -339,7 +388,7 @@
       "correctAnswer": 2
     },
     {
-      "id": 10,
+      "id": "10",
       "trackId": 1,
       "skill": "CSS",
       "question": "Which property makes text bold?",
@@ -347,7 +396,7 @@
       "correctAnswer": 1
     },
     {
-      "id": 11,
+      "id": "11",
       "trackId": 1,
       "skill": "JavaScript",
       "question": "Which keyword is used to declare a variable?",
@@ -355,7 +404,7 @@
       "correctAnswer": 3
     },
     {
-      "id": 12,
+      "id": "12",
       "trackId": 1,
       "skill": "JavaScript",
       "question": "Which method is used to print data in the console?",
@@ -363,7 +412,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 13,
+      "id": "13",
       "trackId": 1,
       "skill": "JavaScript",
       "question": "Which symbol is used for single-line comments?",
@@ -371,7 +420,7 @@
       "correctAnswer": 1
     },
     {
-      "id": 14,
+      "id": "14",
       "trackId": 1,
       "skill": "JavaScript",
       "question": "Which statement is used to make decisions in JavaScript?",
@@ -379,7 +428,7 @@
       "correctAnswer": 2
     },
     {
-      "id": 15,
+      "id": "15",
       "trackId": 1,
       "skill": "JavaScript",
       "question": "Which function displays a popup message?",
@@ -387,7 +436,7 @@
       "correctAnswer": 2
     },
     {
-      "id": 16,
+      "id": "16",
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which language is commonly used with Node.js?",
@@ -395,7 +444,7 @@
       "correctAnswer": 2
     },
     {
-      "id": 17,
+      "id": "17",
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which statement is used for decision making?",
@@ -403,7 +452,7 @@
       "correctAnswer": 2
     },
     {
-      "id": 18,
+      "id": "18",
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which data structure stores key-value pairs?",
@@ -411,7 +460,7 @@
       "correctAnswer": 1
     },
     {
-      "id": 19,
+      "id": "19",
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which loop always executes at least once?",
@@ -419,7 +468,7 @@
       "correctAnswer": 2
     },
     {
-      "id": 20,
+      "id": "20",
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which keyword is used to declare a constant in JavaScript?",
@@ -427,7 +476,7 @@
       "correctAnswer": 1
     },
     {
-      "id": 21,
+      "id": "21",
       "trackId": 2,
       "skill": "Node.js",
       "question": "What is Node.js mainly used for?",
@@ -440,7 +489,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 22,
+      "id": "22",
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which command initializes a Node.js project?",
@@ -448,7 +497,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 23,
+      "id": "23",
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which file contains project information and dependencies?",
@@ -456,7 +505,7 @@
       "correctAnswer": 1
     },
     {
-      "id": 24,
+      "id": "24",
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which command installs all project dependencies?",
@@ -464,7 +513,7 @@
       "correctAnswer": 1
     },
     {
-      "id": 25,
+      "id": "25",
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which object is used to create a web server in Node.js?",
@@ -472,7 +521,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 26,
+      "id": "26",
       "trackId": 2,
       "skill": "SQL",
       "question": "Which SQL statement is used to retrieve data?",
@@ -480,7 +529,7 @@
       "correctAnswer": 1
     },
     {
-      "id": 27,
+      "id": "27",
       "trackId": 2,
       "skill": "SQL",
       "question": "Which SQL statement is used to insert new data?",
@@ -488,7 +537,7 @@
       "correctAnswer": 1
     },
     {
-      "id": 28,
+      "id": "28",
       "trackId": 2,
       "skill": "SQL",
       "question": "Which clause is used to filter records?",
@@ -496,7 +545,7 @@
       "correctAnswer": 1
     },
     {
-      "id": 29,
+      "id": "29",
       "trackId": 2,
       "skill": "SQL",
       "question": "Which SQL statement is used to modify existing data?",
@@ -504,7 +553,7 @@
       "correctAnswer": 1
     },
     {
-      "id": 30,
+      "id": "30",
       "trackId": 2,
       "skill": "SQL",
       "question": "Which SQL statement is used to delete records?",
@@ -514,7 +563,7 @@
   ],
   "jobs": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Junior Frontend Developer",
       "company": "TechSolutions",
       "track": "Frontend",
@@ -524,7 +573,7 @@
       "description": "We are looking for a Junior Frontend Developer to build clean and responsive user interfaces."
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "React Developer",
       "company": "WebCraft",
       "track": "Frontend",
@@ -534,7 +583,7 @@
       "description": "Join our team to develop scalable single-page applications using React.js."
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "UI/UX Frontend Developer",
       "company": "PixelPerfect",
       "track": "Frontend",
@@ -550,7 +599,7 @@
       "description": "We need a frontend developer with an eye for UI/UX to convert design mockups into pixel-perfect responsive web pages."
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Node.js Backend Developer",
       "company": "DataFlow",
       "track": "Backend",
@@ -566,7 +615,7 @@
       "description": "Build high-performance, secure backend services and APIs using Node.js and Express."
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Full-Stack Engineer (Backend Focused)",
       "company": "CloudSystems",
       "track": "Backend",
@@ -582,7 +631,7 @@
       "description": "Looking for a backend-heavy engineer to maintain databases and scale server infrastructure."
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Backend Security Engineer",
       "company": "SecureNet",
       "track": "Backend",
@@ -598,7 +647,6 @@
       "description": "Focus on building secure APIs, managing user authorization systems, and protecting application endpoints from vulnerabilities."
     }
   ],
-
   "recommended": [
     {
       "id": "rec-1",
@@ -625,7 +673,6 @@
       "link": "#"
     }
   ],
-
   "upcomingProjects": [
     {
       "id": "proj-1",
@@ -649,19 +696,19 @@
       "level": "Advanced"
     }
   ],
-
   "motivationMessages": [
     {
-      "id": 1,
+      "id": "1",
       "message": "Great job! You're making steady progress. Stay consistent and you'll achieve your goals soon!"
     },
     {
-      "id": 2,
+      "id": "2",
       "message": "Keep learning, keep growing. You're doing great!"
     },
     {
-      "id": 3,
+      "id": "3",
       "message": "One step at a time — you're closer to your goal than yesterday."
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
