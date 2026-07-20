@@ -545,8 +545,9 @@ aside {
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #8b5cf6, #7c3aed);
+  background: linear-gradient(90deg, #a385ea, #d5cde3);
   border-radius: 3px;
+  
 }
 
 .progress-65 {

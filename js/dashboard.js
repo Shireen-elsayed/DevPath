@@ -2,22 +2,12 @@ const links = document.querySelectorAll(".links-sidebar nav ul li");
 const clock = document.querySelector(".clock");
 const sidebar = document.querySelector(".sidebar");
 const menuToggle = document.querySelector(".mobile-menu-toggle");
-
+// icon toggle
 if (menuToggle && sidebar) {
-  const syncMenuState = () => {
-    if (window.innerWidth > 992) {
-      menuToggle.classList.remove("hidden");
-    } else {
-      menuToggle.classList.remove("hidden");
-    }
-  };
-
   menuToggle.addEventListener("click", () => {
     sidebar.classList.toggle("open");
   });
 
-  window.addEventListener("resize", syncMenuState);
-  syncMenuState();
 }
 
 links.forEach((link) => {
@@ -31,22 +21,6 @@ links.forEach((link) => {
   });
 });
 
-if (sidebar) {
-  document.addEventListener("click", (event) => {
-    if (window.innerWidth > 992) return;
-
-    const clickedInsideSidebar = sidebar.contains(event.target);
-    const clickedToggle = menuToggle && menuToggle.contains(event.target);
-
-    if (
-      !clickedInsideSidebar &&
-      !clickedToggle &&
-      sidebar.classList.contains("open")
-    ) {
-      sidebar.classList.remove("open");
-    }
-  });
-}
 
 function setGreeting() {
   if (!clock) return;
@@ -145,7 +119,7 @@ async function initDashboard() {
       return;
     }
 
-    const percent = Number(currentUser.overallScore ?? 0);
+    const percent = Number(currentUser.overallScore || 0);
     const chart = progressChart || initChart();
 
     if (chart) {

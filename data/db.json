@@ -226,8 +226,17 @@
   ],
 
   "motivationMessages": [
-    "Great job! You're making steady progress. Stay consistent and you'll achieve your goals soon!",
-    "Keep learning, keep growing. You're doing great!",
-    "One step at a time — you're closer to your goal than yesterday."
+    {
+      "id": 1,
+      "message": "Great job! You're making steady progress. Stay consistent and you'll achieve your goals soon!"
+    },
+    {
+      "id": 2,
+      "message": "Keep learning, keep growing. You're doing great!"
+    },
+    {
+      "id": 3,
+      "message": "One step at a time — you're closer to your goal than yesterday."
+    }
   ]
 }
