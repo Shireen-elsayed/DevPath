@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "Manar",
       "email": "manar@gmail.com",
       "password": "123456",
@@ -64,12 +64,12 @@
 
   "tracks": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Frontend",
       "description": "Learn to build responsive and interactive web applications."
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Backend",
       "description": "Learn to build server-side applications and APIs."
     }
@@ -77,73 +77,221 @@
 
   "roadmaps": [
     {
-      "id": 1,
-      "track": "Frontend",
+      "id": "Frontend",
+      "title": "Front-End Development",
       "skills": [
-        { "id": 1, "name": "HTML" },
-        { "id": 2, "name": "CSS" },
-        { "id": 3, "name": "Responsive Design" },
-        { "id": 4, "name": "JavaScript" },
-        { "id": 5, "name": "Git & GitHub" },
-        { "id": 6, "name": "Bootstrap" },
-        { "id": 7, "name": "React" },
-        { "id": 8, "name": "REST API" }
+        {
+          "title": "HTML",
+          "duration": "1 week",
+          "lessons": [
+            {
+              "title": "HTML Introduction",
+              "resource": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            },
+            {
+              "title": "HTML Element & Tags",
+              "resource": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements"
+            }
+          ]
+        },
+        {
+          "title": "CSS",
+          "duration": "2 week",
+          "lessons": [
+            {
+              "title": "CSS Selectors & Specificity",
+              "resource": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors"
+            },
+            {
+              "title": "Box Model",
+              "resource": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_model"
+            }
+          ]
+        }
       ]
     },
     {
-      "id": 2,
-      "track": "Backend",
+      "id": "Backend",
+      "title": "Back-End Development",
       "skills": [
-        { "id": 1, "name": "Programming Basics" },
-        { "id": 2, "name": "Node.js" },
-        { "id": 3, "name": "Express.js" },
-        { "id": 4, "name": "REST API" },
-        { "id": 5, "name": "SQL" },
-        { "id": 6, "name": "MongoDB" },
-        { "id": 7, "name": "Authentication" },
-        { "id": 8, "name": "Deployment" }
+        {
+          "title": "Programming Basics",
+          "duration": "1 week",
+          "lessons": []
+        },
+        {
+          "title": "Node.js",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "Express.js",
+          "duration": "1 week",
+          "lessons": []
+        },
+        {
+          "title": "REST API",
+          "duration": "1 week",
+          "lessons": []
+        },
+        {
+          "title": "SQL",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "MongoDB",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "Authentication",
+          "duration": "1 week",
+          "lessons": []
+        },
+        {
+          "title": "Deployment",
+          "duration": "1 week",
+          "lessons": []
+        }
       ]
     },
     {
-      "id": 3,
-      "track": "UI/UX",
+      "id": "UI/UX",
+      "title": "UI/UX Design",
       "skills": [
-        { "id": 1, "name": "Design Principles" },
-        { "id": 2, "name": "Color Theory" },
-        { "id": 3, "name": "Typography" },
-        { "id": 4, "name": "Wireframing" },
-        { "id": 5, "name": "Prototyping" },
-        { "id": 6, "name": "Figma" },
-        { "id": 7, "name": "User Research" },
-        { "id": 8, "name": "Usability Testing" }
+        {
+          "title": "Design Principles",
+          "duration": "1 week",
+          "lessons": []
+        },
+        {
+          "title": "Color Theory",
+          "duration": "1 week",
+          "lessons": []
+        },
+        {
+          "title": "Typography",
+          "duration": "1 week",
+          "lessons": []
+        },
+        {
+          "title": "Wireframing",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "Prototyping",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "Figma",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "User Research",
+          "duration": "1 week",
+          "lessons": []
+        },
+        {
+          "title": "Usability Testing",
+          "duration": "1 week",
+          "lessons": []
+        }
       ]
     },
     {
-      "id": 4,
-      "track": "Flutter",
+      "id": "Flutter",
+      "title": "Flutter Development",
       "skills": [
-        { "id": 1, "name": "Dart" },
-        { "id": 2, "name": "Flutter Basics" },
-        { "id": 3, "name": "Widgets" },
-        { "id": 4, "name": "Layouts" },
-        { "id": 5, "name": "State Management" },
-        { "id": 6, "name": "Firebase" },
-        { "id": 7, "name": "REST API" },
-        { "id": 8, "name": "App Deployment" }
+        {
+          "title": "Dart",
+          "duration": "1 week",
+          "lessons": []
+        },
+        {
+          "title": "Flutter Basics",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "Widgets",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "Layouts",
+          "duration": "1 week",
+          "lessons": []
+        },
+        {
+          "title": "State Management",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "Firebase",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "REST API",
+          "duration": "1 week",
+          "lessons": []
+        },
+        {
+          "title": "App Deployment",
+          "duration": "1 week",
+          "lessons": []
+        }
       ]
     },
     {
-      "id": 5,
-      "track": "Data Analysis",
+      "id": "Data Analysis",
+      "title": "Data Analysis",
       "skills": [
-        { "id": 1, "name": "Python" },
-        { "id": 2, "name": "Statistics" },
-        { "id": 3, "name": "NumPy" },
-        { "id": 4, "name": "Pandas" },
-        { "id": 5, "name": "Data Visualization" },
-        { "id": 6, "name": "SQL" },
-        { "id": 7, "name": "Excel" },
-        { "id": 8, "name": "Power BI" }
+        {
+          "title": "Python",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "Statistics",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "NumPy",
+          "duration": "1 week",
+          "lessons": []
+        },
+        {
+          "title": "Pandas",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "Data Visualization",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "SQL",
+          "duration": "2 weeks",
+          "lessons": []
+        },
+        {
+          "title": "Excel",
+          "duration": "1 week",
+          "lessons": []
+        },
+        {
+          "title": "Power BI",
+          "duration": "2 weeks",
+          "lessons": []
+        }
       ]
     }
   ],
@@ -183,7 +331,7 @@
 
   "jobs": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Junior Frontend Developer",
       "company": "TechSolutions",
       "track": "Frontend",
@@ -193,7 +341,7 @@
       "description": "We are looking for a Junior Frontend Developer to build clean and responsive user interfaces."
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "React Developer",
       "company": "WebCraft",
       "track": "Frontend",
