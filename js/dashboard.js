@@ -7,7 +7,6 @@ if (menuToggle && sidebar) {
   menuToggle.addEventListener("click", () => {
     sidebar.classList.toggle("open");
   });
-
 }
 
 links.forEach((link) => {
@@ -22,22 +21,10 @@ links.forEach((link) => {
 });
 
 
-function setGreeting() {
-  if (!clock) return;
+  
 
-  const hour = new Date().getHours();
-  let greeting;
+  
 
-  if (hour < 12) {
-    greeting = "Good morning";
-  } else if (hour < 18) {
-    greeting = "Good afternoon";
-  } else {
-    greeting = "Good evening";
-  }
-
-  clock.innerHTML = `${greeting}, <span class="log">naema <span class="emo">👋</span></span>`;
-}
 
 function renderStreakDays(streakWeek = []) {
   const container = document.getElementById("streakDaysContainer");
@@ -93,34 +80,33 @@ function initChart() {
 }
 
 async function loadDashboardData() {
-  const response = await fetch("../data/db.json");
+  const response = await fetch("http://localhost:3000/users");
   if (!response.ok) {
     throw new Error("Unable to load dashboard data");
   }
   return response.json();
 }
 
+localStorage.setItem("currentUserId",1)
 
-
-
-
-
-
-
-
-
+// get user id
 
 async function initDashboard() {
   try {
     const data = await loadDashboardData();
-    const currentUser = data?.users?.[0];
-
+    console.log(data);
+    const currentUserId =localStorage.getItem("currentUserId") ;
+    const currentUser = data.find((u) => u.id === currentUserId);
+    // if(currentUser){
+    //   // console.log("fetch"); found user
+    // }
+// handleData(currentUser.username,currentUser.level)
     if (!currentUser) {
       return;
     }
-
-    const percent = Number(currentUser.overallScore || 0);
-    const chart = progressChart || initChart();
+    const percent = Number(currentUser.overallScore);
+    // console.log(percent);
+    const chart = progressChart  || initChart() ;
 
     if (chart) {
       chart.data.datasets[0].data = [percent, Math.max(0, 100 - percent)];
@@ -132,6 +118,40 @@ async function initDashboard() {
       percentText.textContent = `${percent}%`;
     }
 
+
+
+
+
+let level=document.querySelector(".level")
+let userName=document.querySelector(".username")
+let track=document.querySelector(".track")
+let completedModule=document.querySelector(".completedmodule")
+let completedModule=document.querySelector(".completedmodule")
+
+level.innerHTML=currentUser.level
+userName.innerHTML=currentUser.username
+track.innerHTML=currentUser.track;
+completedModule.innerHTML=`${currentUser.completedSkillIds.length} / ${currentUser.skills.length}`
+
+
+if (!clock) return;
+
+  const hour = new Date().getHours();
+  let greeting;
+
+  if (hour < 12) {
+    greeting = "Good morning";
+  } else if (hour < 18) {
+    greeting = "Good afternoon";
+  } else {
+    greeting = "Good evening";
+  }
+  clock.innerHTML=`${greeting}, ${userName.innerHTML}`
+
+
+
+
+
     renderStreakDays(currentUser.streakWeek || []);
   } catch (error) {
     console.error("Dashboard loading error:", error);
@@ -141,8 +161,32 @@ async function initDashboard() {
     }
     renderStreakDays([]);
   }
+  
 }
 
-setGreeting();
+// setGreeting();
 initChart();
 initDashboard();
+let level=document.querySelector(".level")
+let userName=document.querySelector(".username")
+function handleData(name,levelUser){
+console.log(name);
+console.log(levelUser);
+level.innerHTML=levelUser
+userName.innerHTML=name
+// clock
+if (!clock) return;
+
+  const hour = new Date().getHours();
+  let greeting;
+
+  if (hour < 12) {
+    greeting = "Good morning";
+  } else if (hour < 18) {
+    greeting = "Good afternoon";
+  } else {
+    greeting = "Good evening";
+  }
+  clock.innerHTML=`${greeting}, ${name}`
+}
+

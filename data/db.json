@@ -6,13 +6,22 @@
       "email": "manar@gmail.com",
       "password": "123456",
 
-      "track": "Frontend",
-      "level": "Beginner",
+      "track": "Backend",
+      "level": "professional",
       "avatar": "",
 
       "overallScore": 30,
-      "skills": [],
-      "completedSkillIds": [],
+      "skills": [
+        { "id": 1, "name": "Programming Basics" },
+        { "id": 2, "name": "Node.js" },
+        { "id": 3, "name": "Express.js" },
+        { "id": 4, "name": "REST API" },
+        { "id": 5, "name": "SQL" },
+        { "id": 6, "name": "MongoDB" },
+        { "id": 7, "name": "Authentication" },
+        { "id": 8, "name": "Deployment" }
+      ],
+      "completedSkillIds": ["Programming Basics","Node.js","Express.js"],
 
       "xpEarned": 0,
       "xpNextReward": 3000,
