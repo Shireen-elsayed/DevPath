@@ -19,24 +19,41 @@
 
       "xpEarned": 0,
       "xpNextReward": 3000,
-
       "streakDays": 0,
       "streakWeek": [
-        { "day": "Mon", "done": false },
-        { "day": "Tue", "done": false },
-        { "day": "Wed", "done": false },
-        { "day": "Thu", "done": false },
-        { "day": "Fri", "done": false },
-        { "day": "Sat", "done": false },
-        { "day": "Sun", "done": false }
+        {
+          "day": "Mon",
+          "done": false
+        },
+        {
+          "day": "Tue",
+          "done": false
+        },
+        {
+          "day": "Wed",
+          "done": false
+        },
+        {
+          "day": "Thu",
+          "done": false
+        },
+        {
+          "day": "Fri",
+          "done": false
+        },
+        {
+          "day": "Sat",
+          "done": false
+        },
+        {
+          "day": "Sun",
+          "done": false
+        }
       ],
-
       "weeklyGoalDone": 0,
       "weeklyGoalTotal": 7,
-
       "dailyGoalMinutesDone": 0,
       "dailyGoalMinutesTotal": 30,
-
       "quizProgress": {
         "questionsDoneToday": 0,
         "questionsTotalToday": 5
@@ -45,7 +62,6 @@
         "problemsDoneToday": 0,
         "problemsTotalToday": 2
       },
-
       "currentModule": {
         "skillId": 1,
         "skillName": "HTML",
@@ -59,9 +75,143 @@
           "durationMinutes": 0
         }
       }
+    },
+    {
+      "username": "Malak Khairy",
+      "email": "Malak@gmail.com",
+      "password": "mmm66$$$",
+      "track": "",
+      "level": "",
+      "avatar": "",
+      "overallScore": 0,
+      "skills": [],
+      "completedSkillIds": [],
+      "xpEarned": 0,
+      "xpNextReward": 3000,
+      "streakDays": 0,
+      "streakWeek": [
+        {
+          "day": "Mon",
+          "done": false
+        },
+        {
+          "day": "Tue",
+          "done": false
+        },
+        {
+          "day": "Wed",
+          "done": false
+        },
+        {
+          "day": "Thu",
+          "done": false
+        },
+        {
+          "day": "Fri",
+          "done": false
+        },
+        {
+          "day": "Sat",
+          "done": false
+        },
+        {
+          "day": "Sun",
+          "done": false
+        }
+      ],
+      "id": "iTEIDSU1mWQ"
+    },
+    {
+      "username": "Menna",
+      "email": "Menna@gmail.com",
+      "password": "mmm789@@",
+      "track": "",
+      "level": "",
+      "avatar": "",
+      "overallScore": 0,
+      "skills": [],
+      "completedSkillIds": [],
+      "xpEarned": 0,
+      "xpNextReward": 3000,
+      "streakDays": 0,
+      "streakWeek": [
+        {
+          "day": "Mon",
+          "done": false
+        },
+        {
+          "day": "Tue",
+          "done": false
+        },
+        {
+          "day": "Wed",
+          "done": false
+        },
+        {
+          "day": "Thu",
+          "done": false
+        },
+        {
+          "day": "Fri",
+          "done": false
+        },
+        {
+          "day": "Sat",
+          "done": false
+        },
+        {
+          "day": "Sun",
+          "done": false
+        }
+      ],
+      "id": "ffgNv03rSFc"
+    },
+    {
+      "username": "Mohamed",
+      "email": "Mohamed@gmail.com",
+      "password": "mmm456!!",
+      "track": "",
+      "level": "",
+      "avatar": "",
+      "overallScore": 0,
+      "skills": [],
+      "completedSkillIds": [],
+      "xpEarned": 0,
+      "xpNextReward": 3000,
+      "streakDays": 0,
+      "streakWeek": [
+        {
+          "day": "Mon",
+          "done": false
+        },
+        {
+          "day": "Tue",
+          "done": false
+        },
+        {
+          "day": "Wed",
+          "done": false
+        },
+        {
+          "day": "Thu",
+          "done": false
+        },
+        {
+          "day": "Fri",
+          "done": false
+        },
+        {
+          "day": "Sat",
+          "done": false
+        },
+        {
+          "day": "Sun",
+          "done": false
+        }
+      ],
+      "id": "JW_CuyGorwA"
     }
   ],
-
   "tracks": [
     {
       "id": "1",
@@ -74,7 +224,6 @@
       "description": "Learn to build server-side applications and APIs."
     }
   ],
-
   "roadmaps": [
     {
       "id": "Frontend",
@@ -295,40 +444,398 @@
       ]
     }
   ],
-
   "questions": [
-    { "id": 1, "trackId": 1, "skill": "HTML", "question": "What does HTML stand for?", "options": ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyper Transfer Markup Language"], "correctAnswer": 0 },
-    { "id": 2, "trackId": 1, "skill": "HTML", "question": "Which HTML tag is used to create a hyperlink?", "options": ["<a>", "<link>", "<href>", "<url>"], "correctAnswer": 0 },
-    { "id": 3, "trackId": 1, "skill": "HTML", "question": "Which HTML tag is used to insert an image?", "options": ["<image>", "<img>", "<picture>", "<src>"], "correctAnswer": 1 },
-    { "id": 4, "trackId": 1, "skill": "HTML", "question": "Which HTML element is used for the largest heading?", "options": ["<heading>", "<head>", "<h6>", "<h1>"], "correctAnswer": 3 },
-    { "id": 5, "trackId": 1, "skill": "HTML", "question": "Which tag is used to create an unordered list?", "options": ["<ol>", "<ul>", "<li>", "<list>"], "correctAnswer": 1 },
-    { "id": 6, "trackId": 1, "skill": "CSS", "question": "Which CSS property changes the text color?", "options": ["font-color", "text-color", "color", "background-color"], "correctAnswer": 2 },
-    { "id": 7, "trackId": 1, "skill": "CSS", "question": "Which property is used to change the background color?", "options": ["background-color", "bg-color", "color", "background"], "correctAnswer": 0 },
-    { "id": 8, "trackId": 1, "skill": "CSS", "question": "Which CSS layout is one-dimensional?", "options": ["Grid", "Flexbox", "Table", "Float"], "correctAnswer": 1 },
-    { "id": 9, "trackId": 1, "skill": "CSS", "question": "Which property controls the space outside an element?", "options": ["padding", "border", "margin", "spacing"], "correctAnswer": 2 },
-    { "id": 10, "trackId": 1, "skill": "CSS", "question": "Which property makes text bold?", "options": ["font-style", "font-weight", "text-weight", "font-size"], "correctAnswer": 1 },
-    { "id": 11, "trackId": 1, "skill": "JavaScript", "question": "Which keyword is used to declare a variable?", "options": ["var", "let", "const", "All of the above"], "correctAnswer": 3 },
-    { "id": 12, "trackId": 1, "skill": "JavaScript", "question": "Which method is used to print data in the console?", "options": ["console.log()", "print()", "alert()", "document.write()"], "correctAnswer": 0 },
-    { "id": 13, "trackId": 1, "skill": "JavaScript", "question": "Which symbol is used for single-line comments?", "options": ["/* */", "//", "<!-- -->", "#"], "correctAnswer": 1 },
-    { "id": 14, "trackId": 1, "skill": "JavaScript", "question": "Which statement is used to make decisions in JavaScript?", "options": ["for", "switch", "if", "while"], "correctAnswer": 2 },
-    { "id": 15, "trackId": 1, "skill": "JavaScript", "question": "Which function displays a popup message?", "options": ["prompt()", "confirm()", "alert()", "console.log()"], "correctAnswer": 2 },
-    { "id": 16, "trackId": 2, "skill": "Programming Basics", "question": "Which language is commonly used with Node.js?", "options": ["Python", "Java", "JavaScript", "C#"], "correctAnswer": 2 },
-    { "id": 17, "trackId": 2, "skill": "Programming Basics", "question": "Which statement is used for decision making?", "options": ["for", "while", "if", "switch"], "correctAnswer": 2 },
-    { "id": 18, "trackId": 2, "skill": "Programming Basics", "question": "Which data structure stores key-value pairs?", "options": ["Array", "Object", "String", "Number"], "correctAnswer": 1 },
-    { "id": 19, "trackId": 2, "skill": "Programming Basics", "question": "Which loop always executes at least once?", "options": ["for", "while", "do...while", "foreach"], "correctAnswer": 2 },
-    { "id": 20, "trackId": 2, "skill": "Programming Basics", "question": "Which keyword is used to declare a constant in JavaScript?", "options": ["var", "const", "let", "static"], "correctAnswer": 1 },
-    { "id": 21, "trackId": 2, "skill": "Node.js", "question": "What is Node.js mainly used for?", "options": ["Building server-side applications", "Editing images", "Creating databases", "Designing websites"], "correctAnswer": 0 },
-    { "id": 22, "trackId": 2, "skill": "Node.js", "question": "Which command initializes a Node.js project?", "options": ["npm init", "node start", "npm install", "node init"], "correctAnswer": 0 },
-    { "id": 23, "trackId": 2, "skill": "Node.js", "question": "Which file contains project information and dependencies?", "options": ["index.js", "package.json", "server.js", "node_modules"], "correctAnswer": 1 },
-    { "id": 24, "trackId": 2, "skill": "Node.js", "question": "Which command installs all project dependencies?", "options": ["npm start", "npm install", "npm init", "node install"], "correctAnswer": 1 },
-    { "id": 25, "trackId": 2, "skill": "Node.js", "question": "Which object is used to create a web server in Node.js?", "options": ["http", "server", "web", "app"], "correctAnswer": 0 },
-    { "id": 26, "trackId": 2, "skill": "SQL", "question": "Which SQL statement is used to retrieve data?", "options": ["GET", "SELECT", "FETCH", "SHOW"], "correctAnswer": 1 },
-    { "id": 27, "trackId": 2, "skill": "SQL", "question": "Which SQL statement is used to insert new data?", "options": ["ADD", "INSERT INTO", "UPDATE", "CREATE"], "correctAnswer": 1 },
-    { "id": 28, "trackId": 2, "skill": "SQL", "question": "Which clause is used to filter records?", "options": ["ORDER BY", "WHERE", "GROUP BY", "HAVING"], "correctAnswer": 1 },
-    { "id": 29, "trackId": 2, "skill": "SQL", "question": "Which SQL statement is used to modify existing data?", "options": ["CHANGE", "UPDATE", "MODIFY", "ALTER"], "correctAnswer": 1 },
-    { "id": 30, "trackId": 2, "skill": "SQL", "question": "Which SQL statement is used to delete records?", "options": ["REMOVE", "DELETE", "DROP", "CLEAR"], "correctAnswer": 1 }
+    {
+      "id": "1",
+      "trackId": 1,
+      "skill": "HTML",
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "Home Tool Markup Language",
+        "Hyperlinks and Text Markup Language",
+        "Hyper Transfer Markup Language"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "2",
+      "trackId": 1,
+      "skill": "HTML",
+      "question": "Which HTML tag is used to create a hyperlink?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<url>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "3",
+      "trackId": 1,
+      "skill": "HTML",
+      "question": "Which HTML tag is used to insert an image?",
+      "options": [
+        "<image>",
+        "<img>",
+        "<picture>",
+        "<src>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "4",
+      "trackId": 1,
+      "skill": "HTML",
+      "question": "Which HTML element is used for the largest heading?",
+      "options": [
+        "<heading>",
+        "<head>",
+        "<h6>",
+        "<h1>"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "5",
+      "trackId": 1,
+      "skill": "HTML",
+      "question": "Which tag is used to create an unordered list?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "6",
+      "trackId": 1,
+      "skill": "CSS",
+      "question": "Which CSS property changes the text color?",
+      "options": [
+        "font-color",
+        "text-color",
+        "color",
+        "background-color"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "7",
+      "trackId": 1,
+      "skill": "CSS",
+      "question": "Which property is used to change the background color?",
+      "options": [
+        "background-color",
+        "bg-color",
+        "color",
+        "background"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "8",
+      "trackId": 1,
+      "skill": "CSS",
+      "question": "Which CSS layout is one-dimensional?",
+      "options": [
+        "Grid",
+        "Flexbox",
+        "Table",
+        "Float"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "9",
+      "trackId": 1,
+      "skill": "CSS",
+      "question": "Which property controls the space outside an element?",
+      "options": [
+        "padding",
+        "border",
+        "margin",
+        "spacing"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "10",
+      "trackId": 1,
+      "skill": "CSS",
+      "question": "Which property makes text bold?",
+      "options": [
+        "font-style",
+        "font-weight",
+        "text-weight",
+        "font-size"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "11",
+      "trackId": 1,
+      "skill": "JavaScript",
+      "question": "Which keyword is used to declare a variable?",
+      "options": [
+        "var",
+        "let",
+        "const",
+        "All of the above"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "12",
+      "trackId": 1,
+      "skill": "JavaScript",
+      "question": "Which method is used to print data in the console?",
+      "options": [
+        "console.log()",
+        "print()",
+        "alert()",
+        "document.write()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "13",
+      "trackId": 1,
+      "skill": "JavaScript",
+      "question": "Which symbol is used for single-line comments?",
+      "options": [
+        "/* */",
+        "//",
+        "<!-- -->",
+        "#"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "14",
+      "trackId": 1,
+      "skill": "JavaScript",
+      "question": "Which statement is used to make decisions in JavaScript?",
+      "options": [
+        "for",
+        "switch",
+        "if",
+        "while"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "15",
+      "trackId": 1,
+      "skill": "JavaScript",
+      "question": "Which function displays a popup message?",
+      "options": [
+        "prompt()",
+        "confirm()",
+        "alert()",
+        "console.log()"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "16",
+      "trackId": 2,
+      "skill": "Programming Basics",
+      "question": "Which language is commonly used with Node.js?",
+      "options": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C#"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "17",
+      "trackId": 2,
+      "skill": "Programming Basics",
+      "question": "Which statement is used for decision making?",
+      "options": [
+        "for",
+        "while",
+        "if",
+        "switch"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "18",
+      "trackId": 2,
+      "skill": "Programming Basics",
+      "question": "Which data structure stores key-value pairs?",
+      "options": [
+        "Array",
+        "Object",
+        "String",
+        "Number"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "19",
+      "trackId": 2,
+      "skill": "Programming Basics",
+      "question": "Which loop always executes at least once?",
+      "options": [
+        "for",
+        "while",
+        "do...while",
+        "foreach"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "20",
+      "trackId": 2,
+      "skill": "Programming Basics",
+      "question": "Which keyword is used to declare a constant in JavaScript?",
+      "options": [
+        "var",
+        "const",
+        "let",
+        "static"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "21",
+      "trackId": 2,
+      "skill": "Node.js",
+      "question": "What is Node.js mainly used for?",
+      "options": [
+        "Building server-side applications",
+        "Editing images",
+        "Creating databases",
+        "Designing websites"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "22",
+      "trackId": 2,
+      "skill": "Node.js",
+      "question": "Which command initializes a Node.js project?",
+      "options": [
+        "npm init",
+        "node start",
+        "npm install",
+        "node init"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "23",
+      "trackId": 2,
+      "skill": "Node.js",
+      "question": "Which file contains project information and dependencies?",
+      "options": [
+        "index.js",
+        "package.json",
+        "server.js",
+        "node_modules"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "24",
+      "trackId": 2,
+      "skill": "Node.js",
+      "question": "Which command installs all project dependencies?",
+      "options": [
+        "npm start",
+        "npm install",
+        "npm init",
+        "node install"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "25",
+      "trackId": 2,
+      "skill": "Node.js",
+      "question": "Which object is used to create a web server in Node.js?",
+      "options": [
+        "http",
+        "server",
+        "web",
+        "app"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "26",
+      "trackId": 2,
+      "skill": "SQL",
+      "question": "Which SQL statement is used to retrieve data?",
+      "options": [
+        "GET",
+        "SELECT",
+        "FETCH",
+        "SHOW"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "27",
+      "trackId": 2,
+      "skill": "SQL",
+      "question": "Which SQL statement is used to insert new data?",
+      "options": [
+        "ADD",
+        "INSERT INTO",
+        "UPDATE",
+        "CREATE"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "28",
+      "trackId": 2,
+      "skill": "SQL",
+      "question": "Which clause is used to filter records?",
+      "options": [
+        "ORDER BY",
+        "WHERE",
+        "GROUP BY",
+        "HAVING"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "29",
+      "trackId": 2,
+      "skill": "SQL",
+      "question": "Which SQL statement is used to modify existing data?",
+      "options": [
+        "CHANGE",
+        "UPDATE",
+        "MODIFY",
+        "ALTER"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "30",
+      "trackId": 2,
+      "skill": "SQL",
+      "question": "Which SQL statement is used to delete records?",
+      "options": [
+        "REMOVE",
+        "DELETE",
+        "DROP",
+        "CLEAR"
+      ],
+      "correctAnswer": 1
+    }
   ],
-
   "jobs": [
     {
       "id": "1",
@@ -403,31 +910,311 @@
     "description": "Focus on building secure APIs, managing user authorization systems, and protecting application endpoints from vulnerabilities."
   }
   ],
-
   "recommended": [
-    { "id": "rec-1", "icon": "css", "title": "CSS Flexbox Guide", "type": "Article", "meta": "20 min", "link": "#" },
-    { "id": "rec-2", "icon": "js", "title": "JavaScript Practice Set", "type": "Practice", "meta": "10 Problems", "link": "#" },
-    { "id": "rec-3", "icon": "code", "title": "Build a To-Do App", "type": "Project", "meta": "Beginner", "link": "#" }
+    {
+      "id": "rec-1",
+      "icon": "css",
+      "title": "CSS Flexbox Guide",
+      "type": "Article",
+      "meta": "20 min",
+      "link": "#"
+    },
+    {
+      "id": "rec-2",
+      "icon": "js",
+      "title": "JavaScript Practice Set",
+      "type": "Practice",
+      "meta": "10 Problems",
+      "link": "#"
+    },
+    {
+      "id": "rec-3",
+      "icon": "code",
+      "title": "Build a To-Do App",
+      "type": "Project",
+      "meta": "Beginner",
+      "link": "#"
+    }
   ],
-
   "upcomingProjects": [
-    { "id": "proj-1", "icon": "weather", "title": "Weather App", "tags": ["HTML", "CSS", "JavaScript"], "level": "Beginner" },
-    { "id": "proj-2", "icon": "portfolio", "title": "Portfolio Website", "tags": ["HTML", "CSS", "JavaScript"], "level": "Intermediate" },
-    { "id": "proj-3", "icon": "ecommerce", "title": "E-commerce Website", "tags": ["React", "Node.js", "MongoDB"], "level": "Advanced" }
+    {
+      "id": "proj-1",
+      "icon": "weather",
+      "title": "Weather App",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "level": "Beginner"
+    },
+    {
+      "id": "proj-2",
+      "icon": "portfolio",
+      "title": "Portfolio Website",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "level": "Intermediate"
+    },
+    {
+      "id": "proj-3",
+      "icon": "ecommerce",
+      "title": "E-commerce Website",
+      "tags": [
+        "React",
+        "Node.js",
+        "MongoDB"
+      ],
+      "level": "Advanced"
+    }
   ],
-
   "motivationMessages": [
-  {
-    "id": 1,
-    "message": "Great job! You're making steady progress. Stay consistent and you'll achieve your goals soon!"
-  },
-  {
-    "id": 2,
-    "message": "Keep learning, keep growing. You're doing great!"
-  },
-  {
-    "id": 3,
-    "message": "One step at a time — you're closer to your goal than yesterday."
-  }
-]
+    {
+      "id": "1",
+      "message": "Great job! You're making steady progress. Stay consistent and you'll achieve your goals soon!"
+    },
+    {
+      "id": "2",
+      "message": "Keep learning, keep growing. You're doing great!"
+    },
+    {
+      "id": "3",
+      "message": "One step at a time — you're closer to your goal than yesterday."
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "trackId": 1,
+      "title": "Personal Portfolio",
+      "description": "Build a responsive personal portfolio website using HTML and CSS.",
+      "details": "Create a fully responsive personal portfolio website with multiple sections including Home, About, Skills, Projects and Contact. Focus on clean layouts, responsive design, smooth scrolling and modern UI using only HTML and CSS.",
+      "image": "../assets/images/Front1.png",
+      "difficulty": "Easy",
+      "estimatedTime": "2 - 3 Days",
+      "skills": [
+        "HTML",
+        "CSS",
+        "Responsive Design"
+      ]
+    },
+    {
+      "id": "2",
+      "trackId": 1,
+      "title": "Weather App",
+      "description": "Create a weather application using JavaScript and REST API.",
+      "details": "Develop a weather application that allows users to search for cities and view current weather information. Fetch live weather data from a REST API, display temperature, humidity, wind speed and weather icons with a responsive interface.",
+      "image": "../assets/images/Front2.png",
+      "difficulty": "Medium",
+      "estimatedTime": "4 - 5 Days",
+      "skills": [
+        "JavaScript",
+        "REST API",
+        "CSS"
+      ]
+    },
+    {
+      "id": "3",
+      "trackId": 1,
+      "title": "E-Commerce Store",
+      "description": "Build a complete React e-commerce interface with API integration.",
+      "details": "Build a modern React e-commerce application with product listing, categories, search, shopping cart and API integration. Apply reusable components, routing and responsive layouts.",
+      "image": "../assets/images/Front3.png",
+      "difficulty": "Hard",
+      "estimatedTime": "10 - 14 Days",
+      "skills": [
+        "React",
+        "REST API",
+        "Bootstrap",
+        "Git & GitHub"
+      ]
+    },
+    {
+      "id": "4",
+      "trackId": 2,
+      "title": "Simple REST API",
+      "description": "Build your first REST API using Node.js and Express.",
+      "details": "Create a REST API that performs CRUD operations for products or users. Learn routing, middleware, request validation and proper API responses using Express.",
+      "image": "../assets/images/Back1.png",
+      "difficulty": "Easy",
+      "estimatedTime": "2 - 3 Days",
+      "skills": [
+        "Programming Basics",
+        "Node.js",
+        "Express.js"
+      ]
+    },
+    {
+      "id": "5",
+      "trackId": 2,
+      "title": "Authentication System",
+      "description": "Develop a secure login and registration system with JWT.",
+      "details": "Implement secure authentication using JWT tokens, encrypted passwords with bcrypt, protected routes and user authorization. Store user accounts in MongoDB.",
+      "image": "../assets/images/Back2.png",
+      "difficulty": "Medium",
+      "estimatedTime": "5 - 7 Days",
+      "skills": [
+        "Authentication",
+        "Node.js",
+        "MongoDB"
+      ]
+    },
+    {
+      "id": "6",
+      "trackId": 2,
+      "title": "Task Management API",
+      "description": "Create a complete backend for a task management application.",
+      "details": "Build a scalable backend with authentication, task CRUD operations, filtering, pagination, database integration and deployment to a cloud platform.",
+      "image": "../assets/images/Back3.png",
+      "difficulty": "Hard",
+      "estimatedTime": "10 - 14 Days",
+      "skills": [
+        "REST API",
+        "MongoDB",
+        "SQL",
+        "Deployment"
+      ]
+    },
+    {
+      "id": "7",
+      "trackId": 3,
+      "title": "Mobile Login Screen",
+      "description": "Design a clean and modern mobile login screen in Figma.",
+      "details": "Design a complete login experience including sign in, sign up and password recovery screens. Apply typography, spacing and color theory principles.",
+      "image": "../assets/images/ui-ux1.png",
+      "difficulty": "Easy",
+      "estimatedTime": "1 - 2 Days",
+      "skills": [
+        "Figma",
+        "Typography",
+        "Color Theory"
+      ]
+    },
+    {
+      "id": "8",
+      "trackId": 3,
+      "title": "Food Delivery App UI",
+      "description": "Design a complete food delivery app with interactive prototype.",
+      "details": "Create user flows, wireframes, high-fidelity screens and an interactive prototype for a food delivery mobile application using Figma.",
+      "image": "../assets/images/ui-ux2.png",
+      "difficulty": "Medium",
+      "estimatedTime": "5 - 6 Days",
+      "skills": [
+        "Wireframing",
+        "Prototyping",
+        "Figma"
+      ]
+    },
+    {
+      "id": "9",
+      "trackId": 3,
+      "title": "Banking App UX Case Study",
+      "description": "Research, design and test a complete banking application experience.",
+      "details": "Perform user research, build personas, create user journeys, design banking screens, prototype interactions and conduct usability testing with improvements.",
+      "image": "../assets/images/ui-ux3.png",
+      "difficulty": "Hard",
+      "estimatedTime": "12 - 15 Days",
+      "skills": [
+        "User Research",
+        "Usability Testing",
+        "Figma",
+        "Prototyping"
+      ]
+    },
+    {
+      "id": "10",
+      "trackId": 4,
+      "title": "To-Do App",
+      "description": "Build a simple to-do application using Flutter widgets.",
+      "details": "Develop a Flutter to-do application with task creation, editing, deleting and completion tracking while learning widgets and layouts.",
+      "image": "../assets/images/Flutter1.png",
+      "difficulty": "Easy",
+      "estimatedTime": "2 - 3 Days",
+      "skills": [
+        "Dart",
+        "Flutter Basics",
+        "Widgets"
+      ]
+    },
+    {
+      "id": "11",
+      "trackId": 4,
+      "title": "Weather Mobile App",
+      "description": "Develop a weather app with REST API integration.",
+      "details": "Build a responsive Flutter weather application connected to a weather API using state management, reusable widgets and clean UI.",
+      "image": "../assets/images/Flutter2.png",
+      "difficulty": "Medium",
+      "estimatedTime": "5 - 6 Days",
+      "skills": [
+        "REST API",
+        "Layouts",
+        "State Management"
+      ]
+    },
+    {
+      "id": "12",
+      "trackId": 4,
+      "title": "Chat Application",
+      "description": "Create a real-time chat application using Flutter and Firebase.",
+      "details": "Develop a complete chat application with Firebase Authentication, Firestore, real-time messaging, profile management and responsive mobile design.",
+      "image": "../assets/images/Flutter3.png",
+      "difficulty": "Hard",
+      "estimatedTime": "12 - 14 Days",
+      "skills": [
+        "Firebase",
+        "State Management",
+        "REST API",
+        "App Deployment"
+      ]
+    },
+    {
+      "id": "13",
+      "trackId": 5,
+      "title": "Sales Data Analysis",
+      "description": "Analyze sales data using Excel and Python.",
+      "details": "Clean sales datasets, calculate KPIs, perform statistical analysis and generate charts using Python and Excel to identify business insights.",
+      "image": "../assets/images/Data1.png",
+      "difficulty": "Easy",
+      "estimatedTime": "2 - 3 Days",
+      "skills": [
+        "Excel",
+        "Python",
+        "Statistics"
+      ]
+    },
+    {
+      "id": "14",
+      "trackId": 5,
+      "title": "Netflix Data Dashboard",
+      "description": "Clean and visualize Netflix dataset using Pandas and Power BI.",
+      "details": "Import, clean and transform the Netflix dataset using Pandas, then build an interactive Power BI dashboard with charts, filters and insights.",
+      "image": "../assets/images/Data2.png",
+      "difficulty": "Medium",
+      "estimatedTime": "5 - 7 Days",
+      "skills": [
+        "Pandas",
+        "Power BI",
+        "Data Visualization"
+      ]
+    },
+    {
+      "id": "15",
+      "trackId": 5,
+      "title": "Business Intelligence Dashboard",
+      "description": "Build an interactive business dashboard from multiple data sources.",
+      "details": "Combine multiple datasets using SQL and Python, prepare the data, then create a professional Power BI dashboard with KPIs, trends and executive reports.",
+      "image": "../assets/images/Data3.png",
+      "difficulty": "Hard",
+      "estimatedTime": "10 - 14 Days",
+      "skills": [
+        "SQL",
+        "Power BI",
+        "Pandas",
+        "NumPy"
+      ]
+    }
+  ]
 }
