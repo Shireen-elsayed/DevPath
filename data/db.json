@@ -193,6 +193,8 @@
       "title": "Junior Frontend Developer",
       "company": "TechSolutions",
       "track": "Frontend",
+      "salary":"$900 - $1300",
+      "type":"Remote",
       "requiredSkills": ["HTML", "CSS", "Responsive Design", "JavaScript"],
       "description": "We are looking for a Junior Frontend Developer to build clean and responsive user interfaces."
     },
@@ -201,25 +203,63 @@
       "title": "React Developer",
       "company": "WebCraft",
       "track": "Frontend",
+       "salary":"$1300 - $1900",
+       "type":"Hybrid",
       "requiredSkills": ["HTML", "CSS", "JavaScript", "React", "Git & GitHub"],
       "description": "Join our team to develop scalable single-page applications using React.js."
     },
     {
-      "id": 3,
-      "title": "Node.js Backend Developer",
-      "company": "DataFlow",
-      "track": "Backend",
-      "requiredSkills": ["Programming Basics", "Node.js", "Express.js", "REST API", "MongoDB"],
-      "description": "Build high-performance, secure backend services and APIs using Node.js and Express."
+    "id": 3,
+    "title": "UI/UX Frontend Developer",
+    "company": "PixelPerfect",
+    "track": "Frontend",
+     "salary":"$1100 - $1700",
+     "type":"On-site",
+    "requiredSkills": ["HTML", "CSS", "Bootstrap", "JavaScript", "Responsive Design"],
+    "description": "We need a frontend developer with an eye for UI/UX to convert design mockups into pixel-perfect responsive web pages."
     },
     {
       "id": 4,
+      "title": "Node.js Backend Developer",
+      "company": "DataFlow",
+      "track": "Backend",
+       "salary":"$1700 - $2100",
+       "type":"Remote",
+      "requiredSkills": [
+        "Programming Basics",
+        "Node.js",
+        "Express.js",
+        "REST API",
+        "MongoDB"
+      ],
+      "description": "Build high-performance, secure backend services and APIs using Node.js and Express."
+    },
+    {
+      "id": 5,
       "title": "Full-Stack Engineer (Backend Focused)",
       "company": "CloudSystems",
       "track": "Backend",
+      "type":"Hybrid",
+      "salary":"$1300 - $1900",
       "requiredSkills": ["Node.js", "REST API", "SQL", "Authentication", "Deployment"],
       "description": "Looking for a backend-heavy engineer to maintain databases and scale server infrastructure."
-    }
+    },
+    {
+    "id": 6,
+    "title": "Backend Security Engineer",
+    "company": "SecureNet",
+    "track": "Backend",
+     "salary":"$2000 - $3000",
+     "type":"On-site",
+    "requiredSkills": [
+      "Programming Basics",
+      "Node.js",
+      "REST API",
+      "Authentication",
+      "SQL"
+    ],
+    "description": "Focus on building secure APIs, managing user authorization systems, and protecting application endpoints from vulnerabilities."
+  }
   ],
 
   "recommended": [
