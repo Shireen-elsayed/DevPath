@@ -23,11 +23,60 @@
 </head>
 
 <body>
+    <header></header>
+    <main>
+        <!-- Register Form -->
+<div class="register-form">
+    <div class="form-container">
+        <h2>Create Account</h2>
+        <p>Join thousands of learners today.</p>
+        <div class="form-tabs">
+            <a href="./login.html" class="tab">Sign In</a>
+            <a href="./signup.html" class="tab active">Register</a>
+        </div>
+        <form>
+            <div class="input-group">
+                <label for="fullname">FULL NAME</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Full Name"
+                    required>
+            </div>
+            <div class="input-group">
+                <label for="email">EMAIL</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="you@gmail.com"
+                    required>
+            </div>
+            <div class="input-group">
+                <label for="password">PASSWORD</label>
+                <div class="password-box">
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="••••••••"
+                        required>
 
-
-
-
-
+                    <button type="button" class="toggle-password">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+            <button type="submit" class="create-btn">
+                Create Account
+            </button>
+        </form>
+        <p class="login-link">
+            Already have one?
+            <a href="./login.html">Sign In</a>
+        </p>
+    </div>
+</div>
+    </main>
+    <footer></footer>
     <script src="../js/signup.js"></script>
     <script src="../js/helpers.js"></script>
 
