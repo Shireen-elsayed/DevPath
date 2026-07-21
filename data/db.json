@@ -5,12 +5,18 @@
       "username": "Manar",
       "email": "manar@gmail.com",
       "password": "123456",
-      "track": "Frontend",
+
+      "track": "Backend",
       "level": "Beginner",
       "avatar": "",
-      "overallScore": 0,
+
+      "overallScore": 30,
       "skills": [],
-      "completedSkillIds": [],
+      "completedSkillIds": [ "Programming Basics",
+        "Node.js",
+        "Express.js",
+        "REST API","MongoDB"],
+
       "xpEarned": 0,
       "xpNextReward": 3000,
       "streakDays": 0,
@@ -220,192 +226,220 @@
   ],
   "roadmaps": [
     {
-      "id": "1",
-      "track": "Frontend",
+      "id": "Frontend",
+      "title": "Front-End Development",
       "skills": [
         {
-          "id": 1,
-          "name": "HTML"
+          "title": "HTML",
+          "duration": "1 week",
+          "lessons": [
+            {
+              "title": "HTML Introduction",
+              "resource": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            },
+            {
+              "title": "HTML Element & Tags",
+              "resource": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements"
+            }
+          ]
         },
         {
-          "id": 2,
-          "name": "CSS"
-        },
-        {
-          "id": 3,
-          "name": "Responsive Design"
-        },
-        {
-          "id": 4,
-          "name": "JavaScript"
-        },
-        {
-          "id": 5,
-          "name": "Git & GitHub"
-        },
-        {
-          "id": 6,
-          "name": "Bootstrap"
-        },
-        {
-          "id": 7,
-          "name": "React"
-        },
-        {
-          "id": 8,
-          "name": "REST API"
+          "title": "CSS",
+          "duration": "2 week",
+          "lessons": [
+            {
+              "title": "CSS Selectors & Specificity",
+              "resource": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors"
+            },
+            {
+              "title": "Box Model",
+              "resource": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_model"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "2",
-      "track": "Backend",
+      "id": "Backend",
+      "title": "Back-End Development",
       "skills": [
         {
-          "id": 1,
-          "name": "Programming Basics"
+          "title": "Programming Basics",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 2,
-          "name": "Node.js"
+          "title": "Node.js",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 3,
-          "name": "Express.js"
+          "title": "Express.js",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 4,
-          "name": "REST API"
+          "title": "REST API",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 5,
-          "name": "SQL"
+          "title": "SQL",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 6,
-          "name": "MongoDB"
+          "title": "MongoDB",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 7,
-          "name": "Authentication"
+          "title": "Authentication",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 8,
-          "name": "Deployment"
+          "title": "Deployment",
+          "duration": "1 week",
+          "lessons": []
         }
       ]
     },
     {
-      "id": "3",
-      "track": "UI/UX",
+      "id": "UI/UX",
+      "title": "UI/UX Design",
       "skills": [
         {
-          "id": 1,
-          "name": "Design Principles"
+          "title": "Design Principles",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 2,
-          "name": "Color Theory"
+          "title": "Color Theory",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 3,
-          "name": "Typography"
+          "title": "Typography",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 4,
-          "name": "Wireframing"
+          "title": "Wireframing",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 5,
-          "name": "Prototyping"
+          "title": "Prototyping",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 6,
-          "name": "Figma"
+          "title": "Figma",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 7,
-          "name": "User Research"
+          "title": "User Research",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 8,
-          "name": "Usability Testing"
+          "title": "Usability Testing",
+          "duration": "1 week",
+          "lessons": []
         }
       ]
     },
     {
-      "id": "4",
-      "track": "Flutter",
+      "id": "Flutter",
+      "title": "Flutter Development",
       "skills": [
         {
-          "id": 1,
-          "name": "Dart"
+          "title": "Dart",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 2,
-          "name": "Flutter Basics"
+          "title": "Flutter Basics",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 3,
-          "name": "Widgets"
+          "title": "Widgets",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 4,
-          "name": "Layouts"
+          "title": "Layouts",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 5,
-          "name": "State Management"
+          "title": "State Management",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 6,
-          "name": "Firebase"
+          "title": "Firebase",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 7,
-          "name": "REST API"
+          "title": "REST API",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 8,
-          "name": "App Deployment"
+          "title": "App Deployment",
+          "duration": "1 week",
+          "lessons": []
         }
       ]
     },
     {
-      "id": "5",
-      "track": "Data Analysis",
+      "id": "Data Analysis",
+      "title": "Data Analysis",
       "skills": [
         {
-          "id": 1,
-          "name": "Python"
+          "title": "Python",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 2,
-          "name": "Statistics"
+          "title": "Statistics",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 3,
-          "name": "NumPy"
+          "title": "NumPy",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 4,
-          "name": "Pandas"
+          "title": "Pandas",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 5,
-          "name": "Data Visualization"
+          "title": "Data Visualization",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 6,
-          "name": "SQL"
+          "title": "SQL",
+          "duration": "2 weeks",
+          "lessons": []
         },
         {
-          "id": 7,
-          "name": "Excel"
+          "title": "Excel",
+          "duration": "1 week",
+          "lessons": []
         },
         {
-          "id": 8,
-          "name": "Power BI"
+          "title": "Power BI",
+          "duration": "2 weeks",
+          "lessons": []
         }
       ]
     }
@@ -808,12 +842,9 @@
       "title": "Junior Frontend Developer",
       "company": "TechSolutions",
       "track": "Frontend",
-      "requiredSkills": [
-        "HTML",
-        "CSS",
-        "Responsive Design",
-        "JavaScript"
-      ],
+      "salary":"$900 - $1300",
+      "type":"Remote",
+      "requiredSkills": ["HTML", "CSS", "Responsive Design", "JavaScript"],
       "description": "We are looking for a Junior Frontend Developer to build clean and responsive user interfaces."
     },
     {
@@ -821,20 +852,28 @@
       "title": "React Developer",
       "company": "WebCraft",
       "track": "Frontend",
-      "requiredSkills": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Git & GitHub"
-      ],
+       "salary":"$1300 - $1900",
+       "type":"Hybrid",
+      "requiredSkills": ["HTML", "CSS", "JavaScript", "React", "Git & GitHub"],
       "description": "Join our team to develop scalable single-page applications using React.js."
     },
     {
-      "id": "3",
+    "id": 3,
+    "title": "UI/UX Frontend Developer",
+    "company": "PixelPerfect",
+    "track": "Frontend",
+     "salary":"$1100 - $1700",
+     "type":"On-site",
+    "requiredSkills": ["HTML", "CSS", "Bootstrap", "JavaScript", "Responsive Design"],
+    "description": "We need a frontend developer with an eye for UI/UX to convert design mockups into pixel-perfect responsive web pages."
+    },
+    {
+      "id": 4,
       "title": "Node.js Backend Developer",
       "company": "DataFlow",
       "track": "Backend",
+       "salary":"$1700 - $2100",
+       "type":"Remote",
       "requiredSkills": [
         "Programming Basics",
         "Node.js",
@@ -845,19 +884,31 @@
       "description": "Build high-performance, secure backend services and APIs using Node.js and Express."
     },
     {
-      "id": "4",
+      "id": 5,
       "title": "Full-Stack Engineer (Backend Focused)",
       "company": "CloudSystems",
       "track": "Backend",
-      "requiredSkills": [
-        "Node.js",
-        "REST API",
-        "SQL",
-        "Authentication",
-        "Deployment"
-      ],
+      "type":"Hybrid",
+      "salary":"$1300 - $1900",
+      "requiredSkills": ["Node.js", "REST API", "SQL", "Authentication", "Deployment"],
       "description": "Looking for a backend-heavy engineer to maintain databases and scale server infrastructure."
-    }
+    },
+    {
+    "id": 6,
+    "title": "Backend Security Engineer",
+    "company": "SecureNet",
+    "track": "Backend",
+     "salary":"$2000 - $3000",
+     "type":"On-site",
+    "requiredSkills": [
+      "Programming Basics",
+      "Node.js",
+      "REST API",
+      "Authentication",
+      "SQL"
+    ],
+    "description": "Focus on building secure APIs, managing user authorization systems, and protecting application endpoints from vulnerabilities."
+  }
   ],
   "recommended": [
     {
