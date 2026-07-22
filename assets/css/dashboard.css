@@ -47,15 +47,21 @@ aside {
   list-style: none;
 }
 
-.links-sidebar nav ul li {
-  margin-top: 7px;
-  padding: 10px 14px;
-  border-radius: 10px;
-  text-align: start;
-  font-size: 15px;
-  transition: 0.3s;
-  display: flex;
-  align-items: center;
+ .links-sidebar nav ul li{
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    padding:14px 18px;
+    margin-top:10px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+    border:1px solid transparent;
 }
 
 .links-sidebar nav ul li a {
@@ -63,11 +69,23 @@ aside {
   text-decoration: none;
   font-size: 1.05em;
 }
+.links-sidebar nav ul li:hover{
+    background:rgba(124,58,237,.18);
+    border-color:rgba(139,92,246,.35);
+    transform:translateX(8px);
 
+    box-shadow:0 10px 25px rgba(124,58,237,.18);
+}
 .active {
-  background-color: rgb(49, 34, 113);
-  border-right: 2px solid rgb(102, 80, 129);
-  transform: translateX(6px);
+  background:linear-gradient(90deg,#7c3aed,#5b3df5);
+
+    border-right:none;
+
+    color:white;
+
+    transfrm:translateX(8px);
+
+    box-shadow:0 10px 25px rgba(124,58,237,.3);
 }
 
 .links-sidebar nav ul li i {
@@ -202,10 +220,15 @@ aside {
 }
 
 .top-card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  padding: 12px 10px;
-  gap: 10px;
+display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:22px;
+
+    padding:22px;
+
+
 }
 
 .top-card #progress,
@@ -216,12 +239,135 @@ aside {
 .top-card #weeklygoal {
   background: linear-gradient(to bottom, rgb(23, 14, 71), rgb(20, 14, 56), rgb(27, 21, 74));
   min-height: 140px;
-  border-radius: 14px;
+  border-radius: 22px;
   box-shadow: 0 0 3px 1px rgba(221, 221, 221, 0.072);
   overflow: hidden;
   padding: 12px;
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+cursor: pointer;
+ position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.06);
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+
+}
+.top-card>div::before{
+
+content:"";
+
+position:absolute;
+
+top:-40%;
+
+left:-30%;
+
+width:220px;
+
+height:220px;
+
+background:radial-gradient(#8b5cf633,transparent);
+
+pointer-events:none;
+
+transition:.4s;
+
+}
+.top-card>div:hover{
+
+transform:translateY(-8px);
+
+border-color:#8b5cf6;
+
+box-shadow:
+0 20px 45px rgba(139,92,246,.22);
+
+}
+.circle-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.top-card > div::after{
+
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    border-radius: inherit;
+
+    padding: 1px;
+
+    background: linear-gradient(
+        135deg,
+        #8B5CF6,
+        #60A5FA,
+        #A855F7
+    );
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+
+    opacity: 0;
+
+    transition: .35s;
+
+    pointer-events: none;
 }
 
+.top-card > div:hover::after{
+
+    opacity: 1;
+}
+
+
+@keyframes cards{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+.top-card>div{
+
+animation:cards .6s;
+
+}
+
+
+.top-card > div:hover{
+    transform: translateY(-8px);
+
+    border-color: #8B5CF6;
+
+    box-shadow:
+        0 0 0 1px rgba(139,92,246,.35),
+        0 15px 35px rgba(139,92,246,.22);
+
+}
 .middle-cart {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.75fr);
@@ -300,14 +446,11 @@ aside {
 .progress-title,
 .level-title,
 .weak-title {
-  color: rgb(199, 198, 198);
-  font-size: 0.8em;
+  font-size: 14px;
+  color: #b8b3d9;
+ 
 }
 
-.level-title {
-  padding-left: 17px;
-  font-size: 0.8em;
-}
 
 .text-big p,
 .text-big span {
@@ -354,7 +497,7 @@ aside {
 .module-one,
 .xp-one,
 .weak-one {
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .module-one i {
@@ -465,6 +608,19 @@ aside {
   gap: 12px;
 }
 
+.recommended-learning {
+  padding: 10px;
+}
+.continue-learning-container {
+  padding-top: 10px;
+}
+.upcoming-projects {
+  padding: 10px;
+}
+
+
+
+
 .cart-title {
   font-size: 0.95em;
   font-weight: 700;
@@ -545,13 +701,14 @@ aside {
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #a385ea, #d5cde3);
+  background: linear-gradient(90deg, #f1fe8e, #d5cde3) !important;
   border-radius: 3px;
   
 }
 
 .progress-65 {
-  width: 65%;
+  /* width: 65%; */
+
 }
 
 .progress-percent {
@@ -1096,22 +1253,4 @@ aside {
     padding-right: 15px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Responsive Design
-   ========================================================================== */
 

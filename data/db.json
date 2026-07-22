@@ -2,34 +2,34 @@
   "users": [
     {
       "id": 1,
-      "username": "Manar",
+      "username": "Naema",
       "email": "manar@gmail.com",
       "password": "123456",
 
-      "track": "Backend",
+      "track": "Frontend",
       "level": "professional",
       "avatar": "",
 
       "overallScore": 30,
       "skills": [
-        { "id": 1, "name": "Programming Basics" },
-        { "id": 2, "name": "Node.js" },
-        { "id": 3, "name": "Express.js" },
-        { "id": 4, "name": "REST API" },
-        { "id": 5, "name": "SQL" },
-        { "id": 6, "name": "MongoDB" },
-        { "id": 7, "name": "Authentication" },
-        { "id": 8, "name": "Deployment" }
+        { "id": 1, "name": "HTML" },
+        { "id": 2, "name": "CSS" },
+        { "id": 3, "name": "Responsive Design" },
+        { "id": 4, "name": "JavaScript" },
+        { "id": 5, "name": "Git & GitHub" },
+        { "id": 6, "name": "Bootstrap" },
+        { "id": 7, "name": "React" },
+        { "id": 8, "name": "REST API" }
       ],
-      "completedSkillIds": ["Programming Basics","Node.js","Express.js"],
+      "completedSkillIds": ["HTML","Responsive Design","CSS"],
 
-      "xpEarned": 0,
+      "xpEarned": 2.555,
       "xpNextReward": 3000,
 
-      "streakDays": 0,
+      "streakDays": 9,
       "streakWeek": [
-        { "day": "Mon", "done": false },
-        { "day": "Tue", "done": false },
+        { "day": "Mon", "done": true },
+        { "day": "Tue", "done": true },
         { "day": "Wed", "done": false },
         { "day": "Thu", "done": false },
         { "day": "Fri", "done": false },
@@ -37,7 +37,7 @@
         { "day": "Sun", "done": false }
       ],
 
-      "weeklyGoalDone": 0,
+      "weeklyGoalDone": 5,
       "weeklyGoalTotal": 7,
 
       "dailyGoalMinutesDone": 0,
@@ -55,14 +55,14 @@
       "currentModule": {
         "skillId": 1,
         "skillName": "HTML",
-        "progressPercent": 0,
+        "progressPercent": 40,
         "nextLesson": {
-          "title": "",
-          "durationMinutes": 0
+          "title": "Operators and Expressions",
+          "durationMinutes": 50
         },
         "upNext": {
-          "title": "",
-          "durationMinutes": 0
+          "title": "Variables and Data Types",
+          "durationMinutes": 45
         }
       }
     }

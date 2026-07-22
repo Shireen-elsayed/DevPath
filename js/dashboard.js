@@ -2,6 +2,7 @@ const links = document.querySelectorAll(".links-sidebar nav ul li");
 const clock = document.querySelector(".clock");
 const sidebar = document.querySelector(".sidebar");
 const menuToggle = document.querySelector(".mobile-menu-toggle");
+
 // icon toggle
 if (menuToggle && sidebar) {
   menuToggle.addEventListener("click", () => {
@@ -20,32 +21,63 @@ links.forEach((link) => {
   });
 });
 
+/* =====================================================
+   ✅ إضافة جديدة: حساب أيام الأسبوع الحالي بالتاريخ الحقيقي
+   بدل ما تكون التواريخ ثابتة، هنحسبها من تاريخ اليوم فعليًا
+   ===================================================== */
+function getCurrentWeekDates(startDay = 1) {
+  // startDay: 0=Sunday, 6=Saturday (غيّريها حسب أول يوم في أسبوعكم)
+  const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const today = new Date();
+  const todayIndex = today.getDay();
 
-  
+  // نحسب فرق الأيام عشان نوصل لأول يوم في الأسبوع
+  let diff = todayIndex - startDay;
+  if (diff < 0) diff += 7;
 
-  
+  const weekStart = new Date(today);
+  weekStart.setDate(today.getDate() - diff);
 
+  const week = [];
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(weekStart);
+    d.setDate(weekStart.getDate() + i);
+    week.push({
+      day: dayNames[d.getDay()],
+      date: d.getDate(),
+      isToday: d.toDateString() === today.toDateString(),
+      fullDate: d.toISOString().split("T")[0],
+    });
+  }
+  return week;
+}
 
+/* =====================================================
+   ✅ تعديل: renderStreakDays بقى بيدمج تاريخ اليوم الحقيقي
+   مع بيانات "done" الجاية من الداتا (currentUser.streakWeek)
+   ===================================================== */
 function renderStreakDays(streakWeek = []) {
   const container = document.getElementById("streakDaysContainer");
   if (!container) return;
 
   container.innerHTML = "";
 
-  const today = new Date().toLocaleDateString("en-US", { weekday: "short" });
+  const realWeek = getCurrentWeekDates(); // الأسبوع الحالي بتواريخ حقيقية
 
-  streakWeek.forEach((dayData) => {
-    const dayLetter = dayData.day[0];
-    const isToday = dayData.day.startsWith(today.slice(0, 3));
+  realWeek.forEach((weekDay) => {
+    // نلاقي هل اليوم ده متسجل "done" في بيانات اليوزر ولا لأ
+    const matched = streakWeek.find((d) => d.day === weekDay.day);
+    const isDone = matched ? !!matched.done : false;
 
     const dayEl = document.createElement("div");
     dayEl.className = "streak-day";
-    if (dayData.done) dayEl.classList.add("completed");
-    if (isToday) dayEl.classList.add("today");
+    if (isDone) dayEl.classList.add("completed");
+    if (weekDay.isToday) dayEl.classList.add("today");
 
     dayEl.innerHTML = `
-      <span class="day-letter">${dayLetter}</span>
-      <div class="day-circle">${dayData.done ? "✓" : ""}</div>
+      <span class="day-letter">${weekDay.day}</span>
+      <span class="day-date">${weekDay.date}</span>
+      <div class="day-circle">${isDone ? "✓" : (weekDay.isToday ? "●" : "")}</div>
     `;
 
     container.appendChild(dayEl);
@@ -87,26 +119,31 @@ async function loadDashboardData() {
   return response.json();
 }
 
-localStorage.setItem("currentUserId",1)
-
-// get user id
+/* =====================================================
+   ✅ تصحيح: كانت بتعمل setItem كل مرة تفتح فيها الصفحة
+   وده بيبوّظ أي user id اتسجل قبل كده. دلوقتي بس أول مرة
+   ===================================================== */
+if (!localStorage.getItem("currentUserId")) {
+  localStorage.setItem("currentUserId", "1");
+}
 
 async function initDashboard() {
   try {
     const data = await loadDashboardData();
     console.log(data);
-    const currentUserId =localStorage.getItem("currentUserId") ;
-    const currentUser = data.find((u) => u.id === currentUserId);
-    // if(currentUser){
-    //   // console.log("fetch"); found user
-    // }
-// handleData(currentUser.username,currentUser.level)
+
+    // ✅ تصحيح: نتأكد إن المقارنة بتتم بنفس النوع (String مع String)
+    const currentUserId = String(localStorage.getItem("currentUserId"));
+    const currentUser = data.find((u) => String(u.id) === currentUserId);
+
     if (!currentUser) {
+      console.warn("لم يتم العثور على المستخدم");
+      renderStreakDays([]);
       return;
     }
-    const percent = Number(currentUser.overallScore);
-    // console.log(percent);
-    const chart = progressChart  || initChart() ;
+
+    const percent = Number(currentUser.overallScore) || 0;
+    const chart = progressChart || initChart();
 
     if (chart) {
       chart.data.datasets[0].data = [percent, Math.max(0, 100 - percent)];
@@ -118,41 +155,81 @@ async function initDashboard() {
       percentText.textContent = `${percent}%`;
     }
 
+    let level = document.querySelector(".level");
+    let userName = document.querySelector(".username");
+    let track = document.querySelector(".track");
+    let completedModule = document.querySelector(".completedmodule");
+    let valuexp = document.querySelector(".valuexp");
+    let numberstreak = document.querySelector(".numberstreak");
+    let numberweakgoals = document.querySelector(".numberweakgoals");
+    let namecourse = document.querySelector(".namecourse");
+    let course_track = document.querySelector(".course-track");
+    let progress_percent = document.querySelector(".progress-percent");
+    let progress_fill = document.querySelector(".progress-fill");
+    let lesson_name = document.querySelector(".lesson-name");
+    let secondlesson = document.querySelector(".secondlesson");
+    let lesson_duration = document.querySelector(".lesson-duration");
+    let second_duration = document.querySelector(".second-duration");
 
+    /* =====================================================
+       ✅ إضافة: دالة صغيرة تتأكد إن العنصر موجود قبل ما تكتب فيه
+       عشان الكود ميوقفش بالغلط لو عنصر ناقص من الـ HTML
+       ===================================================== */
+    const setText = (el, value) => {
+      if (el) el.innerHTML = value;
+    };
 
+    setText(level, currentUser.level);
+    setText(userName, currentUser.username);
+    setText(track, currentUser.track);
+    setText(
+      completedModule,
+      `${currentUser.completedSkillIds?.length ?? 0} / ${currentUser.skills?.length ?? 0}`
+    );
+    setText(valuexp, currentUser.xpEarned);
+    setText(numberstreak, `${currentUser.streakDays} Days`);
+    setText(
+      numberweakgoals,
+      `${currentUser.weeklyGoalDone} / ${currentUser.weeklyGoalTotal}`
+    );
 
+    if (currentUser.currentModule) {
+      setText(namecourse, `${currentUser.currentModule.skillName} Basics`);
+      setText(course_track, `${currentUser.track} track`);
+      setText(progress_percent, `${currentUser.currentModule.progressPercent} %`);
 
-let level=document.querySelector(".level")
-let userName=document.querySelector(".username")
-let track=document.querySelector(".track")
-let completedModule=document.querySelector(".completedmodule")
-let completedModule=document.querySelector(".completedmodule")
+      if (progress_fill) {
+        progress_fill.style.width = `${currentUser.currentModule.progressPercent}%`;
+      }
 
-level.innerHTML=currentUser.level
-userName.innerHTML=currentUser.username
-track.innerHTML=currentUser.track;
-completedModule.innerHTML=`${currentUser.completedSkillIds.length} / ${currentUser.skills.length}`
+      if (currentUser.currentModule.nextLesson) {
+        setText(lesson_name, currentUser.currentModule.nextLesson.title);
+        setText(lesson_duration, `${currentUser.currentModule.nextLesson.durationMinutes} min`);
+      }
 
+      if (currentUser.currentModule.upNext) {
+        setText(secondlesson, currentUser.currentModule.upNext.title);
+        setText(second_duration, `${currentUser.currentModule.upNext.durationMinutes} min`);
+      }
+    }
 
-if (!clock) return;
+    // clock / greeting
+    if (clock) {
+      const hour = new Date().getHours();
+      let greeting;
 
-  const hour = new Date().getHours();
-  let greeting;
-
-  if (hour < 12) {
-    greeting = "Good morning";
-  } else if (hour < 18) {
-    greeting = "Good afternoon";
-  } else {
-    greeting = "Good evening";
-  }
-  clock.innerHTML=`${greeting}, ${userName.innerHTML}`
-
-
-
-
+      if (hour < 12) {
+        greeting = "Good morning";
+      } else if (hour < 18) {
+        greeting = "Good afternoon";
+      } else {
+        greeting = "Good evening";
+      }
+      clock.innerHTML = `${greeting}, ${currentUser.username}`;
+    }
 
     renderStreakDays(currentUser.streakWeek || []);
+    renderWeekCalendar(currentUser.streakWeek || []); // ✅ القسم الجديد "This Week"
   } catch (error) {
     console.error("Dashboard loading error:", error);
     const percentText = document.querySelector(".percent-text");
@@ -160,33 +237,48 @@ if (!clock) return;
       percentText.textContent = "0%";
     }
     renderStreakDays([]);
+    renderWeekCalendar([]);
   }
-  
 }
 
-// setGreeting();
+/* =====================================================
+   ✅ إضافة جديدة: قسم "This Week" (calendar-widget)
+   نفس فكرة renderStreakDays بس بشكل الـ HTML بتاعه هو
+   بالـ i class بتاعة font-awesome بدل الدوائر
+   ===================================================== */
+function renderWeekCalendar(streakWeek = []) {
+  const container = document.querySelector(".week-calendar"); // ✅ بيستخدم نفس الـ class القديم
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  const realWeek = getCurrentWeekDates(); // نفس دالة حساب الأسبوع الحقيقي
+
+  realWeek.forEach((weekDay) => {
+    const matched = streakWeek.find((d) => d.day === weekDay.day);
+    const isDone = matched ? !!matched.done : false;
+
+    const dayEl = document.createElement("div");
+    dayEl.className = "week-day";
+    if (isDone) dayEl.classList.add("completed");
+    if (weekDay.isToday) dayEl.classList.add("today");
+
+    let iconClass = "fa-regular fa-circle"; // يوم لسه ماجاش
+    if (isDone) {
+      iconClass = "fa-solid fa-check";
+    } else if (weekDay.isToday) {
+      iconClass = "fa-solid fa-circle-dot";
+    }
+
+    dayEl.innerHTML = `
+      <span class="day-name">${weekDay.day}</span>
+      <span class="day-date">${weekDay.date}</span>
+      <i class="${iconClass}"></i>
+    `;
+
+    container.appendChild(dayEl);
+  });
+}
+
 initChart();
 initDashboard();
-let level=document.querySelector(".level")
-let userName=document.querySelector(".username")
-function handleData(name,levelUser){
-console.log(name);
-console.log(levelUser);
-level.innerHTML=levelUser
-userName.innerHTML=name
-// clock
-if (!clock) return;
-
-  const hour = new Date().getHours();
-  let greeting;
-
-  if (hour < 12) {
-    greeting = "Good morning";
-  } else if (hour < 18) {
-    greeting = "Good afternoon";
-  } else {
-    greeting = "Good evening";
-  }
-  clock.innerHTML=`${greeting}, ${name}`
-}
-
