@@ -222,6 +222,21 @@
       "id": "2",
       "name": "Backend",
       "description": "Learn to build server-side applications and APIs."
+    },
+    {
+      "id": 3,
+      "name": "Flutter",
+      "description": "Learn Flutter"
+    },
+    {
+      "id": 4,
+      "name": "UI/UX",
+      "description": "Learn UI/UX"
+    },
+    {
+      "id": 5,
+      "name": "Data Analysis",
+      "description": "Learn Data Analysis"
     }
   ],
   "roadmaps": [
@@ -446,7 +461,7 @@
   ],
   "questions": [
     {
-      "id": "1",
+      "id": 1,
       "trackId": 1,
       "skill": "HTML",
       "question": "What does HTML stand for?",
@@ -459,7 +474,7 @@
       "correctAnswer": 0
     },
     {
-      "id": "2",
+      "id": 2,
       "trackId": 1,
       "skill": "HTML",
       "question": "Which HTML tag is used to create a hyperlink?",
@@ -472,7 +487,7 @@
       "correctAnswer": 0
     },
     {
-      "id": "3",
+      "id": 3,
       "trackId": 1,
       "skill": "HTML",
       "question": "Which HTML tag is used to insert an image?",
@@ -485,7 +500,7 @@
       "correctAnswer": 1
     },
     {
-      "id": "4",
+      "id": 4,
       "trackId": 1,
       "skill": "HTML",
       "question": "Which HTML element is used for the largest heading?",
@@ -498,7 +513,7 @@
       "correctAnswer": 3
     },
     {
-      "id": "5",
+      "id": 5,
       "trackId": 1,
       "skill": "HTML",
       "question": "Which tag is used to create an unordered list?",
@@ -511,7 +526,7 @@
       "correctAnswer": 1
     },
     {
-      "id": "6",
+      "id": 6,
       "trackId": 1,
       "skill": "CSS",
       "question": "Which CSS property changes the text color?",
@@ -524,7 +539,7 @@
       "correctAnswer": 2
     },
     {
-      "id": "7",
+      "id": 7,
       "trackId": 1,
       "skill": "CSS",
       "question": "Which property is used to change the background color?",
@@ -537,7 +552,7 @@
       "correctAnswer": 0
     },
     {
-      "id": "8",
+      "id": 8,
       "trackId": 1,
       "skill": "CSS",
       "question": "Which CSS layout is one-dimensional?",
@@ -550,7 +565,7 @@
       "correctAnswer": 1
     },
     {
-      "id": "9",
+      "id": 9,
       "trackId": 1,
       "skill": "CSS",
       "question": "Which property controls the space outside an element?",
@@ -563,7 +578,7 @@
       "correctAnswer": 2
     },
     {
-      "id": "10",
+      "id": 10,
       "trackId": 1,
       "skill": "CSS",
       "question": "Which property makes text bold?",
@@ -576,7 +591,7 @@
       "correctAnswer": 1
     },
     {
-      "id": "11",
+      "id": 11,
       "trackId": 1,
       "skill": "JavaScript",
       "question": "Which keyword is used to declare a variable?",
@@ -589,7 +604,7 @@
       "correctAnswer": 3
     },
     {
-      "id": "12",
+      "id": 12,
       "trackId": 1,
       "skill": "JavaScript",
       "question": "Which method is used to print data in the console?",
@@ -602,7 +617,7 @@
       "correctAnswer": 0
     },
     {
-      "id": "13",
+      "id": 13,
       "trackId": 1,
       "skill": "JavaScript",
       "question": "Which symbol is used for single-line comments?",
@@ -615,7 +630,7 @@
       "correctAnswer": 1
     },
     {
-      "id": "14",
+      "id": 14,
       "trackId": 1,
       "skill": "JavaScript",
       "question": "Which statement is used to make decisions in JavaScript?",
@@ -628,7 +643,7 @@
       "correctAnswer": 2
     },
     {
-      "id": "15",
+      "id": 15,
       "trackId": 1,
       "skill": "JavaScript",
       "question": "Which function displays a popup message?",
@@ -641,7 +656,7 @@
       "correctAnswer": 2
     },
     {
-      "id": "16",
+      "id": 16,
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which language is commonly used with Node.js?",
@@ -654,7 +669,7 @@
       "correctAnswer": 2
     },
     {
-      "id": "17",
+      "id": 17,
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which statement is used for decision making?",
@@ -667,7 +682,7 @@
       "correctAnswer": 2
     },
     {
-      "id": "18",
+      "id": 18,
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which data structure stores key-value pairs?",
@@ -680,7 +695,7 @@
       "correctAnswer": 1
     },
     {
-      "id": "19",
+      "id": 19,
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which loop always executes at least once?",
@@ -693,7 +708,7 @@
       "correctAnswer": 2
     },
     {
-      "id": "20",
+      "id": 20,
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which keyword is used to declare a constant in JavaScript?",
@@ -706,7 +721,7 @@
       "correctAnswer": 1
     },
     {
-      "id": "21",
+      "id": 21,
       "trackId": 2,
       "skill": "Node.js",
       "question": "What is Node.js mainly used for?",
@@ -719,7 +734,7 @@
       "correctAnswer": 0
     },
     {
-      "id": "22",
+      "id": 22,
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which command initializes a Node.js project?",
@@ -732,7 +747,7 @@
       "correctAnswer": 0
     },
     {
-      "id": "23",
+      "id": 23,
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which file contains project information and dependencies?",
@@ -745,7 +760,7 @@
       "correctAnswer": 1
     },
     {
-      "id": "24",
+      "id": 24,
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which command installs all project dependencies?",
@@ -758,7 +773,7 @@
       "correctAnswer": 1
     },
     {
-      "id": "25",
+      "id": 25,
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which object is used to create a web server in Node.js?",
@@ -771,7 +786,7 @@
       "correctAnswer": 0
     },
     {
-      "id": "26",
+      "id": 26,
       "trackId": 2,
       "skill": "SQL",
       "question": "Which SQL statement is used to retrieve data?",
@@ -784,7 +799,7 @@
       "correctAnswer": 1
     },
     {
-      "id": "27",
+      "id": 27,
       "trackId": 2,
       "skill": "SQL",
       "question": "Which SQL statement is used to insert new data?",
@@ -797,7 +812,7 @@
       "correctAnswer": 1
     },
     {
-      "id": "28",
+      "id": 28,
       "trackId": 2,
       "skill": "SQL",
       "question": "Which clause is used to filter records?",
@@ -810,7 +825,7 @@
       "correctAnswer": 1
     },
     {
-      "id": "29",
+      "id": 29,
       "trackId": 2,
       "skill": "SQL",
       "question": "Which SQL statement is used to modify existing data?",
@@ -823,7 +838,7 @@
       "correctAnswer": 1
     },
     {
-      "id": "30",
+      "id": 30,
       "trackId": 2,
       "skill": "SQL",
       "question": "Which SQL statement is used to delete records?",
@@ -834,6 +849,591 @@
         "CLEAR"
       ],
       "correctAnswer": 1
+    },
+    {
+      "id": 31,
+      "trackId": 3,
+      "skill": "Dart Basics",
+      "question": "Which keyword declares an immutable compile-time constant in Dart?",
+      "options": [
+        "var",
+        "final",
+        "const",
+        "let"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 32,
+      "trackId": 3,
+      "skill": "Dart Basics",
+      "question": "Which function prints text?",
+      "options": [
+        "echo()",
+        "print()",
+        "console.log()",
+        "printf()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 33,
+      "trackId": 3,
+      "skill": "Dart Basics",
+      "question": "Dart is primarily used with?",
+      "options": [
+        "React",
+        "Flutter",
+        "AngularJS",
+        "Laravel"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 34,
+      "trackId": 3,
+      "skill": "Dart Basics",
+      "question": "Which collection stores ordered items?",
+      "options": [
+        "Map",
+        "Set",
+        "List",
+        "Queue"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 35,
+      "trackId": 3,
+      "skill": "Dart Basics",
+      "question": "Which keyword defines a class?",
+      "options": [
+        "object",
+        "class",
+        "struct",
+        "type"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 36,
+      "trackId": 3,
+      "skill": "Flutter Widgets",
+      "question": "Which widget creates a button?",
+      "options": [
+        "Text",
+        "ElevatedButton",
+        "Icon",
+        "Padding"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 37,
+      "trackId": 3,
+      "skill": "Flutter Widgets",
+      "question": "Everything in Flutter is a?",
+      "options": [
+        "File",
+        "Widget",
+        "Class",
+        "Package"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 38,
+      "trackId": 3,
+      "skill": "Flutter Widgets",
+      "question": "Which widget arranges children vertically?",
+      "options": [
+        "Row",
+        "Column",
+        "Stack",
+        "Wrap"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 39,
+      "trackId": 3,
+      "skill": "Flutter Widgets",
+      "question": "Which widget adds empty space?",
+      "options": [
+        "Spacer",
+        "Padding",
+        "Center",
+        "SafeArea"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 40,
+      "trackId": 3,
+      "skill": "Flutter Widgets",
+      "question": "Which widget displays text?",
+      "options": [
+        "Label",
+        "Text",
+        "Typography",
+        "Span"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 41,
+      "trackId": 3,
+      "skill": "State Management",
+      "question": "Which widget updates UI with setState?",
+      "options": [
+        "StatelessWidget",
+        "StatefulWidget",
+        "Container",
+        "Scaffold"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 42,
+      "trackId": 3,
+      "skill": "State Management",
+      "question": "Provider is used for?",
+      "options": [
+        "Routing",
+        "State management",
+        "Networking",
+        "Storage"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 43,
+      "trackId": 3,
+      "skill": "State Management",
+      "question": "Which method rebuilds UI?",
+      "options": [
+        "build()",
+        "render()",
+        "refresh()",
+        "paint()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 44,
+      "trackId": 3,
+      "skill": "State Management",
+      "question": "State belongs to?",
+      "options": [
+        "State class",
+        "Widget tree",
+        "MaterialApp",
+        "Theme"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 45,
+      "trackId": 3,
+      "skill": "State Management",
+      "question": "Hot reload preserves?",
+      "options": [
+        "Nothing",
+        "App state often",
+        "Files",
+        "Packages"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 46,
+      "trackId": 4,
+      "skill": "UI Design",
+      "question": "What does UI stand for?",
+      "options": [
+        "User Interface",
+        "Universal Interaction",
+        "User Internet",
+        "Unified Interface"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 47,
+      "trackId": 4,
+      "skill": "UI Design",
+      "question": "Consistency in UI improves?",
+      "options": [
+        "Confusion",
+        "Usability",
+        "Latency",
+        "Storage"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 48,
+      "trackId": 4,
+      "skill": "UI Design",
+      "question": "Whitespace helps?",
+      "options": [
+        "Clutter",
+        "Readability",
+        "Errors",
+        "Speed"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 49,
+      "trackId": 4,
+      "skill": "UI Design",
+      "question": "Which is a UI element?",
+      "options": [
+        "Button",
+        "Algorithm",
+        "Database",
+        "API"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 50,
+      "trackId": 4,
+      "skill": "UI Design",
+      "question": "Good contrast improves?",
+      "options": [
+        "Accessibility",
+        "Memory",
+        "Hosting",
+        "SEO"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 51,
+      "trackId": 4,
+      "skill": "UX Principles",
+      "question": "UX stands for?",
+      "options": [
+        "User Experience",
+        "Universal XML",
+        "User Extension",
+        "Ultra Experience"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 52,
+      "trackId": 4,
+      "skill": "UX Principles",
+      "question": "Personas represent?",
+      "options": [
+        "Servers",
+        "Target users",
+        "Colors",
+        "Fonts"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 53,
+      "trackId": 4,
+      "skill": "UX Principles",
+      "question": "User flow describes?",
+      "options": [
+        "Navigation path",
+        "Code",
+        "Database",
+        "Animation"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 54,
+      "trackId": 4,
+      "skill": "UX Principles",
+      "question": "Usability means?",
+      "options": [
+        "Easy to use",
+        "Fast internet",
+        "Dark mode",
+        "Cloud"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 55,
+      "trackId": 4,
+      "skill": "UX Principles",
+      "question": "Wireframes are?",
+      "options": [
+        "Low fidelity layouts",
+        "Final code",
+        "Database",
+        "Icons"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 56,
+      "trackId": 4,
+      "skill": "Figma",
+      "question": "Figma is mainly used for?",
+      "options": [
+        "Design",
+        "Database",
+        "Backend",
+        "Testing"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 57,
+      "trackId": 4,
+      "skill": "Figma",
+      "question": "Auto Layout helps?",
+      "options": [
+        "Responsive layouts",
+        "SQL",
+        "Hosting",
+        "Debugging"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 58,
+      "trackId": 4,
+      "skill": "Figma",
+      "question": "Components improve?",
+      "options": [
+        "Reuse",
+        "Compilation",
+        "Security",
+        "Storage"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 59,
+      "trackId": 4,
+      "skill": "Figma",
+      "question": "Prototype mode is for?",
+      "options": [
+        "Interactions",
+        "Coding",
+        "Export SQL",
+        "Hosting"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 60,
+      "trackId": 4,
+      "skill": "Figma",
+      "question": "Figma collaboration is?",
+      "options": [
+        "Real-time",
+        "Offline only",
+        "Email only",
+        "None"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 61,
+      "trackId": 5,
+      "skill": "Excel",
+      "question": "Which symbol starts a formula?",
+      "options": [
+        "=",
+        "+",
+        "@",
+        "#"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 62,
+      "trackId": 5,
+      "skill": "Excel",
+      "question": "SUM() does?",
+      "options": [
+        "Adds values",
+        "Sorts",
+        "Deletes",
+        "Formats"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 63,
+      "trackId": 5,
+      "skill": "Excel",
+      "question": "Rows are numbered?",
+      "options": [
+        "Yes",
+        "No",
+        "Sometimes",
+        "Only tables"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 64,
+      "trackId": 5,
+      "skill": "Excel",
+      "question": "Columns are labeled?",
+      "options": [
+        "Letters",
+        "Numbers",
+        "Symbols",
+        "Dates"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 65,
+      "trackId": 5,
+      "skill": "Excel",
+      "question": "Chart is used to?",
+      "options": [
+        "Visualize data",
+        "Delete",
+        "Encrypt",
+        "Compile"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 66,
+      "trackId": 5,
+      "skill": "SQL",
+      "question": "SELECT is used to?",
+      "options": [
+        "Read data",
+        "Delete",
+        "Insert",
+        "Update"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 67,
+      "trackId": 5,
+      "skill": "SQL",
+      "question": "WHERE clause?",
+      "options": [
+        "Filters rows",
+        "Sorts",
+        "Groups",
+        "Creates"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 68,
+      "trackId": 5,
+      "skill": "SQL",
+      "question": "Primary key is?",
+      "options": [
+        "Unique identifier",
+        "Duplicate",
+        "Index only",
+        "View"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 69,
+      "trackId": 5,
+      "skill": "SQL",
+      "question": "INSERT adds?",
+      "options": [
+        "Rows",
+        "Columns",
+        "Tables",
+        "Views"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 70,
+      "trackId": 5,
+      "skill": "SQL",
+      "question": "UPDATE modifies?",
+      "options": [
+        "Existing data",
+        "Database name",
+        "Users",
+        "Indexes"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 71,
+      "trackId": 5,
+      "skill": "Power BI",
+      "question": "Power BI is for?",
+      "options": [
+        "Data visualization",
+        "Coding",
+        "Gaming",
+        "Hosting"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 72,
+      "trackId": 5,
+      "skill": "Power BI",
+      "question": "Dashboard shows?",
+      "options": [
+        "Visual insights",
+        "Source code",
+        "Errors",
+        "Passwords"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 73,
+      "trackId": 5,
+      "skill": "Power BI",
+      "question": "Power Query is used for?",
+      "options": [
+        "Data transformation",
+        "Networking",
+        "Security",
+        "Design"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 74,
+      "trackId": 5,
+      "skill": "Power BI",
+      "question": "DAX is used for?",
+      "options": [
+        "Calculations",
+        "Styling",
+        "Hosting",
+        "Animation"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 75,
+      "trackId": 5,
+      "skill": "Power BI",
+      "question": "Report consists of?",
+      "options": [
+        "Visuals",
+        "Drivers",
+        "Compilers",
+        "Sockets"
+      ],
+      "correctAnswer": 0
     }
   ],
   "jobs": [

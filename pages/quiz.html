@@ -14,7 +14,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- SweetAlert2  #if needed# -->
+    <!-- SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- CSS -->
@@ -24,12 +24,56 @@
 
 <body>
 
+    <section class="quiz-section">
 
+        <div class="quiz-container">
 
+            <!-- Header -->
+            <div class="quiz-header">
 
+                <h1>Skill Assessment</h1>
 
-    <script src="../js/quiz.js"></script>
+                <p>
+                    Answer all the questions below to evaluate your current knowledge.
+                </p>
+
+                <div class="quiz-info">
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-code"></i>
+                        <span id="trackName">Frontend</span>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span id="questionCount">15 Questions</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Quiz Form -->
+            <form id="quizForm">
+
+                <!-- Questions will be generated here -->
+                <div id="questionsContainer">
+
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Submit Assessment
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- JS -->
     <script src="../js/helpers.js"></script>
+    <script src="../js/quiz.js"></script>
 
 </body>
 
