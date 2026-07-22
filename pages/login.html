@@ -5,32 +5,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DevPath | Login</title>
+    <title>DevPath | Login-Register</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- SweetAlert2  #if needed# -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/login.css">
-
 </head>
-
 <body>
+    <main>
+        <!-- ================= Left Side ================= -->
+        <div class="left-side">
+            <div class="left-content">
+                <h1>
+                    Your learning <br>
+                    journey starts <br>
+                    right here.
+                </h1>
+                <p>
+                    Structured tracks, hands-on projects,
+                    and a career match engine that
+                    connects your skills to real opportunities.
+                </p>
+            </div>
+            <div class="stats">
+                <div class="stat-box">
+                    <h2>100+</h2>
+                    <span>Learners</span>
+                </div>
+                <div class="stat-box">
+                    <h2>5+</h2>
+                    <span>Tracks</span>
+                </div>
+                <div class="stat-box">
+                    <h2>90%</h2>
+                    <span>Job Match Rate</span>
+                </div>
+            </div>
+        </div>
+        <!-- ================= Right Side ================= -->
+        <div class="right-side">
+               <div class="overlay" id="overlay"></div>
 
+<div class="popup" id="resetPopup">
+    <h3>Reset Password</h3>
 
+    <input
+        type="email"
+        id="resetEmail"
+        placeholder="Enter your email">
 
+    <input
+        type="password"
+        id="newPassword"
+        placeholder="New Password">
 
+    <button
+        type="button"
+        id="savePassword">
+        Save
+    </button>
+</div>
+            <!-- ============ Login Form ============ -->
+            <div class="form-container login-form active">
+                <h2>Welcome Back 👋🏻</h2>
+                <p class="subtitle">
+                    Sign in to continue your progress.
+                </p>
+                <div class="form-tabs">
+                    <button class="tab active" id="loginTab">Sign In</button>
+                    <button class="tab" id="registerTab">Register</button>
+                </div>
+                <form class="loginForm">
+                    <div class="input-group">
+                        <label for="login-email">EMAIL</label>
+                        <input
+                            type="email"
+                            id="login-email"
+                            placeholder="you@gmail.com"
+                            required>
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">PASSWORD</label>
+                        <div class="password-box">
+                            <input
+                                type="password"
+                                id="login-password"
+                                placeholder="••••••••"
+                                required>
+                            <button type="button" class="toggle-password">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="login-btn">
+                        Sign In
+                    </button>
+                </form>
+                <p class="switch-text">
+                    Don't have an account?
+                    <a href="#" id="openRegister">
+                        Register
+                    </a>
+                </p>
+            </div>
+            <!-- ============ Register Form ============ -->
+            <div class="form-container register-form">
+                <h2>Create Account</h2>
+                <p class="subtitle">
+                    Join thousands of learners today.
+                </p>
+                <div class="form-tabs">
+                    <button class="tab" id="loginTab2">Sign In</button>
+                    <button class="tab active" id="registerTab2">Register</button>
+                </div>
+                <form class="registerForm">
+                    <div class="input-group">
+                        <label for="fullname">FULL NAME</label>
+                        <input
+                            type="text"
+                            id="fullname"
+                            placeholder="Full Name"
+                            required>
+                    </div>
+                    <div class="input-group">
+                        <label for="register-email">EMAIL</label>
+                        <input
+                            type="email"
+                            id="register-email"
+                            placeholder="you@gmail.com"
+                            required>
+                    </div>
+                    <div class="input-group">
+                        <label for="register-password">PASSWORD</label>
+                        <div class="password-box">
+                            <input
+                                type="password"
+                                id="register-password"
+                                placeholder="••••••••"
+                                required>
+                            <button type="button" class="toggle-password">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="submit" class="create-btn">
+                        Create Account
+                    </button>
+                </form>
+                <p class="switch-text">
+                    Already have an account?
+                    <a href="#" id="openLogin">
+                        Sign In
+                    </a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/login.js"></script>
-    <script src="../js/helpers.js"></script>
-
 </body>
-
 </html>
