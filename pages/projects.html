@@ -23,14 +23,100 @@
 </head>
 
 <body>
-
-
-
-
-
+    <header>
+        <nav class="navbar">
+            <button class="bars-icon" aria-label="open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <h3>DevPath</h3>
+        </nav>
+    </header>
+    <div class="overlay"></div>
+    <div class="layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="logo-sidebar">
+                    <img src="../assets/images/logo.jpg" alt="DevPath Logo" class="logo">
+                </div>
+                <div class="links-sidebar">
+                    <nav>
+                        <ul>
+                            <li><i class="fa-solid fa-house"></i><a href="dashboard.html">Dashboard</a></li>
+                            <li><i class="fa-solid fa-book-open"></i><a href="roadmap.html">Roadmap</a></li>
+                            <li class="active"><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#">Projects</a></li>
+                            <li><i class="fa-regular fa-file-lines"></i><a href="#">Assessments</a></li>
+                            <li><i class="fa-solid fa-user"></i><a href="#">Profile</a></li>
+                            <li><i class="fa-solid fa-briefcase"></i><a href="../pages/career-match.html">Career Match</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="sidebar-bottom">
+                <div class="upgrade-pro">
+                    <i class="fa-solid fa-crown"></i>
+                    <span>Upgrade to pro</span>
+                    <p>Unlock all features and get unlimited access.</p>
+                    <button class="pro-btn">Upgrade Now</button>
+                </div>
+                <div class="log-out">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </aside>
+    <main class="projects-page">
+        <!-- ================= Hero ================= -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge">
+                    Great Progress! 🎉
+                </span>
+                <h1>
+                    Ready to Build Real Projects?🚀
+                </h1>
+                <p>
+                    Great job! You've completed your learning plan.
+                    Choose one of the recommended projects below and
+                    start building your portfolio.
+                </p>
+            </div>
+        </section>
+        <!-- ================= Projects ================= -->
+        <section class="projects">
+            <div class="section-title">
+                <i class="fa-solid fa-cube"></i>
+                <h2>
+                    Recommended Projects
+                </h2>
+            </div>
+            <!-- JavaScript will generate cards here -->
+            <div class="projects-container">
+            </div>
+        </section>
+        <!-- ================= Tip ================= -->
+        <section class="project-tip">
+            <div class="tip-icon">
+                <i class="fa-regular fa-lightbulb"></i>
+            </div>
+            <div class="tip-text">
+                <h3>Project Tip</h3>
+                <p>
+                    Don't worry if you can't finish the project from
+                    the first attempt. Practice is the key to becoming
+                    a better developer.
+                </p>
+            </div>
+        </section>
+        <!-- ================= Contiشnue ================= -->
+        <section class="continue">
+            <a class="continue-btn" href="../pages/career-match.html" >
+                Continue to Career Match 👉🏻
+            </a>
+        </section>
+    </main>
     <script src="../js/projects.js"></script>
     <script src="../js/helpers.js"></script>
-
 </body>
 
 </html>
