@@ -153,6 +153,7 @@ function displayMatchedJobs(trackName, userSkills, appData) {
                 </div>
             </div>
         `;
+        
     });
 
     jobsContainer.innerHTML = jobsHTML;

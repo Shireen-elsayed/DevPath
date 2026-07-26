@@ -6,16 +6,16 @@
       "email": "manar@gmail.com",
       "password": "123456",
 
-      "track": "Backend",
+      "track": "UI/UX",
       "level": "Beginner",
       "avatar": "",
 
       "overallScore": 30,
       "skills": [],
-      "completedSkillIds": [ "Programming Basics",
-        "Node.js",
-        "Express.js",
-        "REST API","MongoDB"],
+      "completedSkillIds": ["Design Principles",
+    "Color Theory",
+    "Typography",
+    "Figma"],
 
       "xpEarned": 0,
       "xpNextReward": 3000,
@@ -253,7 +253,147 @@
       "SQL"
     ],
     "description": "Focus on building secure APIs, managing user authorization systems, and protecting application endpoints from vulnerabilities."
-  }
+  },
+  {
+  "id": 7,
+  "title": "Junior UI/UX Designer",
+  "company": "Creative Studio",
+  "track": "UI/UX",
+  "salary": "$900 - $1400",
+  "type": "Remote",
+  "requiredSkills": [
+    "Design Principles",
+    "Color Theory",
+    "Typography",
+    "Figma"
+  ],
+  "description": "Design user-friendly interfaces and create visually appealing layouts for web and mobile applications."
+},
+{
+  "id": 8,
+  "title": "Product Designer",
+  "company": "VisionTech",
+  "track": "UI/UX",
+  "salary": "$1400 - $2000",
+  "type": "Hybrid",
+  "requiredSkills": [
+    "Wireframing",
+    "Prototyping",
+    "Figma",
+    "User Research",
+    "Usability Testing"
+  ],
+  "description": "Collaborate with developers and stakeholders to create intuitive digital product experiences."
+},
+{
+  "id": 9,
+  "title": "UX Researcher",
+  "company": "Insight Labs",
+  "track": "UI/UX",
+  "salary": "$1600 - $2300",
+  "type": "On-site",
+  "requiredSkills": [
+    "User Research",
+    "Usability Testing",
+    "Wireframing",
+    "Design Principles"
+  ],
+  "description": "Conduct user interviews and usability testing to improve product experience."
+},
+{
+  "id": 10,
+  "title": "Junior Flutter Developer",
+  "company": "MobileTech",
+  "track": "Flutter",
+  "salary": "$1000 - $1500",
+  "type": "Remote",
+  "requiredSkills": [
+    "Dart",
+    "Flutter Basics",
+    "Widgets",
+    "Layouts"
+  ],
+  "description": "Develop cross-platform mobile applications using Flutter."
+},
+{
+  "id": 11,
+  "title": "Flutter Mobile Developer",
+  "company": "AppWorks",
+  "track": "Flutter",
+  "salary": "$1500 - $2200",
+  "type": "Hybrid",
+  "requiredSkills": [
+    "Dart",
+    "State Management",
+    "Firebase",
+    "REST API",
+    "Widgets"
+  ],
+  "description": "Build scalable mobile applications integrated with backend services."
+},
+{
+  "id": 12,
+  "title": "Cross Platform App Developer",
+  "company": "NextApps",
+  "track": "Flutter",
+  "salary": "$1800 - $2600",
+  "type": "On-site",
+  "requiredSkills": [
+    "Flutter Basics",
+    "State Management",
+    "Firebase",
+    "REST API",
+    "App Deployment"
+  ],
+  "description": "Create and deploy high-performance Flutter applications for Android and iOS."
+},
+{
+  "id": 13,
+  "title": "Junior Data Analyst",
+  "company": "Data Insights",
+  "track": "Data Analysis",
+  "salary": "$1000 - $1500",
+  "type": "Remote",
+  "requiredSkills": [
+    "Python",
+    "Statistics",
+    "Excel",
+    "Pandas"
+  ],
+  "description": "Analyze business data and generate reports to support decision making."
+},
+{
+  "id": 14,
+  "title": "Business Intelligence Analyst",
+  "company": "Smart Analytics",
+  "track": "Data Analysis",
+  "salary": "$1500 - $2200",
+  "type": "Hybrid",
+  "requiredSkills": [
+    "SQL",
+    "Power BI",
+    "Data Visualization",
+    "Excel",
+    "Pandas"
+  ],
+  "description": "Build dashboards and visualize business performance using Power BI."
+},
+{
+  "id": 15,
+  "title": "Data Analyst",
+  "company": "Insight Solutions",
+  "track": "Data Analysis",
+  "salary": "$1800 - $2600",
+  "type": "On-site",
+  "requiredSkills": [
+    "Python",
+    "NumPy",
+    "Pandas",
+    "SQL",
+    "Data Visualization"
+  ],
+  "description": "Work with large datasets, perform analysis, and create visual reports for stakeholders."
+}
   ],
 
   "recommended": [
