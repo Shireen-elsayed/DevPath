@@ -4,64 +4,339 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>DevPath | Dashboard</title>
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- SweetAlert2  #if needed# -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/dashboard.css">
 </head>
 
 <body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="logo-sidebar">
+                <img src="../assets/images/logo.jpg" alt="" class="logo">
+            </div>
+            <div class="links-sidebar">
+                <nav>
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i><a href="#">Dashboard</a></li>
+                        <li><i class="fa-solid fa-book-open"></i><a href="#">Roadmap</a></li>
+                        <li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#">Projects</a></li>
+                        <li><i class="fa-regular fa-file-lines"></i><a href="#">Assessments</a></li>
+                        <li><i class="fa-solid fa-user"></i><a href="#">Profile</a></li>
+                        <li><i class="fa-solid fa-briefcase"></i><a href="#">Career Match</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="upgrade-pro">
+                <i class="fa-solid fa-crown"></i>
+                <span>Upgrade to pro</span>
+                <p>Unlock all features and get unlimited access.</p>
+                <button class="pro-btn">Upgrade Now</button>
+            </div>
+            <div class="log-out">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <a href="#">Log out</a>
+            </div>
+        </aside>
+        <section class="dashbord">
+            <div class="header">
+                <div class="header-left">
+                    <button class="mobile-menu-toggle" type="button" aria-label="Toggle sidebar">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="name-user">
+                        <h2 class="clock"></h2>
+                        <p>Keep learning, keep growing</p>
+                    </div>
+                </div>
+                <div class="right-user">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="image-user">
+                        <div class="text">
+                            <p class="username"></p>
+                            <span class="track">Frontend Devaloper</span>
+                        </div>
+                        <img src="../assets/images/icons8-user-60.png" alt="" class="prof" width="35px">
+                    </div>
+                </div>
+            </div>
+            <div class="top-card">
+                <div id="progress" class="circle-wrapper">
+                    <p class="progress-title">Overall Progress</p>
+                    <canvas id="progressChart" width="140" height="140"></canvas>
+                    <span class="percent-text"></span>
+                </div>
+                <div id="level">
+                    <div class="level-all">
+                        <span class="level-title">Current Level</span>
+                        <div class="big">
+                            <i class="fa-solid fa-clover"></i>
+                            <div class="text-big">
+                                <p class="level"></p>
+                                <span>Keep Learning and level up!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<aside class="sidebar">
-    <div class="logo-sidebar">
-        <img src="../assets/images/logo.jpg" alt="" class="logo">
+
+                <div id="modules">
+                    <div class="module-one">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span class="module-title">Modules Completed</span>
+                    </div>
+                    <div class="module-two">
+                        <i class="fa-solid fa-list"></i>
+                        <div class="number-module">
+                            <p class="completedmodule"></p>
+                            <span>You're ahead of 32% of learners</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="xp">
+                    <div class="xp-one">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="xp-title">XP Earned</span>
+                    </div>
+                    <div class="xp-two">
+                        <i class="fa-solid fa-star"></i>
+                        <div class="number-xp">
+                            <p class="valuexp"></p>
+                            <span>Next reward at 3,000 XP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="streak">
+                    <div class="streak-one">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                        <span class="xp-title">Streak</span>
+                    </div>
+                    <div class="streak-two">
+                        <p class="numberstreak"></p>
+                    </div>
+                    <div class="streak-days" id="streakDaysContainer"></div>
+                </div>
+
+
+
+                <div id="weeklygoal">
+                    <div class="weak-one">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <span class="weak-title">Weekly Goal</span>
+                    </div>
+                    <div class="weak-two">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <div class="number-weak">
+                            <p class="numberweakgoals"></p>
+                            <span>Learn 30 mins everyday to complete your goal</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="middle-cart">
+                <div class="middle-la">
+                    <!-- Continue Learning -->
+                    <div class="continue-learning-container">
+                        <h3 class="cart-title">Continue Learning</h3>
+                        <div class="current-course-card">
+                            <div class="course-header">
+                                <div class="course-badge">JS</div>
+                                <span class="progress-indicator">Module 1 - In Progress</span>
+                            </div>
+                            <div class="course-body">
+                                <h4 class="namecourse"></h4>
+                                <p class="course-track"></p>
+                                <div class="progress-section">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill progress-65"></div>
+                                    </div>
+                                    <span class="progress-percent"></span>
+                                </div>
+                            </div>
+                            <button class="continue-btn">
+                                <i class="fa-solid fa-play"></i>
+                                Continue Module
+                            </button>
+                        </div>
+
+                        <!-- Next Lessons -->
+                        <div class="next-lessons-card">
+                            <h4 class="card-subtitle">Next Lesson</h4>
+                            <div class="lessons-stack">
+                                <div class="lesson-item">
+                                    <div class="lesson-number">1</div>
+                                    <div class="lesson-info">
+                                        <span class="lesson-name"></span>
+                                        <span class="lesson-duration"></span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="lesson-item">
+                                    <div class="lesson-number">2</div>
+                                    <div class="lesson-info">
+                                        <span class="lesson-name secondlesson">Operators and Expressions</span>
+                                        <span class="lesson-duration second-duration">18 min</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="middle-sm">
+                    <!-- Recommended & Calendar -->
+                    <div class="recommended-learning">
+                        <h3 class="cart-title">Recommended For You</h3>
+                        <div class="rec-cards-container">
+                            <div class="rec-card">
+                                <div class="rec-card-icon css-icon">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </div>
+                                <h5>CSS Advanced</h5>
+                                <p class="rec-meta">Article • 12 min read</p>
+                                <div class="rec-tag">CSS</div>
+                            </div>
+                            <div class="rec-card">
+                                <div class="rec-card-icon html-icon">
+                                    <i class="fa-brands fa-html5"></i>
+                                </div>
+                                <h5>HTML Forms</h5>
+                                <p class="rec-meta">Tutorial • 8 min</p>
+                                <div class="rec-tag">HTML</div>
+                            </div>
+                            <div class="rec-card">
+                                <div class="rec-card-icon js-icon">
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                                <h5>DOM Methods</h5>
+                                <p class="rec-meta">Practice • 10 problems</p>
+                                <div class="rec-tag">JavaScript</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learning Calendar -->
+                    <div class="calendar-widget">
+                        <h3 class="cart-title">This Week</h3>
+                        <!-- <div class="week-calendar">
+                            <div class="week-day completed">
+                                <span class="day-name">Mon</span>
+                                <span class="day-date">20</span>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="week-day completed">
+                                <span class="day-name">Tue</span>
+                                <span class="day-date">21</span>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="week-day completed">
+                                <span class="day-name">Wed</span>
+                                <span class="day-date">22</span>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="week-day today">
+                                <span class="day-name">Thu</span>
+                                <span class="day-date">23</span>
+                                <i class="fa-solid fa-circle-dot"></i>
+                            </div>
+                            <div class="week-day">
+                                <span class="day-name">Fri</span>
+                                <span class="day-date">24</span>
+                                <i class="fa-regular fa-circle"></i>
+                            </div>
+                            <div class="week-day">
+                                <span class="day-name">Sat</span>
+                                <span class="day-date">25</span>
+                                <i class="fa-regular fa-circle"></i>
+                            </div>
+                            <div class="week-day">
+                                <span class="day-name">Sun</span>
+                                <span class="day-date">26</span>
+                                <i class="fa-regular fa-circle"></i>
+                            </div>
+                        </div>  -->
+                        <div class="week-calendar" id="weekCalendarContainer">
+    <!-- الأيام هتتكتب هنا من الـ JS تلقائي -->
+</div>
+                        
+
+                        <div class="daily-goals">
+                            <div class="goal daily-goal">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Daily Goal: Learn 30 mins</span>
+                            </div>
+                            <div class="goal quiz-goal">
+                                <i class="fa-regular fa-circle"></i>
+                                <span>Quiz: Complete 5 questions</span>
+                            </div>
+                            <div class="goal practice-goal">
+                                <i class="fa-regular fa-circle"></i>
+                                <span>Code Practice: 1/2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="end-cart">
+                <div class="upcoming-projects">
+                    <h3 class="cart-title">Upcoming Projects</h3>
+                    <div class="projects-showcase">
+                        <div class="project-showcase-card">
+                            <div class="project-badge weather">
+                                <i class="fa-solid fa-cloud-sun"></i>
+                            </div>
+                            <h5>Weather App</h5>
+                            <p class="project-stack">HTML • CSS • JavaScript</p>
+                            <span class="difficulty-badge beginner">
+                                <i class="fa-solid fa-leaf"></i>
+                                Beginner
+                            </span>
+                        </div>
+                        <div class="project-showcase-card">
+                            <div class="project-badge ecommerce">
+                                <i class="fa-solid fa-shopping-bag"></i>
+                            </div>
+                            <h5>E-commerce Store</h5>
+                            <p class="project-stack">React • Node.js • MongoDB</p>
+                            <span class="difficulty-badge advanced">
+                                <i class="fa-solid fa-star"></i>
+                                Advanced
+                            </span>
+                        </div>
+                        <div class="project-showcase-card">
+                            <div class="project-badge portfolio">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <h5>Portfolio Website</h5>
+                            <p class="project-stack">React • Tailwind CSS</p>
+                            <span class="difficulty-badge intermediate">
+                                <i class="fa-solid fa-circle-half-stroke"></i>
+                                Intermediate
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="links-sidebar">
-        <nav>
-            <ul>
-                <li class="active"><i class="fa-solid fa-house"></i><a href="#">Dashboard</a></li>
-                <li><i class="fa-solid fa-book-open"></i><a href="#">Roadmap</a></li>
-                <li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#">Projects</a></li>
-                <li><i class="fa-regular fa-file-lines"></i><a href="#">Assessments</a></li>
-                <li><i class="fa-solid fa-user"></i><a href="#">Profile</a></li>
-                <li><i class="fa-solid fa-briefcase"></i><a href="#">Career Match</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="upgrade-pro">
-        <i class="fa-solid fa-crown"></i>
-        <span>Upgrade to pro</span>
-        <p>Unlock all features and get unlimited access.</p>
-        <button class="pro-btn">Upgrade Now</button>
-    </div>
-    <div class="log-out">
-        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-        <a href="#">Log out</a>
-    </div>
-</aside>
-
-
-
-
-
-
-
-
-    <script src="../js/dashboard.js"></script>
-    <script src="../js/helpers.js"></script>
-
+    <script src="../js/dashboard.js" type="module"></script>
+    <!-- <script src="../js/helpers.js" type="module"></script> -->
 
 </body>
 

@@ -1,34 +1,43 @@
 {
   "users": [
     {
-      "id": "1",
-      "username": "Manar",
+      "id": 1,
+      "username": "Naema",
       "email": "manar@gmail.com",
       "password": "123456",
-      "track": "Backend",
-      "level": "Beginner",
+
+      "track": "UI/UX",
+      "level": "beginner", 
       "avatar": "",
 
-      "overallScore": 30,
-      "skills": [],
-      "completedSkillIds": [ "Programming Basics",
-        "Node.js",
-        "Express.js",
-        "REST API","MongoDB"],
+      "overallScore": 70,
+      "skills": [
+        { "id": 1, "name": "HTML" },
+        { "id": 2, "name": "CSS" },
+        { "id": 3, "name": "Responsive Design" },
+        { "id": 4, "name": "JavaScript" },
+        { "id": 5, "name": "Git & GitHub" },
+        { "id": 6, "name": "Bootstrap" },
+        { "id": 7, "name": "React" },
+        { "id": 8, "name": "REST API" }
+      ],
+      "completedSkillIds": ["HTML", "Responsive Design", "CSS"],
 
-      "xpEarned": 0,
+      "xpEarned": 2.555,
       "xpNextReward": 3000,
-      "streakDays": 0,
+
+      "streakDays": 9,
       "streakWeek": [
-        { "day": "Mon", "done": false },
-        { "day": "Tue", "done": false },
-        { "day": "Wed", "done": false },
-        { "day": "Thu", "done": false },
-        { "day": "Fri", "done": false },
-        { "day": "Sat", "done": false },
+        { "day": "Mon", "done": true },
+        { "day": "Tue", "done": true },
+        { "day": "Wed", "done": true },
+        { "day": "Thu", "done": true },
+        { "day": "Fri", "done": true },
+        { "day": "Sat", "done": true },
         { "day": "Sun", "done": false }
       ],
-      "weeklyGoalDone": 0,
+
+      "weeklyGoalDone": 5,
       "weeklyGoalTotal": 7,
       "dailyGoalMinutesDone": 0,
       "dailyGoalMinutesTotal": 30,
@@ -43,91 +52,27 @@
       "currentModule": {
         "skillId": 1,
         "skillName": "HTML",
-        "progressPercent": 0,
-        "nextLesson": { "title": "", "durationMinutes": 0 },
-        "upNext": { "title": "", "durationMinutes": 0 }
+        "progressPercent": 40,
+        "nextLesson": {
+          "title": "Operators and Expressions",
+          "durationMinutes": 50
+        },
+        "upNext": {
+          "title": "Variables and Data Types",
+          "durationMinutes": 45
+        }
       }
-    },
-    {
-      "username": "Malak Khairy",
-      "email": "Malak@gmail.com",
-      "password": "mmm66$$$",
-      "track": "",
-      "level": "",
-      "avatar": "",
-      "overallScore": 0,
-      "skills": [],
-      "completedSkillIds": [],
-      "xpEarned": 0,
-      "xpNextReward": 3000,
-      "streakDays": 0,
-      "streakWeek": [
-        { "day": "Mon", "done": false },
-        { "day": "Tue", "done": false },
-        { "day": "Wed", "done": false },
-        { "day": "Thu", "done": false },
-        { "day": "Fri", "done": false },
-        { "day": "Sat", "done": false },
-        { "day": "Sun", "done": false }
-      ],
-      "id": "iTEIDSU1mWQ"
-    },
-    {
-      "username": "Menna",
-      "email": "Menna@gmail.com",
-      "password": "mmm789@@",
-      "track": "",
-      "level": "",
-      "avatar": "",
-      "overallScore": 0,
-      "skills": [],
-      "completedSkillIds": [],
-      "xpEarned": 0,
-      "xpNextReward": 3000,
-      "streakDays": 0,
-      "streakWeek": [
-        { "day": "Mon", "done": false },
-        { "day": "Tue", "done": false },
-        { "day": "Wed", "done": false },
-        { "day": "Thu", "done": false },
-        { "day": "Fri", "done": false },
-        { "day": "Sat", "done": false },
-        { "day": "Sun", "done": false }
-      ],
-      "id": "ffgNv03rSFc"
-    },
-    {
-      "username": "Mohamed",
-      "email": "Mohamed@gmail.com",
-      "password": "mmm456!!",
-      "track": "",
-      "level": "",
-      "avatar": "",
-      "overallScore": 0,
-      "skills": [],
-      "completedSkillIds": [],
-      "xpEarned": 0,
-      "xpNextReward": 3000,
-      "streakDays": 0,
-      "streakWeek": [
-        { "day": "Mon", "done": false },
-        { "day": "Tue", "done": false },
-        { "day": "Wed", "done": false },
-        { "day": "Thu", "done": false },
-        { "day": "Fri", "done": false },
-        { "day": "Sat", "done": false },
-        { "day": "Sun", "done": false }
-      ],
-      "id": "JW_CuyGorwA"
     }
   ],
+
   "tracks": [
-    { "id": "1", "name": "Frontend", "description": "Learn to build responsive and interactive web applications." },
-    { "id": "2", "name": "Backend", "description": "Learn to build server-side applications and APIs." },
-    { "id": 3, "name": "Flutter", "description": "Learn Flutter" },
-    { "id": 4, "name": "UI/UX", "description": "Learn UI/UX" },
-    { "id": 5, "name": "Data Analysis", "description": "Learn Data Analysis" }
+    { "id": 1, "name": "Frontend", "description": "Learn to build responsive and interactive web applications." },
+    { "id": 2, "name": "Backend", "description": "Learn to build server-side applications and APIs." },
+    { "id": 3, "name": "UI/UX", "description": "Learn to design intuitive and visually appealing user experiences." },
+    { "id": 4, "name": "Flutter", "description": "Learn to build cross-platform mobile applications using Flutter and Dart." },
+    { "id": 5, "name": "Data Analysis", "description": "Learn to analyze data and extract meaningful insights." }
   ],
+
   "roadmaps": [
     {
       "id": "Frontend",
@@ -683,200 +628,94 @@
     { "id": 75, "trackId": 5, "skill": "Power BI", "question": "Report consists of?", "options": ["Visuals","Drivers","Compilers","Sockets"], "correctAnswer": 0 }
   ],
   "jobs": [
-    { "id": "1", "title": "Junior Frontend Developer", "company": "TechSolutions", "track": "Frontend", "salary":"$900 - $1300", "type":"Remote", "requiredSkills": ["HTML", "CSS", "Responsive Design", "JavaScript"], "description": "We are looking for a Junior Frontend Developer to build clean and responsive user interfaces." },
-    { "id": "2", "title": "React Developer", "company": "WebCraft", "track": "Frontend", "salary":"$1300 - $1900", "type":"Hybrid", "requiredSkills": ["HTML", "CSS", "JavaScript", "React", "Git & GitHub"], "description": "Join our team to develop scalable single-page applications using React.js." },
-    { "id": 3, "title": "UI/UX Frontend Developer", "company": "PixelPerfect", "track": "Frontend", "salary":"$1100 - $1700", "type":"On-site", "requiredSkills": ["HTML", "CSS", "Bootstrap", "JavaScript", "Responsive Design"], "description": "We need a frontend developer with an eye for UI/UX to convert design mockups into pixel-perfect responsive web pages." },
-    { "id": 4, "title": "Node.js Backend Developer", "company": "DataFlow", "track": "Backend", "salary":"$1700 - $2100", "type":"Remote", "requiredSkills": ["Programming Basics", "Node.js", "Express.js", "REST API", "MongoDB"], "description": "Build high-performance, secure backend services and APIs using Node.js and Express." },
-    { "id": 5, "title": "Full-Stack Engineer (Backend Focused)", "company": "CloudSystems", "track": "Backend", "type":"Hybrid", "salary":"$1300 - $1900", "requiredSkills": ["Node.js", "REST API", "SQL", "Authentication", "Deployment"], "description": "Looking for a backend-heavy engineer to maintain databases and scale server infrastructure." },
-    { "id": 6, "title": "Backend Security Engineer", "company": "SecureNet", "track": "Backend", "salary":"$2000 - $3000", "type":"On-site", "requiredSkills": ["Programming Basics", "Node.js", "REST API", "Authentication", "SQL"], "description": "Focus on building secure APIs, managing user authorization systems, and protecting application endpoints from vulnerabilities." }
+    {
+      "id": 1,
+      "title": "Junior Frontend Developer",
+      "company": "TechSolutions",
+      "track": "Frontend",
+      "salary": "$900 - $1300",
+      "type": "Remote",
+      "requiredSkills": ["HTML", "CSS", "Responsive Design", "JavaScript"],
+      "description": "We are looking for a Junior Frontend Developer to build clean and responsive user interfaces."
+    },
+    {
+      "id": 2,
+      "title": "React Developer",
+      "company": "WebCraft",
+      "track": "Frontend",
+      "salary": "$1300 - $1900",
+      "type": "Hybrid",
+      "requiredSkills": ["HTML", "CSS", "JavaScript", "React", "Git & GitHub"],
+      "description": "Join our team to develop scalable single-page applications using React.js."
+    },
+    {
+      "id": 3,
+      "title": "UI/UX Frontend Developer",
+      "company": "PixelPerfect",
+      "track": "Frontend",
+      "salary": "$1100 - $1700",
+      "type": "On-site",
+      "requiredSkills": ["HTML", "CSS", "Bootstrap", "JavaScript", "Responsive Design"],
+      "description": "We need a frontend developer with an eye for UI/UX to convert design mockups into pixel-perfect responsive web pages."
+    },
+    {
+      "id": 4,
+      "title": "Node.js Backend Developer",
+      "company": "DataFlow",
+      "track": "Backend",
+      "salary": "$1700 - $2100",
+      "type": "Remote",
+      "requiredSkills": ["Programming Basics", "Node.js", "Express.js", "REST API", "MongoDB"],
+      "description": "Build high-performance, secure backend services and APIs using Node.js and Express."
+    },
+    {
+      "id": 5,
+      "title": "Full-Stack Engineer (Backend Focused)",
+      "company": "CloudSystems",
+      "track": "Backend",
+      "type": "Hybrid",
+      "salary": "$1300 - $1900",
+      "requiredSkills": ["Node.js", "REST API", "SQL", "Authentication", "Deployment"],
+      "description": "Looking for a backend-heavy engineer to maintain databases and scale server infrastructure."
+    },
+    {
+      "id": 6,
+      "title": "Backend Security Engineer",
+      "company": "SecureNet",
+      "track": "Backend",
+      "salary": "$2000 - $3000",
+      "type": "On-site",
+      "requiredSkills": ["Programming Basics", "Node.js", "REST API", "Authentication", "SQL"],
+      "description": "Focus on building secure APIs, managing user authorization systems, and protecting application endpoints from vulnerabilities."
+    }
   ],
   "recommended": [
-    { "id": "rec-1", "icon": "css", "title": "CSS Flexbox Guide", "type": "Article", "meta": "20 min", "link": "#" },
-    { "id": "rec-2", "icon": "js", "title": "JavaScript Practice Set", "type": "Practice", "meta": "10 Problems", "link": "#" },
-    { "id": "rec-3", "icon": "code", "title": "Build a To-Do App", "type": "Project", "meta": "Beginner", "link": "#" }
+    { "id": "rec-1", "icon": "css", "title": "CSS Flexbox Guide", "type": "Article", "meta": "20 min", "link": "#", "track": "Frontend" },
+    { "id": "rec-2", "icon": "js", "title": "JavaScript Practice Set", "type": "Practice", "meta": "10 Problems", "link": "#", "track": "Frontend" },
+    { "id": "rec-3", "icon": "code", "title": "Build a To-Do App", "type": "Project", "meta": "Beginner", "link": "#", "track": "Frontend" },
+    { "id": "rec-4", "icon": "node", "title": "Node.js Crash Course", "type": "Article", "meta": "25 min", "link": "#", "track": "Backend" },
+    { "id": "rec-5", "icon": "sql", "title": "SQL Query Practice", "type": "Practice", "meta": "8 Problems", "link": "#", "track": "Backend" },
+    { "id": "rec-6", "icon": "figma", "title": "Figma for Beginners", "type": "Tutorial", "meta": "15 min", "link": "#", "track": "UI/UX" },
+    { "id": "rec-7", "icon": "flutter", "title": "Flutter Widgets Guide", "type": "Article", "meta": "18 min", "link": "#", "track": "Flutter" },
+    { "id": "rec-8", "icon": "python", "title": "Pandas Basics", "type": "Tutorial", "meta": "22 min", "link": "#", "track": "Data Analysis" }
   ],
+
   "upcomingProjects": [
-    { "id": "proj-1", "icon": "weather", "title": "Weather App", "tags": ["HTML", "CSS", "JavaScript"], "level": "Beginner" },
-    { "id": "proj-2", "icon": "portfolio", "title": "Portfolio Website", "tags": ["HTML", "CSS", "JavaScript"], "level": "Intermediate" },
-    { "id": "proj-3", "icon": "ecommerce", "title": "E-commerce Website", "tags": ["React", "Node.js", "MongoDB"], "level": "Advanced" }
+    { "id": "proj-1", "icon": "weather", "title": "Weather App", "tags": ["HTML", "CSS", "JavaScript"], "level": "Beginner", "track": "Frontend" },
+    { "id": "proj-2", "icon": "portfolio", "title": "Portfolio Website", "tags": ["HTML", "CSS", "JavaScript"], "level": "Intermediate", "track": "Frontend" },
+    { "id": "proj-3", "icon": "ecommerce", "title": "E-commerce Website", "tags": ["React", "Node.js", "MongoDB"], "level": "Advanced", "track": "Backend" },
+    { "id": "proj-4", "icon": "api", "title": "Task Management API", "tags": ["Node.js", "Express.js", "MongoDB"], "level": "Intermediate", "track": "Backend" },
+    { "id": "proj-5", "icon": "todo", "title": "To-Do List App", "tags": ["Dart", "Flutter Basics", "Widgets"], "level": "Beginner", "track": "Flutter" },
+    { "id": "proj-6", "icon": "expense", "title": "Expense Tracker App", "tags": ["Flutter", "State Management", "Firebase"], "level": "Intermediate", "track": "Flutter" },
+    { "id": "proj-7", "icon": "wireframe", "title": "Mobile App Wireframes", "tags": ["Figma", "Wireframing", "Design Principles"], "level": "Beginner", "track": "UI/UX" },
+    { "id": "proj-8", "icon": "prototype", "title": "E-commerce App Prototype", "tags": ["Figma", "Prototyping", "User Research"], "level": "Intermediate", "track": "UI/UX" },
+    { "id": "proj-9", "icon": "dashboard", "title": "Sales Data Dashboard", "tags": ["Python", "Pandas", "Data Visualization"], "level": "Intermediate", "track": "Data Analysis" },
+    { "id": "proj-10", "icon": "report", "title": "COVID-19 Data Report", "tags": ["Python", "NumPy", "Power BI"], "level": "Advanced", "track": "Data Analysis" }
   ],
+
   "motivationMessages": [
-    { "id": "1", "message": "Great job! You're making steady progress. Stay consistent and you'll achieve your goals soon!" },
-    { "id": "2", "message": "Keep learning, keep growing. You're doing great!" },
-    { "id": "3", "message": "One step at a time — you're closer to your goal than yesterday." },
-    { "id": "4", "message": "Small daily progress leads to big achievements." },
-    { "id": "5", "message": "Every lesson you complete is another step toward becoming a professional developer." },
-    { "id": "6", "message": "Don't compare yourself to others. Compare yourself to who you were yesterday." },
-    { "id": "7", "message": "Learning to code isn't a race. Stay patient and trust the process." },
-    { "id": "8", "message": "Challenges are proof that you're learning something new. Keep going!" },
-    { "id": "9", "message": "Consistency beats motivation. Show up today, even if it's just for a few minutes." },
-    { "id": "10", "message": "The future developer you dream of becoming starts with the lesson you're studying right now." }
-  ],
-  "projects": [
-    {
-      "id": "1",
-      "trackId": 1,
-      "title": "Personal Portfolio",
-      "description": "Build a responsive personal portfolio website using HTML and CSS.",
-      "details": "Create a fully responsive personal portfolio website with multiple sections including Home, About, Skills, Projects and Contact. Focus on clean layouts, responsive design, smooth scrolling and modern UI using only HTML and CSS.",
-      "image": "../assets/images/Front1.png",
-      "difficulty": "Easy",
-      "estimatedTime": "2 - 3 Days",
-      "skills": ["HTML", "CSS", "Responsive Design"]
-    },
-    {
-      "id": "2",
-      "trackId": 1,
-      "title": "Weather App",
-      "description": "Create a weather application using JavaScript and REST API.",
-      "details": "Develop a weather application that allows users to search for cities and view current weather information. Fetch live weather data from a REST API, display temperature, humidity, wind speed and weather icons with a responsive interface.",
-      "image": "../assets/images/Front2.png",
-      "difficulty": "Medium",
-      "estimatedTime": "4 - 5 Days",
-      "skills": ["JavaScript", "REST API", "CSS"]
-    },
-    {
-      "id": "3",
-      "trackId": 1,
-      "title": "E-Commerce Store",
-      "description": "Build a complete React e-commerce interface with API integration.",
-      "details": "Build a modern React e-commerce application with product listing, categories, search, shopping cart and API integration. Apply reusable components, routing and responsive layouts.",
-      "image": "../assets/images/Front3.png",
-      "difficulty": "Hard",
-      "estimatedTime": "10 - 14 Days",
-      "skills": ["React", "REST API", "Bootstrap", "Git & GitHub"]
-    },
-    {
-      "id": "4",
-      "trackId": 2,
-      "title": "Simple REST API",
-      "description": "Build your first REST API using Node.js and Express.",
-      "details": "Create a REST API that performs CRUD operations for products or users. Learn routing, middleware, request validation and proper API responses using Express.",
-      "image": "../assets/images/Back1.png",
-      "difficulty": "Easy",
-      "estimatedTime": "2 - 3 Days",
-      "skills": ["Programming Basics", "Node.js", "Express.js"]
-    },
-    {
-      "id": "5",
-      "trackId": 2,
-      "title": "Authentication System",
-      "description": "Develop a secure login and registration system with JWT.",
-      "details": "Implement secure authentication using JWT tokens, encrypted passwords with bcrypt, protected routes and user authorization. Store user accounts in MongoDB.",
-      "image": "../assets/images/Back2.png",
-      "difficulty": "Medium",
-      "estimatedTime": "5 - 7 Days",
-      "skills": ["Authentication", "Node.js", "MongoDB"]
-    },
-    {
-      "id": "6",
-      "trackId": 2,
-      "title": "Task Management API",
-      "description": "Create a complete backend for a task management application.",
-      "details": "Build a scalable backend with authentication, task CRUD operations, filtering, pagination, database integration and deployment to a cloud platform.",
-      "image": "../assets/images/Back3.png",
-      "difficulty": "Hard",
-      "estimatedTime": "10 - 14 Days",
-      "skills": ["REST API", "MongoDB", "SQL", "Deployment"]
-    },
-    {
-      "id": "7",
-      "trackId": 3,
-      "title": "Mobile Login Screen",
-      "description": "Design a clean and modern mobile login screen in Figma.",
-      "details": "Design a complete login experience including sign in, sign up and password recovery screens. Apply typography, spacing and color theory principles.",
-      "image": "../assets/images/ui-ux1.png",
-      "difficulty": "Easy",
-      "estimatedTime": "1 - 2 Days",
-      "skills": ["Figma", "Typography", "Color Theory"]
-    },
-    {
-      "id": "8",
-      "trackId": 3,
-      "title": "Food Delivery App UI",
-      "description": "Design a complete food delivery app with interactive prototype.",
-      "details": "Create user flows, wireframes, high-fidelity screens and an interactive prototype for a food delivery mobile application using Figma.",
-      "image": "../assets/images/ui-ux2.png",
-      "difficulty": "Medium",
-      "estimatedTime": "5 - 6 Days",
-      "skills": ["Wireframing", "Prototyping", "Figma"]
-    },
-    {
-      "id": "9",
-      "trackId": 3,
-      "title": "Banking App UX Case Study",
-      "description": "Research, design and test a complete banking application experience.",
-      "details": "Perform user research, build personas, create user journeys, design banking screens, prototype interactions and conduct usability testing with improvements.",
-      "image": "../assets/images/ui-ux3.png",
-      "difficulty": "Hard",
-      "estimatedTime": "12 - 15 Days",
-      "skills": ["User Research", "Usability Testing", "Figma", "Prototyping"]
-    },
-    {
-      "id": "10",
-      "trackId": 4,
-      "title": "To-Do App",
-      "description": "Build a simple to-do application using Flutter widgets.",
-      "details": "Develop a Flutter to-do application with task creation, editing, deleting and completion tracking while learning widgets and layouts.",
-      "image": "../assets/images/Flutter1.png",
-      "difficulty": "Easy",
-      "estimatedTime": "2 - 3 Days",
-      "skills": ["Dart", "Flutter Basics", "Widgets"]
-    },
-    {
-      "id": "11",
-      "trackId": 4,
-      "title": "Weather Mobile App",
-      "description": "Develop a weather app with REST API integration.",
-      "details": "Build a responsive Flutter weather application connected to a weather API using state management, reusable widgets and clean UI.",
-      "image": "../assets/images/Flutter2.png",
-      "difficulty": "Medium",
-      "estimatedTime": "5 - 6 Days",
-      "skills": ["REST API", "Layouts", "State Management"]
-    },
-    {
-      "id": "12",
-      "trackId": 4,
-      "title": "Chat Application",
-      "description": "Create a real-time chat application using Flutter and Firebase.",
-      "details": "Develop a complete chat application with Firebase Authentication, Firestore, real-time messaging, profile management and responsive mobile design.",
-      "image": "../assets/images/Flutter3.png",
-      "difficulty": "Hard",
-      "estimatedTime": "12 - 14 Days",
-      "skills": ["Firebase", "State Management", "REST API", "App Deployment"]
-    },
-    {
-      "id": "13",
-      "trackId": 5,
-      "title": "Sales Data Analysis",
-      "description": "Analyze sales data using Excel and Python.",
-      "details": "Clean sales datasets, calculate KPIs, perform statistical analysis and generate charts using Python and Excel to identify business insights.",
-      "image": "../assets/images/Data1.png",
-      "difficulty": "Easy",
-      "estimatedTime": "2 - 3 Days",
-      "skills": ["Excel", "Python", "Statistics"]
-    },
-    {
-      "id": "14",
-      "trackId": 5,
-      "title": "Netflix Data Dashboard",
-      "description": "Clean and visualize Netflix dataset using Pandas and Power BI.",
-      "details": "Import, clean and transform the Netflix dataset using Pandas, then build an interactive Power BI dashboard with charts, filters and insights.",
-      "image": "../assets/images/Data2.png",
-      "difficulty": "Medium",
-      "estimatedTime": "5 - 7 Days",
-      "skills": ["Pandas", "Power BI", "Data Visualization"]
-    },
-    {
-      "id": "15",
-      "trackId": 5,
-      "title": "Business Intelligence Dashboard",
-      "description": "Build an interactive business dashboard from multiple data sources.",
-      "details": "Combine multiple datasets using SQL and Python, prepare the data, then create a professional Power BI dashboard with KPIs, trends and executive reports.",
-      "image": "../assets/images/Data3.png",
-      "difficulty": "Hard",
-      "estimatedTime": "10 - 14 Days",
-      "skills": ["SQL", "Power BI", "Pandas", "NumPy"]
-    }
+    { "id": 1, "message": "Great job! You're making steady progress. Stay consistent and you'll achieve your goals soon!" },
+    { "id": 2, "message": "Keep learning, keep growing. You're doing great!" },
+    { "id": 3, "message": "One step at a time — you're closer to your goal than yesterday." }
   ]
 }
