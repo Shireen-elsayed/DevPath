@@ -17,6 +17,8 @@ body {
 .wrapper {
   display: flex;
   min-height: 100vh;
+  padding-right: 20px;
+  gap: 20px; 
 }
 
 aside {
@@ -30,6 +32,8 @@ aside {
   flex-direction: column;
   gap: 20px;
   flex-shrink: 0;
+  position: fixed;
+  
 }
 
 .logo-sidebar img {
@@ -53,7 +57,7 @@ aside {
     gap:14px;
 
     padding:14px 18px;
-    margin-top:10px;
+    margin-top:4px;
 
     border-radius:14px;
 
@@ -148,6 +152,8 @@ aside {
   flex: 1;
   min-width: 0;
   background-color: #080B1E;
+  margin-left: 280px;
+  padding: 0 20px;
 }
 
 .header {
@@ -1198,11 +1204,20 @@ animation:cards .6s;
 
   .dashbord {
     padding-top: 10px;
+    margin-left: 0;
+    padding-left: 30px;
   }
 
   .middle-cart {
     grid-template-columns: 1fr;
+    /* padding-top: 10px;
+    margin-left: 0;
+    padding-left: 30px; */
   }
+  .name-user {
+    padding-top: 50px;
+  }
+  
 }
 
 @media (max-width: 768px) {
@@ -1219,6 +1234,9 @@ animation:cards .6s;
   .top-card,
   .end-cart {
     grid-template-columns: 1fr;
+  }
+  .name-user {
+    padding-top: 50px;
   }
 }
 
@@ -1249,8 +1267,10 @@ animation:cards .6s;
   .top-card,
   .middle-cart,
   .end-cart {
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
   }
+  
+  
 }
 

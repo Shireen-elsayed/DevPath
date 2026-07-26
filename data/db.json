@@ -6,11 +6,11 @@
       "email": "manar@gmail.com",
       "password": "123456",
 
-      "track": "Frontend",
-      "level": "professional",
+      "track": "UI/UX",
+      "level": "beginner", 
       "avatar": "",
 
-      "overallScore": 30,
+      "overallScore": 70,
       "skills": [
         { "id": 1, "name": "HTML" },
         { "id": 2, "name": "CSS" },
@@ -21,7 +21,7 @@
         { "id": 7, "name": "React" },
         { "id": 8, "name": "REST API" }
       ],
-      "completedSkillIds": ["HTML","Responsive Design","CSS"],
+      "completedSkillIds": ["HTML", "Responsive Design", "CSS"],
 
       "xpEarned": 2.555,
       "xpNextReward": 3000,
@@ -30,10 +30,10 @@
       "streakWeek": [
         { "day": "Mon", "done": true },
         { "day": "Tue", "done": true },
-        { "day": "Wed", "done": false },
-        { "day": "Thu", "done": false },
-        { "day": "Fri", "done": false },
-        { "day": "Sat", "done": false },
+        { "day": "Wed", "done": true },
+        { "day": "Thu", "done": true },
+        { "day": "Fri", "done": true },
+        { "day": "Sat", "done": true },
         { "day": "Sun", "done": false }
       ],
 
@@ -69,16 +69,11 @@
   ],
 
   "tracks": [
-    {
-      "id": 1,
-      "name": "Frontend",
-      "description": "Learn to build responsive and interactive web applications."
-    },
-    {
-      "id": 2,
-      "name": "Backend",
-      "description": "Learn to build server-side applications and APIs."
-    }
+    { "id": 1, "name": "Frontend", "description": "Learn to build responsive and interactive web applications." },
+    { "id": 2, "name": "Backend", "description": "Learn to build server-side applications and APIs." },
+    { "id": 3, "name": "UI/UX", "description": "Learn to design intuitive and visually appealing user experiences." },
+    { "id": 4, "name": "Flutter", "description": "Learn to build cross-platform mobile applications using Flutter and Dart." },
+    { "id": 5, "name": "Data Analysis", "description": "Learn to analyze data and extract meaningful insights." }
   ],
 
   "roadmaps": [
@@ -193,8 +188,8 @@
       "title": "Junior Frontend Developer",
       "company": "TechSolutions",
       "track": "Frontend",
-      "salary":"$900 - $1300",
-      "type":"Remote",
+      "salary": "$900 - $1300",
+      "type": "Remote",
       "requiredSkills": ["HTML", "CSS", "Responsive Design", "JavaScript"],
       "description": "We are looking for a Junior Frontend Developer to build clean and responsive user interfaces."
     },
@@ -203,35 +198,29 @@
       "title": "React Developer",
       "company": "WebCraft",
       "track": "Frontend",
-       "salary":"$1300 - $1900",
-       "type":"Hybrid",
+      "salary": "$1300 - $1900",
+      "type": "Hybrid",
       "requiredSkills": ["HTML", "CSS", "JavaScript", "React", "Git & GitHub"],
       "description": "Join our team to develop scalable single-page applications using React.js."
     },
     {
-    "id": 3,
-    "title": "UI/UX Frontend Developer",
-    "company": "PixelPerfect",
-    "track": "Frontend",
-     "salary":"$1100 - $1700",
-     "type":"On-site",
-    "requiredSkills": ["HTML", "CSS", "Bootstrap", "JavaScript", "Responsive Design"],
-    "description": "We need a frontend developer with an eye for UI/UX to convert design mockups into pixel-perfect responsive web pages."
+      "id": 3,
+      "title": "UI/UX Frontend Developer",
+      "company": "PixelPerfect",
+      "track": "Frontend",
+      "salary": "$1100 - $1700",
+      "type": "On-site",
+      "requiredSkills": ["HTML", "CSS", "Bootstrap", "JavaScript", "Responsive Design"],
+      "description": "We need a frontend developer with an eye for UI/UX to convert design mockups into pixel-perfect responsive web pages."
     },
     {
       "id": 4,
       "title": "Node.js Backend Developer",
       "company": "DataFlow",
       "track": "Backend",
-       "salary":"$1700 - $2100",
-       "type":"Remote",
-      "requiredSkills": [
-        "Programming Basics",
-        "Node.js",
-        "Express.js",
-        "REST API",
-        "MongoDB"
-      ],
+      "salary": "$1700 - $2100",
+      "type": "Remote",
+      "requiredSkills": ["Programming Basics", "Node.js", "Express.js", "REST API", "MongoDB"],
       "description": "Build high-performance, secure backend services and APIs using Node.js and Express."
     },
     {
@@ -239,53 +228,50 @@
       "title": "Full-Stack Engineer (Backend Focused)",
       "company": "CloudSystems",
       "track": "Backend",
-      "type":"Hybrid",
-      "salary":"$1300 - $1900",
+      "type": "Hybrid",
+      "salary": "$1300 - $1900",
       "requiredSkills": ["Node.js", "REST API", "SQL", "Authentication", "Deployment"],
       "description": "Looking for a backend-heavy engineer to maintain databases and scale server infrastructure."
     },
     {
-    "id": 6,
-    "title": "Backend Security Engineer",
-    "company": "SecureNet",
-    "track": "Backend",
-     "salary":"$2000 - $3000",
-     "type":"On-site",
-    "requiredSkills": [
-      "Programming Basics",
-      "Node.js",
-      "REST API",
-      "Authentication",
-      "SQL"
-    ],
-    "description": "Focus on building secure APIs, managing user authorization systems, and protecting application endpoints from vulnerabilities."
-  }
+      "id": 6,
+      "title": "Backend Security Engineer",
+      "company": "SecureNet",
+      "track": "Backend",
+      "salary": "$2000 - $3000",
+      "type": "On-site",
+      "requiredSkills": ["Programming Basics", "Node.js", "REST API", "Authentication", "SQL"],
+      "description": "Focus on building secure APIs, managing user authorization systems, and protecting application endpoints from vulnerabilities."
+    }
   ],
 
   "recommended": [
-    { "id": "rec-1", "icon": "css", "title": "CSS Flexbox Guide", "type": "Article", "meta": "20 min", "link": "#" },
-    { "id": "rec-2", "icon": "js", "title": "JavaScript Practice Set", "type": "Practice", "meta": "10 Problems", "link": "#" },
-    { "id": "rec-3", "icon": "code", "title": "Build a To-Do App", "type": "Project", "meta": "Beginner", "link": "#" }
+    { "id": "rec-1", "icon": "css", "title": "CSS Flexbox Guide", "type": "Article", "meta": "20 min", "link": "#", "track": "Frontend" },
+    { "id": "rec-2", "icon": "js", "title": "JavaScript Practice Set", "type": "Practice", "meta": "10 Problems", "link": "#", "track": "Frontend" },
+    { "id": "rec-3", "icon": "code", "title": "Build a To-Do App", "type": "Project", "meta": "Beginner", "link": "#", "track": "Frontend" },
+    { "id": "rec-4", "icon": "node", "title": "Node.js Crash Course", "type": "Article", "meta": "25 min", "link": "#", "track": "Backend" },
+    { "id": "rec-5", "icon": "sql", "title": "SQL Query Practice", "type": "Practice", "meta": "8 Problems", "link": "#", "track": "Backend" },
+    { "id": "rec-6", "icon": "figma", "title": "Figma for Beginners", "type": "Tutorial", "meta": "15 min", "link": "#", "track": "UI/UX" },
+    { "id": "rec-7", "icon": "flutter", "title": "Flutter Widgets Guide", "type": "Article", "meta": "18 min", "link": "#", "track": "Flutter" },
+    { "id": "rec-8", "icon": "python", "title": "Pandas Basics", "type": "Tutorial", "meta": "22 min", "link": "#", "track": "Data Analysis" }
   ],
 
   "upcomingProjects": [
-    { "id": "proj-1", "icon": "weather", "title": "Weather App", "tags": ["HTML", "CSS", "JavaScript"], "level": "Beginner" },
-    { "id": "proj-2", "icon": "portfolio", "title": "Portfolio Website", "tags": ["HTML", "CSS", "JavaScript"], "level": "Intermediate" },
-    { "id": "proj-3", "icon": "ecommerce", "title": "E-commerce Website", "tags": ["React", "Node.js", "MongoDB"], "level": "Advanced" }
+    { "id": "proj-1", "icon": "weather", "title": "Weather App", "tags": ["HTML", "CSS", "JavaScript"], "level": "Beginner", "track": "Frontend" },
+    { "id": "proj-2", "icon": "portfolio", "title": "Portfolio Website", "tags": ["HTML", "CSS", "JavaScript"], "level": "Intermediate", "track": "Frontend" },
+    { "id": "proj-3", "icon": "ecommerce", "title": "E-commerce Website", "tags": ["React", "Node.js", "MongoDB"], "level": "Advanced", "track": "Backend" },
+    { "id": "proj-4", "icon": "api", "title": "Task Management API", "tags": ["Node.js", "Express.js", "MongoDB"], "level": "Intermediate", "track": "Backend" },
+    { "id": "proj-5", "icon": "todo", "title": "To-Do List App", "tags": ["Dart", "Flutter Basics", "Widgets"], "level": "Beginner", "track": "Flutter" },
+    { "id": "proj-6", "icon": "expense", "title": "Expense Tracker App", "tags": ["Flutter", "State Management", "Firebase"], "level": "Intermediate", "track": "Flutter" },
+    { "id": "proj-7", "icon": "wireframe", "title": "Mobile App Wireframes", "tags": ["Figma", "Wireframing", "Design Principles"], "level": "Beginner", "track": "UI/UX" },
+    { "id": "proj-8", "icon": "prototype", "title": "E-commerce App Prototype", "tags": ["Figma", "Prototyping", "User Research"], "level": "Intermediate", "track": "UI/UX" },
+    { "id": "proj-9", "icon": "dashboard", "title": "Sales Data Dashboard", "tags": ["Python", "Pandas", "Data Visualization"], "level": "Intermediate", "track": "Data Analysis" },
+    { "id": "proj-10", "icon": "report", "title": "COVID-19 Data Report", "tags": ["Python", "NumPy", "Power BI"], "level": "Advanced", "track": "Data Analysis" }
   ],
 
   "motivationMessages": [
-    {
-      "id": 1,
-      "message": "Great job! You're making steady progress. Stay consistent and you'll achieve your goals soon!"
-    },
-    {
-      "id": 2,
-      "message": "Keep learning, keep growing. You're doing great!"
-    },
-    {
-      "id": 3,
-      "message": "One step at a time — you're closer to your goal than yesterday."
-    }
+    { "id": 1, "message": "Great job! You're making steady progress. Stay consistent and you'll achieve your goals soon!" },
+    { "id": 2, "message": "Keep learning, keep growing. You're doing great!" },
+    { "id": 3, "message": "One step at a time — you're closer to your goal than yesterday." }
   ]
 }

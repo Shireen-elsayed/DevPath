@@ -3,7 +3,6 @@ const clock = document.querySelector(".clock");
 const sidebar = document.querySelector(".sidebar");
 const menuToggle = document.querySelector(".mobile-menu-toggle");
 
-// icon toggle
 if (menuToggle && sidebar) {
   menuToggle.addEventListener("click", () => {
     sidebar.classList.toggle("open");
@@ -14,30 +13,20 @@ links.forEach((link) => {
   link.addEventListener("click", function () {
     links.forEach((item) => item.classList.remove("active"));
     this.classList.add("active");
-
     if (window.innerWidth <= 992 && sidebar) {
       sidebar.classList.remove("open");
     }
   });
 });
 
-/* =====================================================
-   ✅ إضافة جديدة: حساب أيام الأسبوع الحالي بالتاريخ الحقيقي
-   بدل ما تكون التواريخ ثابتة، هنحسبها من تاريخ اليوم فعليًا
-   ===================================================== */
 function getCurrentWeekDates(startDay = 1) {
-  // startDay: 0=Sunday, 6=Saturday (غيّريها حسب أول يوم في أسبوعكم)
   const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const today = new Date();
   const todayIndex = today.getDay();
-
-  // نحسب فرق الأيام عشان نوصل لأول يوم في الأسبوع
   let diff = todayIndex - startDay;
   if (diff < 0) diff += 7;
-
   const weekStart = new Date(today);
   weekStart.setDate(today.getDate() - diff);
-
   const week = [];
   for (let i = 0; i < 7; i++) {
     const d = new Date(weekStart);
@@ -52,36 +41,163 @@ function getCurrentWeekDates(startDay = 1) {
   return week;
 }
 
-/* =====================================================
-   ✅ تعديل: renderStreakDays بقى بيدمج تاريخ اليوم الحقيقي
-   مع بيانات "done" الجاية من الداتا (currentUser.streakWeek)
-   ===================================================== */
 function renderStreakDays(streakWeek = []) {
   const container = document.getElementById("streakDaysContainer");
   if (!container) return;
-
   container.innerHTML = "";
-
-  const realWeek = getCurrentWeekDates(); // الأسبوع الحالي بتواريخ حقيقية
-
+  const realWeek = getCurrentWeekDates();
   realWeek.forEach((weekDay) => {
-    // نلاقي هل اليوم ده متسجل "done" في بيانات اليوزر ولا لأ
     const matched = streakWeek.find((d) => d.day === weekDay.day);
     const isDone = matched ? !!matched.done : false;
-
     const dayEl = document.createElement("div");
     dayEl.className = "streak-day";
     if (isDone) dayEl.classList.add("completed");
     if (weekDay.isToday) dayEl.classList.add("today");
-
     dayEl.innerHTML = `
       <span class="day-letter">${weekDay.day}</span>
       <span class="day-date">${weekDay.date}</span>
       <div class="day-circle">${isDone ? "✓" : (weekDay.isToday ? "●" : "")}</div>
     `;
-
     container.appendChild(dayEl);
   });
+}
+
+function renderWeekCalendar(streakWeek = []) {
+  const container = document.querySelector(".week-calendar");
+  if (!container) return;
+  container.innerHTML = "";
+  const realWeek = getCurrentWeekDates();
+  realWeek.forEach((weekDay) => {
+    const matched = streakWeek.find((d) => d.day === weekDay.day);
+    const isDone = matched ? !!matched.done : false;
+    const dayEl = document.createElement("div");
+    dayEl.className = "week-day";
+    if (isDone) dayEl.classList.add("completed");
+    if (weekDay.isToday) dayEl.classList.add("today");
+    let iconClass = "fa-regular fa-circle";
+    if (isDone) iconClass = "fa-solid fa-check";
+    else if (weekDay.isToday) iconClass = "fa-solid fa-circle-dot";
+    dayEl.innerHTML = `
+      <span class="day-name">${weekDay.day}</span>
+      <span class="day-date">${weekDay.date}</span>
+      <i class="${iconClass}"></i>
+    `;
+    container.appendChild(dayEl);
+  });
+}
+
+function renderRecommended(recommended = [], userTrack) {
+  const container = document.querySelector(".rec-cards-container");
+  if (!container) return;
+  container.innerHTML = "";
+
+  const filtered = recommended.filter((r) => r.track === userTrack);
+
+  if (filtered.length === 0) {
+    container.innerHTML = `<p>لا توجد اقتراحات متاحة لهذا التراك حالياً</p>`;
+    return;
+  }
+
+  const iconMap = {
+    css:     { class: "css-icon",  fa: "fa-brands fa-css3-alt" },
+    html:    { class: "html-icon", fa: "fa-brands fa-html5" },
+    js:      { class: "js-icon",   fa: "fa-brands fa-js" },
+    code:    { class: "js-icon",   fa: "fa-solid fa-code" },
+    node:    { class: "node-icon", fa: "fa-brands fa-node-js" },
+    sql:     { class: "sql-icon",  fa: "fa-solid fa-database" },
+    figma:   { class: "figma-icon", fa: "fa-brands fa-figma" },
+    flutter: { class: "flutter-icon", fa: "fa-solid fa-mobile-screen" },
+    python:  { class: "python-icon", fa: "fa-brands fa-python" },
+  };
+
+  filtered.forEach((item) => {
+    const icon = iconMap[item.icon] || iconMap.code;
+    const card = document.createElement("div");
+    card.className = "rec-card";
+    card.innerHTML = `
+      <div class="rec-card-icon ${icon.class}">
+        <i class="${icon.fa}"></i>
+      </div>
+      <h5>${item.title}</h5>
+      <p class="rec-meta">${item.type} • ${item.meta}</p>
+      <div class="rec-tag">${item.title.split(" ")[0]}</div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function renderUpcomingProjects(projects = [], userTrack) {
+  const container = document.querySelector(".projects-showcase");
+  if (!container) return;
+  container.innerHTML = "";
+  const filtered = projects.filter((p) => p.track === userTrack);
+  if (filtered.length === 0) {
+    container.innerHTML = `<p>لا توجد مشاريع متاحة لهذا التراك حالياً</p>`;
+    return;
+  }
+  const iconMap = {
+    weather: { class: "weather", fa: "fa-solid fa-cloud-sun" },
+    portfolio: { class: "portfolio", fa: "fa-solid fa-briefcase" },
+    ecommerce: { class: "ecommerce", fa: "fa-solid fa-shopping-bag" },
+    api: { class: "api", fa: "fa-solid fa-server" },
+    todo: { class: "todo", fa: "fa-solid fa-list-check" },
+    expense: { class: "expense", fa: "fa-solid fa-wallet" },
+    wireframe: { class: "wireframe", fa: "fa-solid fa-pen-ruler" },
+    prototype: { class: "prototype", fa: "fa-solid fa-object-group" },
+    dashboard: { class: "dashboard", fa: "fa-solid fa-chart-line" },
+    report: { class: "report", fa: "fa-solid fa-file-lines" },
+  };
+  const levelIconMap = {
+    Beginner: "fa-solid fa-leaf",
+    Intermediate: "fa-solid fa-circle-half-stroke",
+    Advanced: "fa-solid fa-star",
+  };
+  filtered.forEach((project) => {
+    const icon = iconMap[project.icon] || iconMap.portfolio;
+    const levelIcon = levelIconMap[project.level] || "fa-solid fa-leaf";
+    const card = document.createElement("div");
+    card.className = "project-showcase-card";
+    card.innerHTML = `
+      <div class="project-badge ${icon.class}">
+        <i class="${icon.fa}"></i>
+      </div>
+      <h5>${project.title}</h5>
+      <p class="project-stack">${project.tags.join(" • ")}</p>
+      <span class="difficulty-badge ${project.level.toLowerCase()}">
+        <i class="${levelIcon}"></i>
+        ${project.level}
+      </span>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function getEffectiveModule(currentUser, roadmaps) {
+  const roadmap = roadmaps.find((r) => r.track === currentUser.track);
+  const roadmapSkillNames = roadmap ? roadmap.skills.map((s) => s.name) : [];
+
+  const existingModule = currentUser.currentModule;
+  const isModuleValid =
+    existingModule && roadmapSkillNames.includes(existingModule.skillName);
+
+  if (isModuleValid) {
+    return existingModule;
+  }
+
+  const completed = currentUser.completedSkillIds || [];
+  const nextSkill = roadmap?.skills.find((s) => !completed.includes(s.name));
+
+  if (!nextSkill) {
+    return null;
+  }
+
+  return {
+    skillId: nextSkill.id,
+    skillName: nextSkill.name,
+    progressPercent: 0,
+    nextLesson: { title: `Getting started with ${nextSkill.name}`, durationMinutes: 30 },
+    upNext: { title: `${nextSkill.name} fundamentals`, durationMinutes: 30 },
+  };
 }
 
 let progressChart = null;
@@ -89,71 +205,52 @@ let progressChart = null;
 function initChart() {
   const ctx = document.getElementById("progressChart");
   if (!ctx || typeof Chart === "undefined") return null;
-
   progressChart = new Chart(ctx, {
     type: "doughnut",
-    data: {
-      datasets: [
-        {
-          data: [0, 100],
-          backgroundColor: ["#8b5cf6", "#2a2a3d"],
-          borderWidth: 0,
-        },
-      ],
-    },
-    options: {
-      cutout: "75%",
-      rotation: -90,
-      plugins: { legend: { display: false }, tooltip: { enabled: false } },
-    },
+    data: { datasets: [{ data: [0, 100], backgroundColor: ["#8b5cf6", "#2a2a3d"], borderWidth: 0 }] },
+    options: { cutout: "75%", rotation: -90, plugins: { legend: { display: false }, tooltip: { enabled: false } } },
   });
-
   return progressChart;
 }
 
-async function loadDashboardData() {
-  const response = await fetch("http://localhost:3000/users");
-  if (!response.ok) {
-    throw new Error("Unable to load dashboard data");
-  }
+async function fetchJSON(url) {
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`Unable to load: ${url}`);
   return response.json();
 }
 
-/* =====================================================
-   ✅ تصحيح: كانت بتعمل setItem كل مرة تفتح فيها الصفحة
-   وده بيبوّظ أي user id اتسجل قبل كده. دلوقتي بس أول مرة
-   ===================================================== */
 if (!localStorage.getItem("currentUserId")) {
   localStorage.setItem("currentUserId", "1");
 }
 
 async function initDashboard() {
   try {
-    const data = await loadDashboardData();
-    console.log(data);
+    const [users, recommended, upcomingProjects, roadmaps] = await Promise.all([
+      fetchJSON("http://localhost:3000/users"),
+      fetchJSON("http://localhost:3000/recommended"),
+      fetchJSON("http://localhost:3000/upcomingProjects"),
+      fetchJSON("http://localhost:3000/roadmaps"),
+    ]);
 
-    // ✅ تصحيح: نتأكد إن المقارنة بتتم بنفس النوع (String مع String)
     const currentUserId = String(localStorage.getItem("currentUserId"));
-    const currentUser = data.find((u) => String(u.id) === currentUserId);
+    const currentUser = users.find((u) => String(u.id) === currentUserId);
 
     if (!currentUser) {
       console.warn("لم يتم العثور على المستخدم");
       renderStreakDays([]);
+      renderWeekCalendar([]);
       return;
     }
 
     const percent = Number(currentUser.overallScore) || 0;
     const chart = progressChart || initChart();
-
     if (chart) {
       chart.data.datasets[0].data = [percent, Math.max(0, 100 - percent)];
       chart.update();
     }
 
     const percentText = document.querySelector(".percent-text");
-    if (percentText) {
-      percentText.textContent = `${percent}%`;
-    }
+    if (percentText) percentText.textContent = `${percent}%`;
 
     let level = document.querySelector(".level");
     let userName = document.querySelector(".username");
@@ -171,113 +268,58 @@ async function initDashboard() {
     let lesson_duration = document.querySelector(".lesson-duration");
     let second_duration = document.querySelector(".second-duration");
 
-    /* =====================================================
-       ✅ إضافة: دالة صغيرة تتأكد إن العنصر موجود قبل ما تكتب فيه
-       عشان الكود ميوقفش بالغلط لو عنصر ناقص من الـ HTML
-       ===================================================== */
-    const setText = (el, value) => {
-      if (el) el.innerHTML = value;
-    };
+    const setText = (el, value) => { if (el) el.innerHTML = value; };
 
     setText(level, currentUser.level);
     setText(userName, currentUser.username);
     setText(track, currentUser.track);
-    setText(
-      completedModule,
-      `${currentUser.completedSkillIds?.length ?? 0} / ${currentUser.skills?.length ?? 0}`
-    );
+    setText(completedModule, `${currentUser.completedSkillIds?.length ?? 0} / ${currentUser.skills?.length ?? 0}`);
     setText(valuexp, currentUser.xpEarned);
     setText(numberstreak, `${currentUser.streakDays} Days`);
-    setText(
-      numberweakgoals,
-      `${currentUser.weeklyGoalDone} / ${currentUser.weeklyGoalTotal}`
-    );
+    setText(numberweakgoals, `${currentUser.weeklyGoalDone} / ${currentUser.weeklyGoalTotal}`);
 
-    if (currentUser.currentModule) {
-      setText(namecourse, `${currentUser.currentModule.skillName} Basics`);
-      setText(course_track, `${currentUser.track} track`);
-      setText(progress_percent, `${currentUser.currentModule.progressPercent} %`);
+    const effectiveModule = getEffectiveModule(currentUser, roadmaps);
+
+    if (effectiveModule) {
+      setText(namecourse, `${effectiveModule.skillName} `);
+      setText(course_track, `${currentUser.track} `);
+      setText(progress_percent, `${effectiveModule.progressPercent} %`);
 
       if (progress_fill) {
-        progress_fill.style.width = `${currentUser.currentModule.progressPercent}%`;
+        progress_fill.style.width = `${effectiveModule.progressPercent}%`;
       }
 
-      if (currentUser.currentModule.nextLesson) {
-        setText(lesson_name, currentUser.currentModule.nextLesson.title);
-        setText(lesson_duration, `${currentUser.currentModule.nextLesson.durationMinutes} min`);
+      if (effectiveModule.nextLesson) {
+        setText(lesson_name, effectiveModule.nextLesson.title);
+        setText(lesson_duration, `${effectiveModule.nextLesson.durationMinutes} min`);
       }
-
-      if (currentUser.currentModule.upNext) {
-        setText(secondlesson, currentUser.currentModule.upNext.title);
-        setText(second_duration, `${currentUser.currentModule.upNext.durationMinutes} min`);
+      if (effectiveModule.upNext) {
+        setText(secondlesson, effectiveModule.upNext.title);
+        setText(second_duration, `${effectiveModule.upNext.durationMinutes} min`);
       }
+    } else {
+      setText(namecourse, "All skills completed 🎉");
+      setText(course_track, `${currentUser.track} track`);
     }
 
-    // clock / greeting
     if (clock) {
       const hour = new Date().getHours();
-      let greeting;
-
-      if (hour < 12) {
-        greeting = "Good morning";
-      } else if (hour < 18) {
-        greeting = "Good afternoon";
-      } else {
-        greeting = "Good evening";
-      }
+      let greeting = hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening";
       clock.innerHTML = `${greeting}, ${currentUser.username}`;
     }
 
     renderStreakDays(currentUser.streakWeek || []);
-    renderWeekCalendar(currentUser.streakWeek || []); // ✅ القسم الجديد "This Week"
+    renderWeekCalendar(currentUser.streakWeek || []);
+    renderRecommended(recommended, currentUser.track);
+    renderUpcomingProjects(upcomingProjects, currentUser.track);
+
   } catch (error) {
     console.error("Dashboard loading error:", error);
     const percentText = document.querySelector(".percent-text");
-    if (percentText) {
-      percentText.textContent = "0%";
-    }
+    if (percentText) percentText.textContent = "0%";
     renderStreakDays([]);
     renderWeekCalendar([]);
   }
-}
-
-/* =====================================================
-   ✅ إضافة جديدة: قسم "This Week" (calendar-widget)
-   نفس فكرة renderStreakDays بس بشكل الـ HTML بتاعه هو
-   بالـ i class بتاعة font-awesome بدل الدوائر
-   ===================================================== */
-function renderWeekCalendar(streakWeek = []) {
-  const container = document.querySelector(".week-calendar"); // ✅ بيستخدم نفس الـ class القديم
-  if (!container) return;
-
-  container.innerHTML = "";
-
-  const realWeek = getCurrentWeekDates(); // نفس دالة حساب الأسبوع الحقيقي
-
-  realWeek.forEach((weekDay) => {
-    const matched = streakWeek.find((d) => d.day === weekDay.day);
-    const isDone = matched ? !!matched.done : false;
-
-    const dayEl = document.createElement("div");
-    dayEl.className = "week-day";
-    if (isDone) dayEl.classList.add("completed");
-    if (weekDay.isToday) dayEl.classList.add("today");
-
-    let iconClass = "fa-regular fa-circle"; // يوم لسه ماجاش
-    if (isDone) {
-      iconClass = "fa-solid fa-check";
-    } else if (weekDay.isToday) {
-      iconClass = "fa-solid fa-circle-dot";
-    }
-
-    dayEl.innerHTML = `
-      <span class="day-name">${weekDay.day}</span>
-      <span class="day-date">${weekDay.date}</span>
-      <i class="${iconClass}"></i>
-    `;
-
-    container.appendChild(dayEl);
-  });
 }
 
 initChart();
