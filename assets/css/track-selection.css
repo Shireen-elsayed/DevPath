@@ -65,9 +65,12 @@ body {
 .track-cards {
    display: grid;
    gap: 20px;
-   grid-template-columns: 1fr;
+   grid-template-columns: repeat(auto-fit,
+         minmax(280px, 1fr));
    padding-block: 30px;
+   justify-content: center;
 }
+
 
 .track-card {
    cursor: pointer;
@@ -255,9 +258,10 @@ body {
 }
 
 @media (min-width: 768px) {
-   .track-cards {
-      grid-template-columns: repeat(2, minmax(300px, 1fr));
-   }
+   /* .track-cards {
+      grid-template-columns: repeat(auto-fit,
+            minmax(280px, 1fr));
+   } */
 
    .not-sure-card {
       width: 750px;
@@ -269,9 +273,10 @@ body {
 }
 
 @media (min-width: 992px) {
-   .track-cards {
-      grid-template-columns: repeat(3, minmax(320px, 1fr));
-   }
+   /* .track-cards {
+      grid-template-columns: repeat(3, 1fr);
+
+   } */
 }
 
 @media (min-width: 1200px) {}

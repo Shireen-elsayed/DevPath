@@ -1,5 +1,5 @@
 fetchProjectData();
-initSidebar();
+
 
 async function fetchProjectData() {
     try {
@@ -21,9 +21,9 @@ async function fetchProjectData() {
         };
 
 
-        const currentUserId = Number(localStorage.getItem("currentUserId"));
+        const currentUserId = localStorage.getItem("currentUserId");
         const currentUser = appData.users.find(
-    user => Number(user.id) === Number(currentUserId)
+    user => user.id=== currentUserId
 );
 
 
@@ -57,8 +57,8 @@ function displayUserSkills(trackName, userSkills, appData) {
     const container = document.getElementById("current-skills-container");
     if (!container) return;
 
-    const roadmap = appData.roadmaps.find(r => r.track.toLowerCase() === trackName.toLowerCase());
-    const trackSkills = roadmap ? (roadmap.skills || []).map(s => s.name) : [];
+    const roadmap = appData.roadmaps.find(r => r.id.toLowerCase() === trackName.toLowerCase());
+    const trackSkills = roadmap ? (roadmap.skills || []).map(s => s.title) : [];
 
     const totalTrackSkillsCount = trackSkills.length;
     const earnedSkillsCount = trackSkills.filter(s => userSkills.includes(s)).length;
@@ -165,33 +165,23 @@ function displayMatchedJobs(trackName, userSkills, appData) {
 
 
 // sidebar
-function initSidebar() {
-    const barsIcon = document.querySelector(".bars-icon");
-    const sideBar = document.querySelector(".sidebar");
-    const overlay = document.querySelector(".overlay");
+const links = document.querySelectorAll(".links-sidebar nav ul li");
+// const clock = document.querySelector(".clock");
+const sidebar = document.querySelector(".sidebar");
+const menuToggle = document.querySelector(".mobile-menu-toggle");
 
-    if (!barsIcon || !sideBar || !overlay) return;
-
-    barsIcon.addEventListener("click", (e) => {
-        e.stopPropagation();
-        sideBar.classList.toggle("open");
-        const icon = barsIcon.querySelector("i");
-        if (icon) {
-            icon.classList.toggle("fa-bars");
-            icon.classList.toggle("fa-xmark");
-        }
-        overlay.classList.toggle("show");
-    });
-
-    document.addEventListener("click", (e) => {
-        if (!sideBar.contains(e.target) && !barsIcon.contains(e.target)) {
-            sideBar.classList.remove("open");
-            const icon = barsIcon.querySelector("i");
-            if (icon) {
-                icon.classList.remove("fa-xmark");
-                icon.classList.add("fa-bars");
-            }
-            overlay.classList.remove("show");
-        }
-    });
+if (menuToggle && sidebar) {
+  menuToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+  });
 }
+
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    links.forEach((item) => item.classList.remove("active"));
+    this.classList.add("active");
+    if (window.innerWidth <= 992 && sidebar) {
+      sidebar.classList.remove("open");
+    }
+  });
+});

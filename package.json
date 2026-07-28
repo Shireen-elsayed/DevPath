@@ -1,0 +1,25 @@
+{
+  "name": "devpath",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch data/db.json --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shireen-elsayed/DevPath.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Shireen-elsayed/DevPath/issues"
+  },
+  "homepage": "https://github.com/Shireen-elsayed/DevPath#readme",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
