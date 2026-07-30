@@ -119,9 +119,7 @@ loginFormElement.addEventListener("submit", async function (e) {
   const email = loginEmail.value.trim();
   const password = loginPassword.value.trim();
   const user = Users.find(function (user) {
-    return user.email
-
-=== email;
+    return user.email === email;
   });
   if (user === undefined) {
     Swal.fire({
