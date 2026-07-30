@@ -87,7 +87,7 @@ aside {
 
     color:white;
 
-    transfrm:translateX(8px);
+    transform:translateX(8px);
 
     box-shadow:0 10px 25px rgba(124,58,237,.3);
 }

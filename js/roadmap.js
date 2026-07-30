@@ -112,8 +112,6 @@ function renderSkillProgress(skills) {
 // => draw UI for each skill & lesson
 function renderTimeline(skills, user, roadmap) {
   const timeline = document.getElementById("timeline");
-  // const cards = timeline.querySelectorAll(".timeline-card");
-  // const card = cards[skillIndex];
   timeline.innerHTML = "";
   skills.forEach((skill, skillIndex) => {
     timeline.innerHTML += createSkillCard(skill, skillIndex, user, roadmap);
@@ -450,7 +448,6 @@ function renderRoadmapResult() {
 
 // sidebar
 const links = document.querySelectorAll(".links-sidebar nav ul li");
-// const clock = document.querySelector(".clock");
 const sidebar = document.querySelector(".sidebar");
 const menuToggle = document.querySelector(".mobile-menu-toggle");
 
@@ -469,26 +466,3 @@ links.forEach((link) => {
     }
   });
 });
-
-
-
-
-
-// User
-//       ↓
-// completedSkillIds
-//       ↓
-// getSkillStatus()
-//       ↓
-// createSkillCard()
-//       ↓
-// createLessonList()
-//       ↓
-// createOneLesson()
-// ✅ Mission 1: Determine the skill status.
-// ✅ Mission 2: Pass the status to every lesson.
-// 🔄 Mission 3: Make the checkboxes behave according to the status.
-// ⏳ Mission 4: Detect when the Current skill reaches 100%.
-// ⏳ Mission 5: Add that skill to completedSkillIds.
-// ⏳ Mission 6: Save the updated user with PUT.
-// ⏳ Mission 7: Update only the affected UI elements without re-rendering the entire timeline.
