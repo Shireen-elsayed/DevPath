@@ -274,4 +274,6 @@ const savedUser = await response.json();
     }).then(function () {
         window.location.replace("../pages/quiz.html");
     });
+     
+
 });
