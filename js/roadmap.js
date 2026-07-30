@@ -244,6 +244,10 @@ function addLessonEvents() {
 }
 
 async function updateLesson(skillIndex, lessonIndex, completed) {
+<<<<<<< HEAD
+=======
+  checkWeeklyReset();
+>>>>>>> main
   const roadmapSkill = currRoadmap.skills[skillIndex];
   const roadmapLesson = roadmapSkill.lessons[lessonIndex];
 
@@ -265,6 +269,20 @@ async function updateLesson(skillIndex, lessonIndex, completed) {
 
   if (userLesson.completed === completed) return;
   userLesson.completed = completed;
+<<<<<<< HEAD
+=======
+  const completedLessons = currUser.skills.reduce((total, skill) => {
+  return (
+    total +
+    skill.lessons.filter((lesson) => lesson.completed).length
+  );
+}, 0);
+
+currUser.weeklyGoalDone = Math.min(
+  completedLessons,
+  currUser.weeklyGoalTotal
+);
+>>>>>>> main
 
   if (calcSkillProgress(roadmapSkill) === 100) {
     if (!currUser.completedSkillIds.includes(roadmapSkill.title)) {
@@ -278,24 +296,98 @@ async function updateLesson(skillIndex, lessonIndex, completed) {
   } else {
     currUser.xpEarned = Math.max(0, currUser.xpEarned - 100);
   }
+  // Update overall score
+currUser.overallScore = calcOverallProgress(currRoadmap);
 
+<<<<<<< HEAD
+=======
+// Update current module
+const currentSkill = currRoadmap.skills.find(
+  (skill) => !currUser.completedSkillIds.includes(skill.title)
+);
+
+if (currentSkill) {
+  currUser.currentModule = {
+    skillId: currentSkill.title,
+    skillName: currentSkill.title,
+    progressPercent: calcSkillProgress(currentSkill),
+    nextLesson: {
+      title:
+        currentSkill.lessons.find((l) => !isLessonCompletedForUser(currentSkill.title, l.title))
+          ?.title || "",
+      durationMinutes: 30,
+    },
+    upNext: {
+      title:
+        currentSkill.lessons.filter(
+          (l) => !isLessonCompletedForUser(currentSkill.title, l.title)
+        )[1]?.title || "",
+      durationMinutes: 30,
+    },
+  };
+}
+const today = new Date().toLocaleDateString("en-US", {
+  weekday: "short",
+});
+
+if (!currUser.streakWeek) currUser.streakWeek = [];
+
+const todayObj = currUser.streakWeek.find(
+  (d) => d.day === today
+);
+
+if (todayObj) {
+  todayObj.done = true;
+} else {
+  currUser.streakWeek.push({
+    day: today,
+    done: true,
+  });
+}
+
+currUser.streakDays =
+currUser.streakWeek.filter(
+(d)=>d.done
+).length;
+
+
+>>>>>>> main
   renderOvarallProgress(currRoadmap);
   renderModulesDone(currRoadmap);
   renderLessonsDone(currRoadmap.skills, currRoadmap);
   renderSkillProgress(currRoadmap.skills);
   renderCurrSkill();
   renderRoadmapResult();
+<<<<<<< HEAD
+=======
+  
+>>>>>>> main
 
   const response = await fetch(`http://localhost:3000/users/${currUser.id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
     },
+<<<<<<< HEAD
     body: JSON.stringify({
       skills: currUser.skills,
       completedSkillIds: currUser.completedSkillIds,
       xpEarned: currUser.xpEarned,
     }),
+=======
+   body: JSON.stringify({
+  skills: currUser.skills,
+  completedSkillIds: currUser.completedSkillIds,
+  xpEarned: currUser.xpEarned,
+  overallScore: currUser.overallScore,
+  currentModule: currUser.currentModule,
+  streakDays: currUser.streakDays,
+  streakWeek: currUser.streakWeek,
+  weeklyGoalDone: currUser.weeklyGoalDone,
+  weeklyGoalTotal: currUser.weeklyGoalTotal,
+  lastWeeklyReset: currUser.lastWeeklyReset,
+}),
+>>>>>>> main
   });
   console.log(response.status);
   const data = await response.json();
@@ -466,3 +558,24 @@ links.forEach((link) => {
     }
   });
 });
+<<<<<<< HEAD
+=======
+
+function checkWeeklyReset() {
+  const today = new Date();
+
+  // بداية الأسبوع يوم الاتنين
+  const monday = new Date(today);
+  const day = monday.getDay();
+  const diff = day === 0 ? -6 : 1 - day;
+
+  monday.setDate(today.getDate() + diff);
+
+  const weekKey = monday.toISOString().split("T")[0];
+
+  if (currUser.lastWeeklyReset !== weekKey) {
+    currUser.weeklyGoalDone = 0;
+    currUser.lastWeeklyReset = weekKey;
+  }
+}
+>>>>>>> main

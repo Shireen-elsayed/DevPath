@@ -70,295 +70,6 @@
           "durationMinutes": 45
         }
       }
-    },
-    {
-      "username": "mona",
-      "email": "mona@gmail.com",
-      "password": "mona11",
-      "track": "Backend",
-      "level": "",
-      "avatar": "",
-      "overallScore": 0,
-      "skills": [
-        {
-          "id": 1,
-          "name": "Programming Basics",
-          "lessons": [
-            {
-              "title": "Variables & Data Types",
-              "completed": true
-            },
-            {
-              "title": "Control Flow",
-              "completed": true
-            },
-            {
-              "title": "Functions",
-              "completed": true
-            },
-            {
-              "title": "Data Structures",
-              "completed": true
-            },
-            {
-              "title": "Error Handling",
-              "completed": true
-            },
-            {
-              "title": "OOP Basics",
-              "completed": true
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "name": "Node.js",
-          "lessons": [
-            {
-              "title": "Node.js Fundamentals",
-              "completed": true
-            },
-            {
-              "title": "Modules & npm",
-              "completed": true
-            },
-            {
-              "title": "File System & Events",
-              "completed": true
-            },
-            {
-              "title": "Asynchronous Node (Callbacks/Promises)",
-              "completed": true
-            },
-            {
-              "title": "Building a Simple Server",
-              "completed": true
-            },
-            {
-              "title": "Debugging Node Apps",
-              "completed": true
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "name": "Express.js",
-          "lessons": [
-            {
-              "title": "Express Setup & Routing",
-              "completed": false
-            },
-            {
-              "title": "Middleware",
-              "completed": false
-            },
-            {
-              "title": "Handling Requests & Responses",
-              "completed": false
-            },
-            {
-              "title": "Error Handling in Express",
-              "completed": false
-            },
-            {
-              "title": "Templating Engines",
-              "completed": false
-            },
-            {
-              "title": "Building a REST API with Express",
-              "completed": false
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "name": "REST API",
-          "lessons": [
-            {
-              "title": "REST Principles",
-              "completed": false
-            },
-            {
-              "title": "Designing Endpoints",
-              "completed": false
-            },
-            {
-              "title": "CRUD Operations",
-              "completed": false
-            },
-            {
-              "title": "Status Codes & Error Handling",
-              "completed": false
-            },
-            {
-              "title": "API Versioning",
-              "completed": false
-            },
-            {
-              "title": "API Documentation",
-              "completed": false
-            }
-          ]
-        },
-        {
-          "id": 5,
-          "name": "SQL",
-          "lessons": [
-            {
-              "title": "SQL Basics (SELECT, WHERE)",
-              "completed": false
-            },
-            {
-              "title": "Joins",
-              "completed": false
-            },
-            {
-              "title": "Aggregation & Grouping",
-              "completed": false
-            },
-            {
-              "title": "Subqueries",
-              "completed": false
-            },
-            {
-              "title": "Indexes & Performance",
-              "completed": false
-            },
-            {
-              "title": "Database Design & Normalization",
-              "completed": false
-            }
-          ]
-        },
-        {
-          "id": 6,
-          "name": "MongoDB",
-          "lessons": [
-            {
-              "title": "NoSQL Concepts",
-              "completed": false
-            },
-            {
-              "title": "MongoDB CRUD Operations",
-              "completed": false
-            },
-            {
-              "title": "Schema Design",
-              "completed": false
-            },
-            {
-              "title": "Mongoose ODM",
-              "completed": false
-            },
-            {
-              "title": "Aggregation Pipeline",
-              "completed": false
-            },
-            {
-              "title": "Indexing in MongoDB",
-              "completed": false
-            }
-          ]
-        },
-        {
-          "id": 7,
-          "name": "Authentication",
-          "lessons": [
-            {
-              "title": "Authentication vs Authorization",
-              "completed": false
-            },
-            {
-              "title": "Sessions & Cookies",
-              "completed": false
-            },
-            {
-              "title": "JWT (JSON Web Tokens)",
-              "completed": false
-            },
-            {
-              "title": "Password Hashing (bcrypt)",
-              "completed": false
-            },
-            {
-              "title": "OAuth Basics",
-              "completed": false
-            },
-            {
-              "title": "Securing Routes",
-              "completed": false
-            }
-          ]
-        },
-        {
-          "id": 8,
-          "name": "Deployment",
-          "lessons": [
-            {
-              "title": "Environment Variables",
-              "completed": false
-            },
-            {
-              "title": "Deploying to Cloud (Render/Heroku)",
-              "completed": false
-            },
-            {
-              "title": "CI/CD Basics",
-              "completed": false
-            },
-            {
-              "title": "Docker Basics",
-              "completed": false
-            },
-            {
-              "title": "Monitoring & Logging",
-              "completed": false
-            },
-            {
-              "title": "Domain & SSL Setup",
-              "completed": false
-            }
-          ]
-        }
-      ],
-      "completedSkillIds": [
-        "Programming Basics",
-        "Node.js"
-      ],
-      "xpEarned": 1200,
-      "xpNextReward": 3000,
-      "streakDays": 0,
-      "streakWeek": [
-        {
-          "day": "Mon",
-          "done": false
-        },
-        {
-          "day": "Tue",
-          "done": false
-        },
-        {
-          "day": "Wed",
-          "done": false
-        },
-        {
-          "day": "Thu",
-          "done": false
-        },
-        {
-          "day": "Fri",
-          "done": false
-        },
-        {
-          "day": "Sat",
-          "done": false
-        },
-        {
-          "day": "Sun",
-          "done": false
-        }
-      ],
-      "id": "Lywf94lHfig"
     }
   ],
   "tracks": [
@@ -2684,12 +2395,7 @@
       "trackId": 1,
       "skill": "HTML",
       "question": "Which HTML tag creates a hyperlink?",
-      "options": [
-        "<link>",
-        "<a>",
-        "<href>",
-        "<url>"
-      ],
+      "options": ["<link>", "<a>", "<href>", "<url>"],
       "correctAnswer": 1
     },
     {
@@ -2697,12 +2403,7 @@
       "trackId": 1,
       "skill": "HTML",
       "question": "Which tag is used to insert an image?",
-      "options": [
-        "<src>",
-        "<picture>",
-        "<image>",
-        "<img>"
-      ],
+      "options": ["<src>", "<picture>", "<image>", "<img>"],
       "correctAnswer": 3
     },
     {
@@ -2710,12 +2411,7 @@
       "trackId": 1,
       "skill": "HTML",
       "question": "Which tag creates an unordered list?",
-      "options": [
-        "<ol>",
-        "<ul>",
-        "<li>",
-        "<dl>"
-      ],
+      "options": ["<ol>", "<ul>", "<li>", "<dl>"],
       "correctAnswer": 1
     },
     {
@@ -2723,12 +2419,7 @@
       "trackId": 1,
       "skill": "HTML",
       "question": "Which HTML element represents the largest heading?",
-      "options": [
-        "<title>",
-        "<head>",
-        "<h6>",
-        "<h1>"
-      ],
+      "options": ["<title>", "<head>", "<h6>", "<h1>"],
       "correctAnswer": 3
     },
     {
@@ -2736,12 +2427,7 @@
       "trackId": 1,
       "skill": "CSS",
       "question": "Which CSS property changes text colour?",
-      "options": [
-        "font-color",
-        "background-color",
-        "color",
-        "text-color"
-      ],
+      "options": ["font-color", "background-color", "color", "text-color"],
       "correctAnswer": 2
     },
     {
@@ -2749,12 +2435,7 @@
       "trackId": 1,
       "skill": "CSS",
       "question": "Which property changes the background colour?",
-      "options": [
-        "background-style",
-        "bg-color",
-        "background-color",
-        "color"
-      ],
+      "options": ["background-style", "bg-color", "background-color", "color"],
       "correctAnswer": 2
     },
     {
@@ -2762,12 +2443,7 @@
       "trackId": 1,
       "skill": "CSS",
       "question": "Which layout system is one-dimensional?",
-      "options": [
-        "Grid",
-        "Float",
-        "Flexbox",
-        "Table"
-      ],
+      "options": ["Grid", "Float", "Flexbox", "Table"],
       "correctAnswer": 2
     },
     {
@@ -2775,12 +2451,7 @@
       "trackId": 1,
       "skill": "CSS",
       "question": "Which property adds space outside an element?",
-      "options": [
-        "padding",
-        "border",
-        "gap",
-        "margin"
-      ],
+      "options": ["padding", "border", "gap", "margin"],
       "correctAnswer": 3
     },
     {
@@ -2788,12 +2459,7 @@
       "trackId": 1,
       "skill": "CSS",
       "question": "Which property controls text size?",
-      "options": [
-        "font-size",
-        "font-style",
-        "text-size",
-        "font-weight"
-      ],
+      "options": ["font-size", "font-style", "text-size", "font-weight"],
       "correctAnswer": 0
     },
     {
@@ -2814,12 +2480,7 @@
       "trackId": 1,
       "skill": "Responsive Design",
       "question": "Which CSS feature is mainly used for responsive layouts?",
-      "options": [
-        "Media Queries",
-        "Borders",
-        "Gradients",
-        "Animations"
-      ],
+      "options": ["Media Queries", "Borders", "Gradients", "Animations"],
       "correctAnswer": 0
     },
     {
@@ -2827,12 +2488,7 @@
       "trackId": 1,
       "skill": "Responsive Design",
       "question": "Which unit is relative to the viewport width?",
-      "options": [
-        "%",
-        "vw",
-        "px",
-        "em"
-      ],
+      "options": ["%", "vw", "px", "em"],
       "correctAnswer": 1
     },
     {
@@ -2853,12 +2509,7 @@
       "trackId": 1,
       "skill": "Responsive Design",
       "question": "Which layout is commonly used for responsive pages?",
-      "options": [
-        "Frames",
-        "Flexbox",
-        "Tables",
-        "Inline styles"
-      ],
+      "options": ["Frames", "Flexbox", "Tables", "Inline styles"],
       "correctAnswer": 1
     },
     {
@@ -2866,12 +2517,7 @@
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which keyword declares a variable in JavaScript?",
-      "options": [
-        "let",
-        "int",
-        "define",
-        "string"
-      ],
+      "options": ["let", "int", "define", "string"],
       "correctAnswer": 0
     },
     {
@@ -2879,12 +2525,7 @@
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which statement is used for decision making?",
-      "options": [
-        "class",
-        "loop",
-        "if",
-        "print"
-      ],
+      "options": ["class", "loop", "if", "print"],
       "correctAnswer": 2
     },
     {
@@ -2892,12 +2533,7 @@
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which loop repeats while a condition is true?",
-      "options": [
-        "while",
-        "break",
-        "return",
-        "switch"
-      ],
+      "options": ["while", "break", "return", "switch"],
       "correctAnswer": 0
     },
     {
@@ -2905,12 +2541,7 @@
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which data type stores true or false?",
-      "options": [
-        "Number",
-        "Boolean",
-        "String",
-        "Array"
-      ],
+      "options": ["Number", "Boolean", "String", "Array"],
       "correctAnswer": 1
     },
     {
@@ -2918,12 +2549,7 @@
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which symbol is used for assignment?",
-      "options": [
-        "==",
-        "=",
-        "===",
-        "!="
-      ],
+      "options": ["==", "=", "===", "!="],
       "correctAnswer": 1
     },
     {
@@ -2944,12 +2570,7 @@
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which command creates a package.json file?",
-      "options": [
-        "npm init",
-        "npm start",
-        "npm create",
-        "node init"
-      ],
+      "options": ["npm init", "npm start", "npm create", "node init"],
       "correctAnswer": 0
     },
     {
@@ -2957,12 +2578,7 @@
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which file stores project dependencies?",
-      "options": [
-        "package.json",
-        "config.js",
-        "server.js",
-        "index.html"
-      ],
+      "options": ["package.json", "config.js", "server.js", "index.html"],
       "correctAnswer": 0
     },
     {
@@ -2970,12 +2586,7 @@
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which command installs project dependencies?",
-      "options": [
-        "node install",
-        "npm install",
-        "npm run",
-        "npm start"
-      ],
+      "options": ["node install", "npm install", "npm run", "npm start"],
       "correctAnswer": 1
     },
     {
@@ -2983,12 +2594,7 @@
       "trackId": 2,
       "skill": "Node.js",
       "question": "Node.js is built on which JavaScript engine?",
-      "options": [
-        "V8",
-        "SpiderMonkey",
-        "Java VM",
-        "Chakra"
-      ],
+      "options": ["V8", "SpiderMonkey", "Java VM", "Chakra"],
       "correctAnswer": 0
     },
     {
@@ -3009,12 +2615,7 @@
       "trackId": 2,
       "skill": "Express.js",
       "question": "Which method creates a GET route?",
-      "options": [
-        "app.post()",
-        "app.get()",
-        "app.use()",
-        "app.listen()"
-      ],
+      "options": ["app.post()", "app.get()", "app.use()", "app.listen()"],
       "correctAnswer": 1
     },
     {
@@ -3022,12 +2623,7 @@
       "trackId": 2,
       "skill": "Express.js",
       "question": "Which method starts the Express server?",
-      "options": [
-        "app.open()",
-        "app.start()",
-        "app.run()",
-        "app.listen()"
-      ],
+      "options": ["app.open()", "app.start()", "app.run()", "app.listen()"],
       "correctAnswer": 3
     },
     {
@@ -3035,12 +2631,7 @@
       "trackId": 2,
       "skill": "Express.js",
       "question": "Which object contains request data?",
-      "options": [
-        "app",
-        "res",
-        "router",
-        "req"
-      ],
+      "options": ["app", "res", "router", "req"],
       "correctAnswer": 3
     },
     {
@@ -3048,12 +2639,7 @@
       "trackId": 2,
       "skill": "Express.js",
       "question": "Which object sends the response?",
-      "options": [
-        "body",
-        "req",
-        "app",
-        "res"
-      ],
+      "options": ["body", "req", "app", "res"],
       "correctAnswer": 3
     },
     {
@@ -3061,12 +2647,7 @@
       "trackId": 3,
       "skill": "Design Principles",
       "question": "Which principle improves visual organization?",
-      "options": [
-        "Hierarchy",
-        "Encryption",
-        "Hosting",
-        "Compilation"
-      ],
+      "options": ["Hierarchy", "Encryption", "Hosting", "Compilation"],
       "correctAnswer": 0
     },
     {
@@ -3074,12 +2655,7 @@
       "trackId": 3,
       "skill": "Design Principles",
       "question": "Consistency in design helps users by making interfaces...",
-      "options": [
-        "Predictable",
-        "Complex",
-        "Confusing",
-        "Slower"
-      ],
+      "options": ["Predictable", "Complex", "Confusing", "Slower"],
       "correctAnswer": 0
     },
     {
@@ -3087,12 +2663,7 @@
       "trackId": 3,
       "skill": "Design Principles",
       "question": "Whitespace is mainly used to improve...",
-      "options": [
-        "Networking",
-        "Performance",
-        "Storage",
-        "Readability"
-      ],
+      "options": ["Networking", "Performance", "Storage", "Readability"],
       "correctAnswer": 3
     },
     {
@@ -3113,12 +2684,7 @@
       "trackId": 3,
       "skill": "Design Principles",
       "question": "Which principle draws attention to important elements?",
-      "options": [
-        "Encoding",
-        "Caching",
-        "Emphasis",
-        "Compression"
-      ],
+      "options": ["Encoding", "Caching", "Emphasis", "Compression"],
       "correctAnswer": 2
     },
     {
@@ -3165,12 +2731,7 @@
       "trackId": 3,
       "skill": "Color Theory",
       "question": "Blue is commonly associated with...",
-      "options": [
-        "Noise",
-        "Hunger",
-        "Danger",
-        "Trust"
-      ],
+      "options": ["Noise", "Hunger", "Danger", "Trust"],
       "correctAnswer": 3
     },
     {
@@ -3178,12 +2739,7 @@
       "trackId": 3,
       "skill": "Color Theory",
       "question": "A colour palette should be...",
-      "options": [
-        "Consistent",
-        "Invisible",
-        "Random",
-        "Unlimited"
-      ],
+      "options": ["Consistent", "Invisible", "Random", "Unlimited"],
       "correctAnswer": 0
     },
     {
@@ -3204,12 +2760,7 @@
       "trackId": 3,
       "skill": "Typography",
       "question": "Which property changes font size in CSS?",
-      "options": [
-        "font-family",
-        "font-size",
-        "font-style",
-        "text-align"
-      ],
+      "options": ["font-family", "font-size", "font-style", "text-align"],
       "correctAnswer": 1
     },
     {
@@ -3230,12 +2781,7 @@
       "trackId": 3,
       "skill": "Typography",
       "question": "Good line spacing improves...",
-      "options": [
-        "Readability",
-        "Hosting",
-        "Compilation",
-        "Storage"
-      ],
+      "options": ["Readability", "Hosting", "Compilation", "Storage"],
       "correctAnswer": 0
     },
     {
@@ -3243,12 +2789,7 @@
       "trackId": 3,
       "skill": "Typography",
       "question": "Which font type is commonly used for modern interfaces?",
-      "options": [
-        "Decorative",
-        "Handwriting",
-        "Sans-serif",
-        "Serif only"
-      ],
+      "options": ["Decorative", "Handwriting", "Sans-serif", "Serif only"],
       "correctAnswer": 2
     },
     {
@@ -3256,12 +2797,7 @@
       "trackId": 4,
       "skill": "Dart",
       "question": "Which keyword declares a constant value in Dart?",
-      "options": [
-        "const",
-        "var",
-        "let",
-        "define"
-      ],
+      "options": ["const", "var", "let", "define"],
       "correctAnswer": 0
     },
     {
@@ -3269,12 +2805,7 @@
       "trackId": 4,
       "skill": "Dart",
       "question": "Which function prints output in Dart?",
-      "options": [
-        "echo()",
-        "print()",
-        "console.log()",
-        "printf()"
-      ],
+      "options": ["echo()", "print()", "console.log()", "printf()"],
       "correctAnswer": 1
     },
     {
@@ -3282,12 +2813,7 @@
       "trackId": 4,
       "skill": "Dart",
       "question": "Dart is mainly used with...",
-      "options": [
-        "AngularJS",
-        "Flutter",
-        "Laravel",
-        "React"
-      ],
+      "options": ["AngularJS", "Flutter", "Laravel", "React"],
       "correctAnswer": 1
     },
     {
@@ -3295,12 +2821,7 @@
       "trackId": 4,
       "skill": "Dart",
       "question": "Which collection stores ordered items?",
-      "options": [
-        "Map",
-        "List",
-        "Set",
-        "Queue"
-      ],
+      "options": ["Map", "List", "Set", "Queue"],
       "correctAnswer": 1
     },
     {
@@ -3308,12 +2829,7 @@
       "trackId": 4,
       "skill": "Dart",
       "question": "Which keyword defines a class in Dart?",
-      "options": [
-        "object",
-        "class",
-        "type",
-        "struct"
-      ],
+      "options": ["object", "class", "type", "struct"],
       "correctAnswer": 1
     },
     {
@@ -3334,12 +2850,7 @@
       "trackId": 4,
       "skill": "Flutter Basics",
       "question": "Who developed Flutter?",
-      "options": [
-        "Meta",
-        "Microsoft",
-        "Google",
-        "Apple"
-      ],
+      "options": ["Meta", "Microsoft", "Google", "Apple"],
       "correctAnswer": 2
     },
     {
@@ -3347,12 +2858,7 @@
       "trackId": 4,
       "skill": "Flutter Basics",
       "question": "Flutter applications are written in...",
-      "options": [
-        "Java",
-        "Swift",
-        "Dart",
-        "Kotlin"
-      ],
+      "options": ["Java", "Swift", "Dart", "Kotlin"],
       "correctAnswer": 2
     },
     {
@@ -3386,12 +2892,7 @@
       "trackId": 4,
       "skill": "Widgets",
       "question": "Everything in Flutter is a...",
-      "options": [
-        "Widget",
-        "Module",
-        "File",
-        "Package"
-      ],
+      "options": ["Widget", "Module", "File", "Package"],
       "correctAnswer": 0
     },
     {
@@ -3399,12 +2900,7 @@
       "trackId": 4,
       "skill": "Widgets",
       "question": "Which widget displays text?",
-      "options": [
-        "Text",
-        "Label",
-        "Paragraph",
-        "Typography"
-      ],
+      "options": ["Text", "Label", "Paragraph", "Typography"],
       "correctAnswer": 0
     },
     {
@@ -3412,12 +2908,7 @@
       "trackId": 4,
       "skill": "Widgets",
       "question": "Which widget arranges children vertically?",
-      "options": [
-        "Column",
-        "Row",
-        "Wrap",
-        "Stack"
-      ],
+      "options": ["Column", "Row", "Wrap", "Stack"],
       "correctAnswer": 0
     },
     {
@@ -3425,12 +2916,7 @@
       "trackId": 4,
       "skill": "Widgets",
       "question": "Which widget creates a clickable button?",
-      "options": [
-        "Text",
-        "ElevatedButton",
-        "Container",
-        "Padding"
-      ],
+      "options": ["Text", "ElevatedButton", "Container", "Padding"],
       "correctAnswer": 1
     },
     {
@@ -3438,12 +2924,7 @@
       "trackId": 4,
       "skill": "Widgets",
       "question": "Which widget centers its child?",
-      "options": [
-        "Padding",
-        "Align",
-        "SizedBox",
-        "Center"
-      ],
+      "options": ["Padding", "Align", "SizedBox", "Center"],
       "correctAnswer": 3
     },
     {
@@ -3451,12 +2932,7 @@
       "trackId": 5,
       "skill": "Python",
       "question": "Which keyword defines a function in Python?",
-      "options": [
-        "def",
-        "func",
-        "define",
-        "function"
-      ],
+      "options": ["def", "func", "define", "function"],
       "correctAnswer": 0
     },
     {
@@ -3464,12 +2940,7 @@
       "trackId": 5,
       "skill": "Python",
       "question": "Which function prints output?",
-      "options": [
-        "print()",
-        "console.log()",
-        "echo()",
-        "printf()"
-      ],
+      "options": ["print()", "console.log()", "echo()", "printf()"],
       "correctAnswer": 0
     },
     {
@@ -3477,12 +2948,7 @@
       "trackId": 5,
       "skill": "Python",
       "question": "Which data type stores text?",
-      "options": [
-        "str",
-        "bool",
-        "float",
-        "int"
-      ],
+      "options": ["str", "bool", "float", "int"],
       "correctAnswer": 0
     },
     {
@@ -3490,12 +2956,7 @@
       "trackId": 5,
       "skill": "Python",
       "question": "Which loop is used to iterate over a sequence?",
-      "options": [
-        "repeat",
-        "switch",
-        "for",
-        "goto"
-      ],
+      "options": ["repeat", "switch", "for", "goto"],
       "correctAnswer": 2
     },
     {
@@ -3503,12 +2964,7 @@
       "trackId": 5,
       "skill": "Python",
       "question": "Which symbol starts a comment in Python?",
-      "options": [
-        "#",
-        "//",
-        "--",
-        "/*"
-      ],
+      "options": ["#", "//", "--", "/*"],
       "correctAnswer": 0
     },
     {
@@ -3516,12 +2972,7 @@
       "trackId": 5,
       "skill": "Statistics",
       "question": "Which measure represents the average of a dataset?",
-      "options": [
-        "Median",
-        "Range",
-        "Mode",
-        "Mean"
-      ],
+      "options": ["Median", "Range", "Mode", "Mean"],
       "correctAnswer": 3
     },
     {
@@ -3529,12 +2980,7 @@
       "trackId": 5,
       "skill": "Statistics",
       "question": "Which measure represents the middle value?",
-      "options": [
-        "Median",
-        "Variance",
-        "Range",
-        "Mean"
-      ],
+      "options": ["Median", "Variance", "Range", "Mean"],
       "correctAnswer": 0
     },
     {
@@ -3542,12 +2988,7 @@
       "trackId": 5,
       "skill": "Statistics",
       "question": "Which measure represents the most frequent value?",
-      "options": [
-        "Mode",
-        "Mean",
-        "Median",
-        "Standard Deviation"
-      ],
+      "options": ["Mode", "Mean", "Median", "Standard Deviation"],
       "correctAnswer": 0
     },
     {
@@ -3555,12 +2996,7 @@
       "trackId": 5,
       "skill": "Statistics",
       "question": "What does standard deviation measure?",
-      "options": [
-        "Maximum value",
-        "Data spread",
-        "Average",
-        "Minimum value"
-      ],
+      "options": ["Maximum value", "Data spread", "Average", "Minimum value"],
       "correctAnswer": 1
     },
     {
@@ -3568,12 +3004,7 @@
       "trackId": 5,
       "skill": "Statistics",
       "question": "Which chart is best for showing trends over time?",
-      "options": [
-        "Line Chart",
-        "Scatter Plot",
-        "Bar Chart",
-        "Pie Chart"
-      ],
+      "options": ["Line Chart", "Scatter Plot", "Bar Chart", "Pie Chart"],
       "correctAnswer": 0
     },
     {
@@ -3594,12 +3025,7 @@
       "trackId": 5,
       "skill": "NumPy",
       "question": "Which function creates a NumPy array?",
-      "options": [
-        "np.array()",
-        "np.make()",
-        "np.create()",
-        "np.list()"
-      ],
+      "options": ["np.array()", "np.make()", "np.create()", "np.list()"],
       "correctAnswer": 0
     },
     {
@@ -3607,12 +3033,7 @@
       "trackId": 5,
       "skill": "NumPy",
       "question": "Which library is commonly imported as 'np'?",
-      "options": [
-        "Matplotlib",
-        "Pandas",
-        "NumPy",
-        "SciPy"
-      ],
+      "options": ["Matplotlib", "Pandas", "NumPy", "SciPy"],
       "correctAnswer": 2
     },
     {
@@ -3620,12 +3041,7 @@
       "trackId": 5,
       "skill": "NumPy",
       "question": "What is the main data structure in Numpy?",
-      "options": [
-        "List",
-        "ndarray",
-        "DataFrame",
-        "Dictionary"
-      ],
+      "options": ["List", "ndarray", "DataFrame", "Dictionary"],
       "correctAnswer": 1
     },
     {
@@ -3633,12 +3049,7 @@
       "trackId": 5,
       "skill": "NumPy",
       "question": "Which Numpy function create an array of zeros?",
-      "options": [
-        "np.ones()",
-        "np.null()",
-        "np.empty()",
-        "np.zeros()"
-      ],
+      "options": ["np.ones()", "np.null()", "np.empty()", "np.zeros()"],
       "correctAnswer": 3
     }
   ],
@@ -3650,12 +3061,7 @@
       "track": "Frontend",
       "salary": "$900 - $1300",
       "type": "Remote",
-      "requiredSkills": [
-        "HTML",
-        "CSS",
-        "Responsive Design",
-        "JavaScript"
-      ],
+      "requiredSkills": ["HTML", "CSS", "Responsive Design", "JavaScript"],
       "description": "We are looking for a Junior Frontend Developer to build clean and responsive user interfaces."
     },
     {
@@ -3665,13 +3071,7 @@
       "track": "Frontend",
       "salary": "$1300 - $1900",
       "type": "Hybrid",
-      "requiredSkills": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Git & GitHub"
-      ],
+      "requiredSkills": ["HTML", "CSS", "JavaScript", "React", "Git & GitHub"],
       "description": "Join our team to develop scalable single-page applications using React.js."
     },
     {
@@ -3791,12 +3191,7 @@
       "track": "Flutter",
       "salary": "$1000 - $1500",
       "type": "Remote",
-      "requiredSkills": [
-        "Dart",
-        "Flutter Basics",
-        "Widgets",
-        "Layouts"
-      ],
+      "requiredSkills": ["Dart", "Flutter Basics", "Widgets", "Layouts"],
       "description": "Develop cross-platform mobile applications using Flutter."
     },
     {
@@ -3838,12 +3233,7 @@
       "track": "Data Analysis",
       "salary": "$1000 - $1500",
       "type": "Remote",
-      "requiredSkills": [
-        "Python",
-        "Statistics",
-        "Excel",
-        "Pandas"
-      ],
+      "requiredSkills": ["Python", "Statistics", "Excel", "Pandas"],
       "description": "Analyze business data and generate reports to support decision making."
     },
     {
@@ -4295,11 +3685,7 @@
       "id": "proj-1",
       "icon": "weather",
       "title": "Weather App",
-      "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
+      "tags": ["HTML", "CSS", "JavaScript"],
       "level": "Beginner",
       "track": "Frontend",
       "skill": "JavaScript"
@@ -4308,11 +3694,7 @@
       "id": "proj-2",
       "icon": "portfolio",
       "title": "Portfolio Website",
-      "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
+      "tags": ["HTML", "CSS", "JavaScript"],
       "level": "Intermediate",
       "track": "Frontend",
       "skill": "Responsive Design"
@@ -4321,11 +3703,7 @@
       "id": "proj-3",
       "icon": "ecommerce",
       "title": "E-commerce Website",
-      "tags": [
-        "React",
-        "Node.js",
-        "MongoDB"
-      ],
+      "tags": ["React", "Node.js", "MongoDB"],
       "level": "Advanced",
       "track": "Backend",
       "skill": "Node.js"
@@ -4334,11 +3712,7 @@
       "id": "proj-4",
       "icon": "api",
       "title": "Task Management API",
-      "tags": [
-        "Node.js",
-        "Express.js",
-        "MongoDB"
-      ],
+      "tags": ["Node.js", "Express.js", "MongoDB"],
       "level": "Intermediate",
       "track": "Backend",
       "skill": "Express.js"
@@ -4347,11 +3721,7 @@
       "id": "proj-5",
       "icon": "todo",
       "title": "To-Do List App",
-      "tags": [
-        "Dart",
-        "Flutter Basics",
-        "Widgets"
-      ],
+      "tags": ["Dart", "Flutter Basics", "Widgets"],
       "level": "Beginner",
       "track": "Flutter",
       "skill": "Widgets"
@@ -4360,11 +3730,7 @@
       "id": "proj-6",
       "icon": "expense",
       "title": "Expense Tracker App",
-      "tags": [
-        "Flutter",
-        "State Management",
-        "Firebase"
-      ],
+      "tags": ["Flutter", "State Management", "Firebase"],
       "level": "Intermediate",
       "track": "Flutter",
       "skill": "State Management"
@@ -4373,11 +3739,7 @@
       "id": "proj-7",
       "icon": "wireframe",
       "title": "Mobile App Wireframes",
-      "tags": [
-        "Figma",
-        "Wireframing",
-        "Design Principles"
-      ],
+      "tags": ["Figma", "Wireframing", "Design Principles"],
       "level": "Beginner",
       "track": "UI/UX",
       "skill": "Wireframing"
@@ -4386,11 +3748,7 @@
       "id": "proj-8",
       "icon": "prototype",
       "title": "E-commerce App Prototype",
-      "tags": [
-        "Figma",
-        "Prototyping",
-        "User Research"
-      ],
+      "tags": ["Figma", "Prototyping", "User Research"],
       "level": "Intermediate",
       "track": "UI/UX",
       "skill": "Prototyping"
@@ -4399,11 +3757,7 @@
       "id": "proj-9",
       "icon": "dashboard",
       "title": "Sales Data Dashboard",
-      "tags": [
-        "Python",
-        "Pandas",
-        "Data Visualization"
-      ],
+      "tags": ["Python", "Pandas", "Data Visualization"],
       "level": "Intermediate",
       "track": "Data Analysis",
       "skill": "Pandas"
@@ -4412,11 +3766,7 @@
       "id": "proj-10",
       "icon": "report",
       "title": "COVID-19 Data Report",
-      "tags": [
-        "Python",
-        "NumPy",
-        "Power BI"
-      ],
+      "tags": ["Python", "NumPy", "Power BI"],
       "level": "Advanced",
       "track": "Data Analysis",
       "skill": "Power BI"
@@ -4425,9 +3775,7 @@
       "id": "proj-11",
       "icon": "api",
       "title": "Simple HTTP Server",
-      "tags": [
-        "Node.js"
-      ],
+      "tags": ["Node.js"],
       "level": "Beginner",
       "track": "Backend",
       "skill": "Node.js"
@@ -4436,9 +3784,7 @@
       "id": "proj-12",
       "icon": "api",
       "title": "Task Management API",
-      "tags": [
-        "Express.js"
-      ],
+      "tags": ["Express.js"],
       "level": "Intermediate",
       "track": "Backend",
       "skill": "Express.js"
@@ -4447,9 +3793,7 @@
       "id": "proj-13",
       "icon": "api",
       "title": "Authentication API",
-      "tags": [
-        "REST API"
-      ],
+      "tags": ["REST API"],
       "level": "Intermediate",
       "track": "Backend",
       "skill": "REST API"
@@ -4458,9 +3802,7 @@
       "id": "proj-14",
       "icon": "dashboard",
       "title": "Student Database",
-      "tags": [
-        "SQL"
-      ],
+      "tags": ["SQL"],
       "level": "Intermediate",
       "track": "Backend",
       "skill": "SQL"
@@ -4469,9 +3811,7 @@
       "id": "proj-15",
       "icon": "dashboard",
       "title": "Blog Database",
-      "tags": [
-        "MongoDB"
-      ],
+      "tags": ["MongoDB"],
       "level": "Intermediate",
       "track": "Backend",
       "skill": "MongoDB"
@@ -4480,9 +3820,7 @@
       "id": "proj-16",
       "icon": "api",
       "title": "JWT Login System",
-      "tags": [
-        "Authentication"
-      ],
+      "tags": ["Authentication"],
       "level": "Advanced",
       "track": "Backend",
       "skill": "Authentication"
@@ -4491,9 +3829,7 @@
       "id": "proj-17",
       "icon": "dashboard",
       "title": "Deploy Full API",
-      "tags": [
-        "Deployment"
-      ],
+      "tags": ["Deployment"],
       "level": "Advanced",
       "track": "Backend",
       "skill": "Deployment"
@@ -4502,9 +3838,7 @@
       "id": "proj-18",
       "icon": "wireframe",
       "title": "Restaurant Wireframe",
-      "tags": [
-        "Wireframe"
-      ],
+      "tags": ["Wireframe"],
       "level": "Beginner",
       "track": "UI/UX",
       "skill": "Design Principles"
@@ -4513,9 +3847,7 @@
       "id": "proj-19",
       "icon": "palette",
       "title": "Color Palette",
-      "tags": [
-        "Colors"
-      ],
+      "tags": ["Colors"],
       "level": "Beginner",
       "track": "UI/UX",
       "skill": "Color Theory"
@@ -4524,9 +3856,7 @@
       "id": "proj-20",
       "icon": "typography",
       "title": "Typography Guide",
-      "tags": [
-        "Typography"
-      ],
+      "tags": ["Typography"],
       "level": "Beginner",
       "track": "UI/UX",
       "skill": "Typography"
@@ -4535,9 +3865,7 @@
       "id": "proj-21",
       "icon": "wireframe",
       "title": "Mobile Wireframes",
-      "tags": [
-        "Wireframe"
-      ],
+      "tags": ["Wireframe"],
       "level": "Intermediate",
       "track": "UI/UX",
       "skill": "Wireframing"
@@ -4546,9 +3874,7 @@
       "id": "proj-22",
       "icon": "prototype",
       "title": "Shopping App Prototype",
-      "tags": [
-        "Prototype"
-      ],
+      "tags": ["Prototype"],
       "level": "Intermediate",
       "track": "UI/UX",
       "skill": "Prototyping"
@@ -4557,9 +3883,7 @@
       "id": "proj-23",
       "icon": "prototype",
       "title": "Figma Dashboard",
-      "tags": [
-        "Figma"
-      ],
+      "tags": ["Figma"],
       "level": "Intermediate",
       "track": "UI/UX",
       "skill": "Figma"
@@ -4568,9 +3892,7 @@
       "id": "proj-24",
       "icon": "prototype",
       "title": "User Interview Report",
-      "tags": [
-        "Research"
-      ],
+      "tags": ["Research"],
       "level": "Advanced",
       "track": "UI/UX",
       "skill": "User Research"
@@ -4579,9 +3901,7 @@
       "id": "proj-25",
       "icon": "prototype",
       "title": "Usability Test",
-      "tags": [
-        "Testing"
-      ],
+      "tags": ["Testing"],
       "level": "Advanced",
       "track": "UI/UX",
       "skill": "Usability Testing"
@@ -4590,9 +3910,7 @@
       "id": "proj-26",
       "icon": "todo",
       "title": "Calculator App",
-      "tags": [
-        "Dart"
-      ],
+      "tags": ["Dart"],
       "level": "Beginner",
       "track": "Flutter",
       "skill": "Dart"
@@ -4601,9 +3919,7 @@
       "id": "proj-27",
       "icon": "todo",
       "title": "Counter App",
-      "tags": [
-        "Flutter"
-      ],
+      "tags": ["Flutter"],
       "level": "Beginner",
       "track": "Flutter",
       "skill": "Flutter Basics"
@@ -4612,9 +3928,7 @@
       "id": "proj-28",
       "icon": "todo",
       "title": "Widgets Demo",
-      "tags": [
-        "Widgets"
-      ],
+      "tags": ["Widgets"],
       "level": "Beginner",
       "track": "Flutter",
       "skill": "Widgets"
@@ -4623,9 +3937,7 @@
       "id": "proj-29",
       "icon": "todo",
       "title": "Expense Tracker",
-      "tags": [
-        "Layouts"
-      ],
+      "tags": ["Layouts"],
       "level": "Intermediate",
       "track": "Flutter",
       "skill": "Layouts"
@@ -4634,9 +3946,7 @@
       "id": "proj-30",
       "icon": "expense",
       "title": "Notes App",
-      "tags": [
-        "State Management"
-      ],
+      "tags": ["State Management"],
       "level": "Intermediate",
       "track": "Flutter",
       "skill": "State Management"
@@ -4645,9 +3955,7 @@
       "id": "proj-31",
       "icon": "expense",
       "title": "Firebase Chat",
-      "tags": [
-        "Firebase"
-      ],
+      "tags": ["Firebase"],
       "level": "Advanced",
       "track": "Flutter",
       "skill": "Firebase"
@@ -4656,9 +3964,7 @@
       "id": "proj-32",
       "icon": "api",
       "title": "Movies API App",
-      "tags": [
-        "REST API"
-      ],
+      "tags": ["REST API"],
       "level": "Advanced",
       "track": "Flutter",
       "skill": "REST API"
@@ -4667,9 +3973,7 @@
       "id": "proj-33",
       "icon": "dashboard",
       "title": "Publish App",
-      "tags": [
-        "Deployment"
-      ],
+      "tags": ["Deployment"],
       "level": "Advanced",
       "track": "Flutter",
       "skill": "App Deployment"
@@ -4678,9 +3982,7 @@
       "id": "proj-34",
       "icon": "dashboard",
       "title": "Python Calculator",
-      "tags": [
-        "Python"
-      ],
+      "tags": ["Python"],
       "level": "Beginner",
       "track": "Data Analysis",
       "skill": "Python"
@@ -4689,9 +3991,7 @@
       "id": "proj-35",
       "icon": "report",
       "title": "Statistics Report",
-      "tags": [
-        "Statistics"
-      ],
+      "tags": ["Statistics"],
       "level": "Beginner",
       "track": "Data Analysis",
       "skill": "Statistics"
@@ -4700,9 +4000,7 @@
       "id": "proj-36",
       "icon": "dashboard",
       "title": "NumPy Matrix Project",
-      "tags": [
-        "NumPy"
-      ],
+      "tags": ["NumPy"],
       "level": "Intermediate",
       "track": "Data Analysis",
       "skill": "NumPy"
@@ -4711,9 +4009,7 @@
       "id": "proj-37",
       "icon": "dashboard",
       "title": "Sales Dashboard",
-      "tags": [
-        "Pandas"
-      ],
+      "tags": ["Pandas"],
       "level": "Intermediate",
       "track": "Data Analysis",
       "skill": "Pandas"
@@ -4722,9 +4018,7 @@
       "id": "proj-38",
       "icon": "dashboard",
       "title": "Charts Dashboard",
-      "tags": [
-        "Data Visualization"
-      ],
+      "tags": ["Data Visualization"],
       "level": "Intermediate",
       "track": "Data Analysis",
       "skill": "Data Visualization"
@@ -4733,9 +4027,7 @@
       "id": "proj-39",
       "icon": "dashboard",
       "title": "SQL Data Analysis",
-      "tags": [
-        "SQL"
-      ],
+      "tags": ["SQL"],
       "level": "Advanced",
       "track": "Data Analysis",
       "skill": "SQL"
@@ -4744,9 +4036,7 @@
       "id": "proj-40",
       "icon": "report",
       "title": "Excel Sales Report",
-      "tags": [
-        "Excel"
-      ],
+      "tags": ["Excel"],
       "level": "Advanced",
       "track": "Data Analysis",
       "skill": "Excel"
@@ -4755,9 +4045,7 @@
       "id": "proj-41",
       "icon": "dashboard",
       "title": "Power BI Dashboard",
-      "tags": [
-        "Power BI"
-      ],
+      "tags": ["Power BI"],
       "level": "Advanced",
       "track": "Data Analysis",
       "skill": "Power BI"
@@ -4770,13 +4058,7 @@
       "level": "Easy",
       "title": "Personal Portfolio",
       "description": "Build a responsive personal portfolio website to showcase your skills, projects, education, and contact information using clean HTML and modern CSS.",
-      "skills": [
-        "HTML",
-        "CSS",
-        "Responsive Design",
-        "Flex Box",
-        "CSS Grid"
-      ],
+      "skills": ["HTML", "CSS", "Responsive Design", "Flex Box", "CSS Grid"],
       "image": "../assets/images/Front1.png",
       "github": "",
       "demo": "",
@@ -4950,13 +4232,7 @@
       "level": "Easy",
       "title": "BMI Calculator",
       "description": "Build a Flutter BMI Calculator calculates Body Mass Index based on user input and displays health categories with a clean interface.",
-      "skills": [
-        "Flutter",
-        "Dart",
-        "Widgets",
-        "UI Design",
-        "State Management"
-      ],
+      "skills": ["Flutter", "Dart", "Widgets", "UI Design", "State Management"],
       "image": "../assets/images/Flutter1.png",
       "github": "",
       "demo": "",
@@ -5104,6 +4380,5 @@
       "id": "10",
       "message": "Consistency beats motivation. Keep showing up, and the results will follow."
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
