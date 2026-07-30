@@ -244,10 +244,7 @@ function addLessonEvents() {
 }
 
 async function updateLesson(skillIndex, lessonIndex, completed) {
-<<<<<<< HEAD
-=======
   checkWeeklyReset();
->>>>>>> main
   const roadmapSkill = currRoadmap.skills[skillIndex];
   const roadmapLesson = roadmapSkill.lessons[lessonIndex];
 
@@ -269,8 +266,6 @@ async function updateLesson(skillIndex, lessonIndex, completed) {
 
   if (userLesson.completed === completed) return;
   userLesson.completed = completed;
-<<<<<<< HEAD
-=======
   const completedLessons = currUser.skills.reduce((total, skill) => {
   return (
     total +
@@ -282,7 +277,6 @@ currUser.weeklyGoalDone = Math.min(
   completedLessons,
   currUser.weeklyGoalTotal
 );
->>>>>>> main
 
   if (calcSkillProgress(roadmapSkill) === 100) {
     if (!currUser.completedSkillIds.includes(roadmapSkill.title)) {
@@ -299,8 +293,6 @@ currUser.weeklyGoalDone = Math.min(
   // Update overall score
 currUser.overallScore = calcOverallProgress(currRoadmap);
 
-<<<<<<< HEAD
-=======
 // Update current module
 const currentSkill = currRoadmap.skills.find(
   (skill) => !currUser.completedSkillIds.includes(skill.title)
@@ -351,30 +343,19 @@ currUser.streakWeek.filter(
 ).length;
 
 
->>>>>>> main
   renderOvarallProgress(currRoadmap);
   renderModulesDone(currRoadmap);
   renderLessonsDone(currRoadmap.skills, currRoadmap);
   renderSkillProgress(currRoadmap.skills);
   renderCurrSkill();
   renderRoadmapResult();
-<<<<<<< HEAD
-=======
   
->>>>>>> main
 
   const response = await fetch(`http://localhost:3000/users/${currUser.id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
     },
-<<<<<<< HEAD
-    body: JSON.stringify({
-      skills: currUser.skills,
-      completedSkillIds: currUser.completedSkillIds,
-      xpEarned: currUser.xpEarned,
-    }),
-=======
    body: JSON.stringify({
   skills: currUser.skills,
   completedSkillIds: currUser.completedSkillIds,
@@ -387,7 +368,6 @@ currUser.streakWeek.filter(
   weeklyGoalTotal: currUser.weeklyGoalTotal,
   lastWeeklyReset: currUser.lastWeeklyReset,
 }),
->>>>>>> main
   });
   console.log(response.status);
   const data = await response.json();
@@ -558,8 +538,6 @@ links.forEach((link) => {
     }
   });
 });
-<<<<<<< HEAD
-=======
 
 function checkWeeklyReset() {
   const today = new Date();
@@ -578,4 +556,3 @@ function checkWeeklyReset() {
     currUser.lastWeeklyReset = weekKey;
   }
 }
->>>>>>> main

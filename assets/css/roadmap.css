@@ -2,9 +2,6 @@
    Roadmap Page
    ========================================================================== */
 
-/* Page Styles */
-
-
 body {
    background-color: #080B1E;
    color: var(--text);
@@ -15,110 +12,9 @@ body {
 }
 
 
-/* _____________sidebar______________ */
-/* .sidebar {
-   background-color: #070a19;
-   width: 280px;
-   color: white;
-   position: fixed;
-   top: 60px;
-   left: 0;
-   z-index: 9;
-   min-height: 300px;
-   border-right: 1px solid rgb(27, 26, 26);
-   box-shadow: 0 0 10px 10px rgba(41, 40, 40, 0.044);
-   transform: translateX(-100%);
-   transition: transform .3s ease;
-}
-
-.sidebar.open {
-   transform: translateX(0);
-}
-
-.logo-sidebar img {
-   width: 180px;
-}
-
-.links-sidebar {
-   margin-top: 30px;
-}
-
-.links-sidebar nav ul li {
-   margin-top: 7px;
-   padding: 10px;
-   padding-left: 17px;
-   border-radius: 10px;
-   text-align: start;
-}
-
-.sidebar .active {
-   background-color: rgb(49, 34, 113);
-}
-
-.links-sidebar nav ul li i {
-   margin-right: 15px;
-   color: rgb(245, 241, 241);
-
-}
-
-.links-sidebar nav ul li a {
-   font-size: 1.1em !important;
-
-}
-
-.upgrade-pro {
-   background-color: rgb(20, 14, 49);
-   padding: 15px;
-   margin-top: 23px;
-   border-radius: 7px;
-}
-
-.pro-btn {
-   padding: 10px;
-   text-align: center;
-   background-color: rgb(61, 43, 141);
-   margin-top: 5px;
-   width: 100%;
-   border: none;
-   border-radius: 7px;
-   color: white;
-   cursor: pointer;
-}
-
-.upgrade-pro {
-   text-align: center;
-}
-
-.upgrade-pro i {
-   color: rgb(255, 213, 0);
-   margin-right: 5px;
-}
-
-.upgrade-pro span {
-   font-size: 1.1em !important;
-   font-family: 'Times New Roman', Times, serif !important;
-}
-
-.upgrade-pro p {
-   text-align: start;
-   color: rgb(207, 207, 207);
-}
-
-.log-out {
-   padding: 20px;
-   margin-top: 20px;
-   color: rgb(205, 205, 205);
-}
-
-.log-out i {
-   margin-right: 15px;
-}
-
-
-.layout {
-   display: flex;
-   padding-top: 60px;
-} */
+/* ==========================================================================
+   Sidebar — copied exactly from Career Match page
+   ========================================================================== */
 
 aside::-webkit-scrollbar {
    display: none;
@@ -147,12 +43,7 @@ aside {
    z-index: 1000;
    box-sizing: border-box;
    overflow-y: auto;
-
-
-   -ms-overflow-style: none;
-   scrollbar-width: none;
 }
-
 
 .logo-sidebar img {
    width: 100%;
@@ -173,16 +64,11 @@ aside {
    display: flex;
    align-items: center;
    gap: 14px;
-
    padding: 14px 18px;
    margin-top: 4px;
-
    border-radius: 14px;
-
    cursor: pointer;
-
    transition: .35s ease;
-
    border: 1px solid transparent;
 }
 
@@ -196,19 +82,14 @@ aside {
    background: rgba(124, 58, 237, .18);
    border-color: rgba(139, 92, 246, .35);
    transform: translateX(8px);
-
    box-shadow: 0 10px 25px rgba(124, 58, 237, .18);
 }
 
 .active {
    background: linear-gradient(90deg, #7c3aed, #5b3df5);
-
    border-right: none;
-
    color: white;
-
    transform: translateX(8px);
-
    box-shadow: 0 10px 25px rgba(124, 58, 237, .3);
 }
 
@@ -243,7 +124,7 @@ aside {
 
 .upgrade-pro i {
    color: rgb(235, 196, 4);
-   margin-right: 10px;
+   margin-right: 2px;
 }
 
 .upgrade-pro span {
@@ -268,15 +149,31 @@ aside {
    margin-right: 12px;
 }
 
+/* Toggle button + close icon are hidden by default, only shown on mobile below */
 .mobile-menu-toggle,
 .sidebar-close {
    display: none !important;
 }
 
+
+/* ==========================================================================
+   Page content layout — pushes content next to the fixed sidebar
+   ========================================================================== */
+
+.main-content {
+   margin-left: 280px;
+   padding: 20px;
+   padding-top: 90px;
+   min-height: 100vh;
+   box-sizing: border-box;
+}
+
+
+/* ==========================================================================
+   Sidebar responsive behavior (mobile) — copied from Career Match page
+   ========================================================================== */
+
 @media (max-width: 992px) {
-   .wrapper {
-      flex-direction: column;
-   }
 
    .mobile-menu-toggle {
       display: flex !important;
@@ -303,7 +200,6 @@ aside {
       pointer-events: none;
       transform: scale(0.9);
    }
-
 
    aside {
       width: 100%;
@@ -333,7 +229,6 @@ aside {
       margin-bottom: 20px;
    }
 
-
    .links-sidebar nav ul {
       padding: 0;
       margin: 0;
@@ -343,7 +238,6 @@ aside {
       align-items: stretch;
    }
 
-
    .links-sidebar nav ul li {
       width: 100% !important;
       max-width: 100% !important;
@@ -351,7 +245,6 @@ aside {
       background-color: #0f1329;
       border-radius: 50px;
       margin-bottom: 12px;
-      /* padding: 14px 24px; */
       padding: 8px 16px;
       border: 1px solid rgba(255, 255, 255, 0.05);
       display: flex;
@@ -371,7 +264,6 @@ aside {
 
    .links-sidebar nav ul li a {
       color: #ffffff;
-      /* font-size: 1rem; */
       font-size: 0.85rem;
       font-weight: 500;
       text-decoration: none;
@@ -383,23 +275,9 @@ aside {
       transform: none !important;
    }
 
-
    .upgrade-pro,
    .log-out {
       display: none;
-   }
-
-
-   .header-left {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-   }
-
-   .dashbord {
-      padding-top: 10px;
-      margin-left: 0;
-      padding-left: 30px;
    }
 
    .main-content {
@@ -407,48 +285,9 @@ aside {
       padding: 20px;
       padding-top: 90px;
    }
-
-   .middle-cart {
-      grid-template-columns: 1fr;
-   }
-
-   .name-user {
-      padding-top: 50px;
-   }
 }
-
-
-
-@media (max-width: 768px) {
-
-   .header {
-      flex-direction: column;
-      align-items: flex-start;
-   }
-
-   .right-user {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-   }
-
-   .top-card,
-   .end-cart {
-      grid-template-columns: 1fr;
-   }
-
-   .name-user {
-      padding-top: 50px;
-   }
-}
-
-
 
 @media (max-width: 480px) {
-
-   .header {
-      padding: 16px 15px;
-   }
 
    .mobile-menu-toggle {
       width: 40px;
@@ -456,12 +295,6 @@ aside {
       font-size: 1rem;
       top: 15px;
       left: 15px;
-   }
-
-   .image-user {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
    }
 
    aside {
@@ -478,34 +311,15 @@ aside {
    }
 
    .main-content {
-      padding: 15px;
-      padding-top: 80px;
+      padding: 20px;
+      padding-top: 90px;
    }
-
 }
 
-/* _______overlay______ */
-.overlay {
-   position: fixed;
-   inset: 0;
-   background: rgba(0, 0, 0, .5);
-   opacity: 0;
-   visibility: hidden;
-   transition: .3s;
-}
 
-.overlay.show {
-   opacity: 1;
-   visibility: visible;
-}
-
-/* _____________main content______________ */
-
-.roadmap-content-header {
-   flex: 1;
-   padding: 20px;
-
-}
+/* ==========================================================================
+   Roadmap page content (unchanged)
+   ========================================================================== */
 
 h1 {
    font-size: 25px;
@@ -534,10 +348,9 @@ h1 {
 
 .roadmap-levels {
    padding: 20px;
-
 }
 
-/* _____________timeline______________ */
+/* Timeline */
 .timeline {
    position: relative;
    display: flex;
@@ -663,7 +476,6 @@ h1 {
    padding: 0px 5px;
    border-radius: 15px;
    letter-spacing: 0.05em;
-   ;
 }
 
 .done {
@@ -681,7 +493,6 @@ h1 {
    border-radius: 15px;
    border: 1px solid #ac21fc;
 }
-
 
 .beginner {
    color: #00D492;
@@ -727,7 +538,6 @@ h1 {
    gap: 10px;
 }
 
-
 .progress-status {
    flex-direction: column;
    gap: 10px;
@@ -751,23 +561,19 @@ h1 {
    display: block;
 }
 
-/* _____________lessons______________ */
+/* Lessons */
 .lesson-card {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
-
 .lesson-card.completed label {
    opacity: 0.6;
    text-decoration: line-through;
 }
 
-
-
-/* ______________ ROADMAP RESULT _________________ */
-
+/* Roadmap Result */
 .roadmap-result {
    margin-top: 25px;
    padding: 24px;
@@ -840,8 +646,6 @@ h1 {
    background: #26384f;
 }
 
-/* Locked Version */
-
 .result-locked {
    opacity: .65;
 }
@@ -854,36 +658,29 @@ h1 {
    display: none;
 }
 
-/* _____________Motivation Message______________ */
+/* Motivation Message */
 .motivation-card {
    display: flex;
    flex-direction: column;
    align-items: center;
    gap: 18px;
-
    text-align: center;
    background: #1d293d;
    border-left: 5px solid #00d492;
-
    border-radius: 14px;
    padding: 18px 22px;
    margin-bottom: 30px;
-
    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
 }
 
 .motivation-icon {
    width: 55px;
    height: 55px;
-
    display: flex;
    justify-content: center;
    align-items: center;
-
    font-size: 28px;
-
    background: rgba(0, 212, 146, .15);
-
    border-radius: 50%;
 }
 
@@ -905,7 +702,7 @@ h1 {
 
 
 /* ==========================================================================
-   Responsive Design
+   Content responsive rules (unrelated to sidebar, kept as min-width)
    ========================================================================== */
 
 @media (min-width: 576px) {
@@ -942,38 +739,8 @@ h1 {
       display: inline;
    }
 
-   .motivation-card{
+   .motivation-card {
       flex-direction: row;
       text-align: left;
    }
 }
-
-@media (min-width: 992px) {
-
-   .layout {
-      display: flex;
-   }
-
-   .sidebar {
-      position: static;
-      transform: none;
-      height: auto;
-      flex-shrink: 0;
-   }
-
-   .bars-icon {
-      display: none;
-   }
-
-   .overlay {
-      display: none;
-   }
-
-   .roadmap-content-header {
-      flex: 1;
-   }
-}
-
-@media (min-width: 1200px) {}
-
-@media (min-width: 1400px) {}

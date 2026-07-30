@@ -15,7 +15,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- SweetAlert2  #if needed# -->
+    <!-- SweetAlert2 #if needed# -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- CSS -->
@@ -24,124 +24,124 @@
 </head>
 
 <body>
-    <!-- <div class="overlay"></div> -->
-    <!-- <div class="layout"> -->
-    <div class="wrapper">
-        <aside class="sidebar">
-            <div class="logo-sidebar">
-                <img src="../assets/images/logo.jpg" alt="" class="logo">
-            </div>
-            <div class="links-sidebar">
-                <nav>
-                    <ul>
-                        <li><i class="fa-solid fa-house"></i><a href="../pages/dashboard.html">Dashboard</a></li>
-                        <li class="active"><i class="fa-solid fa-book-open"></i><a href="../pages/roadmap.html">Roadmap</a></li>
-                        <li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="../pages/projects.html">Projects</a></li>
-                        <li><i class="fa-solid fa-briefcase"></i><a href="../pages/career-match.html">Career Match</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="upgrade-pro">
-                <i class="fa-solid fa-crown"></i>
-                <span>Upgrade to pro</span>
-                <p>Unlock all features and get unlimited access.</p>
-                <button class="pro-btn">Upgrade Now</button>
-            </div>
-            <div class="log-out">
-                <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                <a href="#">Log out</a>
-            </div>
-        </aside> -->
+    <!-- Mobile sidebar toggle button (copied from Career Match page) -->
+    <button class="mobile-menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
 
-        <main class="roadmap-content">
+    <!-- Sidebar: copied as-is from Career Match page, "Roadmap" link is now the active one -->
+    <aside class="sidebar">
 
-            <section class="roadmap-content-header">
-                <span class="your-map">Personalized Roadmap</span>
-                <h1 id="roadmap-title"></h1>
-                <p style="color:var(--text-secondary)">Continue your personalized learning journey. Complete every
-                    learning module, finish the final
-                    assessment,
-                    and become
-                    job-ready.</p>
+        <div class="logo-sidebar">
+            <img src="../assets/images/logo.jpg" alt="Logo" class="logo">
+        </div>
 
-                <div class="card-dtls"
-                    style="color: var(--text-muted); width:100%; display: grid; gap:20px; grid-template-columns: auto 1fr; align-items: center ;">
-                    <div style="color: #5047E5;"><i class="fa-solid fa-arrow-trend-up fa-xl"></i></div>
+        <div class="links-sidebar">
+            <nav>
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><a href="dashboard.html">Dashboard</a></li>
+                    <li class="active"><i class="fa-solid fa-book-open"></i><a href="roadmap.html">Roadmap</a></li>
+                    <li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="projects.html">Projects</a></li>
+                    <li><i class="fa-solid fa-briefcase"></i><a href="career-match.html">Career Match</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="upgrade-pro">
+            <i class="fa-solid fa-crown"></i>
+            <span>Upgrade to pro</span>
+            <p>Unlock all features and get unlimited access.</p>
+            <button class="pro-btn">Upgrade Now</button>
+        </div>
+
+        <div class="log-out" style="color:rgb(190, 2, 2);">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <a href="#">Log out</a>
+        </div>
+    </aside>
+
+    <!-- Main content: same Roadmap content as before, just moved out of the old .wrapper/.layout -->
+    <main class="main-content">
+
+        <section class="roadmap-content-header">
+            <span class="your-map">Personalized Roadmap</span>
+            <h1 id="roadmap-title"></h1>
+            <p style="color:var(--text-secondary)">Continue your personalized learning journey. Complete every
+                learning module, finish the final assessment, and become job-ready.</p>
+
+            <div class="card-dtls"
+                style="color: var(--text-muted); width:100%; display: grid; gap:20px; grid-template-columns: auto 1fr; align-items: center;">
+                <div style="color: #5047E5;"><i class="fa-solid fa-arrow-trend-up fa-xl"></i></div>
+                <div style="display: flex; flex-direction:column;">
+                    <span>Overall Progress</span>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span id="overall-progress"
+                            style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#fff;"></span>
+                        <p class="p-badge-completed pending" style="width:fit-content; margin-bottom:20px">Pending</p>
+                    </div>
+                    <div
+                        style="width: 100%; height: 8px; background-color: var(--text-muted); border-radius: 5px; position: relative; overflow: hidden;">
+                        <div id="ovarall-progress-width"
+                            style="position: absolute; background:var(--gradient); height: 8px; border-radius: 5px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-dtls" style="display: flex; align-items: center; gap:20px">
+                    <div><i class="fa-solid fa-layer-group" style="color: #c0a1f6;"></i></div>
                     <div style="display: flex; flex-direction:column;">
-                        <span>Overall Progress</span>
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <span id="overall-progress"
-                                style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#fff;"></span>
-                            <p class="p-badge-completed pending" style="width:fit-content; margin-bottom:20px">Pending
-                            </p>
-                        </div>
-                        <div
-                            style="width: 100%; height: 8px; background-color: var(--text-muted); border-radius: 5px; position: relative; overflow: hidden;">
-                            <div id="ovarall-progress-width"
-                                style="position: absolute; background:var(--gradient); height: 8px; border-radius: 5px;">
-                            </div>
-                        </div>
+                        <span>Completed Modules</span>
+                        <span id="modules-done"
+                            style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#fff;"></span>
+                        <span id="modules-remaining"></span>
                     </div>
                 </div>
-                <div class="cards">
-                    <div class="card-dtls" style="display: flex; align-items: center; gap:20px">
-                        <div><i class="fa-solid fa-layer-group" style="color: #c0a1f6;"></i></div>
-                        <div style="display: flex; flex-direction:column;">
-                            <span>Completed Modules</span>
-                            <span id="modules-done"
-                                style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#fff;"></span>
-                            <span id="modules-remaining"></span>
-                        </div>
-                    </div>
 
-                    <div class="card-dtls" style="display: flex; align-items: center; gap:20px">
-                        <div><i class="fa-regular fa-circle-check fa-lg" style="color: #00d492;"></i></div>
-                        <div style="display: flex; flex-direction:column;">
-                            <span>Current Module</span>
-                            <span id="curr-skill"
-                                style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#fff;"></span>
-                            <span style="color:#7C86F3">In Progress</span>
-                        </div>
-                    </div>
-
-                    <div class="card-dtls lessons-done" style="display: flex; align-items: center; gap:20px">
-                        <div><i class="fa-brands fa-leanpub" style="color: #1BBCD8;"></i></div>
-                        <div style="display: flex; flex-direction:column;">
-                            <span>Lessons Done</span>
-                            <span id="lessons-done"
-                                style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#fff;"></span>
-                            <span id="lessons-left"></span>
-                        </div>
+                <div class="card-dtls" style="display: flex; align-items: center; gap:20px">
+                    <div><i class="fa-regular fa-circle-check fa-lg" style="color: #00d492;"></i></div>
+                    <div style="display: flex; flex-direction:column;">
+                        <span>Current Module</span>
+                        <span id="curr-skill"
+                            style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#fff;"></span>
+                        <span style="color:#7C86F3">In Progress</span>
                     </div>
                 </div>
-            </section>
 
-            <section class="motivation-card" style="margin:0 20px;">
-                <div class="motivation-icon">💡</div>
-
-                <div class="motivation-content">
-                    <h3>Today's Motivation</h3>
-                    <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
-                        id="motivation-message"></p>
+                <div class="card-dtls lessons-done" style="display: flex; align-items: center; gap:20px">
+                    <div><i class="fa-brands fa-leanpub" style="color: #1BBCD8;"></i></div>
+                    <div style="display: flex; flex-direction:column;">
+                        <span>Lessons Done</span>
+                        <span id="lessons-done"
+                            style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#fff;"></span>
+                        <span id="lessons-left"></span>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="roadmap-levels">
-                <h3 style=" margin-bottom: 20px;">Learning Journey<span style="color:var(--text-muted);"> — 8
-                        milestones</span></h3>
+        <section class="motivation-card" style="margin:40px 10px;">
+            <div class="motivation-icon">💡</div>
 
-                <div class="timeline" id="timeline"></div>
-            </section>
+            <div class="motivation-content">
+                <h3>Today's Motivation</h3>
+                <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+                    id="motivation-message"></p>
+            </div>
+        </section>
 
+        <section class="roadmap-levels">
+            <h3 style="margin-bottom: 20px;">Learning Journey<span style="color:var(--text-muted);"> — 8
+                    milestones</span></h3>
 
-            <section id="roadmap-result" style="margin: 20px 20px 40px;"></section>
-        </main>
-    </div>
-    </div>
+            <div class="timeline" id="timeline"></div>
+        </section>
 
+        <section id="roadmap-result" style="margin: 20px 0px 20px;"></section>
+    </main>
 
     <script src="../js/roadmap.js"></script>
-    <!-- <script src="../js/helpers.js"></script> -->
 
 </body>
 
