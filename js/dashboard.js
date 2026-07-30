@@ -2,13 +2,19 @@ const links = document.querySelectorAll(".links-sidebar nav ul li");
 const clock = document.querySelector(".clock");
 const sidebar = document.querySelector(".sidebar");
 const menuToggle = document.querySelector(".mobile-menu-toggle");
-
+// =========================================
+// SIDEBAR TOGGLE
+// Open and close the sidebar on mobile devices
+// =========================================
 if (menuToggle && sidebar) {
   menuToggle.addEventListener("click", () => {
     sidebar.classList.toggle("open");
   });
 }
-
+// =========================================
+// SIDEBAR ACTIVE LINKS
+// Highlight the selected navigation link
+// =========================================
 links.forEach((link) => {
   link.addEventListener("click", function () {
     links.forEach((item) => item.classList.remove("active"));
@@ -18,7 +24,10 @@ links.forEach((link) => {
     }
   });
 });
-
+// =========================================
+// WEEK DATE HELPER
+// Generate the current week's dates
+// =========================================
 function getCurrentWeekDates(startDay = 1) {
   const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const today = new Date();
@@ -40,7 +49,10 @@ function getCurrentWeekDates(startDay = 1) {
   }
   return week;
 }
-
+// =========================================
+// STREAK DAYS
+// Display the user's learning streak
+// =========================================
 function renderStreakDays(streakWeek = []) {
   const container = document.getElementById("streakDaysContainer");
   if (!container) return;
@@ -61,7 +73,10 @@ function renderStreakDays(streakWeek = []) {
     container.appendChild(dayEl);
   });
 }
-
+// =========================================
+// WEEK CALENDAR
+// Render the weekly learning calendar
+// =========================================
 function renderWeekCalendar(streakWeek = []) {
   const container = document.querySelector(".week-calendar");
   if (!container) return;
@@ -72,8 +87,11 @@ function renderWeekCalendar(streakWeek = []) {
     const isDone = matched ? !!matched.done : false;
     const dayEl = document.createElement("div");
     dayEl.className = "week-day";
-    if (isDone) dayEl.classList.add("completed");
-    if (weekDay.isToday) dayEl.classList.add("today");
+    if (isDone) {
+  dayEl.classList.add("completed");
+} else if (weekDay.isToday) {
+  dayEl.classList.add("today");
+}
     let iconClass = "fa-regular fa-circle";
     if (isDone) iconClass = "fa-solid fa-check";
     else if (weekDay.isToday) iconClass = "fa-solid fa-circle-dot";
@@ -85,13 +103,20 @@ function renderWeekCalendar(streakWeek = []) {
     container.appendChild(dayEl);
   });
 }
-
-function renderRecommended(recommended = [], userTrack) {
+// =========================================
+// RECOMMENDED COURSES
+// Display recommended courses based on the user's track
+// =========================================
+function renderRecommended(recommended = [], userTrack, currentSkill) {
   const container = document.querySelector(".rec-cards-container");
   if (!container) return;
   container.innerHTML = "";
 
-  const filtered = recommended.filter((r) => r.track === userTrack);
+  const filtered = recommended.filter(
+  (r) =>
+    r.track === userTrack &&
+    r.skill === currentSkill
+);
 
   if (filtered.length === 0) {
     container.innerHTML = `<p>لا توجد اقتراحات متاحة لهذا التراك حالياً</p>`;
@@ -125,12 +150,21 @@ function renderRecommended(recommended = [], userTrack) {
     container.appendChild(card);
   });
 }
-
-function renderUpcomingProjects(projects = [], userTrack) {
+// =========================================
+// UPCOMING PROJECTS
+// Display projects related to the user's learning track
+// =========================================
+function renderUpcomingProjects(projects = [], userTrack, currentSkill) {
   const container = document.querySelector(".projects-showcase");
   if (!container) return;
   container.innerHTML = "";
-  const filtered = projects.filter((p) => p.track === userTrack);
+ 
+  const filtered = projects.filter(
+  (p) =>
+    p.track === userTrack &&
+    p.skill === currentSkill
+);
+// console.log("Filtered:", filtered);
   if (filtered.length === 0) {
     container.innerHTML = `<p>لا توجد مشاريع متاحة لهذا التراك حالياً</p>`;
     return;
@@ -171,10 +205,13 @@ function renderUpcomingProjects(projects = [], userTrack) {
     container.appendChild(card);
   });
 }
-
+// =========================================
+// CURRENT LEARNING MODULE
+// Get the current module or calculate the next available one
+// =========================================
 function getEffectiveModule(currentUser, roadmaps) {
-  const roadmap = roadmaps.find((r) => r.track === currentUser.track);
-  const roadmapSkillNames = roadmap ? roadmap.skills.map((s) => s.name) : [];
+  const roadmap = roadmaps.find((r) => r.id === currentUser.track); // r.track -> r.id
+  const roadmapSkillNames = roadmap ? roadmap.skills.map((s) => s.title) : []; // s.name -> s.title
 
   const existingModule = currentUser.currentModule;
   const isModuleValid =
@@ -185,21 +222,35 @@ function getEffectiveModule(currentUser, roadmaps) {
   }
 
   const completed = currentUser.completedSkillIds || [];
-  const nextSkill = roadmap?.skills.find((s) => !completed.includes(s.name));
+  const nextSkill = roadmap?.skills.find((s) => !completed.includes(s.title)); // s.name -> s.title
 
   if (!nextSkill) {
     return null;
   }
 
   return {
-    skillId: nextSkill.id,
-    skillName: nextSkill.name,
-    progressPercent: 0,
-    nextLesson: { title: `Getting started with ${nextSkill.name}`, durationMinutes: 30 },
-    upNext: { title: `${nextSkill.name} fundamentals`, durationMinutes: 30 },
+    skillId: nextSkill.title, // مفيش id للسكيل في الشكل الجديد، فهنستخدم العنوان كمعرّف
+    skillName: nextSkill.title, // s.name -> s.title
+    progressPercent:
+currentUser.currentModule?.progressPercent ?? 0,
+    nextLesson:
+currentUser.currentModule?.nextLesson ??
+{
+title:"",
+durationMinutes:30
+},
+    upNext:
+currentUser.currentModule?.upNext ??
+{
+title:"",
+durationMinutes:30
+},
   };
 }
-
+// =========================================
+// PROGRESS CHART
+// Initialize the doughnut progress chart
+// =========================================
 let progressChart = null;
 
 function initChart() {
@@ -212,46 +263,66 @@ function initChart() {
   });
   return progressChart;
 }
-
+// =========================================
+// FETCH JSON DATA
+// Generic helper to load JSON from the server
+// =========================================
 async function fetchJSON(url) {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`Unable to load: ${url}`);
   return response.json();
 }
-
+// =========================================
+// LOCAL STORAGE
+// Store the current user id if it doesn't exist
+// =========================================
 if (!localStorage.getItem("currentUserId")) {
   localStorage.setItem("currentUserId", "1");
 }
+console.log(localStorage.getItem("currentUserId"));
 
+
+// =========================================
+// DASHBOARD INITIALIZATION
+// Load all dashboard data and update the UI
+// =========================================
 async function initDashboard() {
   try {
+    // Fetch all required data from JSON Server
     const [users, recommended, upcomingProjects, roadmaps] = await Promise.all([
       fetchJSON("http://localhost:3000/users"),
       fetchJSON("http://localhost:3000/recommended"),
       fetchJSON("http://localhost:3000/upcomingProjects"),
       fetchJSON("http://localhost:3000/roadmaps"),
     ]);
-
+// =========================================
+// LOCAL STORAGE
+// Store the current user id if it doesn't exist
+// =========================================
+// Get the current logged-in user from Local Storage
     const currentUserId = String(localStorage.getItem("currentUserId"));
     const currentUser = users.find((u) => String(u.id) === currentUserId);
-
+    console.log(currentUser);
+console.log(currentUser.weeklyGoalDone);
+console.log(currentUser.weeklyGoalTotal);
+// Stop execution if the user doesn't exist
     if (!currentUser) {
       console.warn("لم يتم العثور على المستخدم");
       renderStreakDays([]);
       renderWeekCalendar([]);
       return;
     }
-
+// Update the progress chart
     const percent = Number(currentUser.overallScore) || 0;
     const chart = progressChart || initChart();
     if (chart) {
       chart.data.datasets[0].data = [percent, Math.max(0, 100 - percent)];
       chart.update();
     }
-
+// Display the progress percentage
     const percentText = document.querySelector(".percent-text");
     if (percentText) percentText.textContent = `${percent}%`;
-
+// Select dashboard elements
     let level = document.querySelector(".level");
     let userName = document.querySelector(".username");
     let track = document.querySelector(".track");
@@ -267,22 +338,23 @@ async function initDashboard() {
     let secondlesson = document.querySelector(".secondlesson");
     let lesson_duration = document.querySelector(".lesson-duration");
     let second_duration = document.querySelector(".second-duration");
-
+// Helper function to safely update text content
     const setText = (el, value) => { if (el) el.innerHTML = value; };
-
+// Helper function to safely update text content
     setText(level, currentUser.level);
     setText(userName, currentUser.username);
     setText(track, currentUser.track);
     setText(completedModule, `${currentUser.completedSkillIds?.length ?? 0} / ${currentUser.skills?.length ?? 0}`);
-    setText(valuexp, currentUser.xpEarned);
-    setText(numberstreak, `${currentUser.streakDays} Days`);
-    setText(numberweakgoals, `${currentUser.weeklyGoalDone} / ${currentUser.weeklyGoalTotal}`);
-
+    setText(valuexp, currentUser.xpEarned ?? 0);
+setText(numberstreak, `${currentUser.streakDays ?? 0} Days`);
+   setText(numberweakgoals, `${currentUser.weeklyGoalDone ?? 0} / ${currentUser.weeklyGoalTotal ?? 0}`);
+// Determine which module the user should continue
     const effectiveModule = getEffectiveModule(currentUser, roadmaps);
-
+const currentSkill = effectiveModule?.skillName || "";
+// Determine which module the user should continue
     if (effectiveModule) {
-      setText(namecourse, `${effectiveModule.skillName} `);
-      setText(course_track, `${currentUser.track} `);
+      setText(namecourse, `${effectiveModule.skillName} Basics`);
+      setText(course_track, `${currentUser.track} track`);
       setText(progress_percent, `${effectiveModule.progressPercent} %`);
 
       if (progress_fill) {
@@ -310,8 +382,50 @@ async function initDashboard() {
 
     renderStreakDays(currentUser.streakWeek || []);
     renderWeekCalendar(currentUser.streakWeek || []);
-    renderRecommended(recommended, currentUser.track);
-    renderUpcomingProjects(upcomingProjects, currentUser.track);
+    renderRecommended(
+  recommended,
+  currentUser.track,
+  currentSkill
+);
+
+renderUpcomingProjects(
+  upcomingProjects,
+  currentUser.track,
+  currentSkill
+);
+
+
+
+
+
+
+
+    const continueBtn = document.querySelector(".continue-btn");
+
+if (continueBtn) {
+  continueBtn.addEventListener("click", () => {
+    localStorage.setItem("selectedSkillId", effectiveModule.skillId);
+    window.location.href = "../pages/roadmap.html";
+  });
+}
+const nextLessonCard = document.getElementsByClassName("lesson-item")[0];
+
+if (nextLessonCard) {
+  nextLessonCard.addEventListener("click", () => {
+    localStorage.setItem("selectedSkillId", effectiveModule.skillId);
+    localStorage.setItem("selectedLessonTitle", effectiveModule.nextLesson.title);
+    window.location.href = "../pages/roadmap.html";
+  });
+}
+const nextLessonCardTwo = document.getElementsByClassName("lesson-item")[1];
+if (nextLessonCardTwo) {
+  nextLessonCardTwo.addEventListener("click", () => {
+    localStorage.setItem("selectedSkillId", effectiveModule.skillId);
+    localStorage.setItem("selectedLessonTitle", effectiveModule.upNext.title);
+    window.location.href = "../pages/roadmap.html"; 
+  });
+}
+
 
   } catch (error) {
     console.error("Dashboard loading error:", error);
@@ -320,7 +434,50 @@ async function initDashboard() {
     renderStreakDays([]);
     renderWeekCalendar([]);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 initChart();
 initDashboard();
