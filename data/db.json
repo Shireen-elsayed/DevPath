@@ -70,319 +70,6 @@
           "durationMinutes": 45
         }
       }
-    },
-    {
-      "username": "naema",
-      "email": "naemasayed9858@gmail.com",
-      "password": "naema*658",
-      "track": "Frontend",
-      "level": "",
-      "avatar": "",
-      "overallScore": 0,
-      "skills": [
-        {
-          "id": 1,
-          "name": "HTML",
-          "lessons": [
-            {
-              "title": "HTML Introduction",
-              "completed": true
-            },
-            {
-              "title": "HTML Elements & Tags",
-              "completed": true
-            },
-            {
-              "title": "Forms & Inputs",
-              "completed": true
-            },
-            {
-              "title": "Tables",
-              "completed": true
-            },
-            {
-              "title": "Semantic HTML",
-              "completed": true
-            },
-            {
-              "title": "Accessibility Basics",
-              "completed": true
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "name": "CSS",
-          "lessons": [
-            {
-              "title": "CSS Selectors & Specificity",
-              "completed": false
-            },
-            {
-              "title": "Box Model",
-              "completed": false
-            },
-            {
-              "title": "Flexbox",
-              "completed": false
-            },
-            {
-              "title": "CSS Grid",
-              "completed": false
-            },
-            {
-              "title": "Positioning & Display",
-              "completed": false
-            },
-            {
-              "title": "Animations & Transitions",
-              "completed": false
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "name": "Responsive Design",
-          "lessons": [
-            {
-              "title": "Media Queries",
-              "completed": false
-            },
-            {
-              "title": "Mobile-First Design",
-              "completed": false
-            },
-            {
-              "title": "Flexbox for Responsive Layouts",
-              "completed": false
-            },
-            {
-              "title": "CSS Grid for Responsive Layouts",
-              "completed": false
-            },
-            {
-              "title": "Responsive Images",
-              "completed": false
-            },
-            {
-              "title": "Testing Across Devices",
-              "completed": false
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "name": "JavaScript",
-          "lessons": [
-            {
-              "title": "JS Fundamentals & Syntax",
-              "completed": false
-            },
-            {
-              "title": "Variables & Data Types",
-              "completed": false
-            },
-            {
-              "title": "Functions & Scope",
-              "completed": false
-            },
-            {
-              "title": "DOM Manipulation",
-              "completed": false
-            },
-            {
-              "title": "Events & Event Listeners",
-              "completed": false
-            },
-            {
-              "title": "Async JS (Promises & Fetch)",
-              "completed": false
-            }
-          ]
-        },
-        {
-          "id": 5,
-          "name": "Git & GitHub",
-          "lessons": [
-            {
-              "title": "Git Basics (init, add, commit)",
-              "completed": false
-            },
-            {
-              "title": "Branching & Merging",
-              "completed": false
-            },
-            {
-              "title": "Remote Repos & GitHub",
-              "completed": false
-            },
-            {
-              "title": "Pull Requests & Code Review",
-              "completed": false
-            },
-            {
-              "title": "Resolving Merge Conflicts",
-              "completed": false
-            },
-            {
-              "title": "Git Workflows",
-              "completed": false
-            }
-          ]
-        },
-        {
-          "id": 6,
-          "name": "TypeScript",
-          "lessons": [
-            {
-              "title": "TypeScript Basics & Types",
-              "completed": false
-            },
-            {
-              "title": "Interfaces & Type Aliases",
-              "completed": false
-            },
-            {
-              "title": "Functions & Generics",
-              "completed": false
-            },
-            {
-              "title": "Classes in TypeScript",
-              "completed": false
-            },
-            {
-              "title": "Working with tsconfig",
-              "completed": false
-            },
-            {
-              "title": "TypeScript with React",
-              "completed": false
-            }
-          ]
-        },
-        {
-          "id": 7,
-          "name": "React",
-          "lessons": [
-            {
-              "title": "Components & JSX",
-              "completed": false
-            },
-            {
-              "title": "Props & State",
-              "completed": false
-            },
-            {
-              "title": "Hooks (useState, useEffect)",
-              "completed": false
-            },
-            {
-              "title": "Conditional Rendering & Lists",
-              "completed": false
-            },
-            {
-              "title": "Forms in React",
-              "completed": false
-            },
-            {
-              "title": "Context API & State Management",
-              "completed": false
-            }
-          ]
-        },
-        {
-          "id": 8,
-          "name": "REST API",
-          "lessons": [
-            {
-              "title": "REST Principles & HTTP Methods",
-              "completed": false
-            },
-            {
-              "title": "Fetch API & Axios",
-              "completed": false
-            },
-            {
-              "title": "Handling JSON Responses",
-              "completed": false
-            },
-            {
-              "title": "Authentication with APIs",
-              "completed": false
-            },
-            {
-              "title": "Error Handling",
-              "completed": false
-            },
-            {
-              "title": "Building a Simple API Client",
-              "completed": false
-            }
-          ]
-        }
-      ],
-      "completedSkillIds": [
-        "HTML"
-      ],
-      "xpEarned": 0,
-      "xpNextReward": 0,
-      "streakDays": 0,
-      "streakWeek": [
-        {
-          "day": "Mon",
-          "done": false
-        },
-        {
-          "day": "Tue",
-          "done": false
-        },
-        {
-          "day": "Wed",
-          "done": false
-        },
-        {
-          "day": "Thu",
-          "done": false
-        },
-        {
-          "day": "Fri",
-          "done": false
-        },
-        {
-          "day": "Sat",
-          "done": false
-        },
-        {
-          "day": "Sun",
-          "done": false
-        }
-      ],
-      "weeklyGoalDone": 0,
-      "weeklyGoalTotal": 0,
-      "dailyGoalMinutesDone": 0,
-      "dailyGoalMinutesTotal": 0,
-      "quizProgress": {
-        "questionsDoneToday": 0,
-        "questionsTotalToday": 0
-      },
-      "codePracticeProgress": {
-        "problemsDoneToday": 0,
-        "problemsTotalToday": 0
-      },
-      "currentModule": {
-        "skillId": 0,
-        "skillName": "",
-        "progressPercent": 0,
-        "nextLesson": {
-          "title": "",
-          "durationMinutes": 0
-        },
-        "upNext": {
-          "title": "",
-          "durationMinutes": 0
-        }
-      },
-      "id": "UAICcktusos"
     }
   ],
   "tracks": [
@@ -862,6 +549,916 @@
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
                 "youtube": "https://www.youtube.com/results?search_query=Building%20a%20Simple%20API%20Client%20REST%20API%20tutorial"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Backend",
+      "title": "Back-End Development",
+      "icon": "🖥️",
+      "skills": [
+        {
+          "title": "Programming Basics",
+          "icon": "💡",
+          "level": "Beginner",
+          "duration": "1 week",
+          "lessons": [
+            {
+              "title": "Variables & Data Types",
+              "completed": false,
+              "resources": {
+                "docs": "https://developer.mozilla.org/en-US/docs/Learn",
+                "youtube": "https://www.youtube.com/results?search_query=Variables%20%26%20Data%20Types%20Programming%20Basics%20tutorial"
+              }
+            },
+            {
+              "title": "Control Flow",
+              "completed": false,
+              "resources": {
+                "docs": "https://developer.mozilla.org/en-US/docs/Learn",
+                "youtube": "https://www.youtube.com/results?search_query=Control%20Flow%20Programming%20Basics%20tutorial"
+              }
+            },
+            {
+              "title": "Functions",
+              "completed": false,
+              "resources": {
+                "docs": "https://developer.mozilla.org/en-US/docs/Learn",
+                "youtube": "https://www.youtube.com/results?search_query=Functions%20Programming%20Basics%20tutorial"
+              }
+            },
+            {
+              "title": "Data Structures",
+              "completed": false,
+              "resources": {
+                "docs": "https://developer.mozilla.org/en-US/docs/Learn",
+                "youtube": "https://www.youtube.com/results?search_query=Data%20Structures%20Programming%20Basics%20tutorial"
+              }
+            },
+            {
+              "title": "Error Handling",
+              "completed": false,
+              "resources": {
+                "docs": "https://developer.mozilla.org/en-US/docs/Learn",
+                "youtube": "https://www.youtube.com/results?search_query=Error%20Handling%20Programming%20Basics%20tutorial"
+              }
+            },
+            {
+              "title": "OOP Basics",
+              "completed": false,
+              "resources": {
+                "docs": "https://developer.mozilla.org/en-US/docs/Learn",
+                "youtube": "https://www.youtube.com/results?search_query=OOP%20Basics%20Programming%20Basics%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Node.js",
+          "icon": "🟢",
+          "level": "Beginner",
+          "duration": "2 weeks",
+          "lessons": [
+            {
+              "title": "Node.js Fundamentals",
+              "completed": false,
+              "resources": {
+                "docs": "https://nodejs.org/en/docs",
+                "youtube": "https://www.youtube.com/results?search_query=Node.js%20Fundamentals%20Node.js%20tutorial"
+              }
+            },
+            {
+              "title": "Modules & npm",
+              "completed": false,
+              "resources": {
+                "docs": "https://nodejs.org/en/docs",
+                "youtube": "https://www.youtube.com/results?search_query=Modules%20%26%20npm%20Node.js%20tutorial"
+              }
+            },
+            {
+              "title": "File System & Events",
+              "completed": false,
+              "resources": {
+                "docs": "https://nodejs.org/en/docs",
+                "youtube": "https://www.youtube.com/results?search_query=File%20System%20%26%20Events%20Node.js%20tutorial"
+              }
+            },
+            {
+              "title": "Asynchronous Node (Callbacks/Promises)",
+              "completed": false,
+              "resources": {
+                "docs": "https://nodejs.org/en/docs",
+                "youtube": "https://www.youtube.com/results?search_query=Asynchronous%20Node%20%28Callbacks/Promises%29%20Node.js%20tutorial"
+              }
+            },
+            {
+              "title": "Building a Simple Server",
+              "completed": false,
+              "resources": {
+                "docs": "https://nodejs.org/en/docs",
+                "youtube": "https://www.youtube.com/results?search_query=Building%20a%20Simple%20Server%20Node.js%20tutorial"
+              }
+            },
+            {
+              "title": "Debugging Node Apps",
+              "completed": false,
+              "resources": {
+                "docs": "https://nodejs.org/en/docs",
+                "youtube": "https://www.youtube.com/results?search_query=Debugging%20Node%20Apps%20Node.js%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Express.js",
+          "icon": "🚂",
+          "level": "Intermediate",
+          "duration": "1 week",
+          "lessons": [
+            {
+              "title": "Express Setup & Routing",
+              "completed": false,
+              "resources": {
+                "docs": "https://expressjs.com/en/guide/routing.html",
+                "youtube": "https://www.youtube.com/results?search_query=Express%20Setup%20%26%20Routing%20Express.js%20tutorial"
+              }
+            },
+            {
+              "title": "Middleware",
+              "completed": false,
+              "resources": {
+                "docs": "https://expressjs.com/en/guide/routing.html",
+                "youtube": "https://www.youtube.com/results?search_query=Middleware%20Express.js%20tutorial"
+              }
+            },
+            {
+              "title": "Handling Requests & Responses",
+              "completed": false,
+              "resources": {
+                "docs": "https://expressjs.com/en/guide/routing.html",
+                "youtube": "https://www.youtube.com/results?search_query=Handling%20Requests%20%26%20Responses%20Express.js%20tutorial"
+              }
+            },
+            {
+              "title": "Error Handling in Express",
+              "completed": false,
+              "resources": {
+                "docs": "https://expressjs.com/en/guide/routing.html",
+                "youtube": "https://www.youtube.com/results?search_query=Error%20Handling%20in%20Express%20Express.js%20tutorial"
+              }
+            },
+            {
+              "title": "Templating Engines",
+              "completed": false,
+              "resources": {
+                "docs": "https://expressjs.com/en/guide/routing.html",
+                "youtube": "https://www.youtube.com/results?search_query=Templating%20Engines%20Express.js%20tutorial"
+              }
+            },
+            {
+              "title": "Building a REST API with Express",
+              "completed": false,
+              "resources": {
+                "docs": "https://expressjs.com/en/guide/routing.html",
+                "youtube": "https://www.youtube.com/results?search_query=Building%20a%20REST%20API%20with%20Express%20Express.js%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "REST API",
+          "icon": "🔌",
+          "level": "Intermediate",
+          "duration": "1 week",
+          "lessons": [
+            {
+              "title": "REST Principles",
+              "completed": false,
+              "resources": {
+                "docs": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
+                "youtube": "https://www.youtube.com/results?search_query=REST%20Principles%20REST%20API%20tutorial"
+              }
+            },
+            {
+              "title": "Designing Endpoints",
+              "completed": false,
+              "resources": {
+                "docs": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
+                "youtube": "https://www.youtube.com/results?search_query=Designing%20Endpoints%20REST%20API%20tutorial"
+              }
+            },
+            {
+              "title": "CRUD Operations",
+              "completed": false,
+              "resources": {
+                "docs": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
+                "youtube": "https://www.youtube.com/results?search_query=CRUD%20Operations%20REST%20API%20tutorial"
+              }
+            },
+            {
+              "title": "Status Codes & Error Handling",
+              "completed": false,
+              "resources": {
+                "docs": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
+                "youtube": "https://www.youtube.com/results?search_query=Status%20Codes%20%26%20Error%20Handling%20REST%20API%20tutorial"
+              }
+            },
+            {
+              "title": "API Versioning",
+              "completed": false,
+              "resources": {
+                "docs": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
+                "youtube": "https://www.youtube.com/results?search_query=API%20Versioning%20REST%20API%20tutorial"
+              }
+            },
+            {
+              "title": "API Documentation",
+              "completed": false,
+              "resources": {
+                "docs": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
+                "youtube": "https://www.youtube.com/results?search_query=API%20Documentation%20REST%20API%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "SQL",
+          "icon": "🗄️",
+          "level": "Intermediate",
+          "duration": "2 weeks",
+          "lessons": [
+            {
+              "title": "SQL Basics (SELECT, WHERE)",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.w3schools.com/sql/",
+                "youtube": "https://www.youtube.com/results?search_query=SQL%20Basics%20%28SELECT%2C%20WHERE%29%20SQL%20tutorial"
+              }
+            },
+            {
+              "title": "Joins",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.w3schools.com/sql/",
+                "youtube": "https://www.youtube.com/results?search_query=Joins%20SQL%20tutorial"
+              }
+            },
+            {
+              "title": "Aggregation & Grouping",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.w3schools.com/sql/",
+                "youtube": "https://www.youtube.com/results?search_query=Aggregation%20%26%20Grouping%20SQL%20tutorial"
+              }
+            },
+            {
+              "title": "Subqueries",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.w3schools.com/sql/",
+                "youtube": "https://www.youtube.com/results?search_query=Subqueries%20SQL%20tutorial"
+              }
+            },
+            {
+              "title": "Indexes & Performance",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.w3schools.com/sql/",
+                "youtube": "https://www.youtube.com/results?search_query=Indexes%20%26%20Performance%20SQL%20tutorial"
+              }
+            },
+            {
+              "title": "Database Design & Normalization",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.w3schools.com/sql/",
+                "youtube": "https://www.youtube.com/results?search_query=Database%20Design%20%26%20Normalization%20SQL%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "MongoDB",
+          "icon": "🍃",
+          "level": "Intermediate",
+          "duration": "2 weeks",
+          "lessons": [
+            {
+              "title": "NoSQL Concepts",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.mongodb.com/docs/manual/",
+                "youtube": "https://www.youtube.com/results?search_query=NoSQL%20Concepts%20MongoDB%20tutorial"
+              }
+            },
+            {
+              "title": "MongoDB CRUD Operations",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.mongodb.com/docs/manual/",
+                "youtube": "https://www.youtube.com/results?search_query=MongoDB%20CRUD%20Operations%20MongoDB%20tutorial"
+              }
+            },
+            {
+              "title": "Schema Design",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.mongodb.com/docs/manual/",
+                "youtube": "https://www.youtube.com/results?search_query=Schema%20Design%20MongoDB%20tutorial"
+              }
+            },
+            {
+              "title": "Mongoose ODM",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.mongodb.com/docs/manual/",
+                "youtube": "https://www.youtube.com/results?search_query=Mongoose%20ODM%20MongoDB%20tutorial"
+              }
+            },
+            {
+              "title": "Aggregation Pipeline",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.mongodb.com/docs/manual/",
+                "youtube": "https://www.youtube.com/results?search_query=Aggregation%20Pipeline%20MongoDB%20tutorial"
+              }
+            },
+            {
+              "title": "Indexing in MongoDB",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.mongodb.com/docs/manual/",
+                "youtube": "https://www.youtube.com/results?search_query=Indexing%20in%20MongoDB%20MongoDB%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Authentication",
+          "icon": "🔐",
+          "level": "Intermediate",
+          "duration": "1 week",
+          "lessons": [
+            {
+              "title": "Authentication vs Authorization",
+              "completed": false,
+              "resources": {
+                "docs": "https://jwt.io/introduction",
+                "youtube": "https://www.youtube.com/results?search_query=Authentication%20vs%20Authorization%20Authentication%20tutorial"
+              }
+            },
+            {
+              "title": "Sessions & Cookies",
+              "completed": false,
+              "resources": {
+                "docs": "https://jwt.io/introduction",
+                "youtube": "https://www.youtube.com/results?search_query=Sessions%20%26%20Cookies%20Authentication%20tutorial"
+              }
+            },
+            {
+              "title": "JWT (JSON Web Tokens)",
+              "completed": false,
+              "resources": {
+                "docs": "https://jwt.io/introduction",
+                "youtube": "https://www.youtube.com/results?search_query=JWT%20%28JSON%20Web%20Tokens%29%20Authentication%20tutorial"
+              }
+            },
+            {
+              "title": "Password Hashing (bcrypt)",
+              "completed": false,
+              "resources": {
+                "docs": "https://jwt.io/introduction",
+                "youtube": "https://www.youtube.com/results?search_query=Password%20Hashing%20%28bcrypt%29%20Authentication%20tutorial"
+              }
+            },
+            {
+              "title": "OAuth Basics",
+              "completed": false,
+              "resources": {
+                "docs": "https://jwt.io/introduction",
+                "youtube": "https://www.youtube.com/results?search_query=OAuth%20Basics%20Authentication%20tutorial"
+              }
+            },
+            {
+              "title": "Securing Routes",
+              "completed": false,
+              "resources": {
+                "docs": "https://jwt.io/introduction",
+                "youtube": "https://www.youtube.com/results?search_query=Securing%20Routes%20Authentication%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Deployment",
+          "icon": "🚀",
+          "level": "Advanced",
+          "duration": "1 week",
+          "lessons": [
+            {
+              "title": "Environment Variables",
+              "completed": false,
+              "resources": {
+                "docs": "https://docs.docker.com/",
+                "youtube": "https://www.youtube.com/results?search_query=Environment%20Variables%20Deployment%20tutorial"
+              }
+            },
+            {
+              "title": "Deploying to Cloud (Render/Heroku)",
+              "completed": false,
+              "resources": {
+                "docs": "https://docs.docker.com/",
+                "youtube": "https://www.youtube.com/results?search_query=Deploying%20to%20Cloud%20%28Render/Heroku%29%20Deployment%20tutorial"
+              }
+            },
+            {
+              "title": "CI/CD Basics",
+              "completed": false,
+              "resources": {
+                "docs": "https://docs.docker.com/",
+                "youtube": "https://www.youtube.com/results?search_query=CI/CD%20Basics%20Deployment%20tutorial"
+              }
+            },
+            {
+              "title": "Docker Basics",
+              "completed": false,
+              "resources": {
+                "docs": "https://docs.docker.com/",
+                "youtube": "https://www.youtube.com/results?search_query=Docker%20Basics%20Deployment%20tutorial"
+              }
+            },
+            {
+              "title": "Monitoring & Logging",
+              "completed": false,
+              "resources": {
+                "docs": "https://docs.docker.com/",
+                "youtube": "https://www.youtube.com/results?search_query=Monitoring%20%26%20Logging%20Deployment%20tutorial"
+              }
+            },
+            {
+              "title": "Domain & SSL Setup",
+              "completed": false,
+              "resources": {
+                "docs": "https://docs.docker.com/",
+                "youtube": "https://www.youtube.com/results?search_query=Domain%20%26%20SSL%20Setup%20Deployment%20tutorial"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UI/UX",
+      "title": "UI/UX Design",
+      "icon": "🎨",
+      "skills": [
+        {
+          "title": "Design Principles",
+          "icon": "🎯",
+          "level": "Beginner",
+          "duration": "1 week",
+          "lessons": [
+            {
+              "title": "Visual Hierarchy",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/visual-design",
+                "youtube": "https://www.youtube.com/results?search_query=Visual%20Hierarchy%20Design%20Principles%20tutorial"
+              }
+            },
+            {
+              "title": "Balance & Alignment",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/visual-design",
+                "youtube": "https://www.youtube.com/results?search_query=Balance%20%26%20Alignment%20Design%20Principles%20tutorial"
+              }
+            },
+            {
+              "title": "Contrast & Emphasis",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/visual-design",
+                "youtube": "https://www.youtube.com/results?search_query=Contrast%20%26%20Emphasis%20Design%20Principles%20tutorial"
+              }
+            },
+            {
+              "title": "Consistency & Patterns",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/visual-design",
+                "youtube": "https://www.youtube.com/results?search_query=Consistency%20%26%20Patterns%20Design%20Principles%20tutorial"
+              }
+            },
+            {
+              "title": "White Space",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/visual-design",
+                "youtube": "https://www.youtube.com/results?search_query=White%20Space%20Design%20Principles%20tutorial"
+              }
+            },
+            {
+              "title": "Design Systems",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/visual-design",
+                "youtube": "https://www.youtube.com/results?search_query=Design%20Systems%20Design%20Principles%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Color Theory",
+          "icon": "🌈",
+          "level": "Beginner",
+          "duration": "1 week",
+          "lessons": [
+            {
+              "title": "Color Wheel Basics",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/color-theory",
+                "youtube": "https://www.youtube.com/results?search_query=Color%20Wheel%20Basics%20Color%20Theory%20tutorial"
+              }
+            },
+            {
+              "title": "Color Harmonies",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/color-theory",
+                "youtube": "https://www.youtube.com/results?search_query=Color%20Harmonies%20Color%20Theory%20tutorial"
+              }
+            },
+            {
+              "title": "Color Psychology",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/color-theory",
+                "youtube": "https://www.youtube.com/results?search_query=Color%20Psychology%20Color%20Theory%20tutorial"
+              }
+            },
+            {
+              "title": "Accessibility & Contrast Ratios",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/color-theory",
+                "youtube": "https://www.youtube.com/results?search_query=Accessibility%20%26%20Contrast%20Ratios%20Color%20Theory%20tutorial"
+              }
+            },
+            {
+              "title": "Building a Color Palette",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/color-theory",
+                "youtube": "https://www.youtube.com/results?search_query=Building%20a%20Color%20Palette%20Color%20Theory%20tutorial"
+              }
+            },
+            {
+              "title": "Dark Mode Design",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/color-theory",
+                "youtube": "https://www.youtube.com/results?search_query=Dark%20Mode%20Design%20Color%20Theory%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Typography",
+          "icon": "🔤",
+          "level": "Beginner",
+          "duration": "1 week",
+          "lessons": [
+            {
+              "title": "Font Basics & Anatomy",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/typography",
+                "youtube": "https://www.youtube.com/results?search_query=Font%20Basics%20%26%20Anatomy%20Typography%20tutorial"
+              }
+            },
+            {
+              "title": "Choosing Font Pairings",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/typography",
+                "youtube": "https://www.youtube.com/results?search_query=Choosing%20Font%20Pairings%20Typography%20tutorial"
+              }
+            },
+            {
+              "title": "Type Scale & Hierarchy",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/typography",
+                "youtube": "https://www.youtube.com/results?search_query=Type%20Scale%20%26%20Hierarchy%20Typography%20tutorial"
+              }
+            },
+            {
+              "title": "Line Height & Spacing",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/typography",
+                "youtube": "https://www.youtube.com/results?search_query=Line%20Height%20%26%20Spacing%20Typography%20tutorial"
+              }
+            },
+            {
+              "title": "Readability & Accessibility",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/typography",
+                "youtube": "https://www.youtube.com/results?search_query=Readability%20%26%20Accessibility%20Typography%20tutorial"
+              }
+            },
+            {
+              "title": "Typography in UI Design",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.interaction-design.org/literature/topics/typography",
+                "youtube": "https://www.youtube.com/results?search_query=Typography%20in%20UI%20Design%20Typography%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Wireframing",
+          "icon": "📐",
+          "level": "Beginner",
+          "duration": "2 weeks",
+          "lessons": [
+            {
+              "title": "Low-Fidelity Wireframes",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/wireframing/",
+                "youtube": "https://www.youtube.com/results?search_query=Low-Fidelity%20Wireframes%20Wireframing%20tutorial"
+              }
+            },
+            {
+              "title": "High-Fidelity Wireframes",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/wireframing/",
+                "youtube": "https://www.youtube.com/results?search_query=High-Fidelity%20Wireframes%20Wireframing%20tutorial"
+              }
+            },
+            {
+              "title": "Wireframing Tools",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/wireframing/",
+                "youtube": "https://www.youtube.com/results?search_query=Wireframing%20Tools%20Wireframing%20tutorial"
+              }
+            },
+            {
+              "title": "Information Architecture",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/wireframing/",
+                "youtube": "https://www.youtube.com/results?search_query=Information%20Architecture%20Wireframing%20tutorial"
+              }
+            },
+            {
+              "title": "User Flows",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/wireframing/",
+                "youtube": "https://www.youtube.com/results?search_query=User%20Flows%20Wireframing%20tutorial"
+              }
+            },
+            {
+              "title": "Wireframe to Prototype",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/wireframing/",
+                "youtube": "https://www.youtube.com/results?search_query=Wireframe%20to%20Prototype%20Wireframing%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Prototyping",
+          "icon": "🧩",
+          "level": "Intermediate",
+          "duration": "2 weeks",
+          "lessons": [
+            {
+              "title": "Prototyping Basics",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/prototyping/",
+                "youtube": "https://www.youtube.com/results?search_query=Prototyping%20Basics%20Prototyping%20tutorial"
+              }
+            },
+            {
+              "title": "Interactive Prototypes",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/prototyping/",
+                "youtube": "https://www.youtube.com/results?search_query=Interactive%20Prototypes%20Prototyping%20tutorial"
+              }
+            },
+            {
+              "title": "Prototyping Tools",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/prototyping/",
+                "youtube": "https://www.youtube.com/results?search_query=Prototyping%20Tools%20Prototyping%20tutorial"
+              }
+            },
+            {
+              "title": "Micro-interactions",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/prototyping/",
+                "youtube": "https://www.youtube.com/results?search_query=Micro-interactions%20Prototyping%20tutorial"
+              }
+            },
+            {
+              "title": "Testing Prototypes",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/prototyping/",
+                "youtube": "https://www.youtube.com/results?search_query=Testing%20Prototypes%20Prototyping%20tutorial"
+              }
+            },
+            {
+              "title": "Prototype to Development Handoff",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/prototyping/",
+                "youtube": "https://www.youtube.com/results?search_query=Prototype%20to%20Development%20Handoff%20Prototyping%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Figma",
+          "icon": "🎛️",
+          "level": "Intermediate",
+          "duration": "2 weeks",
+          "lessons": [
+            {
+              "title": "Figma Interface & Basics",
+              "completed": false,
+              "resources": {
+                "docs": "https://help.figma.com/hc/en-us",
+                "youtube": "https://www.youtube.com/results?search_query=Figma%20Interface%20%26%20Basics%20Figma%20tutorial"
+              }
+            },
+            {
+              "title": "Frames & Auto Layout",
+              "completed": false,
+              "resources": {
+                "docs": "https://help.figma.com/hc/en-us",
+                "youtube": "https://www.youtube.com/results?search_query=Frames%20%26%20Auto%20Layout%20Figma%20tutorial"
+              }
+            },
+            {
+              "title": "Components & Variants",
+              "completed": false,
+              "resources": {
+                "docs": "https://help.figma.com/hc/en-us",
+                "youtube": "https://www.youtube.com/results?search_query=Components%20%26%20Variants%20Figma%20tutorial"
+              }
+            },
+            {
+              "title": "Prototyping in Figma",
+              "completed": false,
+              "resources": {
+                "docs": "https://help.figma.com/hc/en-us",
+                "youtube": "https://www.youtube.com/results?search_query=Prototyping%20in%20Figma%20Figma%20tutorial"
+              }
+            },
+            {
+              "title": "Design Tokens",
+              "completed": false,
+              "resources": {
+                "docs": "https://help.figma.com/hc/en-us",
+                "youtube": "https://www.youtube.com/results?search_query=Design%20Tokens%20Figma%20tutorial"
+              }
+            },
+            {
+              "title": "Collaboration & Handoff",
+              "completed": false,
+              "resources": {
+                "docs": "https://help.figma.com/hc/en-us",
+                "youtube": "https://www.youtube.com/results?search_query=Collaboration%20%26%20Handoff%20Figma%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "User Research",
+          "icon": "🔍",
+          "level": "Intermediate",
+          "duration": "1 week",
+          "lessons": [
+            {
+              "title": "Research Methods Overview",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/which-ux-research-methods/",
+                "youtube": "https://www.youtube.com/results?search_query=Research%20Methods%20Overview%20User%20Research%20tutorial"
+              }
+            },
+            {
+              "title": "User Interviews",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/which-ux-research-methods/",
+                "youtube": "https://www.youtube.com/results?search_query=User%20Interviews%20User%20Research%20tutorial"
+              }
+            },
+            {
+              "title": "Surveys & Questionnaires",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/which-ux-research-methods/",
+                "youtube": "https://www.youtube.com/results?search_query=Surveys%20%26%20Questionnaires%20User%20Research%20tutorial"
+              }
+            },
+            {
+              "title": "Personas",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/which-ux-research-methods/",
+                "youtube": "https://www.youtube.com/results?search_query=Personas%20User%20Research%20tutorial"
+              }
+            },
+            {
+              "title": "Journey Mapping",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/which-ux-research-methods/",
+                "youtube": "https://www.youtube.com/results?search_query=Journey%20Mapping%20User%20Research%20tutorial"
+              }
+            },
+            {
+              "title": "Competitive Analysis",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/which-ux-research-methods/",
+                "youtube": "https://www.youtube.com/results?search_query=Competitive%20Analysis%20User%20Research%20tutorial"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Usability Testing",
+          "icon": "🧪",
+          "level": "Intermediate",
+          "duration": "1 week",
+          "lessons": [
+            {
+              "title": "Usability Testing Basics",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/usability-testing-101/",
+                "youtube": "https://www.youtube.com/results?search_query=Usability%20Testing%20Basics%20Usability%20Testing%20tutorial"
+              }
+            },
+            {
+              "title": "Writing Test Scripts",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/usability-testing-101/",
+                "youtube": "https://www.youtube.com/results?search_query=Writing%20Test%20Scripts%20Usability%20Testing%20tutorial"
+              }
+            },
+            {
+              "title": "Moderated vs Unmoderated Testing",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/usability-testing-101/",
+                "youtube": "https://www.youtube.com/results?search_query=Moderated%20vs%20Unmoderated%20Testing%20Usability%20Testing%20tutorial"
+              }
+            },
+            {
+              "title": "Analyzing Test Results",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/usability-testing-101/",
+                "youtube": "https://www.youtube.com/results?search_query=Analyzing%20Test%20Results%20Usability%20Testing%20tutorial"
+              }
+            },
+            {
+              "title": "A/B Testing",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/usability-testing-101/",
+                "youtube": "https://www.youtube.com/results?search_query=A/B%20Testing%20Usability%20Testing%20tutorial"
+              }
+            },
+            {
+              "title": "Iterating on Feedback",
+              "completed": false,
+              "resources": {
+                "docs": "https://www.nngroup.com/articles/usability-testing-101/",
+                "youtube": "https://www.youtube.com/results?search_query=Iterating%20on%20Feedback%20Usability%20Testing%20tutorial"
               }
             }
           ]
@@ -1798,12 +2395,7 @@
       "trackId": 1,
       "skill": "HTML",
       "question": "Which HTML tag creates a hyperlink?",
-      "options": [
-        "<link>",
-        "<a>",
-        "<href>",
-        "<url>"
-      ],
+      "options": ["<link>", "<a>", "<href>", "<url>"],
       "correctAnswer": 1
     },
     {
@@ -1811,12 +2403,7 @@
       "trackId": 1,
       "skill": "HTML",
       "question": "Which tag is used to insert an image?",
-      "options": [
-        "<src>",
-        "<picture>",
-        "<image>",
-        "<img>"
-      ],
+      "options": ["<src>", "<picture>", "<image>", "<img>"],
       "correctAnswer": 3
     },
     {
@@ -1824,12 +2411,7 @@
       "trackId": 1,
       "skill": "HTML",
       "question": "Which tag creates an unordered list?",
-      "options": [
-        "<ol>",
-        "<ul>",
-        "<li>",
-        "<dl>"
-      ],
+      "options": ["<ol>", "<ul>", "<li>", "<dl>"],
       "correctAnswer": 1
     },
     {
@@ -1837,12 +2419,7 @@
       "trackId": 1,
       "skill": "HTML",
       "question": "Which HTML element represents the largest heading?",
-      "options": [
-        "<title>",
-        "<head>",
-        "<h6>",
-        "<h1>"
-      ],
+      "options": ["<title>", "<head>", "<h6>", "<h1>"],
       "correctAnswer": 3
     },
     {
@@ -1850,12 +2427,7 @@
       "trackId": 1,
       "skill": "CSS",
       "question": "Which CSS property changes text colour?",
-      "options": [
-        "font-color",
-        "background-color",
-        "color",
-        "text-color"
-      ],
+      "options": ["font-color", "background-color", "color", "text-color"],
       "correctAnswer": 2
     },
     {
@@ -1863,12 +2435,7 @@
       "trackId": 1,
       "skill": "CSS",
       "question": "Which property changes the background colour?",
-      "options": [
-        "background-style",
-        "bg-color",
-        "background-color",
-        "color"
-      ],
+      "options": ["background-style", "bg-color", "background-color", "color"],
       "correctAnswer": 2
     },
     {
@@ -1876,12 +2443,7 @@
       "trackId": 1,
       "skill": "CSS",
       "question": "Which layout system is one-dimensional?",
-      "options": [
-        "Grid",
-        "Float",
-        "Flexbox",
-        "Table"
-      ],
+      "options": ["Grid", "Float", "Flexbox", "Table"],
       "correctAnswer": 2
     },
     {
@@ -1889,12 +2451,7 @@
       "trackId": 1,
       "skill": "CSS",
       "question": "Which property adds space outside an element?",
-      "options": [
-        "padding",
-        "border",
-        "gap",
-        "margin"
-      ],
+      "options": ["padding", "border", "gap", "margin"],
       "correctAnswer": 3
     },
     {
@@ -1902,12 +2459,7 @@
       "trackId": 1,
       "skill": "CSS",
       "question": "Which property controls text size?",
-      "options": [
-        "font-size",
-        "font-style",
-        "text-size",
-        "font-weight"
-      ],
+      "options": ["font-size", "font-style", "text-size", "font-weight"],
       "correctAnswer": 0
     },
     {
@@ -1928,12 +2480,7 @@
       "trackId": 1,
       "skill": "Responsive Design",
       "question": "Which CSS feature is mainly used for responsive layouts?",
-      "options": [
-        "Media Queries",
-        "Borders",
-        "Gradients",
-        "Animations"
-      ],
+      "options": ["Media Queries", "Borders", "Gradients", "Animations"],
       "correctAnswer": 0
     },
     {
@@ -1941,12 +2488,7 @@
       "trackId": 1,
       "skill": "Responsive Design",
       "question": "Which unit is relative to the viewport width?",
-      "options": [
-        "%",
-        "vw",
-        "px",
-        "em"
-      ],
+      "options": ["%", "vw", "px", "em"],
       "correctAnswer": 1
     },
     {
@@ -1967,12 +2509,7 @@
       "trackId": 1,
       "skill": "Responsive Design",
       "question": "Which layout is commonly used for responsive pages?",
-      "options": [
-        "Frames",
-        "Flexbox",
-        "Tables",
-        "Inline styles"
-      ],
+      "options": ["Frames", "Flexbox", "Tables", "Inline styles"],
       "correctAnswer": 1
     },
     {
@@ -1980,12 +2517,7 @@
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which keyword declares a variable in JavaScript?",
-      "options": [
-        "let",
-        "int",
-        "define",
-        "string"
-      ],
+      "options": ["let", "int", "define", "string"],
       "correctAnswer": 0
     },
     {
@@ -1993,12 +2525,7 @@
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which statement is used for decision making?",
-      "options": [
-        "class",
-        "loop",
-        "if",
-        "print"
-      ],
+      "options": ["class", "loop", "if", "print"],
       "correctAnswer": 2
     },
     {
@@ -2006,12 +2533,7 @@
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which loop repeats while a condition is true?",
-      "options": [
-        "while",
-        "break",
-        "return",
-        "switch"
-      ],
+      "options": ["while", "break", "return", "switch"],
       "correctAnswer": 0
     },
     {
@@ -2019,12 +2541,7 @@
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which data type stores true or false?",
-      "options": [
-        "Number",
-        "Boolean",
-        "String",
-        "Array"
-      ],
+      "options": ["Number", "Boolean", "String", "Array"],
       "correctAnswer": 1
     },
     {
@@ -2032,12 +2549,7 @@
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which symbol is used for assignment?",
-      "options": [
-        "==",
-        "=",
-        "===",
-        "!="
-      ],
+      "options": ["==", "=", "===", "!="],
       "correctAnswer": 1
     },
     {
@@ -2058,12 +2570,7 @@
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which command creates a package.json file?",
-      "options": [
-        "npm init",
-        "npm start",
-        "npm create",
-        "node init"
-      ],
+      "options": ["npm init", "npm start", "npm create", "node init"],
       "correctAnswer": 0
     },
     {
@@ -2071,12 +2578,7 @@
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which file stores project dependencies?",
-      "options": [
-        "package.json",
-        "config.js",
-        "server.js",
-        "index.html"
-      ],
+      "options": ["package.json", "config.js", "server.js", "index.html"],
       "correctAnswer": 0
     },
     {
@@ -2084,12 +2586,7 @@
       "trackId": 2,
       "skill": "Node.js",
       "question": "Which command installs project dependencies?",
-      "options": [
-        "node install",
-        "npm install",
-        "npm run",
-        "npm start"
-      ],
+      "options": ["node install", "npm install", "npm run", "npm start"],
       "correctAnswer": 1
     },
     {
@@ -2097,12 +2594,7 @@
       "trackId": 2,
       "skill": "Node.js",
       "question": "Node.js is built on which JavaScript engine?",
-      "options": [
-        "V8",
-        "SpiderMonkey",
-        "Java VM",
-        "Chakra"
-      ],
+      "options": ["V8", "SpiderMonkey", "Java VM", "Chakra"],
       "correctAnswer": 0
     },
     {
@@ -2123,12 +2615,7 @@
       "trackId": 2,
       "skill": "Express.js",
       "question": "Which method creates a GET route?",
-      "options": [
-        "app.post()",
-        "app.get()",
-        "app.use()",
-        "app.listen()"
-      ],
+      "options": ["app.post()", "app.get()", "app.use()", "app.listen()"],
       "correctAnswer": 1
     },
     {
@@ -2136,12 +2623,7 @@
       "trackId": 2,
       "skill": "Express.js",
       "question": "Which method starts the Express server?",
-      "options": [
-        "app.open()",
-        "app.start()",
-        "app.run()",
-        "app.listen()"
-      ],
+      "options": ["app.open()", "app.start()", "app.run()", "app.listen()"],
       "correctAnswer": 3
     },
     {
@@ -2149,12 +2631,7 @@
       "trackId": 2,
       "skill": "Express.js",
       "question": "Which object contains request data?",
-      "options": [
-        "app",
-        "res",
-        "router",
-        "req"
-      ],
+      "options": ["app", "res", "router", "req"],
       "correctAnswer": 3
     },
     {
@@ -2162,12 +2639,7 @@
       "trackId": 2,
       "skill": "Express.js",
       "question": "Which object sends the response?",
-      "options": [
-        "body",
-        "req",
-        "app",
-        "res"
-      ],
+      "options": ["body", "req", "app", "res"],
       "correctAnswer": 3
     },
     {
@@ -2175,12 +2647,7 @@
       "trackId": 3,
       "skill": "Design Principles",
       "question": "Which principle improves visual organization?",
-      "options": [
-        "Hierarchy",
-        "Encryption",
-        "Hosting",
-        "Compilation"
-      ],
+      "options": ["Hierarchy", "Encryption", "Hosting", "Compilation"],
       "correctAnswer": 0
     },
     {
@@ -2188,12 +2655,7 @@
       "trackId": 3,
       "skill": "Design Principles",
       "question": "Consistency in design helps users by making interfaces...",
-      "options": [
-        "Predictable",
-        "Complex",
-        "Confusing",
-        "Slower"
-      ],
+      "options": ["Predictable", "Complex", "Confusing", "Slower"],
       "correctAnswer": 0
     },
     {
@@ -2201,12 +2663,7 @@
       "trackId": 3,
       "skill": "Design Principles",
       "question": "Whitespace is mainly used to improve...",
-      "options": [
-        "Networking",
-        "Performance",
-        "Storage",
-        "Readability"
-      ],
+      "options": ["Networking", "Performance", "Storage", "Readability"],
       "correctAnswer": 3
     },
     {
@@ -2227,12 +2684,7 @@
       "trackId": 3,
       "skill": "Design Principles",
       "question": "Which principle draws attention to important elements?",
-      "options": [
-        "Encoding",
-        "Caching",
-        "Emphasis",
-        "Compression"
-      ],
+      "options": ["Encoding", "Caching", "Emphasis", "Compression"],
       "correctAnswer": 2
     },
     {
@@ -2279,12 +2731,7 @@
       "trackId": 3,
       "skill": "Color Theory",
       "question": "Blue is commonly associated with...",
-      "options": [
-        "Noise",
-        "Hunger",
-        "Danger",
-        "Trust"
-      ],
+      "options": ["Noise", "Hunger", "Danger", "Trust"],
       "correctAnswer": 3
     },
     {
@@ -2292,12 +2739,7 @@
       "trackId": 3,
       "skill": "Color Theory",
       "question": "A colour palette should be...",
-      "options": [
-        "Consistent",
-        "Invisible",
-        "Random",
-        "Unlimited"
-      ],
+      "options": ["Consistent", "Invisible", "Random", "Unlimited"],
       "correctAnswer": 0
     },
     {
@@ -2318,12 +2760,7 @@
       "trackId": 3,
       "skill": "Typography",
       "question": "Which property changes font size in CSS?",
-      "options": [
-        "font-family",
-        "font-size",
-        "font-style",
-        "text-align"
-      ],
+      "options": ["font-family", "font-size", "font-style", "text-align"],
       "correctAnswer": 1
     },
     {
@@ -2344,12 +2781,7 @@
       "trackId": 3,
       "skill": "Typography",
       "question": "Good line spacing improves...",
-      "options": [
-        "Readability",
-        "Hosting",
-        "Compilation",
-        "Storage"
-      ],
+      "options": ["Readability", "Hosting", "Compilation", "Storage"],
       "correctAnswer": 0
     },
     {
@@ -2357,12 +2789,7 @@
       "trackId": 3,
       "skill": "Typography",
       "question": "Which font type is commonly used for modern interfaces?",
-      "options": [
-        "Decorative",
-        "Handwriting",
-        "Sans-serif",
-        "Serif only"
-      ],
+      "options": ["Decorative", "Handwriting", "Sans-serif", "Serif only"],
       "correctAnswer": 2
     },
     {
@@ -2370,12 +2797,7 @@
       "trackId": 4,
       "skill": "Dart",
       "question": "Which keyword declares a constant value in Dart?",
-      "options": [
-        "const",
-        "var",
-        "let",
-        "define"
-      ],
+      "options": ["const", "var", "let", "define"],
       "correctAnswer": 0
     },
     {
@@ -2383,12 +2805,7 @@
       "trackId": 4,
       "skill": "Dart",
       "question": "Which function prints output in Dart?",
-      "options": [
-        "echo()",
-        "print()",
-        "console.log()",
-        "printf()"
-      ],
+      "options": ["echo()", "print()", "console.log()", "printf()"],
       "correctAnswer": 1
     },
     {
@@ -2396,12 +2813,7 @@
       "trackId": 4,
       "skill": "Dart",
       "question": "Dart is mainly used with...",
-      "options": [
-        "AngularJS",
-        "Flutter",
-        "Laravel",
-        "React"
-      ],
+      "options": ["AngularJS", "Flutter", "Laravel", "React"],
       "correctAnswer": 1
     },
     {
@@ -2409,12 +2821,7 @@
       "trackId": 4,
       "skill": "Dart",
       "question": "Which collection stores ordered items?",
-      "options": [
-        "Map",
-        "List",
-        "Set",
-        "Queue"
-      ],
+      "options": ["Map", "List", "Set", "Queue"],
       "correctAnswer": 1
     },
     {
@@ -2422,12 +2829,7 @@
       "trackId": 4,
       "skill": "Dart",
       "question": "Which keyword defines a class in Dart?",
-      "options": [
-        "object",
-        "class",
-        "type",
-        "struct"
-      ],
+      "options": ["object", "class", "type", "struct"],
       "correctAnswer": 1
     },
     {
@@ -2448,12 +2850,7 @@
       "trackId": 4,
       "skill": "Flutter Basics",
       "question": "Who developed Flutter?",
-      "options": [
-        "Meta",
-        "Microsoft",
-        "Google",
-        "Apple"
-      ],
+      "options": ["Meta", "Microsoft", "Google", "Apple"],
       "correctAnswer": 2
     },
     {
@@ -2461,12 +2858,7 @@
       "trackId": 4,
       "skill": "Flutter Basics",
       "question": "Flutter applications are written in...",
-      "options": [
-        "Java",
-        "Swift",
-        "Dart",
-        "Kotlin"
-      ],
+      "options": ["Java", "Swift", "Dart", "Kotlin"],
       "correctAnswer": 2
     },
     {
@@ -2500,12 +2892,7 @@
       "trackId": 4,
       "skill": "Widgets",
       "question": "Everything in Flutter is a...",
-      "options": [
-        "Widget",
-        "Module",
-        "File",
-        "Package"
-      ],
+      "options": ["Widget", "Module", "File", "Package"],
       "correctAnswer": 0
     },
     {
@@ -2513,12 +2900,7 @@
       "trackId": 4,
       "skill": "Widgets",
       "question": "Which widget displays text?",
-      "options": [
-        "Text",
-        "Label",
-        "Paragraph",
-        "Typography"
-      ],
+      "options": ["Text", "Label", "Paragraph", "Typography"],
       "correctAnswer": 0
     },
     {
@@ -2526,12 +2908,7 @@
       "trackId": 4,
       "skill": "Widgets",
       "question": "Which widget arranges children vertically?",
-      "options": [
-        "Column",
-        "Row",
-        "Wrap",
-        "Stack"
-      ],
+      "options": ["Column", "Row", "Wrap", "Stack"],
       "correctAnswer": 0
     },
     {
@@ -2539,12 +2916,7 @@
       "trackId": 4,
       "skill": "Widgets",
       "question": "Which widget creates a clickable button?",
-      "options": [
-        "Text",
-        "ElevatedButton",
-        "Container",
-        "Padding"
-      ],
+      "options": ["Text", "ElevatedButton", "Container", "Padding"],
       "correctAnswer": 1
     },
     {
@@ -2552,12 +2924,7 @@
       "trackId": 4,
       "skill": "Widgets",
       "question": "Which widget centers its child?",
-      "options": [
-        "Padding",
-        "Align",
-        "SizedBox",
-        "Center"
-      ],
+      "options": ["Padding", "Align", "SizedBox", "Center"],
       "correctAnswer": 3
     },
     {
@@ -2565,12 +2932,7 @@
       "trackId": 5,
       "skill": "Python",
       "question": "Which keyword defines a function in Python?",
-      "options": [
-        "def",
-        "func",
-        "define",
-        "function"
-      ],
+      "options": ["def", "func", "define", "function"],
       "correctAnswer": 0
     },
     {
@@ -2578,12 +2940,7 @@
       "trackId": 5,
       "skill": "Python",
       "question": "Which function prints output?",
-      "options": [
-        "print()",
-        "console.log()",
-        "echo()",
-        "printf()"
-      ],
+      "options": ["print()", "console.log()", "echo()", "printf()"],
       "correctAnswer": 0
     },
     {
@@ -2591,12 +2948,7 @@
       "trackId": 5,
       "skill": "Python",
       "question": "Which data type stores text?",
-      "options": [
-        "str",
-        "bool",
-        "float",
-        "int"
-      ],
+      "options": ["str", "bool", "float", "int"],
       "correctAnswer": 0
     },
     {
@@ -2604,12 +2956,7 @@
       "trackId": 5,
       "skill": "Python",
       "question": "Which loop is used to iterate over a sequence?",
-      "options": [
-        "repeat",
-        "switch",
-        "for",
-        "goto"
-      ],
+      "options": ["repeat", "switch", "for", "goto"],
       "correctAnswer": 2
     },
     {
@@ -2617,12 +2964,7 @@
       "trackId": 5,
       "skill": "Python",
       "question": "Which symbol starts a comment in Python?",
-      "options": [
-        "#",
-        "//",
-        "--",
-        "/*"
-      ],
+      "options": ["#", "//", "--", "/*"],
       "correctAnswer": 0
     },
     {
@@ -2630,12 +2972,7 @@
       "trackId": 5,
       "skill": "Statistics",
       "question": "Which measure represents the average of a dataset?",
-      "options": [
-        "Median",
-        "Range",
-        "Mode",
-        "Mean"
-      ],
+      "options": ["Median", "Range", "Mode", "Mean"],
       "correctAnswer": 3
     },
     {
@@ -2643,12 +2980,7 @@
       "trackId": 5,
       "skill": "Statistics",
       "question": "Which measure represents the middle value?",
-      "options": [
-        "Median",
-        "Variance",
-        "Range",
-        "Mean"
-      ],
+      "options": ["Median", "Variance", "Range", "Mean"],
       "correctAnswer": 0
     },
     {
@@ -2656,12 +2988,7 @@
       "trackId": 5,
       "skill": "Statistics",
       "question": "Which measure represents the most frequent value?",
-      "options": [
-        "Mode",
-        "Mean",
-        "Median",
-        "Standard Deviation"
-      ],
+      "options": ["Mode", "Mean", "Median", "Standard Deviation"],
       "correctAnswer": 0
     },
     {
@@ -2669,12 +2996,7 @@
       "trackId": 5,
       "skill": "Statistics",
       "question": "What does standard deviation measure?",
-      "options": [
-        "Maximum value",
-        "Data spread",
-        "Average",
-        "Minimum value"
-      ],
+      "options": ["Maximum value", "Data spread", "Average", "Minimum value"],
       "correctAnswer": 1
     },
     {
@@ -2682,12 +3004,7 @@
       "trackId": 5,
       "skill": "Statistics",
       "question": "Which chart is best for showing trends over time?",
-      "options": [
-        "Line Chart",
-        "Scatter Plot",
-        "Bar Chart",
-        "Pie Chart"
-      ],
+      "options": ["Line Chart", "Scatter Plot", "Bar Chart", "Pie Chart"],
       "correctAnswer": 0
     },
     {
@@ -2708,12 +3025,7 @@
       "trackId": 5,
       "skill": "NumPy",
       "question": "Which function creates a NumPy array?",
-      "options": [
-        "np.array()",
-        "np.make()",
-        "np.create()",
-        "np.list()"
-      ],
+      "options": ["np.array()", "np.make()", "np.create()", "np.list()"],
       "correctAnswer": 0
     },
     {
@@ -2721,12 +3033,7 @@
       "trackId": 5,
       "skill": "NumPy",
       "question": "Which library is commonly imported as 'np'?",
-      "options": [
-        "Matplotlib",
-        "Pandas",
-        "NumPy",
-        "SciPy"
-      ],
+      "options": ["Matplotlib", "Pandas", "NumPy", "SciPy"],
       "correctAnswer": 2
     },
     {
@@ -2734,12 +3041,7 @@
       "trackId": 5,
       "skill": "NumPy",
       "question": "What is the main data structure in Numpy?",
-      "options": [
-        "List",
-        "ndarray",
-        "DataFrame",
-        "Dictionary"
-      ],
+      "options": ["List", "ndarray", "DataFrame", "Dictionary"],
       "correctAnswer": 1
     },
     {
@@ -2747,12 +3049,7 @@
       "trackId": 5,
       "skill": "NumPy",
       "question": "Which Numpy function create an array of zeros?",
-      "options": [
-        "np.ones()",
-        "np.null()",
-        "np.empty()",
-        "np.zeros()"
-      ],
+      "options": ["np.ones()", "np.null()", "np.empty()", "np.zeros()"],
       "correctAnswer": 3
     }
   ],
@@ -2764,12 +3061,7 @@
       "track": "Frontend",
       "salary": "$900 - $1300",
       "type": "Remote",
-      "requiredSkills": [
-        "HTML",
-        "CSS",
-        "Responsive Design",
-        "JavaScript"
-      ],
+      "requiredSkills": ["HTML", "CSS", "Responsive Design", "JavaScript"],
       "description": "We are looking for a Junior Frontend Developer to build clean and responsive user interfaces."
     },
     {
@@ -2779,13 +3071,7 @@
       "track": "Frontend",
       "salary": "$1300 - $1900",
       "type": "Hybrid",
-      "requiredSkills": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Git & GitHub"
-      ],
+      "requiredSkills": ["HTML", "CSS", "JavaScript", "React", "Git & GitHub"],
       "description": "Join our team to develop scalable single-page applications using React.js."
     },
     {
@@ -2851,6 +3137,136 @@
         "SQL"
       ],
       "description": "Focus on building secure APIs, managing user authorization systems, and protecting application endpoints from vulnerabilities."
+    },
+    {
+      "id": "7",
+      "title": "Junior UI/UX Designer",
+      "company": "Creative Studio",
+      "track": "UI/UX",
+      "salary": "$900 - $1400",
+      "type": "Remote",
+      "requiredSkills": [
+        "Design Principles",
+        "Color Theory",
+        "Typography",
+        "Figma"
+      ],
+      "description": "Design user-friendly interfaces and create visually appealing layouts for web and mobile applications."
+    },
+    {
+      "id": "8",
+      "title": "Product Designer",
+      "company": "VisionTech",
+      "track": "UI/UX",
+      "salary": "$1400 - $2000",
+      "type": "Hybrid",
+      "requiredSkills": [
+        "Wireframing",
+        "Prototyping",
+        "Figma",
+        "User Research",
+        "Usability Testing"
+      ],
+      "description": "Collaborate with developers and stakeholders to create intuitive digital product experiences."
+    },
+    {
+      "id": "9",
+      "title": "UX Researcher",
+      "company": "Insight Labs",
+      "track": "UI/UX",
+      "salary": "$1600 - $2300",
+      "type": "On-site",
+      "requiredSkills": [
+        "User Research",
+        "Usability Testing",
+        "Wireframing",
+        "Design Principles"
+      ],
+      "description": "Conduct user interviews and usability testing to improve product experience."
+    },
+    {
+      "id": "10",
+      "title": "Junior Flutter Developer",
+      "company": "MobileTech",
+      "track": "Flutter",
+      "salary": "$1000 - $1500",
+      "type": "Remote",
+      "requiredSkills": ["Dart", "Flutter Basics", "Widgets", "Layouts"],
+      "description": "Develop cross-platform mobile applications using Flutter."
+    },
+    {
+      "id": "11",
+      "title": "Flutter Mobile Developer",
+      "company": "AppWorks",
+      "track": "Flutter",
+      "salary": "$1500 - $2200",
+      "type": "Hybrid",
+      "requiredSkills": [
+        "Dart",
+        "State Management",
+        "Firebase",
+        "REST API",
+        "Widgets"
+      ],
+      "description": "Build scalable mobile applications integrated with backend services."
+    },
+    {
+      "id": "12",
+      "title": "Cross Platform App Developer",
+      "company": "NextApps",
+      "track": "Flutter",
+      "salary": "$1800 - $2600",
+      "type": "On-site",
+      "requiredSkills": [
+        "Flutter Basics",
+        "State Management",
+        "Firebase",
+        "REST API",
+        "App Deployment"
+      ],
+      "description": "Create and deploy high-performance Flutter applications for Android and iOS."
+    },
+    {
+      "id": "13",
+      "title": "Junior Data Analyst",
+      "company": "Data Insights",
+      "track": "Data Analysis",
+      "salary": "$1000 - $1500",
+      "type": "Remote",
+      "requiredSkills": ["Python", "Statistics", "Excel", "Pandas"],
+      "description": "Analyze business data and generate reports to support decision making."
+    },
+    {
+      "id": "14",
+      "title": "Business Intelligence Analyst",
+      "company": "Smart Analytics",
+      "track": "Data Analysis",
+      "salary": "$1500 - $2200",
+      "type": "Hybrid",
+      "requiredSkills": [
+        "SQL",
+        "Power BI",
+        "Data Visualization",
+        "Excel",
+        "Pandas"
+      ],
+      "description": "Build dashboards and visualize business performance using Power BI."
+    },
+    {
+      "id": "15",
+      "title": "Data Analyst",
+      "company": "Insight Solutions",
+      "track": "Data Analysis",
+      "salary": "$1800 - $2600",
+      "type": "On-site",
+      "requiredSkills": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "SQL",
+        "Data Visualization"
+      ],
+      "description": "Work with large datasets, perform analysis, and create visual reports for stakeholders."
     }
   ],
   "recommended": [
@@ -3269,11 +3685,7 @@
       "id": "proj-1",
       "icon": "weather",
       "title": "Weather App",
-      "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
+      "tags": ["HTML", "CSS", "JavaScript"],
       "level": "Beginner",
       "track": "Frontend",
       "skill": "JavaScript"
@@ -3282,11 +3694,7 @@
       "id": "proj-2",
       "icon": "portfolio",
       "title": "Portfolio Website",
-      "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
+      "tags": ["HTML", "CSS", "JavaScript"],
       "level": "Intermediate",
       "track": "Frontend",
       "skill": "Responsive Design"
@@ -3295,11 +3703,7 @@
       "id": "proj-3",
       "icon": "ecommerce",
       "title": "E-commerce Website",
-      "tags": [
-        "React",
-        "Node.js",
-        "MongoDB"
-      ],
+      "tags": ["React", "Node.js", "MongoDB"],
       "level": "Advanced",
       "track": "Backend",
       "skill": "Node.js"
@@ -3308,11 +3712,7 @@
       "id": "proj-4",
       "icon": "api",
       "title": "Task Management API",
-      "tags": [
-        "Node.js",
-        "Express.js",
-        "MongoDB"
-      ],
+      "tags": ["Node.js", "Express.js", "MongoDB"],
       "level": "Intermediate",
       "track": "Backend",
       "skill": "Express.js"
@@ -3321,11 +3721,7 @@
       "id": "proj-5",
       "icon": "todo",
       "title": "To-Do List App",
-      "tags": [
-        "Dart",
-        "Flutter Basics",
-        "Widgets"
-      ],
+      "tags": ["Dart", "Flutter Basics", "Widgets"],
       "level": "Beginner",
       "track": "Flutter",
       "skill": "Widgets"
@@ -3334,11 +3730,7 @@
       "id": "proj-6",
       "icon": "expense",
       "title": "Expense Tracker App",
-      "tags": [
-        "Flutter",
-        "State Management",
-        "Firebase"
-      ],
+      "tags": ["Flutter", "State Management", "Firebase"],
       "level": "Intermediate",
       "track": "Flutter",
       "skill": "State Management"
@@ -3347,11 +3739,7 @@
       "id": "proj-7",
       "icon": "wireframe",
       "title": "Mobile App Wireframes",
-      "tags": [
-        "Figma",
-        "Wireframing",
-        "Design Principles"
-      ],
+      "tags": ["Figma", "Wireframing", "Design Principles"],
       "level": "Beginner",
       "track": "UI/UX",
       "skill": "Wireframing"
@@ -3360,11 +3748,7 @@
       "id": "proj-8",
       "icon": "prototype",
       "title": "E-commerce App Prototype",
-      "tags": [
-        "Figma",
-        "Prototyping",
-        "User Research"
-      ],
+      "tags": ["Figma", "Prototyping", "User Research"],
       "level": "Intermediate",
       "track": "UI/UX",
       "skill": "Prototyping"
@@ -3373,11 +3757,7 @@
       "id": "proj-9",
       "icon": "dashboard",
       "title": "Sales Data Dashboard",
-      "tags": [
-        "Python",
-        "Pandas",
-        "Data Visualization"
-      ],
+      "tags": ["Python", "Pandas", "Data Visualization"],
       "level": "Intermediate",
       "track": "Data Analysis",
       "skill": "Pandas"
@@ -3386,11 +3766,7 @@
       "id": "proj-10",
       "icon": "report",
       "title": "COVID-19 Data Report",
-      "tags": [
-        "Python",
-        "NumPy",
-        "Power BI"
-      ],
+      "tags": ["Python", "NumPy", "Power BI"],
       "level": "Advanced",
       "track": "Data Analysis",
       "skill": "Power BI"
@@ -3399,9 +3775,7 @@
       "id": "proj-11",
       "icon": "api",
       "title": "Simple HTTP Server",
-      "tags": [
-        "Node.js"
-      ],
+      "tags": ["Node.js"],
       "level": "Beginner",
       "track": "Backend",
       "skill": "Node.js"
@@ -3410,9 +3784,7 @@
       "id": "proj-12",
       "icon": "api",
       "title": "Task Management API",
-      "tags": [
-        "Express.js"
-      ],
+      "tags": ["Express.js"],
       "level": "Intermediate",
       "track": "Backend",
       "skill": "Express.js"
@@ -3421,9 +3793,7 @@
       "id": "proj-13",
       "icon": "api",
       "title": "Authentication API",
-      "tags": [
-        "REST API"
-      ],
+      "tags": ["REST API"],
       "level": "Intermediate",
       "track": "Backend",
       "skill": "REST API"
@@ -3432,9 +3802,7 @@
       "id": "proj-14",
       "icon": "dashboard",
       "title": "Student Database",
-      "tags": [
-        "SQL"
-      ],
+      "tags": ["SQL"],
       "level": "Intermediate",
       "track": "Backend",
       "skill": "SQL"
@@ -3443,9 +3811,7 @@
       "id": "proj-15",
       "icon": "dashboard",
       "title": "Blog Database",
-      "tags": [
-        "MongoDB"
-      ],
+      "tags": ["MongoDB"],
       "level": "Intermediate",
       "track": "Backend",
       "skill": "MongoDB"
@@ -3454,9 +3820,7 @@
       "id": "proj-16",
       "icon": "api",
       "title": "JWT Login System",
-      "tags": [
-        "Authentication"
-      ],
+      "tags": ["Authentication"],
       "level": "Advanced",
       "track": "Backend",
       "skill": "Authentication"
@@ -3465,9 +3829,7 @@
       "id": "proj-17",
       "icon": "dashboard",
       "title": "Deploy Full API",
-      "tags": [
-        "Deployment"
-      ],
+      "tags": ["Deployment"],
       "level": "Advanced",
       "track": "Backend",
       "skill": "Deployment"
@@ -3476,9 +3838,7 @@
       "id": "proj-18",
       "icon": "wireframe",
       "title": "Restaurant Wireframe",
-      "tags": [
-        "Wireframe"
-      ],
+      "tags": ["Wireframe"],
       "level": "Beginner",
       "track": "UI/UX",
       "skill": "Design Principles"
@@ -3487,9 +3847,7 @@
       "id": "proj-19",
       "icon": "palette",
       "title": "Color Palette",
-      "tags": [
-        "Colors"
-      ],
+      "tags": ["Colors"],
       "level": "Beginner",
       "track": "UI/UX",
       "skill": "Color Theory"
@@ -3498,9 +3856,7 @@
       "id": "proj-20",
       "icon": "typography",
       "title": "Typography Guide",
-      "tags": [
-        "Typography"
-      ],
+      "tags": ["Typography"],
       "level": "Beginner",
       "track": "UI/UX",
       "skill": "Typography"
@@ -3509,9 +3865,7 @@
       "id": "proj-21",
       "icon": "wireframe",
       "title": "Mobile Wireframes",
-      "tags": [
-        "Wireframe"
-      ],
+      "tags": ["Wireframe"],
       "level": "Intermediate",
       "track": "UI/UX",
       "skill": "Wireframing"
@@ -3520,9 +3874,7 @@
       "id": "proj-22",
       "icon": "prototype",
       "title": "Shopping App Prototype",
-      "tags": [
-        "Prototype"
-      ],
+      "tags": ["Prototype"],
       "level": "Intermediate",
       "track": "UI/UX",
       "skill": "Prototyping"
@@ -3531,9 +3883,7 @@
       "id": "proj-23",
       "icon": "prototype",
       "title": "Figma Dashboard",
-      "tags": [
-        "Figma"
-      ],
+      "tags": ["Figma"],
       "level": "Intermediate",
       "track": "UI/UX",
       "skill": "Figma"
@@ -3542,9 +3892,7 @@
       "id": "proj-24",
       "icon": "prototype",
       "title": "User Interview Report",
-      "tags": [
-        "Research"
-      ],
+      "tags": ["Research"],
       "level": "Advanced",
       "track": "UI/UX",
       "skill": "User Research"
@@ -3553,9 +3901,7 @@
       "id": "proj-25",
       "icon": "prototype",
       "title": "Usability Test",
-      "tags": [
-        "Testing"
-      ],
+      "tags": ["Testing"],
       "level": "Advanced",
       "track": "UI/UX",
       "skill": "Usability Testing"
@@ -3564,9 +3910,7 @@
       "id": "proj-26",
       "icon": "todo",
       "title": "Calculator App",
-      "tags": [
-        "Dart"
-      ],
+      "tags": ["Dart"],
       "level": "Beginner",
       "track": "Flutter",
       "skill": "Dart"
@@ -3575,9 +3919,7 @@
       "id": "proj-27",
       "icon": "todo",
       "title": "Counter App",
-      "tags": [
-        "Flutter"
-      ],
+      "tags": ["Flutter"],
       "level": "Beginner",
       "track": "Flutter",
       "skill": "Flutter Basics"
@@ -3586,9 +3928,7 @@
       "id": "proj-28",
       "icon": "todo",
       "title": "Widgets Demo",
-      "tags": [
-        "Widgets"
-      ],
+      "tags": ["Widgets"],
       "level": "Beginner",
       "track": "Flutter",
       "skill": "Widgets"
@@ -3597,9 +3937,7 @@
       "id": "proj-29",
       "icon": "todo",
       "title": "Expense Tracker",
-      "tags": [
-        "Layouts"
-      ],
+      "tags": ["Layouts"],
       "level": "Intermediate",
       "track": "Flutter",
       "skill": "Layouts"
@@ -3608,9 +3946,7 @@
       "id": "proj-30",
       "icon": "expense",
       "title": "Notes App",
-      "tags": [
-        "State Management"
-      ],
+      "tags": ["State Management"],
       "level": "Intermediate",
       "track": "Flutter",
       "skill": "State Management"
@@ -3619,9 +3955,7 @@
       "id": "proj-31",
       "icon": "expense",
       "title": "Firebase Chat",
-      "tags": [
-        "Firebase"
-      ],
+      "tags": ["Firebase"],
       "level": "Advanced",
       "track": "Flutter",
       "skill": "Firebase"
@@ -3630,9 +3964,7 @@
       "id": "proj-32",
       "icon": "api",
       "title": "Movies API App",
-      "tags": [
-        "REST API"
-      ],
+      "tags": ["REST API"],
       "level": "Advanced",
       "track": "Flutter",
       "skill": "REST API"
@@ -3641,9 +3973,7 @@
       "id": "proj-33",
       "icon": "dashboard",
       "title": "Publish App",
-      "tags": [
-        "Deployment"
-      ],
+      "tags": ["Deployment"],
       "level": "Advanced",
       "track": "Flutter",
       "skill": "App Deployment"
@@ -3652,9 +3982,7 @@
       "id": "proj-34",
       "icon": "dashboard",
       "title": "Python Calculator",
-      "tags": [
-        "Python"
-      ],
+      "tags": ["Python"],
       "level": "Beginner",
       "track": "Data Analysis",
       "skill": "Python"
@@ -3663,9 +3991,7 @@
       "id": "proj-35",
       "icon": "report",
       "title": "Statistics Report",
-      "tags": [
-        "Statistics"
-      ],
+      "tags": ["Statistics"],
       "level": "Beginner",
       "track": "Data Analysis",
       "skill": "Statistics"
@@ -3674,9 +4000,7 @@
       "id": "proj-36",
       "icon": "dashboard",
       "title": "NumPy Matrix Project",
-      "tags": [
-        "NumPy"
-      ],
+      "tags": ["NumPy"],
       "level": "Intermediate",
       "track": "Data Analysis",
       "skill": "NumPy"
@@ -3685,9 +4009,7 @@
       "id": "proj-37",
       "icon": "dashboard",
       "title": "Sales Dashboard",
-      "tags": [
-        "Pandas"
-      ],
+      "tags": ["Pandas"],
       "level": "Intermediate",
       "track": "Data Analysis",
       "skill": "Pandas"
@@ -3696,9 +4018,7 @@
       "id": "proj-38",
       "icon": "dashboard",
       "title": "Charts Dashboard",
-      "tags": [
-        "Data Visualization"
-      ],
+      "tags": ["Data Visualization"],
       "level": "Intermediate",
       "track": "Data Analysis",
       "skill": "Data Visualization"
@@ -3707,9 +4027,7 @@
       "id": "proj-39",
       "icon": "dashboard",
       "title": "SQL Data Analysis",
-      "tags": [
-        "SQL"
-      ],
+      "tags": ["SQL"],
       "level": "Advanced",
       "track": "Data Analysis",
       "skill": "SQL"
@@ -3718,9 +4036,7 @@
       "id": "proj-40",
       "icon": "report",
       "title": "Excel Sales Report",
-      "tags": [
-        "Excel"
-      ],
+      "tags": ["Excel"],
       "level": "Advanced",
       "track": "Data Analysis",
       "skill": "Excel"
@@ -3729,269 +4045,7 @@
       "id": "proj-41",
       "icon": "dashboard",
       "title": "Power BI Dashboard",
-      "tags": [
-        "Power BI"
-      ],
-      "level": "Advanced",
-      "track": "Data Analysis",
-      "skill": "Power BI"
-    },
-    {
-      "id": "proj-42",
-      "icon": "portfolio",
-      "title": "React Movie App",
-      "tags": [
-        "React",
-        "Hooks",
-        "API"
-      ],
-      "level": "Intermediate",
-      "track": "Frontend",
-      "skill": "React"
-    },
-    {
-      "id": "proj-43",
-      "icon": "todo",
-      "title": "TypeScript Todo App",
-      "tags": [
-        "TypeScript",
-        "Interfaces",
-        "Generics"
-      ],
-      "level": "Intermediate",
-      "track": "Frontend",
-      "skill": "TypeScript"
-    },
-    {
-      "id": "proj-44",
-      "icon": "api",
-      "title": "GitHub Users App",
-      "tags": [
-        "REST API",
-        "Fetch",
-        "JSON"
-      ],
-      "level": "Intermediate",
-      "track": "Frontend",
-      "skill": "REST API"
-    },
-    {
-      "id": "proj-45",
-      "icon": "portfolio",
-      "title": "Personal Profile Page",
-      "tags": [
-        "HTML"
-      ],
-      "level": "Beginner",
-      "track": "Frontend",
-      "skill": "HTML"
-    },
-    {
-      "id": "proj-46",
-      "icon": "portfolio",
-      "title": "Landing Page",
-      "tags": [
-        "HTML",
-        "CSS"
-      ],
-      "level": "Beginner",
-      "track": "Frontend",
-      "skill": "CSS"
-    },
-    {
-      "id": "proj-48",
-      "icon": "api",
-      "title": "Authentication System",
-      "tags": [
-        "Authentication"
-      ],
-      "level": "Advanced",
-      "track": "Backend",
-      "skill": "Authentication"
-    },
-    {
-      "id": "proj-49",
-      "icon": "dashboard",
-      "title": "Deploy Express App",
-      "tags": [
-        "Deployment"
-      ],
-      "level": "Advanced",
-      "track": "Backend",
-      "skill": "Deployment"
-    },
-    {
-      "id": "proj-50",
-      "icon": "todo",
-      "title": "Flutter Layout App",
-      "tags": [
-        "Layouts"
-      ],
-      "level": "Intermediate",
-      "track": "Flutter",
-      "skill": "Layouts"
-    },
-    {
-      "id": "proj-51",
-      "icon": "expense",
-      "title": "Firebase Notes App",
-      "tags": [
-        "Firebase"
-      ],
-      "level": "Advanced",
-      "track": "Flutter",
-      "skill": "Firebase"
-    },
-    {
-      "id": "proj-52",
-      "icon": "api",
-      "title": "REST API Integration",
-      "tags": [
-        "REST API"
-      ],
-      "level": "Advanced",
-      "track": "Flutter",
-      "skill": "REST API"
-    },
-    {
-      "id": "proj-53",
-      "icon": "dashboard",
-      "title": "Publish Flutter App",
-      "tags": [
-        "Deployment"
-      ],
-      "level": "Advanced",
-      "track": "Flutter",
-      "skill": "App Deployment"
-    },
-    {
-      "id": "proj-54",
-      "icon": "wireframe",
-      "title": "Design Principles Practice",
-      "tags": [
-        "Design Principles"
-      ],
-      "level": "Beginner",
-      "track": "UI/UX",
-      "skill": "Design Principles"
-    },
-    {
-      "id": "proj-55",
-      "icon": "palette",
-      "title": "Brand Color System",
-      "tags": [
-        "Color Theory"
-      ],
-      "level": "Beginner",
-      "track": "UI/UX",
-      "skill": "Color Theory"
-    },
-    {
-      "id": "proj-56",
-      "icon": "typography",
-      "title": "Typography Showcase",
-      "tags": [
-        "Typography"
-      ],
-      "level": "Beginner",
-      "track": "UI/UX",
-      "skill": "Typography"
-    },
-    {
-      "id": "proj-57",
-      "icon": "prototype",
-      "title": "Advanced Usability Test",
-      "tags": [
-        "Usability Testing"
-      ],
-      "level": "Advanced",
-      "track": "UI/UX",
-      "skill": "Usability Testing"
-    },
-    {
-      "id": "proj-58",
-      "icon": "dashboard",
-      "title": "Python Data Calculator",
-      "tags": [
-        "Python"
-      ],
-      "level": "Beginner",
-      "track": "Data Analysis",
-      "skill": "Python"
-    },
-    {
-      "id": "proj-59",
-      "icon": "report",
-      "title": "Statistics Analysis Report",
-      "tags": [
-        "Statistics"
-      ],
-      "level": "Beginner",
-      "track": "Data Analysis",
-      "skill": "Statistics"
-    },
-    {
-      "id": "proj-60",
-      "icon": "dashboard",
-      "title": "NumPy Matrix Operations",
-      "tags": [
-        "NumPy"
-      ],
-      "level": "Intermediate",
-      "track": "Data Analysis",
-      "skill": "NumPy"
-    },
-    {
-      "id": "proj-61",
-      "icon": "dashboard",
-      "title": "Interactive Sales Dashboard",
-      "tags": [
-        "Pandas"
-      ],
-      "level": "Intermediate",
-      "track": "Data Analysis",
-      "skill": "Pandas"
-    },
-    {
-      "id": "proj-62",
-      "icon": "dashboard",
-      "title": "Charts Visualization",
-      "tags": [
-        "Data Visualization"
-      ],
-      "level": "Intermediate",
-      "track": "Data Analysis",
-      "skill": "Data Visualization"
-    },
-    {
-      "id": "proj-63",
-      "icon": "dashboard",
-      "title": "SQL Analytics",
-      "tags": [
-        "SQL"
-      ],
-      "level": "Advanced",
-      "track": "Data Analysis",
-      "skill": "SQL"
-    },
-    {
-      "id": "proj-64",
-      "icon": "report",
-      "title": "Excel Business Report",
-      "tags": [
-        "Excel"
-      ],
-      "level": "Advanced",
-      "track": "Data Analysis",
-      "skill": "Excel"
-    },
-    {
-      "id": "proj-65",
-      "icon": "dashboard",
-      "title": "Power BI Business Dashboard",
-      "tags": [
-        "Power BI"
-      ],
+      "tags": ["Power BI"],
       "level": "Advanced",
       "track": "Data Analysis",
       "skill": "Power BI"
@@ -4004,13 +4058,7 @@
       "level": "Easy",
       "title": "Personal Portfolio",
       "description": "Build a responsive personal portfolio website to showcase your skills, projects, education, and contact information using clean HTML and modern CSS.",
-      "skills": [
-        "HTML",
-        "CSS",
-        "Responsive Design",
-        "Flex Box",
-        "CSS Grid"
-      ],
+      "skills": ["HTML", "CSS", "Responsive Design", "Flex Box", "CSS Grid"],
       "image": "../assets/images/Front1.png",
       "github": "",
       "demo": "",
@@ -4184,13 +4232,7 @@
       "level": "Easy",
       "title": "BMI Calculator",
       "description": "Build a Flutter BMI Calculator calculates Body Mass Index based on user input and displays health categories with a clean interface.",
-      "skills": [
-        "Flutter",
-        "Dart",
-        "Widgets",
-        "UI Design",
-        "State Management"
-      ],
+      "skills": ["Flutter", "Dart", "Widgets", "UI Design", "State Management"],
       "image": "../assets/images/Flutter1.png",
       "github": "",
       "demo": "",
@@ -4338,6 +4380,5 @@
       "id": "10",
       "message": "Consistency beats motivation. Keep showing up, and the results will follow."
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
