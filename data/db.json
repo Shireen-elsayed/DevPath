@@ -5,88 +5,48 @@
       "username": "Naema",
       "email": "manar@gmail.com",
       "password": "123456",
-      "track": "Backend",
+      "track": "Data Analysis",
       "level": "beginner",
       "avatar": "",
       "overallScore": 70,
-      "skills": [
-        {
-          "id": 1,
-          "name": "HTML"
-        },
-        {
-          "id": 2,
-          "name": "CSS"
-        },
-        {
-          "id": 3,
-          "name": "Responsive Design"
-        },
-        {
-          "id": 4,
-          "name": "JavaScript"
-        },
-        {
-          "id": 5,
-          "name": "Git & GitHub"
-        },
-        {
-          "id": 6,
-          "name": "Bootstrap"
-        },
-        {
-          "id": 7,
-          "name": "React"
-        },
-        {
-          "id": 8,
-          "name": "REST API"
-        }
-      ],
-      "completedSkillIds": [
-        "Programming Basics",
-        "Node.js",
-        "Express.js",
-        "REST API",
-        "MongoDB",
-        "TypeScript",
-        "React"
-      ],
-      "xpEarned": 1202.555,
+      "skills": [],
+      "completedSkillIds": [],
+      "xpEarned": 2.555,
       "xpNextReward": 3000,
       "streakDays": 9,
       "streakWeek": [
         {
           "day": "Mon",
-          "done": true
+          "done": false
         },
         {
           "day": "Tue",
-          "done": true
+          "done": false
         },
         {
           "day": "Wed",
-          "done": true
+          "done": false
         },
         {
           "day": "Thu",
-          "done": true
+          "done": false
         },
         {
           "day": "Fri",
-          "done": true
+          "done": false
         },
         {
           "day": "Sat",
-          "done": true
+          "done": false
         },
         {
           "day": "Sun",
           "done": false
         }
       ],
-      "weeklyGoalDone": 5,
-      "weeklyGoalTotal": 7,
+      "weeklyGoalDone": 0,
+      "weeklyGoalTotal": 40,
+      "lastWeeklyReset": "2026-07-27",
       "dailyGoalMinutesDone": 0,
       "dailyGoalMinutesTotal": 30,
       "quizProgress": {
@@ -153,7 +113,7 @@
           "lessons": [
             {
               "title": "HTML Introduction",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Web/HTML",
                 "youtube": "https://www.youtube.com/results?search_query=HTML%20Introduction%20HTML%20tutorial"
@@ -161,7 +121,7 @@
             },
             {
               "title": "HTML Elements & Tags",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Web/HTML",
                 "youtube": "https://www.youtube.com/results?search_query=HTML%20Elements%20%26%20Tags%20HTML%20tutorial"
@@ -169,7 +129,7 @@
             },
             {
               "title": "Forms & Inputs",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Web/HTML",
                 "youtube": "https://www.youtube.com/results?search_query=Forms%20%26%20Inputs%20HTML%20tutorial"
@@ -177,7 +137,7 @@
             },
             {
               "title": "Tables",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Web/HTML",
                 "youtube": "https://www.youtube.com/results?search_query=Tables%20HTML%20tutorial"
@@ -185,7 +145,7 @@
             },
             {
               "title": "Semantic HTML",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Web/HTML",
                 "youtube": "https://www.youtube.com/results?search_query=Semantic%20HTML%20HTML%20tutorial"
@@ -193,7 +153,7 @@
             },
             {
               "title": "Accessibility Basics",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Web/HTML",
                 "youtube": "https://www.youtube.com/results?search_query=Accessibility%20Basics%20HTML%20tutorial"
@@ -209,7 +169,7 @@
           "lessons": [
             {
               "title": "CSS Selectors & Specificity",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Web/CSS",
                 "youtube": "https://www.youtube.com/results?search_query=CSS%20Selectors%20%26%20Specificity%20CSS%20tutorial"
@@ -217,7 +177,7 @@
             },
             {
               "title": "Box Model",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Web/CSS",
                 "youtube": "https://www.youtube.com/results?search_query=Box%20Model%20CSS%20tutorial"
@@ -225,7 +185,7 @@
             },
             {
               "title": "Flexbox",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Web/CSS",
                 "youtube": "https://www.youtube.com/results?search_query=Flexbox%20CSS%20tutorial"
@@ -233,7 +193,7 @@
             },
             {
               "title": "CSS Grid",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Web/CSS",
                 "youtube": "https://www.youtube.com/results?search_query=CSS%20Grid%20CSS%20tutorial"
@@ -241,7 +201,7 @@
             },
             {
               "title": "Positioning & Display",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Web/CSS",
                 "youtube": "https://www.youtube.com/results?search_query=Positioning%20%26%20Display%20CSS%20tutorial"
@@ -249,7 +209,7 @@
             },
             {
               "title": "Animations & Transitions",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Web/CSS",
                 "youtube": "https://www.youtube.com/results?search_query=Animations%20%26%20Transitions%20CSS%20tutorial"
@@ -433,7 +393,7 @@
           "lessons": [
             {
               "title": "TypeScript Basics & Types",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://www.typescriptlang.org/docs/",
                 "youtube": "https://www.youtube.com/results?search_query=TypeScript%20Basics%20%26%20Types%20TypeScript%20tutorial"
@@ -441,7 +401,7 @@
             },
             {
               "title": "Interfaces & Type Aliases",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://www.typescriptlang.org/docs/",
                 "youtube": "https://www.youtube.com/results?search_query=Interfaces%20%26%20Type%20Aliases%20TypeScript%20tutorial"
@@ -449,7 +409,7 @@
             },
             {
               "title": "Functions & Generics",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://www.typescriptlang.org/docs/",
                 "youtube": "https://www.youtube.com/results?search_query=Functions%20%26%20Generics%20TypeScript%20tutorial"
@@ -457,7 +417,7 @@
             },
             {
               "title": "Classes in TypeScript",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://www.typescriptlang.org/docs/",
                 "youtube": "https://www.youtube.com/results?search_query=Classes%20in%20TypeScript%20TypeScript%20tutorial"
@@ -465,7 +425,7 @@
             },
             {
               "title": "Working with tsconfig",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://www.typescriptlang.org/docs/",
                 "youtube": "https://www.youtube.com/results?search_query=Working%20with%20tsconfig%20TypeScript%20tutorial"
@@ -473,7 +433,7 @@
             },
             {
               "title": "TypeScript with React",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://www.typescriptlang.org/docs/",
                 "youtube": "https://www.youtube.com/results?search_query=TypeScript%20with%20React%20TypeScript%20tutorial"
@@ -489,7 +449,7 @@
           "lessons": [
             {
               "title": "Components & JSX",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://react.dev/learn",
                 "youtube": "https://www.youtube.com/results?search_query=Components%20%26%20JSX%20React%20tutorial"
@@ -497,7 +457,7 @@
             },
             {
               "title": "Props & State",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://react.dev/learn",
                 "youtube": "https://www.youtube.com/results?search_query=Props%20%26%20State%20React%20tutorial"
@@ -505,7 +465,7 @@
             },
             {
               "title": "Hooks (useState, useEffect)",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://react.dev/learn",
                 "youtube": "https://www.youtube.com/results?search_query=Hooks%20%28useState%2C%20useEffect%29%20React%20tutorial"
@@ -513,7 +473,7 @@
             },
             {
               "title": "Conditional Rendering & Lists",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://react.dev/learn",
                 "youtube": "https://www.youtube.com/results?search_query=Conditional%20Rendering%20%26%20Lists%20React%20tutorial"
@@ -521,7 +481,7 @@
             },
             {
               "title": "Forms in React",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://react.dev/learn",
                 "youtube": "https://www.youtube.com/results?search_query=Forms%20in%20React%20React%20tutorial"
@@ -529,7 +489,7 @@
             },
             {
               "title": "Context API & State Management",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://react.dev/learn",
                 "youtube": "https://www.youtube.com/results?search_query=Context%20API%20%26%20State%20Management%20React%20tutorial"
@@ -545,7 +505,7 @@
           "lessons": [
             {
               "title": "REST Principles & HTTP Methods",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
                 "youtube": "https://www.youtube.com/results?search_query=REST%20Principles%20%26%20HTTP%20Methods%20REST%20API%20tutorial"
@@ -553,7 +513,7 @@
             },
             {
               "title": "Fetch API & Axios",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
                 "youtube": "https://www.youtube.com/results?search_query=Fetch%20API%20%26%20Axios%20REST%20API%20tutorial"
@@ -561,7 +521,7 @@
             },
             {
               "title": "Handling JSON Responses",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
                 "youtube": "https://www.youtube.com/results?search_query=Handling%20JSON%20Responses%20REST%20API%20tutorial"
@@ -569,7 +529,7 @@
             },
             {
               "title": "Authentication with APIs",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
                 "youtube": "https://www.youtube.com/results?search_query=Authentication%20with%20APIs%20REST%20API%20tutorial"
@@ -577,7 +537,7 @@
             },
             {
               "title": "Error Handling",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
                 "youtube": "https://www.youtube.com/results?search_query=Error%20Handling%20REST%20API%20tutorial"
@@ -585,7 +545,7 @@
             },
             {
               "title": "Building a Simple API Client",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Glossary/REST",
                 "youtube": "https://www.youtube.com/results?search_query=Building%20a%20Simple%20API%20Client%20REST%20API%20tutorial"
@@ -608,7 +568,7 @@
           "lessons": [
             {
               "title": "Variables & Data Types",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Learn",
                 "youtube": "https://www.youtube.com/results?search_query=Variables%20%26%20Data%20Types%20Programming%20Basics%20tutorial"
@@ -616,7 +576,7 @@
             },
             {
               "title": "Control Flow",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Learn",
                 "youtube": "https://www.youtube.com/results?search_query=Control%20Flow%20Programming%20Basics%20tutorial"
@@ -624,7 +584,7 @@
             },
             {
               "title": "Functions",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Learn",
                 "youtube": "https://www.youtube.com/results?search_query=Functions%20Programming%20Basics%20tutorial"
@@ -632,7 +592,7 @@
             },
             {
               "title": "Data Structures",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Learn",
                 "youtube": "https://www.youtube.com/results?search_query=Data%20Structures%20Programming%20Basics%20tutorial"
@@ -640,7 +600,7 @@
             },
             {
               "title": "Error Handling",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Learn",
                 "youtube": "https://www.youtube.com/results?search_query=Error%20Handling%20Programming%20Basics%20tutorial"
@@ -648,7 +608,7 @@
             },
             {
               "title": "OOP Basics",
-              "completed": true,
+              "completed": false,
               "resources": {
                 "docs": "https://developer.mozilla.org/en-US/docs/Learn",
                 "youtube": "https://www.youtube.com/results?search_query=OOP%20Basics%20Programming%20Basics%20tutorial"
@@ -2423,258 +2383,173 @@
       "skill": "HTML",
       "question": "What does HTML stand for?",
       "options": [
-        "Hyper Text Markup Language",
         "Home Tool Markup Language",
+        "Hyper Text Markup Language",
         "Hyperlinks and Text Markup Language",
         "Hyper Transfer Markup Language"
       ],
-      "correctAnswer": 0
+      "correctAnswer": 1
     },
     {
       "id": "2",
       "trackId": 1,
       "skill": "HTML",
-      "question": "Which HTML tag is used to create a hyperlink?",
-      "options": [
-        "<a>",
-        "<link>",
-        "<href>",
-        "<url>"
-      ],
-      "correctAnswer": 0
+      "question": "Which HTML tag creates a hyperlink?",
+      "options": ["<link>", "<a>", "<href>", "<url>"],
+      "correctAnswer": 1
     },
     {
       "id": "3",
       "trackId": 1,
       "skill": "HTML",
-      "question": "Which HTML tag is used to insert an image?",
-      "options": [
-        "<image>",
-        "<img>",
-        "<picture>",
-        "<src>"
-      ],
-      "correctAnswer": 1
+      "question": "Which tag is used to insert an image?",
+      "options": ["<src>", "<picture>", "<image>", "<img>"],
+      "correctAnswer": 3
     },
     {
       "id": "4",
       "trackId": 1,
       "skill": "HTML",
-      "question": "Which HTML element is used for the largest heading?",
-      "options": [
-        "<heading>",
-        "<head>",
-        "<h6>",
-        "<h1>"
-      ],
-      "correctAnswer": 3
+      "question": "Which tag creates an unordered list?",
+      "options": ["<ol>", "<ul>", "<li>", "<dl>"],
+      "correctAnswer": 1
     },
     {
       "id": "5",
       "trackId": 1,
       "skill": "HTML",
-      "question": "Which tag is used to create an unordered list?",
-      "options": [
-        "<ol>",
-        "<ul>",
-        "<li>",
-        "<list>"
-      ],
-      "correctAnswer": 1
+      "question": "Which HTML element represents the largest heading?",
+      "options": ["<title>", "<head>", "<h6>", "<h1>"],
+      "correctAnswer": 3
     },
     {
       "id": "6",
       "trackId": 1,
       "skill": "CSS",
-      "question": "Which CSS property changes the text color?",
-      "options": [
-        "font-color",
-        "text-color",
-        "color",
-        "background-color"
-      ],
+      "question": "Which CSS property changes text colour?",
+      "options": ["font-color", "background-color", "color", "text-color"],
       "correctAnswer": 2
     },
     {
       "id": "7",
       "trackId": 1,
       "skill": "CSS",
-      "question": "Which property is used to change the background color?",
-      "options": [
-        "background-color",
-        "bg-color",
-        "color",
-        "background"
-      ],
-      "correctAnswer": 0
+      "question": "Which property changes the background colour?",
+      "options": ["background-style", "bg-color", "background-color", "color"],
+      "correctAnswer": 2
     },
     {
       "id": "8",
       "trackId": 1,
       "skill": "CSS",
-      "question": "Which CSS layout is one-dimensional?",
-      "options": [
-        "Grid",
-        "Flexbox",
-        "Table",
-        "Float"
-      ],
-      "correctAnswer": 1
+      "question": "Which layout system is one-dimensional?",
+      "options": ["Grid", "Float", "Flexbox", "Table"],
+      "correctAnswer": 2
     },
     {
       "id": "9",
       "trackId": 1,
       "skill": "CSS",
-      "question": "Which property controls the space outside an element?",
-      "options": [
-        "padding",
-        "border",
-        "margin",
-        "spacing"
-      ],
-      "correctAnswer": 2
+      "question": "Which property adds space outside an element?",
+      "options": ["padding", "border", "gap", "margin"],
+      "correctAnswer": 3
     },
     {
       "id": "10",
       "trackId": 1,
       "skill": "CSS",
-      "question": "Which property makes text bold?",
-      "options": [
-        "font-style",
-        "font-weight",
-        "text-weight",
-        "font-size"
-      ],
-      "correctAnswer": 1
+      "question": "Which property controls text size?",
+      "options": ["font-size", "font-style", "text-size", "font-weight"],
+      "correctAnswer": 0
     },
     {
       "id": "11",
       "trackId": 1,
-      "skill": "JavaScript",
-      "question": "Which keyword is used to declare a variable?",
+      "skill": "Responsive Design",
+      "question": "What is responsive design?",
       "options": [
-        "var",
-        "let",
-        "const",
-        "All of the above"
+        "A fast website",
+        "A design that adapts to different screen sizes",
+        "A static layout",
+        "A colourful website"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 1
     },
     {
       "id": "12",
       "trackId": 1,
-      "skill": "JavaScript",
-      "question": "Which method is used to print data in the console?",
-      "options": [
-        "console.log()",
-        "print()",
-        "alert()",
-        "document.write()"
-      ],
+      "skill": "Responsive Design",
+      "question": "Which CSS feature is mainly used for responsive layouts?",
+      "options": ["Media Queries", "Borders", "Gradients", "Animations"],
       "correctAnswer": 0
     },
     {
       "id": "13",
       "trackId": 1,
-      "skill": "JavaScript",
-      "question": "Which symbol is used for single-line comments?",
-      "options": [
-        "/* */",
-        "//",
-        "<!-- -->",
-        "#"
-      ],
+      "skill": "Responsive Design",
+      "question": "Which unit is relative to the viewport width?",
+      "options": ["%", "vw", "px", "em"],
       "correctAnswer": 1
     },
     {
       "id": "14",
       "trackId": 1,
-      "skill": "JavaScript",
-      "question": "Which statement is used to make decisions in JavaScript?",
+      "skill": "Responsive Design",
+      "question": "Which tag helps with mobile responsiveness?",
       "options": [
-        "for",
-        "switch",
-        "if",
-        "while"
+        "<responsive>",
+        "<meta name=\"viewport\">",
+        "<screen>",
+        "<mobile>"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 1
     },
     {
       "id": "15",
       "trackId": 1,
-      "skill": "JavaScript",
-      "question": "Which function displays a popup message?",
-      "options": [
-        "prompt()",
-        "confirm()",
-        "alert()",
-        "console.log()"
-      ],
-      "correctAnswer": 2
+      "skill": "Responsive Design",
+      "question": "Which layout is commonly used for responsive pages?",
+      "options": ["Frames", "Flexbox", "Tables", "Inline styles"],
+      "correctAnswer": 1
     },
     {
       "id": "16",
       "trackId": 2,
       "skill": "Programming Basics",
-      "question": "Which language is commonly used with Node.js?",
-      "options": [
-        "Python",
-        "Java",
-        "JavaScript",
-        "C#"
-      ],
-      "correctAnswer": 2
+      "question": "Which keyword declares a variable in JavaScript?",
+      "options": ["let", "int", "define", "string"],
+      "correctAnswer": 0
     },
     {
       "id": "17",
       "trackId": 2,
       "skill": "Programming Basics",
       "question": "Which statement is used for decision making?",
-      "options": [
-        "for",
-        "while",
-        "if",
-        "switch"
-      ],
+      "options": ["class", "loop", "if", "print"],
       "correctAnswer": 2
     },
     {
       "id": "18",
       "trackId": 2,
       "skill": "Programming Basics",
-      "question": "Which data structure stores key-value pairs?",
-      "options": [
-        "Array",
-        "Object",
-        "String",
-        "Number"
-      ],
-      "correctAnswer": 1
+      "question": "Which loop repeats while a condition is true?",
+      "options": ["while", "break", "return", "switch"],
+      "correctAnswer": 0
     },
     {
       "id": "19",
       "trackId": 2,
       "skill": "Programming Basics",
-      "question": "Which loop always executes at least once?",
-      "options": [
-        "for",
-        "while",
-        "do...while",
-        "foreach"
-      ],
-      "correctAnswer": 2
+      "question": "Which data type stores true or false?",
+      "options": ["Number", "Boolean", "String", "Array"],
+      "correctAnswer": 1
     },
     {
       "id": "20",
       "trackId": 2,
       "skill": "Programming Basics",
-      "question": "Which keyword is used to declare a constant in JavaScript?",
-      "options": [
-        "var",
-        "const",
-        "let",
-        "static"
-      ],
+      "question": "Which symbol is used for assignment?",
+      "options": ["==", "=", "===", "!="],
       "correctAnswer": 1
     },
     {
@@ -2683,714 +2558,499 @@
       "skill": "Node.js",
       "question": "What is Node.js mainly used for?",
       "options": [
-        "Building server-side applications",
-        "Editing images",
-        "Creating databases",
-        "Designing websites"
+        "UI design",
+        "Database management",
+        "Server-side JavaScript",
+        "Image editing"
       ],
-      "correctAnswer": 0
+      "correctAnswer": 2
     },
     {
       "id": "22",
       "trackId": 2,
       "skill": "Node.js",
-      "question": "Which command initializes a Node.js project?",
-      "options": [
-        "npm init",
-        "node start",
-        "npm install",
-        "node init"
-      ],
+      "question": "Which command creates a package.json file?",
+      "options": ["npm init", "npm start", "npm create", "node init"],
       "correctAnswer": 0
     },
     {
       "id": "23",
       "trackId": 2,
       "skill": "Node.js",
-      "question": "Which file contains project information and dependencies?",
-      "options": [
-        "index.js",
-        "package.json",
-        "server.js",
-        "node_modules"
-      ],
-      "correctAnswer": 1
+      "question": "Which file stores project dependencies?",
+      "options": ["package.json", "config.js", "server.js", "index.html"],
+      "correctAnswer": 0
     },
     {
       "id": "24",
       "trackId": 2,
       "skill": "Node.js",
-      "question": "Which command installs all project dependencies?",
-      "options": [
-        "npm start",
-        "npm install",
-        "npm init",
-        "node install"
-      ],
+      "question": "Which command installs project dependencies?",
+      "options": ["node install", "npm install", "npm run", "npm start"],
       "correctAnswer": 1
     },
     {
       "id": "25",
       "trackId": 2,
       "skill": "Node.js",
-      "question": "Which object is used to create a web server in Node.js?",
-      "options": [
-        "http",
-        "server",
-        "web",
-        "app"
-      ],
+      "question": "Node.js is built on which JavaScript engine?",
+      "options": ["V8", "SpiderMonkey", "Java VM", "Chakra"],
       "correctAnswer": 0
     },
     {
       "id": "26",
       "trackId": 2,
-      "skill": "SQL",
-      "question": "Which SQL statement is used to retrieve data?",
+      "skill": "Express.js",
+      "question": "What is Express.js?",
       "options": [
-        "GET",
-        "SELECT",
-        "FETCH",
-        "SHOW"
+        "A browser",
+        "A Node.js framework",
+        "A database",
+        "A programming language"
       ],
       "correctAnswer": 1
     },
     {
       "id": "27",
       "trackId": 2,
-      "skill": "SQL",
-      "question": "Which SQL statement is used to insert new data?",
-      "options": [
-        "ADD",
-        "INSERT INTO",
-        "UPDATE",
-        "CREATE"
-      ],
+      "skill": "Express.js",
+      "question": "Which method creates a GET route?",
+      "options": ["app.post()", "app.get()", "app.use()", "app.listen()"],
       "correctAnswer": 1
     },
     {
       "id": "28",
       "trackId": 2,
-      "skill": "SQL",
-      "question": "Which clause is used to filter records?",
-      "options": [
-        "ORDER BY",
-        "WHERE",
-        "GROUP BY",
-        "HAVING"
-      ],
-      "correctAnswer": 1
+      "skill": "Express.js",
+      "question": "Which method starts the Express server?",
+      "options": ["app.open()", "app.start()", "app.run()", "app.listen()"],
+      "correctAnswer": 3
     },
     {
       "id": "29",
       "trackId": 2,
-      "skill": "SQL",
-      "question": "Which SQL statement is used to modify existing data?",
-      "options": [
-        "CHANGE",
-        "UPDATE",
-        "MODIFY",
-        "ALTER"
-      ],
-      "correctAnswer": 1
+      "skill": "Express.js",
+      "question": "Which object contains request data?",
+      "options": ["app", "res", "router", "req"],
+      "correctAnswer": 3
     },
     {
       "id": "30",
       "trackId": 2,
-      "skill": "SQL",
-      "question": "Which SQL statement is used to delete records?",
-      "options": [
-        "REMOVE",
-        "DELETE",
-        "DROP",
-        "CLEAR"
-      ],
-      "correctAnswer": 1
+      "skill": "Express.js",
+      "question": "Which object sends the response?",
+      "options": ["body", "req", "app", "res"],
+      "correctAnswer": 3
     },
     {
       "id": "31",
       "trackId": 3,
-      "skill": "Dart Basics",
-      "question": "Which keyword declares an immutable compile-time constant in Dart?",
-      "options": [
-        "var",
-        "final",
-        "const",
-        "let"
-      ],
-      "correctAnswer": 2
+      "skill": "Design Principles",
+      "question": "Which principle improves visual organization?",
+      "options": ["Hierarchy", "Encryption", "Hosting", "Compilation"],
+      "correctAnswer": 0
     },
     {
       "id": "32",
       "trackId": 3,
-      "skill": "Dart Basics",
-      "question": "Which function prints text?",
-      "options": [
-        "echo()",
-        "print()",
-        "console.log()",
-        "printf()"
-      ],
-      "correctAnswer": 1
+      "skill": "Design Principles",
+      "question": "Consistency in design helps users by making interfaces...",
+      "options": ["Predictable", "Complex", "Confusing", "Slower"],
+      "correctAnswer": 0
     },
     {
       "id": "33",
       "trackId": 3,
-      "skill": "Dart Basics",
-      "question": "Dart is primarily used with?",
-      "options": [
-        "React",
-        "Flutter",
-        "AngularJS",
-        "Laravel"
-      ],
-      "correctAnswer": 1
+      "skill": "Design Principles",
+      "question": "Whitespace is mainly used to improve...",
+      "options": ["Networking", "Performance", "Storage", "Readability"],
+      "correctAnswer": 3
     },
     {
       "id": "34",
       "trackId": 3,
-      "skill": "Dart Basics",
-      "question": "Which collection stores ordered items?",
+      "skill": "Design Principles",
+      "question": "Alignment helps create...",
       "options": [
-        "Map",
-        "Set",
-        "List",
-        "Queue"
+        "A clean layout",
+        "Extra animations",
+        "Random positioning",
+        "More colours"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 0
     },
     {
       "id": "35",
       "trackId": 3,
-      "skill": "Dart Basics",
-      "question": "Which keyword defines a class?",
-      "options": [
-        "object",
-        "class",
-        "struct",
-        "type"
-      ],
-      "correctAnswer": 1
+      "skill": "Design Principles",
+      "question": "Which principle draws attention to important elements?",
+      "options": ["Encoding", "Caching", "Emphasis", "Compression"],
+      "correctAnswer": 2
     },
     {
       "id": "36",
       "trackId": 3,
-      "skill": "Flutter Widgets",
-      "question": "Which widget creates a button?",
+      "skill": "Color Theory",
+      "question": "Which colours are called primary colours?",
       "options": [
-        "Text",
-        "ElevatedButton",
-        "Icon",
-        "Padding"
+        "Red, Blue, Yellow",
+        "Orange, Purple, Green",
+        "Red, Green, Blue",
+        "Black, White, Grey"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 0
     },
     {
       "id": "37",
       "trackId": 3,
-      "skill": "Flutter Widgets",
-      "question": "Everything in Flutter is a?",
+      "skill": "Color Theory",
+      "question": "Complementary colours are...",
       "options": [
-        "File",
-        "Widget",
-        "Class",
-        "Package"
+        "Always light",
+        "Always dark",
+        "The same colour",
+        "Opposite on the colour wheel"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 3
     },
     {
       "id": "38",
       "trackId": 3,
-      "skill": "Flutter Widgets",
-      "question": "Which widget arranges children vertically?",
+      "skill": "Color Theory",
+      "question": "High contrast improves...",
       "options": [
-        "Row",
-        "Column",
-        "Stack",
-        "Wrap"
+        "Loading speed",
+        "Accessibility",
+        "Database performance",
+        "SEO"
       ],
       "correctAnswer": 1
     },
     {
       "id": "39",
       "trackId": 3,
-      "skill": "Flutter Widgets",
-      "question": "Which widget adds empty space?",
-      "options": [
-        "Spacer",
-        "Padding",
-        "Center",
-        "SafeArea"
-      ],
-      "correctAnswer": 1
+      "skill": "Color Theory",
+      "question": "Blue is commonly associated with...",
+      "options": ["Noise", "Hunger", "Danger", "Trust"],
+      "correctAnswer": 3
     },
     {
       "id": "40",
       "trackId": 3,
-      "skill": "Flutter Widgets",
-      "question": "Which widget displays text?",
-      "options": [
-        "Label",
-        "Text",
-        "Typography",
-        "Span"
-      ],
-      "correctAnswer": 1
+      "skill": "Color Theory",
+      "question": "A colour palette should be...",
+      "options": ["Consistent", "Invisible", "Random", "Unlimited"],
+      "correctAnswer": 0
     },
     {
       "id": "41",
       "trackId": 3,
-      "skill": "State Management",
-      "question": "Which widget updates UI with setState?",
+      "skill": "Typography",
+      "question": "Typography is the art of...",
       "options": [
-        "StatelessWidget",
-        "StatefulWidget",
-        "Container",
-        "Scaffold"
+        "Arranging text",
+        "Writing code",
+        "Managing databases",
+        "Editing videos"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 0
     },
     {
       "id": "42",
       "trackId": 3,
-      "skill": "State Management",
-      "question": "Provider is used for?",
-      "options": [
-        "Routing",
-        "State management",
-        "Networking",
-        "Storage"
-      ],
+      "skill": "Typography",
+      "question": "Which property changes font size in CSS?",
+      "options": ["font-family", "font-size", "font-style", "text-align"],
       "correctAnswer": 1
     },
     {
       "id": "43",
       "trackId": 3,
-      "skill": "State Management",
-      "question": "Which method rebuilds UI?",
+      "skill": "Typography",
+      "question": "Serif fonts usually have...",
       "options": [
-        "build()",
-        "render()",
-        "refresh()",
-        "paint()"
+        "Only numbers",
+        "Small decorative strokes",
+        "No letters",
+        "Icons only"
       ],
-      "correctAnswer": 0
+      "correctAnswer": 1
     },
     {
       "id": "44",
       "trackId": 3,
-      "skill": "State Management",
-      "question": "State belongs to?",
-      "options": [
-        "State class",
-        "Widget tree",
-        "MaterialApp",
-        "Theme"
-      ],
+      "skill": "Typography",
+      "question": "Good line spacing improves...",
+      "options": ["Readability", "Hosting", "Compilation", "Storage"],
       "correctAnswer": 0
     },
     {
       "id": "45",
       "trackId": 3,
-      "skill": "State Management",
-      "question": "Hot reload preserves?",
-      "options": [
-        "Nothing",
-        "App state often",
-        "Files",
-        "Packages"
-      ],
-      "correctAnswer": 1
+      "skill": "Typography",
+      "question": "Which font type is commonly used for modern interfaces?",
+      "options": ["Decorative", "Handwriting", "Sans-serif", "Serif only"],
+      "correctAnswer": 2
     },
     {
       "id": "46",
       "trackId": 4,
-      "skill": "UI Design",
-      "question": "What does UI stand for?",
-      "options": [
-        "User Interface",
-        "Universal Interaction",
-        "User Internet",
-        "Unified Interface"
-      ],
+      "skill": "Dart",
+      "question": "Which keyword declares a constant value in Dart?",
+      "options": ["const", "var", "let", "define"],
       "correctAnswer": 0
     },
     {
       "id": "47",
       "trackId": 4,
-      "skill": "UI Design",
-      "question": "Consistency in UI improves?",
-      "options": [
-        "Confusion",
-        "Usability",
-        "Latency",
-        "Storage"
-      ],
+      "skill": "Dart",
+      "question": "Which function prints output in Dart?",
+      "options": ["echo()", "print()", "console.log()", "printf()"],
       "correctAnswer": 1
     },
     {
       "id": "48",
       "trackId": 4,
-      "skill": "UI Design",
-      "question": "Whitespace helps?",
-      "options": [
-        "Clutter",
-        "Readability",
-        "Errors",
-        "Speed"
-      ],
+      "skill": "Dart",
+      "question": "Dart is mainly used with...",
+      "options": ["AngularJS", "Flutter", "Laravel", "React"],
       "correctAnswer": 1
     },
     {
       "id": "49",
       "trackId": 4,
-      "skill": "UI Design",
-      "question": "Which is a UI element?",
-      "options": [
-        "Button",
-        "Algorithm",
-        "Database",
-        "API"
-      ],
-      "correctAnswer": 0
+      "skill": "Dart",
+      "question": "Which collection stores ordered items?",
+      "options": ["Map", "List", "Set", "Queue"],
+      "correctAnswer": 1
     },
     {
       "id": "50",
       "trackId": 4,
-      "skill": "UI Design",
-      "question": "Good contrast improves?",
-      "options": [
-        "Accessibility",
-        "Memory",
-        "Hosting",
-        "SEO"
-      ],
-      "correctAnswer": 0
+      "skill": "Dart",
+      "question": "Which keyword defines a class in Dart?",
+      "options": ["object", "class", "type", "struct"],
+      "correctAnswer": 1
     },
     {
       "id": "51",
       "trackId": 4,
-      "skill": "UX Principles",
-      "question": "UX stands for?",
+      "skill": "Flutter Basics",
+      "question": "What is Flutter?",
       "options": [
-        "User Experience",
-        "Universal XML",
-        "User Extension",
-        "Ultra Experience"
+        "A UI toolkit",
+        "A database",
+        "A programming language",
+        "A web browser"
       ],
       "correctAnswer": 0
     },
     {
       "id": "52",
       "trackId": 4,
-      "skill": "UX Principles",
-      "question": "Personas represent?",
-      "options": [
-        "Servers",
-        "Target users",
-        "Colors",
-        "Fonts"
-      ],
-      "correctAnswer": 1
+      "skill": "Flutter Basics",
+      "question": "Who developed Flutter?",
+      "options": ["Meta", "Microsoft", "Google", "Apple"],
+      "correctAnswer": 2
     },
     {
       "id": "53",
       "trackId": 4,
-      "skill": "UX Principles",
-      "question": "User flow describes?",
-      "options": [
-        "Navigation path",
-        "Code",
-        "Database",
-        "Animation"
-      ],
-      "correctAnswer": 0
+      "skill": "Flutter Basics",
+      "question": "Flutter applications are written in...",
+      "options": ["Java", "Swift", "Dart", "Kotlin"],
+      "correctAnswer": 2
     },
     {
       "id": "54",
       "trackId": 4,
-      "skill": "UX Principles",
-      "question": "Usability means?",
+      "skill": "Flutter Basics",
+      "question": "Which command creates a new Flutter project?",
       "options": [
-        "Easy to use",
-        "Fast internet",
-        "Dark mode",
-        "Cloud"
+        "flutter create",
+        "flutter init",
+        "flutter project",
+        "flutter new"
       ],
       "correctAnswer": 0
     },
     {
       "id": "55",
       "trackId": 4,
-      "skill": "UX Principles",
-      "question": "Wireframes are?",
+      "skill": "Flutter Basics",
+      "question": "Which command runs a Flutter application?",
       "options": [
-        "Low fidelity layouts",
-        "Final code",
-        "Database",
-        "Icons"
+        "flutter run",
+        "flutter launch",
+        "flutter execute",
+        "flutter start"
       ],
       "correctAnswer": 0
     },
     {
       "id": "56",
       "trackId": 4,
-      "skill": "Figma",
-      "question": "Figma is mainly used for?",
-      "options": [
-        "Design",
-        "Database",
-        "Backend",
-        "Testing"
-      ],
+      "skill": "Widgets",
+      "question": "Everything in Flutter is a...",
+      "options": ["Widget", "Module", "File", "Package"],
       "correctAnswer": 0
     },
     {
       "id": "57",
       "trackId": 4,
-      "skill": "Figma",
-      "question": "Auto Layout helps?",
-      "options": [
-        "Responsive layouts",
-        "SQL",
-        "Hosting",
-        "Debugging"
-      ],
+      "skill": "Widgets",
+      "question": "Which widget displays text?",
+      "options": ["Text", "Label", "Paragraph", "Typography"],
       "correctAnswer": 0
     },
     {
       "id": "58",
       "trackId": 4,
-      "skill": "Figma",
-      "question": "Components improve?",
-      "options": [
-        "Reuse",
-        "Compilation",
-        "Security",
-        "Storage"
-      ],
+      "skill": "Widgets",
+      "question": "Which widget arranges children vertically?",
+      "options": ["Column", "Row", "Wrap", "Stack"],
       "correctAnswer": 0
     },
     {
       "id": "59",
       "trackId": 4,
-      "skill": "Figma",
-      "question": "Prototype mode is for?",
-      "options": [
-        "Interactions",
-        "Coding",
-        "Export SQL",
-        "Hosting"
-      ],
-      "correctAnswer": 0
+      "skill": "Widgets",
+      "question": "Which widget creates a clickable button?",
+      "options": ["Text", "ElevatedButton", "Container", "Padding"],
+      "correctAnswer": 1
     },
     {
       "id": "60",
       "trackId": 4,
-      "skill": "Figma",
-      "question": "Figma collaboration is?",
-      "options": [
-        "Real-time",
-        "Offline only",
-        "Email only",
-        "None"
-      ],
-      "correctAnswer": 0
+      "skill": "Widgets",
+      "question": "Which widget centers its child?",
+      "options": ["Padding", "Align", "SizedBox", "Center"],
+      "correctAnswer": 3
     },
     {
       "id": "61",
       "trackId": 5,
-      "skill": "Excel",
-      "question": "Which symbol starts a formula?",
-      "options": [
-        "=",
-        "+",
-        "@",
-        "#"
-      ],
+      "skill": "Python",
+      "question": "Which keyword defines a function in Python?",
+      "options": ["def", "func", "define", "function"],
       "correctAnswer": 0
     },
     {
       "id": "62",
       "trackId": 5,
-      "skill": "Excel",
-      "question": "SUM() does?",
-      "options": [
-        "Adds values",
-        "Sorts",
-        "Deletes",
-        "Formats"
-      ],
+      "skill": "Python",
+      "question": "Which function prints output?",
+      "options": ["print()", "console.log()", "echo()", "printf()"],
       "correctAnswer": 0
     },
     {
       "id": "63",
       "trackId": 5,
-      "skill": "Excel",
-      "question": "Rows are numbered?",
-      "options": [
-        "Yes",
-        "No",
-        "Sometimes",
-        "Only tables"
-      ],
+      "skill": "Python",
+      "question": "Which data type stores text?",
+      "options": ["str", "bool", "float", "int"],
       "correctAnswer": 0
     },
     {
       "id": "64",
       "trackId": 5,
-      "skill": "Excel",
-      "question": "Columns are labeled?",
-      "options": [
-        "Letters",
-        "Numbers",
-        "Symbols",
-        "Dates"
-      ],
-      "correctAnswer": 0
+      "skill": "Python",
+      "question": "Which loop is used to iterate over a sequence?",
+      "options": ["repeat", "switch", "for", "goto"],
+      "correctAnswer": 2
     },
     {
       "id": "65",
       "trackId": 5,
-      "skill": "Excel",
-      "question": "Chart is used to?",
-      "options": [
-        "Visualize data",
-        "Delete",
-        "Encrypt",
-        "Compile"
-      ],
+      "skill": "Python",
+      "question": "Which symbol starts a comment in Python?",
+      "options": ["#", "//", "--", "/*"],
       "correctAnswer": 0
     },
     {
       "id": "66",
       "trackId": 5,
-      "skill": "SQL",
-      "question": "SELECT is used to?",
-      "options": [
-        "Read data",
-        "Delete",
-        "Insert",
-        "Update"
-      ],
-      "correctAnswer": 0
+      "skill": "Statistics",
+      "question": "Which measure represents the average of a dataset?",
+      "options": ["Median", "Range", "Mode", "Mean"],
+      "correctAnswer": 3
     },
     {
       "id": "67",
       "trackId": 5,
-      "skill": "SQL",
-      "question": "WHERE clause?",
-      "options": [
-        "Filters rows",
-        "Sorts",
-        "Groups",
-        "Creates"
-      ],
+      "skill": "Statistics",
+      "question": "Which measure represents the middle value?",
+      "options": ["Median", "Variance", "Range", "Mean"],
       "correctAnswer": 0
     },
     {
       "id": "68",
       "trackId": 5,
-      "skill": "SQL",
-      "question": "Primary key is?",
-      "options": [
-        "Unique identifier",
-        "Duplicate",
-        "Index only",
-        "View"
-      ],
+      "skill": "Statistics",
+      "question": "Which measure represents the most frequent value?",
+      "options": ["Mode", "Mean", "Median", "Standard Deviation"],
       "correctAnswer": 0
     },
     {
       "id": "69",
       "trackId": 5,
-      "skill": "SQL",
-      "question": "INSERT adds?",
-      "options": [
-        "Rows",
-        "Columns",
-        "Tables",
-        "Views"
-      ],
-      "correctAnswer": 0
+      "skill": "Statistics",
+      "question": "What does standard deviation measure?",
+      "options": ["Maximum value", "Data spread", "Average", "Minimum value"],
+      "correctAnswer": 1
     },
     {
       "id": "70",
       "trackId": 5,
-      "skill": "SQL",
-      "question": "UPDATE modifies?",
-      "options": [
-        "Existing data",
-        "Database name",
-        "Users",
-        "Indexes"
-      ],
+      "skill": "Statistics",
+      "question": "Which chart is best for showing trends over time?",
+      "options": ["Line Chart", "Scatter Plot", "Bar Chart", "Pie Chart"],
       "correctAnswer": 0
     },
     {
       "id": "71",
       "trackId": 5,
-      "skill": "Power BI",
-      "question": "Power BI is for?",
+      "skill": "NumPy",
+      "question": "NumPy is mainly used for...",
       "options": [
-        "Data visualization",
-        "Coding",
-        "Gaming",
-        "Hosting"
+        "Numerical computing",
+        "Web design",
+        "Game development",
+        "Networking"
       ],
       "correctAnswer": 0
     },
     {
       "id": "72",
       "trackId": 5,
-      "skill": "Power BI",
-      "question": "Dashboard shows?",
-      "options": [
-        "Visual insights",
-        "Source code",
-        "Errors",
-        "Passwords"
-      ],
+      "skill": "NumPy",
+      "question": "Which function creates a NumPy array?",
+      "options": ["np.array()", "np.make()", "np.create()", "np.list()"],
       "correctAnswer": 0
     },
     {
       "id": "73",
       "trackId": 5,
-      "skill": "Power BI",
-      "question": "Power Query is used for?",
-      "options": [
-        "Data transformation",
-        "Networking",
-        "Security",
-        "Design"
-      ],
-      "correctAnswer": 0
+      "skill": "NumPy",
+      "question": "Which library is commonly imported as 'np'?",
+      "options": ["Matplotlib", "Pandas", "NumPy", "SciPy"],
+      "correctAnswer": 2
     },
     {
       "id": "74",
       "trackId": 5,
-      "skill": "Power BI",
-      "question": "DAX is used for?",
-      "options": [
-        "Calculations",
-        "Styling",
-        "Hosting",
-        "Animation"
-      ],
-      "correctAnswer": 0
+      "skill": "NumPy",
+      "question": "What is the main data structure in Numpy?",
+      "options": ["List", "ndarray", "DataFrame", "Dictionary"],
+      "correctAnswer": 1
     },
     {
       "id": "75",
       "trackId": 5,
-      "skill": "Power BI",
-      "question": "Report consists of?",
-      "options": [
-        "Visuals",
-        "Drivers",
-        "Compilers",
-        "Sockets"
-      ],
-      "correctAnswer": 0
+      "skill": "NumPy",
+      "question": "Which Numpy function create an array of zeros?",
+      "options": ["np.ones()", "np.null()", "np.empty()", "np.zeros()"],
+      "correctAnswer": 3
     }
   ],
   "jobs": [
@@ -3401,12 +3061,7 @@
       "track": "Frontend",
       "salary": "$900 - $1300",
       "type": "Remote",
-      "requiredSkills": [
-        "HTML",
-        "CSS",
-        "Responsive Design",
-        "JavaScript"
-      ],
+      "requiredSkills": ["HTML", "CSS", "Responsive Design", "JavaScript"],
       "description": "We are looking for a Junior Frontend Developer to build clean and responsive user interfaces."
     },
     {
@@ -3416,13 +3071,7 @@
       "track": "Frontend",
       "salary": "$1300 - $1900",
       "type": "Hybrid",
-      "requiredSkills": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Git & GitHub"
-      ],
+      "requiredSkills": ["HTML", "CSS", "JavaScript", "React", "Git & GitHub"],
       "description": "Join our team to develop scalable single-page applications using React.js."
     },
     {
@@ -3542,12 +3191,7 @@
       "track": "Flutter",
       "salary": "$1000 - $1500",
       "type": "Remote",
-      "requiredSkills": [
-        "Dart",
-        "Flutter Basics",
-        "Widgets",
-        "Layouts"
-      ],
+      "requiredSkills": ["Dart", "Flutter Basics", "Widgets", "Layouts"],
       "description": "Develop cross-platform mobile applications using Flutter."
     },
     {
@@ -3589,12 +3233,7 @@
       "track": "Data Analysis",
       "salary": "$1000 - $1500",
       "type": "Remote",
-      "requiredSkills": [
-        "Python",
-        "Statistics",
-        "Excel",
-        "Pandas"
-      ],
+      "requiredSkills": ["Python", "Statistics", "Excel", "Pandas"],
       "description": "Analyze business data and generate reports to support decision making."
     },
     {
@@ -3638,7 +3277,8 @@
       "type": "Article",
       "meta": "20 min",
       "link": "#",
-      "track": "Frontend"
+      "track": "Frontend",
+      "skill": "CSS"
     },
     {
       "id": "rec-2",
@@ -3647,7 +3287,8 @@
       "type": "Practice",
       "meta": "10 Problems",
       "link": "#",
-      "track": "Frontend"
+      "track": "Frontend",
+      "skill": "JavaScript"
     },
     {
       "id": "rec-3",
@@ -3656,7 +3297,8 @@
       "type": "Project",
       "meta": "Beginner",
       "link": "#",
-      "track": "Frontend"
+      "track": "Frontend",
+      "skill": "JavaScript"
     },
     {
       "id": "rec-4",
@@ -3665,7 +3307,8 @@
       "type": "Article",
       "meta": "25 min",
       "link": "#",
-      "track": "Backend"
+      "track": "Backend",
+      "skill": "Node.js"
     },
     {
       "id": "rec-5",
@@ -3674,7 +3317,8 @@
       "type": "Practice",
       "meta": "8 Problems",
       "link": "#",
-      "track": "Backend"
+      "track": "Backend",
+      "skill": "SQL"
     },
     {
       "id": "rec-6",
@@ -3683,7 +3327,8 @@
       "type": "Tutorial",
       "meta": "15 min",
       "link": "#",
-      "track": "UI/UX"
+      "track": "UI/UX",
+      "skill": "Figma"
     },
     {
       "id": "rec-7",
@@ -3692,7 +3337,8 @@
       "type": "Article",
       "meta": "18 min",
       "link": "#",
-      "track": "Flutter"
+      "track": "Flutter",
+      "skill": "Flutter Basics"
     },
     {
       "id": "rec-8",
@@ -3701,7 +3347,337 @@
       "type": "Tutorial",
       "meta": "22 min",
       "link": "#",
-      "track": "Data Analysis"
+      "track": "Data Analysis",
+      "skill": "Pandas"
+    },
+    {
+      "id": "rec-9",
+      "icon": "python",
+      "title": "Statistics Fundamentals",
+      "type": "Article",
+      "meta": "20 min",
+      "track": "Data Analysis",
+      "skill": "Statistics"
+    },
+    {
+      "id": "rec-10",
+      "icon": "html",
+      "title": "HTML Semantic Elements",
+      "type": "Article",
+      "meta": "12 min",
+      "link": "#",
+      "track": "Frontend",
+      "skill": "HTML"
+    },
+    {
+      "id": "rec-11",
+      "icon": "css",
+      "title": "Responsive Design Basics",
+      "type": "Tutorial",
+      "meta": "18 min",
+      "link": "#",
+      "track": "Frontend",
+      "skill": "Responsive Design"
+    },
+    {
+      "id": "rec-12",
+      "icon": "code",
+      "title": "Git & GitHub Essentials",
+      "type": "Article",
+      "meta": "20 min",
+      "link": "#",
+      "track": "Frontend",
+      "skill": "Git & GitHub"
+    },
+    {
+      "id": "rec-13",
+      "icon": "css",
+      "title": "Bootstrap Grid System",
+      "type": "Tutorial",
+      "meta": "15 min",
+      "link": "#",
+      "track": "Frontend",
+      "skill": "Bootstrap"
+    },
+    {
+      "id": "rec-14",
+      "icon": "js",
+      "title": "React Hooks Guide",
+      "type": "Article",
+      "meta": "25 min",
+      "link": "#",
+      "track": "Frontend",
+      "skill": "React"
+    },
+    {
+      "id": "rec-15",
+      "icon": "code",
+      "title": "REST API Basics",
+      "type": "Article",
+      "meta": "15 min",
+      "link": "#",
+      "track": "Frontend",
+      "skill": "REST API"
+    },
+    {
+      "id": "rec-16",
+      "icon": "code",
+      "title": "Programming Fundamentals",
+      "type": "Article",
+      "meta": "20 min",
+      "link": "#",
+      "track": "Backend",
+      "skill": "Programming Basics"
+    },
+    {
+      "id": "rec-17",
+      "icon": "node",
+      "title": "Express.js Crash Course",
+      "type": "Article",
+      "meta": "22 min",
+      "link": "#",
+      "track": "Backend",
+      "skill": "Express.js"
+    },
+    {
+      "id": "rec-18",
+      "icon": "code",
+      "title": "Building REST APIs",
+      "type": "Practice",
+      "meta": "6 Problems",
+      "link": "#",
+      "track": "Backend",
+      "skill": "REST API"
+    },
+    {
+      "id": "rec-19",
+      "icon": "code",
+      "title": "MongoDB Basics",
+      "type": "Tutorial",
+      "meta": "18 min",
+      "link": "#",
+      "track": "Backend",
+      "skill": "MongoDB"
+    },
+    {
+      "id": "rec-20",
+      "icon": "code",
+      "title": "Authentication with JWT",
+      "type": "Article",
+      "meta": "20 min",
+      "link": "#",
+      "track": "Backend",
+      "skill": "Authentication"
+    },
+    {
+      "id": "rec-21",
+      "icon": "code",
+      "title": "Deployment Basics",
+      "type": "Article",
+      "meta": "15 min",
+      "link": "#",
+      "track": "Backend",
+      "skill": "Deployment"
+    },
+    {
+      "id": "rec-22",
+      "icon": "figma",
+      "title": "UI Design Principles",
+      "type": "Article",
+      "meta": "15 min",
+      "link": "#",
+      "track": "UI/UX",
+      "skill": "Design Principles"
+    },
+    {
+      "id": "rec-23",
+      "icon": "figma",
+      "title": "Color Theory for Designers",
+      "type": "Article",
+      "meta": "12 min",
+      "link": "#",
+      "track": "UI/UX",
+      "skill": "Color Theory"
+    },
+    {
+      "id": "rec-24",
+      "icon": "figma",
+      "title": "Typography Fundamentals",
+      "type": "Tutorial",
+      "meta": "14 min",
+      "link": "#",
+      "track": "UI/UX",
+      "skill": "Typography"
+    },
+    {
+      "id": "rec-25",
+      "icon": "figma",
+      "title": "Wireframing Techniques",
+      "type": "Tutorial",
+      "meta": "16 min",
+      "link": "#",
+      "track": "UI/UX",
+      "skill": "Wireframing"
+    },
+    {
+      "id": "rec-26",
+      "icon": "figma",
+      "title": "Prototyping in Figma",
+      "type": "Tutorial",
+      "meta": "20 min",
+      "link": "#",
+      "track": "UI/UX",
+      "skill": "Prototyping"
+    },
+    {
+      "id": "rec-27",
+      "icon": "figma",
+      "title": "User Research Methods",
+      "type": "Article",
+      "meta": "18 min",
+      "link": "#",
+      "track": "UI/UX",
+      "skill": "User Research"
+    },
+    {
+      "id": "rec-28",
+      "icon": "figma",
+      "title": "Usability Testing Guide",
+      "type": "Article",
+      "meta": "16 min",
+      "link": "#",
+      "track": "UI/UX",
+      "skill": "Usability Testing"
+    },
+    {
+      "id": "rec-29",
+      "icon": "flutter",
+      "title": "Dart Language Basics",
+      "type": "Article",
+      "meta": "15 min",
+      "link": "#",
+      "track": "Flutter",
+      "skill": "Dart"
+    },
+    {
+      "id": "rec-30",
+      "icon": "flutter",
+      "title": "Flutter Widgets Deep Dive",
+      "type": "Tutorial",
+      "meta": "20 min",
+      "link": "#",
+      "track": "Flutter",
+      "skill": "Widgets"
+    },
+    {
+      "id": "rec-31",
+      "icon": "flutter",
+      "title": "Flutter Layouts Guide",
+      "type": "Tutorial",
+      "meta": "18 min",
+      "link": "#",
+      "track": "Flutter",
+      "skill": "Layouts"
+    },
+    {
+      "id": "rec-32",
+      "icon": "flutter",
+      "title": "State Management in Flutter",
+      "type": "Article",
+      "meta": "25 min",
+      "link": "#",
+      "track": "Flutter",
+      "skill": "State Management"
+    },
+    {
+      "id": "rec-33",
+      "icon": "flutter",
+      "title": "Firebase Integration",
+      "type": "Tutorial",
+      "meta": "22 min",
+      "link": "#",
+      "track": "Flutter",
+      "skill": "Firebase"
+    },
+    {
+      "id": "rec-34",
+      "icon": "flutter",
+      "title": "Consuming REST APIs in Flutter",
+      "type": "Article",
+      "meta": "20 min",
+      "link": "#",
+      "track": "Flutter",
+      "skill": "REST API"
+    },
+    {
+      "id": "rec-35",
+      "icon": "flutter",
+      "title": "Publishing Your App",
+      "type": "Article",
+      "meta": "15 min",
+      "link": "#",
+      "track": "Flutter",
+      "skill": "App Deployment"
+    },
+    {
+      "id": "rec-36",
+      "icon": "python",
+      "title": "Python for Data Analysis",
+      "type": "Tutorial",
+      "meta": "20 min",
+      "link": "#",
+      "track": "Data Analysis",
+      "skill": "Python"
+    },
+    {
+      "id": "rec-37",
+      "icon": "python",
+      "title": "NumPy Arrays Guide",
+      "type": "Article",
+      "meta": "16 min",
+      "link": "#",
+      "track": "Data Analysis",
+      "skill": "NumPy"
+    },
+    {
+      "id": "rec-38",
+      "icon": "python",
+      "title": "Data Visualization with Matplotlib",
+      "type": "Tutorial",
+      "meta": "18 min",
+      "link": "#",
+      "track": "Data Analysis",
+      "skill": "Data Visualization"
+    },
+    {
+      "id": "rec-39",
+      "icon": "sql",
+      "title": "SQL for Data Analysts",
+      "type": "Practice",
+      "meta": "8 Problems",
+      "link": "#",
+      "track": "Data Analysis",
+      "skill": "SQL"
+    },
+    {
+      "id": "rec-40",
+      "icon": "code",
+      "title": "Excel Formulas Essentials",
+      "type": "Article",
+      "meta": "15 min",
+      "link": "#",
+      "track": "Data Analysis",
+      "skill": "Excel"
+    },
+    {
+      "id": "rec-41",
+      "icon": "code",
+      "title": "Power BI Dashboards",
+      "type": "Tutorial",
+      "meta": "22 min",
+      "link": "#",
+      "track": "Data Analysis",
+      "skill": "Power BI"
     }
   ],
   "upcomingProjects": [
@@ -3709,121 +3685,658 @@
       "id": "proj-1",
       "icon": "weather",
       "title": "Weather App",
-      "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
+      "tags": ["HTML", "CSS", "JavaScript"],
       "level": "Beginner",
-      "track": "Frontend"
+      "track": "Frontend",
+      "skill": "JavaScript"
     },
     {
       "id": "proj-2",
       "icon": "portfolio",
       "title": "Portfolio Website",
-      "tags": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
+      "tags": ["HTML", "CSS", "JavaScript"],
       "level": "Intermediate",
-      "track": "Frontend"
+      "track": "Frontend",
+      "skill": "Responsive Design"
     },
     {
       "id": "proj-3",
       "icon": "ecommerce",
       "title": "E-commerce Website",
-      "tags": [
-        "React",
-        "Node.js",
-        "MongoDB"
-      ],
+      "tags": ["React", "Node.js", "MongoDB"],
       "level": "Advanced",
-      "track": "Backend"
+      "track": "Backend",
+      "skill": "Node.js"
     },
     {
       "id": "proj-4",
       "icon": "api",
       "title": "Task Management API",
-      "tags": [
-        "Node.js",
-        "Express.js",
-        "MongoDB"
-      ],
+      "tags": ["Node.js", "Express.js", "MongoDB"],
       "level": "Intermediate",
-      "track": "Backend"
+      "track": "Backend",
+      "skill": "Express.js"
     },
     {
       "id": "proj-5",
       "icon": "todo",
       "title": "To-Do List App",
-      "tags": [
-        "Dart",
-        "Flutter Basics",
-        "Widgets"
-      ],
+      "tags": ["Dart", "Flutter Basics", "Widgets"],
       "level": "Beginner",
-      "track": "Flutter"
+      "track": "Flutter",
+      "skill": "Widgets"
     },
     {
       "id": "proj-6",
       "icon": "expense",
       "title": "Expense Tracker App",
-      "tags": [
-        "Flutter",
-        "State Management",
-        "Firebase"
-      ],
+      "tags": ["Flutter", "State Management", "Firebase"],
       "level": "Intermediate",
-      "track": "Flutter"
+      "track": "Flutter",
+      "skill": "State Management"
     },
     {
       "id": "proj-7",
       "icon": "wireframe",
       "title": "Mobile App Wireframes",
-      "tags": [
-        "Figma",
-        "Wireframing",
-        "Design Principles"
-      ],
+      "tags": ["Figma", "Wireframing", "Design Principles"],
       "level": "Beginner",
-      "track": "UI/UX"
+      "track": "UI/UX",
+      "skill": "Wireframing"
     },
     {
       "id": "proj-8",
       "icon": "prototype",
       "title": "E-commerce App Prototype",
-      "tags": [
-        "Figma",
-        "Prototyping",
-        "User Research"
-      ],
+      "tags": ["Figma", "Prototyping", "User Research"],
       "level": "Intermediate",
-      "track": "UI/UX"
+      "track": "UI/UX",
+      "skill": "Prototyping"
     },
     {
       "id": "proj-9",
       "icon": "dashboard",
       "title": "Sales Data Dashboard",
-      "tags": [
-        "Python",
-        "Pandas",
-        "Data Visualization"
-      ],
+      "tags": ["Python", "Pandas", "Data Visualization"],
       "level": "Intermediate",
-      "track": "Data Analysis"
+      "track": "Data Analysis",
+      "skill": "Pandas"
     },
     {
       "id": "proj-10",
       "icon": "report",
       "title": "COVID-19 Data Report",
-      "tags": [
-        "Python",
-        "NumPy",
-        "Power BI"
-      ],
+      "tags": ["Python", "NumPy", "Power BI"],
       "level": "Advanced",
-      "track": "Data Analysis"
+      "track": "Data Analysis",
+      "skill": "Power BI"
+    },
+    {
+      "id": "proj-11",
+      "icon": "api",
+      "title": "Simple HTTP Server",
+      "tags": ["Node.js"],
+      "level": "Beginner",
+      "track": "Backend",
+      "skill": "Node.js"
+    },
+    {
+      "id": "proj-12",
+      "icon": "api",
+      "title": "Task Management API",
+      "tags": ["Express.js"],
+      "level": "Intermediate",
+      "track": "Backend",
+      "skill": "Express.js"
+    },
+    {
+      "id": "proj-13",
+      "icon": "api",
+      "title": "Authentication API",
+      "tags": ["REST API"],
+      "level": "Intermediate",
+      "track": "Backend",
+      "skill": "REST API"
+    },
+    {
+      "id": "proj-14",
+      "icon": "dashboard",
+      "title": "Student Database",
+      "tags": ["SQL"],
+      "level": "Intermediate",
+      "track": "Backend",
+      "skill": "SQL"
+    },
+    {
+      "id": "proj-15",
+      "icon": "dashboard",
+      "title": "Blog Database",
+      "tags": ["MongoDB"],
+      "level": "Intermediate",
+      "track": "Backend",
+      "skill": "MongoDB"
+    },
+    {
+      "id": "proj-16",
+      "icon": "api",
+      "title": "JWT Login System",
+      "tags": ["Authentication"],
+      "level": "Advanced",
+      "track": "Backend",
+      "skill": "Authentication"
+    },
+    {
+      "id": "proj-17",
+      "icon": "dashboard",
+      "title": "Deploy Full API",
+      "tags": ["Deployment"],
+      "level": "Advanced",
+      "track": "Backend",
+      "skill": "Deployment"
+    },
+    {
+      "id": "proj-18",
+      "icon": "wireframe",
+      "title": "Restaurant Wireframe",
+      "tags": ["Wireframe"],
+      "level": "Beginner",
+      "track": "UI/UX",
+      "skill": "Design Principles"
+    },
+    {
+      "id": "proj-19",
+      "icon": "palette",
+      "title": "Color Palette",
+      "tags": ["Colors"],
+      "level": "Beginner",
+      "track": "UI/UX",
+      "skill": "Color Theory"
+    },
+    {
+      "id": "proj-20",
+      "icon": "typography",
+      "title": "Typography Guide",
+      "tags": ["Typography"],
+      "level": "Beginner",
+      "track": "UI/UX",
+      "skill": "Typography"
+    },
+    {
+      "id": "proj-21",
+      "icon": "wireframe",
+      "title": "Mobile Wireframes",
+      "tags": ["Wireframe"],
+      "level": "Intermediate",
+      "track": "UI/UX",
+      "skill": "Wireframing"
+    },
+    {
+      "id": "proj-22",
+      "icon": "prototype",
+      "title": "Shopping App Prototype",
+      "tags": ["Prototype"],
+      "level": "Intermediate",
+      "track": "UI/UX",
+      "skill": "Prototyping"
+    },
+    {
+      "id": "proj-23",
+      "icon": "prototype",
+      "title": "Figma Dashboard",
+      "tags": ["Figma"],
+      "level": "Intermediate",
+      "track": "UI/UX",
+      "skill": "Figma"
+    },
+    {
+      "id": "proj-24",
+      "icon": "prototype",
+      "title": "User Interview Report",
+      "tags": ["Research"],
+      "level": "Advanced",
+      "track": "UI/UX",
+      "skill": "User Research"
+    },
+    {
+      "id": "proj-25",
+      "icon": "prototype",
+      "title": "Usability Test",
+      "tags": ["Testing"],
+      "level": "Advanced",
+      "track": "UI/UX",
+      "skill": "Usability Testing"
+    },
+    {
+      "id": "proj-26",
+      "icon": "todo",
+      "title": "Calculator App",
+      "tags": ["Dart"],
+      "level": "Beginner",
+      "track": "Flutter",
+      "skill": "Dart"
+    },
+    {
+      "id": "proj-27",
+      "icon": "todo",
+      "title": "Counter App",
+      "tags": ["Flutter"],
+      "level": "Beginner",
+      "track": "Flutter",
+      "skill": "Flutter Basics"
+    },
+    {
+      "id": "proj-28",
+      "icon": "todo",
+      "title": "Widgets Demo",
+      "tags": ["Widgets"],
+      "level": "Beginner",
+      "track": "Flutter",
+      "skill": "Widgets"
+    },
+    {
+      "id": "proj-29",
+      "icon": "todo",
+      "title": "Expense Tracker",
+      "tags": ["Layouts"],
+      "level": "Intermediate",
+      "track": "Flutter",
+      "skill": "Layouts"
+    },
+    {
+      "id": "proj-30",
+      "icon": "expense",
+      "title": "Notes App",
+      "tags": ["State Management"],
+      "level": "Intermediate",
+      "track": "Flutter",
+      "skill": "State Management"
+    },
+    {
+      "id": "proj-31",
+      "icon": "expense",
+      "title": "Firebase Chat",
+      "tags": ["Firebase"],
+      "level": "Advanced",
+      "track": "Flutter",
+      "skill": "Firebase"
+    },
+    {
+      "id": "proj-32",
+      "icon": "api",
+      "title": "Movies API App",
+      "tags": ["REST API"],
+      "level": "Advanced",
+      "track": "Flutter",
+      "skill": "REST API"
+    },
+    {
+      "id": "proj-33",
+      "icon": "dashboard",
+      "title": "Publish App",
+      "tags": ["Deployment"],
+      "level": "Advanced",
+      "track": "Flutter",
+      "skill": "App Deployment"
+    },
+    {
+      "id": "proj-34",
+      "icon": "dashboard",
+      "title": "Python Calculator",
+      "tags": ["Python"],
+      "level": "Beginner",
+      "track": "Data Analysis",
+      "skill": "Python"
+    },
+    {
+      "id": "proj-35",
+      "icon": "report",
+      "title": "Statistics Report",
+      "tags": ["Statistics"],
+      "level": "Beginner",
+      "track": "Data Analysis",
+      "skill": "Statistics"
+    },
+    {
+      "id": "proj-36",
+      "icon": "dashboard",
+      "title": "NumPy Matrix Project",
+      "tags": ["NumPy"],
+      "level": "Intermediate",
+      "track": "Data Analysis",
+      "skill": "NumPy"
+    },
+    {
+      "id": "proj-37",
+      "icon": "dashboard",
+      "title": "Sales Dashboard",
+      "tags": ["Pandas"],
+      "level": "Intermediate",
+      "track": "Data Analysis",
+      "skill": "Pandas"
+    },
+    {
+      "id": "proj-38",
+      "icon": "dashboard",
+      "title": "Charts Dashboard",
+      "tags": ["Data Visualization"],
+      "level": "Intermediate",
+      "track": "Data Analysis",
+      "skill": "Data Visualization"
+    },
+    {
+      "id": "proj-39",
+      "icon": "dashboard",
+      "title": "SQL Data Analysis",
+      "tags": ["SQL"],
+      "level": "Advanced",
+      "track": "Data Analysis",
+      "skill": "SQL"
+    },
+    {
+      "id": "proj-40",
+      "icon": "report",
+      "title": "Excel Sales Report",
+      "tags": ["Excel"],
+      "level": "Advanced",
+      "track": "Data Analysis",
+      "skill": "Excel"
+    },
+    {
+      "id": "proj-41",
+      "icon": "dashboard",
+      "title": "Power BI Dashboard",
+      "tags": ["Power BI"],
+      "level": "Advanced",
+      "track": "Data Analysis",
+      "skill": "Power BI"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "trackId": 1,
+      "level": "Easy",
+      "title": "Personal Portfolio",
+      "description": "Build a responsive personal portfolio website to showcase your skills, projects, education, and contact information using clean HTML and modern CSS.",
+      "skills": ["HTML", "CSS", "Responsive Design", "Flex Box", "CSS Grid"],
+      "image": "../assets/images/Front1.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "2-3 Hours",
+      "details": "Design and build a fully responsive personal portfolio website. Include sections for About, Skills, Projects, and Contact. Focus on clean layout, responsive design, semantic HTML, and modern CSS styling."
+    },
+    {
+      "id": "2",
+      "trackId": 1,
+      "level": "Medium",
+      "title": "Weather App",
+      "description": "Create a weather application that fetches real-time weather data from an API, allowing users to search for any city and display temperature, humidity, wind speed, and weather conditions.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "REST API",
+        "Fetch API",
+        "JSON",
+        "DOM Manipulation"
+      ],
+      "image": "../assets/images/Front2.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "9-10 Hours",
+      "details": "Build a weather application that allows users to search for any city and display current weather information using a public Weather API. Handle invalid city names and display weather icons dynamically."
+    },
+    {
+      "id": "3",
+      "trackId": 1,
+      "level": "Hard",
+      "title": "E-Commerce Website",
+      "description": "Develop a fully responsive e-commerce website featuring product listings, shopping cart functionality, category filtering, and a complete modern shopping experience.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Responsive Design",
+        "JSON",
+        "DOM Manipulation"
+      ],
+      "image": "../assets/images/Front3.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "2-3 Days",
+      "details": "Develop a complete responsive e-commerce frontend including product listing, product details, shopping cart, filtering, searching, and checkout UI using JavaScript without any backend."
+    },
+    {
+      "id": "4",
+      "trackId": 2,
+      "level": "Easy",
+      "title": "Student API",
+      "description": "Build a RESTful Student Management API that supports creating, updating, deleting, and retrieving student records while following clean backend architecture.",
+      "skills": [
+        "Node.js",
+        "Express.js",
+        "REST API",
+        "CRUD Operations",
+        "Postman"
+      ],
+      "image": "../assets/images/Back1.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "2-3 Hours",
+      "details": "Create RESTful CRUD APIs to manage student records. Users should be able to add, update, delete, and retrieve students. Validate all incoming requests and organize routes properly."
+    },
+    {
+      "id": "5",
+      "trackId": 2,
+      "level": "Medium",
+      "title": "Authentication System",
+      "description": "Develop a secure authentication system with user registration, login, password encryption, JWT authentication, and protected routes for authorized users.",
+      "skills": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "bcrypt",
+        "Authentication",
+        "Authorization"
+      ],
+      "image": "../assets/images/Back2.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "9-10 Hours",
+      "details": "Implement a complete authentication system with user registration, login, password hashing, JWT authentication, protected routes, and user authorization."
+    },
+    {
+      "id": "6",
+      "trackId": 2,
+      "level": "Hard",
+      "title": "Hospital System",
+      "description": "Create a hospital management backend that manages patients, doctors, appointments, and medical records with secure authentication and role-based access.",
+      "skills": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "Authentication",
+        "REST API",
+        "MVC Architecture"
+      ],
+      "image": "../assets/images/Back3.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "2-3 Days",
+      "details": "Build a backend system to manage patients, doctors, and appointments. Include authentication, appointment scheduling, patient records, and role-based access control."
+    },
+    {
+      "id": "7",
+      "trackId": 3,
+      "level": "Easy",
+      "title": "Coffee Shop UI",
+      "description": "Design a modern and visually appealing landing page for a coffee shop with attractive layouts, typography, colors, and responsive UI components.",
+      "skills": [
+        "Figma",
+        "UI Design",
+        "Typography",
+        "Color Theory",
+        "Auto Layout"
+      ],
+      "image": "../assets/images/ui-ux1.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "2-3 Hours",
+      "details": "Design a modern coffee shop landing page in Figma. Create a consistent color palette, typography system, call-to-action sections, and responsive layouts following UI design principles."
+    },
+    {
+      "id": "8",
+      "trackId": 3,
+      "level": "Medium",
+      "title": "Food Delivery App UI",
+      "description": "Design a complete mobile food delivery application including user flow, restaurant pages, shopping cart, checkout process, and interactive prototypes.",
+      "skills": [
+        "Figma",
+        "Wireframing",
+        "Prototype",
+        "User Flow",
+        "Mobile Design",
+        "Components"
+      ],
+      "image": "../assets/images/ui-ux2.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "9-10 Hours",
+      "details": "Design a complete food delivery mobile application including onboarding, authentication, home page, restaurant details, cart, checkout, and order tracking screens with interactive prototype."
+    },
+    {
+      "id": "9",
+      "trackId": 3,
+      "level": "Hard",
+      "title": "Banking Dashboard",
+      "description": "Create a professional banking dashboard that displays financial information, user accounts, transaction history, analytics, and modern user experience principles.",
+      "skills": [
+        "Figma",
+        "Dashboard Design",
+        "UX Research",
+        "Design System",
+        "Prototype",
+        "Accessibility"
+      ],
+      "image": "../assets/images/ui-ux3.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "2-3 Days",
+      "details": "Create a professional banking dashboard that displays account balance, transactions, analytics, and user profile. Focus on user experience, accessibility, and consistent design components."
+    },
+    {
+      "id": "10",
+      "trackId": 4,
+      "level": "Easy",
+      "title": "BMI Calculator",
+      "description": "Build a Flutter BMI Calculator calculates Body Mass Index based on user input and displays health categories with a clean interface.",
+      "skills": ["Flutter", "Dart", "Widgets", "UI Design", "State Management"],
+      "image": "../assets/images/Flutter1.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "2-3 Hours",
+      "details": "Develop a BMI Calculator application in Flutter where users enter their height and weight, calculate BMI instantly, and receive health status based on the result."
+    },
+    {
+      "id": "11",
+      "trackId": 4,
+      "level": "Medium",
+      "title": "Notes App",
+      "description": "Develop a Notes application using Flutter that allows users to create, edit, delete, search, and organize notes while storing data locally.",
+      "skills": [
+        "Flutter",
+        "Dart",
+        "SQLite",
+        "State Management",
+        "CRUD Operations"
+      ],
+      "image": "../assets/images/Flutter2.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "9-10 Hours",
+      "details": "Build a Notes application that allows users to create, edit, delete, search, and organize notes. Store all notes locally using SQLite and implement proper state management."
+    },
+    {
+      "id": "12",
+      "trackId": 4,
+      "level": "Hard",
+      "title": "E-Commerce App",
+      "description": "Create a complete Flutter e-commerce app including authentication, product browsing, and order management.",
+      "skills": [
+        "Flutter",
+        "Firebase",
+        "Provider",
+        "Authentication",
+        "Cloud Firestore",
+        "State Management"
+      ],
+      "image": "../assets/images/Flutter3.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "2-3 Days",
+      "details": "Create a complete e-commerce mobile application using Flutter and Firebase. Include authentication, product catalog, shopping cart, favorites, orders, and real-time database integration."
+    },
+    {
+      "id": "13",
+      "trackId": 5,
+      "level": "Easy",
+      "title": "Sales Dashboard",
+      "description": "Analyze sales datasets and build interactive dashboards using Excel and Power BI to visualize business performance and key sales metrics.",
+      "skills": [
+        "Excel",
+        "Power BI",
+        "Data Cleaning",
+        "Data Visualization",
+        "Dashboard Design"
+      ],
+      "image": "../assets/images/Data1.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "2-3 Hours",
+      "details": "Analyze sales data using Excel and Power BI. Clean the dataset, create KPIs, charts, and interactive dashboards to visualize sales performance and business trends."
+    },
+    {
+      "id": "14",
+      "trackId": 5,
+      "level": "Medium",
+      "title": "Customer Analytics",
+      "description": "Use Python to analyze customer data, perform data cleaning and visualization, then segment customers into meaningful groups based on purchasing behavior.",
+      "skills": [
+        "Python",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn",
+        "Scikit-learn",
+        "Data Analysis"
+      ],
+      "image": "../assets/images/Data2.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "9-10 Hours",
+      "details": "Use Python to clean customer data, perform exploratory data analysis, and segment customers into groups based on purchasing behavior using clustering techniques."
+    },
+    {
+      "id": "15",
+      "trackId": 5,
+      "level": "Hard",
+      "title": "BI Dashboard",
+      "description": "Build a complete Business Intelligence solution by collecting, cleaning, analyzing, and visualizing business data using SQL, Python, and Power BI dashboards.",
+      "skills": [
+        "Python",
+        "SQL",
+        "Power BI",
+        "Pandas",
+        "Data Visualization",
+        "Business Intelligence",
+        "ETL"
+      ],
+      "image": "../assets/images/Data3.png",
+      "github": "",
+      "demo": "",
+      "estimatedTime": "2-3 Days",
+      "details": "Build an end-to-end business intelligence solution. Collect data from multiple sources, clean and analyze it using Python and SQL, then create an interactive Power BI dashboard with meaningful insights."
     }
   ],
   "motivationMessages": [
@@ -3838,7 +4351,34 @@
     {
       "id": "3",
       "message": "One step at a time — you're closer to your goal than yesterday."
+    },
+    {
+      "id": "4",
+      "message": "Every lesson you finish is a brick in your future. Keep building!"
+    },
+    {
+      "id": "5",
+      "message": "Progress, not perfection. You're exactly where you need to be."
+    },
+    {
+      "id": "6",
+      "message": "Small daily wins add up to big results. Don't stop now!"
+    },
+    {
+      "id": "7",
+      "message": "You showed up today — that's how skills are built."
+    },
+    {
+      "id": "8",
+      "message": "Challenges are just proof that you're growing. Push through!"
+    },
+    {
+      "id": "9",
+      "message": "Your future self will thank you for the effort you're putting in today."
+    },
+    {
+      "id": "10",
+      "message": "Consistency beats motivation. Keep showing up, and the results will follow."
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }

@@ -1,14 +1,11 @@
 let currRoadmap;
 let currUser;
 async function loadRoadmap() {
-  const userId = 1;
-  // const userId = localStorage.getItem("userId"); // Saved after login
+  const userId = localStorage.getItem("currentUserId");
   const user = await fetch(`http://localhost:3000/users/${userId}`).then(
     (res) => res.json(),
   );
-  // console.log("User:", user);
   const selectedTrack = user.track;
-  // console.log("Selected Track:", selectedTrack);
   const roadmaps = await fetch(
     `http://localhost:3000/roadmaps?id=${selectedTrack}`,
   ).then((res) => res.json());
@@ -16,13 +13,7 @@ async function loadRoadmap() {
   currUser = await fetch(`http://localhost:3000/users/${userId}`).then((res) =>
     res.json(),
   );
-  currRoadmap.skills.forEach((skill) => {
-    if (currUser.completedSkillIds.includes(skill.title)) {
-      skill.lessons.forEach((lesson) => {
-        lesson.completed = true;
-      });
-    }
-  });
+  
   renderHeader(currRoadmap);
   renderTimeline(currRoadmap.skills, currUser, currRoadmap);
   renderOvarallProgress(currRoadmap);
@@ -37,6 +28,19 @@ async function loadRoadmap() {
 loadRoadmap();
 
 //Functions
+
+// => find a lesson's completed state inside currUser
+function getUserLesson(skillTitle, lessonTitle) {
+  const skill = currUser.skills.find((s) => s.name === skillTitle);
+  if (!skill || !skill.lessons) return null;
+  return skill.lessons.find((l) => l.title === lessonTitle) || null;
+}
+
+function isLessonCompletedForUser(skillTitle, lessonTitle) {
+  const userLesson = getUserLesson(skillTitle, lessonTitle);
+  return userLesson ? !!userLesson.completed : false;
+}
+
 
 // => put header according to your track
 function renderHeader(roadmap) {
@@ -108,8 +112,6 @@ function renderSkillProgress(skills) {
 // => draw UI for each skill & lesson
 function renderTimeline(skills, user, roadmap) {
   const timeline = document.getElementById("timeline");
-  // const cards = timeline.querySelectorAll(".timeline-card");
-  // const card = cards[skillIndex];
   timeline.innerHTML = "";
   skills.forEach((skill, skillIndex) => {
     timeline.innerHTML += createSkillCard(skill, skillIndex, user, roadmap);
@@ -168,22 +170,20 @@ function createLessonList(skill, skillIndex, status) {
   return `
   <div class="skill-level">
     <div class="line"></div>
-    ${skill.lessons.map((lesson, lessonIndex) => createOneLesson(lesson, skillIndex, lessonIndex, status)).join("")}
+    ${skill.lessons.map((lesson, lessonIndex) => createOneLesson(lesson, skillIndex, lessonIndex, status, skill.title)).join("")}
     </div>`;
 }
 
-function createOneLesson(lesson, skillIndex, lessonIndex, status) {
+function createOneLesson(lesson, skillIndex, lessonIndex, status, skillTitle) {
   let checked = "";
   let disabled = "";
   if (status === "Completed") {
     checked = "checked";
     disabled = "disabled";
   } else if (status === "Current") {
-    if (lesson.completed) {
-      checked = "checked";
-    } else {
-      checked = "";
-    }
+    checked = isLessonCompletedForUser(skillTitle, lesson.title)
+      ? "checked"
+      : "";
     disabled = "";
   } else {
     checked = "";
@@ -244,47 +244,105 @@ function addLessonEvents() {
 }
 
 async function updateLesson(skillIndex, lessonIndex, completed) {
-  const lesson = currRoadmap.skills[skillIndex].lessons[lessonIndex];
-  if (lesson.completed === completed) return;
-  let currSkill = currRoadmap.skills[skillIndex];
-  lesson.completed = completed;
-  // console.log(currSkill,calcSkillProgress(currSkill));
-  if (calcSkillProgress(currSkill) === 100) {
-    if (!currUser.completedSkillIds.includes(currSkill.title)) {
-      currUser.completedSkillIds.push(currSkill.title);
+  checkWeeklyReset();
+  const roadmapSkill = currRoadmap.skills[skillIndex];
+  const roadmapLesson = roadmapSkill.lessons[lessonIndex];
+
+  // find (or create) the matching skill/lesson inside currUser
+  const userSkill = currUser.skills.find((s) => s.name === roadmapSkill.title);
+  if (!userSkill) {
+    console.error("Skill not found in user data:", roadmapSkill.title);
+    return;
+  }
+  if (!userSkill.lessons) userSkill.lessons = [];
+
+  let userLesson = userSkill.lessons.find(
+    (l) => l.title === roadmapLesson.title,
+  );
+  if (!userLesson) {
+    userLesson = { title: roadmapLesson.title, completed: false };
+    userSkill.lessons.push(userLesson);
+  }
+
+  if (userLesson.completed === completed) return;
+  userLesson.completed = completed;
+  const completedLessons = currUser.skills.reduce((total, skill) => {
+  return (
+    total +
+    skill.lessons.filter((lesson) => lesson.completed).length
+  );
+}, 0);
+
+currUser.weeklyGoalDone = Math.min(
+  completedLessons,
+  currUser.weeklyGoalTotal
+);
+
+  if (calcSkillProgress(roadmapSkill) === 100) {
+    if (!currUser.completedSkillIds.includes(roadmapSkill.title)) {
+      currUser.completedSkillIds.push(roadmapSkill.title);
       renderTimeline(currRoadmap.skills, currUser, currRoadmap);
     }
-    // else {
-    //   currUser.completedSkillIds = currUser.completedSkillIds.filter(
-    //     (title) => title !== currSkill.title,
-    //   );
-    //   renderTimeline(currRoadmap.skills, currUser, currRoadmap);
-    // }
   }
-  console.log(currUser.completedSkillIds);
 
   if (completed) {
     currUser.xpEarned += 100;
   } else {
     currUser.xpEarned = Math.max(0, currUser.xpEarned - 100);
   }
+  // Update overall score
+currUser.overallScore = calcOverallProgress(currRoadmap);
 
-  // console.log("Before PUT:", currRoadmap);
-  // console.log(currRoadmap.skills[skillIndex].lessons[lessonIndex]);
-  // console.log(`${encodeURIComponent(currRoadmap.id)}`);
+// Update current module
+const currentSkill = currRoadmap.skills.find(
+  (skill) => !currUser.completedSkillIds.includes(skill.title)
+);
 
-  const response = await fetch(
-    `http://localhost:3000/roadmaps/${encodeURIComponent(currRoadmap.id)}`,
-    {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(currRoadmap),
+if (currentSkill) {
+  currUser.currentModule = {
+    skillId: currentSkill.title,
+    skillName: currentSkill.title,
+    progressPercent: calcSkillProgress(currentSkill),
+    nextLesson: {
+      title:
+        currentSkill.lessons.find((l) => !isLessonCompletedForUser(currentSkill.title, l.title))
+          ?.title || "",
+      durationMinutes: 30,
     },
-  );
-  console.log(response.status);
-  const data = await response.json();
+    upNext: {
+      title:
+        currentSkill.lessons.filter(
+          (l) => !isLessonCompletedForUser(currentSkill.title, l.title)
+        )[1]?.title || "",
+      durationMinutes: 30,
+    },
+  };
+}
+const today = new Date().toLocaleDateString("en-US", {
+  weekday: "short",
+});
+
+if (!currUser.streakWeek) currUser.streakWeek = [];
+
+const todayObj = currUser.streakWeek.find(
+  (d) => d.day === today
+);
+
+if (todayObj) {
+  todayObj.done = true;
+} else {
+  currUser.streakWeek.push({
+    day: today,
+    done: true,
+  });
+}
+
+currUser.streakDays =
+currUser.streakWeek.filter(
+(d)=>d.done
+).length;
+
+
   renderOvarallProgress(currRoadmap);
   renderModulesDone(currRoadmap);
   renderLessonsDone(currRoadmap.skills, currRoadmap);
@@ -292,15 +350,28 @@ async function updateLesson(skillIndex, lessonIndex, completed) {
   renderCurrSkill();
   renderRoadmapResult();
   
-  console.log(data);
 
-  await fetch(`http://localhost:3000/users/${currUser.id}`, {
-    method: "PUT",
+  const response = await fetch(`http://localhost:3000/users/${currUser.id}`, {
+    method: "PATCH",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(currUser),
+   body: JSON.stringify({
+  skills: currUser.skills,
+  completedSkillIds: currUser.completedSkillIds,
+  xpEarned: currUser.xpEarned,
+  overallScore: currUser.overallScore,
+  currentModule: currUser.currentModule,
+  streakDays: currUser.streakDays,
+  streakWeek: currUser.streakWeek,
+  weeklyGoalDone: currUser.weeklyGoalDone,
+  weeklyGoalTotal: currUser.weeklyGoalTotal,
+  lastWeeklyReset: currUser.lastWeeklyReset,
+}),
   });
+  console.log(response.status);
+  const data = await response.json();
+  console.log(data);
 }
 
 function calcSkillProgress(skill) {
@@ -308,7 +379,7 @@ function calcSkillProgress(skill) {
   if (allLessons === 0) return 0;
   let doneLessons = 0;
   skill.lessons.forEach((lesson) => {
-    if (lesson.completed) doneLessons++;
+    if (isLessonCompletedForUser(skill.title,lesson.title)) doneLessons++;
   });
   let skillProgress = Math.round((doneLessons / allLessons) * 100);
   return skillProgress;
@@ -322,7 +393,7 @@ function calcLessonsProgress(roadmap) {
     skill.lessons.forEach((lesson) => {
       allLessons++;
 
-      if (lesson.completed) {
+      if (isLessonCompletedForUser(skill.title, lesson.title)) {
         doneLessons++;
       }
     });
@@ -336,7 +407,7 @@ function calcNumCompletedSkills(roadmap) {
   roadmap.skills.forEach((skill) => {
     let doneLessons = 0;
     skill.lessons.forEach((lesson) => {
-      if (lesson.completed) doneLessons++;
+      if (isLessonCompletedForUser(skill.title, lesson.title)) doneLessons++;
     });
     if (doneLessons === skill.lessons.length) doneSkills++;
   });
@@ -348,7 +419,7 @@ function calcOverallProgress(roadmap) {
   let allLessons = 0;
   roadmap.skills.forEach((skill) => {
     skill.lessons.forEach((lesson) => {
-      if (lesson.completed) doneLessons++;
+      if (isLessonCompletedForUser(skill.title, lesson.title)) doneLessons++;
       allLessons++;
     });
   });
@@ -448,43 +519,40 @@ function renderRoadmapResult() {
 }
 
 // sidebar
-const barsIcon = document.querySelector(".bars-icon");
-const sideBar = document.querySelector(".sidebar");
-const overlay = document.querySelector(".overlay");
+const links = document.querySelectorAll(".links-sidebar nav ul li");
+const sidebar = document.querySelector(".sidebar");
+const menuToggle = document.querySelector(".mobile-menu-toggle");
 
-//open and close sidebar
-barsIcon.addEventListener("click", () => {
-  sideBar.classList.toggle("open");
-  barsIcon.children[0].classList.toggle("fa-bars");
-  barsIcon.children[0].classList.toggle("fa-xmark");
-  overlay.classList.toggle("show");
+if (menuToggle && sidebar) {
+  menuToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+  });
+}
+
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    links.forEach((item) => item.classList.remove("active"));
+    this.classList.add("active");
+    if (window.innerWidth <= 992 && sidebar) {
+      sidebar.classList.remove("open");
+    }
+  });
 });
 
-//to close sidebar when i click on any point on the main page
-document.addEventListener("click", (e) => {
-  if (!sideBar.contains(e.target) && !barsIcon.contains(e.target)) {
-    sideBar.classList.remove("open");
-    barsIcon.children[0].classList.remove("fa-xmark");
-    barsIcon.children[0].classList.add("fa-bars");
-    overlay.classList.remove("show");
+function checkWeeklyReset() {
+  const today = new Date();
+
+  // بداية الأسبوع يوم الاتنين
+  const monday = new Date(today);
+  const day = monday.getDay();
+  const diff = day === 0 ? -6 : 1 - day;
+
+  monday.setDate(today.getDate() + diff);
+
+  const weekKey = monday.toISOString().split("T")[0];
+
+  if (currUser.lastWeeklyReset !== weekKey) {
+    currUser.weeklyGoalDone = 0;
+    currUser.lastWeeklyReset = weekKey;
   }
-});
-
-// User
-//       ↓
-// completedSkillIds
-//       ↓
-// getSkillStatus()
-//       ↓
-// createSkillCard()
-//       ↓
-// createLessonList()
-//       ↓
-// createOneLesson()
-// ✅ Mission 1: Determine the skill status.
-// ✅ Mission 2: Pass the status to every lesson.
-// 🔄 Mission 3: Make the checkboxes behave according to the status.
-// ⏳ Mission 4: Detect when the Current skill reaches 100%.
-// ⏳ Mission 5: Add that skill to completedSkillIds.
-// ⏳ Mission 6: Save the updated user with PUT.
-// ⏳ Mission 7: Update only the affected UI elements without re-rendering the entire timeline.
+}
