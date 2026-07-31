@@ -138,3 +138,65 @@ function closeDetails(button) {
     const overlay = button.closest('.card-overlay');
     overlay.classList.remove('show');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const logoutBtn = document.querySelector(".log-out a");
+
+logoutBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  Swal.fire({
+    title: "Are you sure?",
+    text: "Do you want to log out?",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonText: "Yes, Log out",
+    cancelButtonText: "Cancel"
+  }).then((result) => {
+
+    if (result.isConfirmed) {
+
+      const currentUserId = localStorage.getItem("currentUserId");
+
+      fetch(`http://localhost:3000/users/${currentUserId}`, {
+        method: "DELETE"
+      })
+      .then(() => {
+
+        localStorage.removeItem("currentUserId");
+
+        Swal.fire({
+          icon: "success",
+          title: "Logged Out!",
+          text: "You have been logged out successfully.",
+          timer: 1500,
+          showConfirmButton: false
+        }).then(() => {
+          window.location.href = "../pages/login.html";
+        });
+
+      })
+      .catch(() => {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "Logout failed."
+        });
+      });
+
+    }
+
+  });
+});

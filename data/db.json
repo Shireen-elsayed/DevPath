@@ -4815,5 +4815,6 @@
       "id": "10",
       "message": "Consistency beats motivation. Keep showing up, and the results will follow."
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
