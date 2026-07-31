@@ -1,64 +1,72 @@
-//side_bar
-function initSidebar() {
-    const barsIcon = document.querySelector(".bars-icon");
-    const sideBar = document.querySelector(".sidebar");
-    const overlay = document.querySelector(".overlay");
-
-    if (!barsIcon || !sideBar || !overlay) return;
-
-    barsIcon.addEventListener("click", (e) => {
-        e.stopPropagation();
-        sideBar.classList.toggle("open");
-        const icon = barsIcon.querySelector("i");
-        if (icon) {
-            icon.classList.toggle("fa-bars");
-            icon.classList.toggle("fa-xmark");
-        }
-        overlay.classList.toggle("show");
-    });
-
-    document.addEventListener("click", (e) => {
-        if (!sideBar.contains(e.target) && !barsIcon.contains(e.target)) {
-            sideBar.classList.remove("open");
-            const icon = barsIcon.querySelector("i");
-            if (icon) {
-                icon.classList.remove("fa-xmark");
-                icon.classList.add("fa-bars");
-            }
-            overlay.classList.remove("show");
-        }
-    });
+// sidebar
+const links = document.querySelectorAll(".links-sidebar nav ul li");
+// const clock = document.querySelector(".clock");
+const sidebar = document.querySelector(".sidebar");
+const menuToggle = document.querySelector(".mobile-menu-toggle");
+if (menuToggle && sidebar) {
+  menuToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+  });
 }
-initSidebar();
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    links.forEach((item) => item.classList.remove("active"));
+    this.classList.add("active");
+    if (window.innerWidth <= 992 && sidebar) {
+      sidebar.classList.remove("open");
+    }
+  });
+});
 //////////////
 const projectsContainer = document.querySelector('.projects-container');
 let allProjects = [];
-// ================= LOAD PROJECTS =================
 async function loadProjects() {
-    const response = await fetch("http://localhost:3000/projects");
-    allProjects = await response.json();
-    // للتجربة فقط
-    const currentTrackId = 5;
-    // const currentTrackId = parseInt(localStorage.getItem("trackId")); // الجزء الاصلى عشان تبقى دينامك 
-    const filteredProjects = allProjects.filter(function (project) {
-        return project.trackId === currentTrackId;
-    });
-    projectsContainer.innerHTML = '';
-    filteredProjects.forEach(function (project) {
-        projectsContainer.innerHTML += createProjectCard(project);
-    });
+    try {
+        const response = await fetch("http://localhost:3000/projects");
+        if (!response.ok) return;
+        allProjects = await response.json();
+        const currentTrackId = localStorage.getItem("selectedTrack");
+        if (!currentTrackId) {
+            projectsContainer.innerHTML ='<p class="no-projects">Please select a track first.</p>';
+            return;
+        }
+        const target = String(currentTrackId).trim().toLowerCase();
+        const trackNameToId = {
+            "frontend": "1",
+            "backend": "2",
+            "ui/ux": "3",
+            "flutter": "4",
+            "data analysis": "5"
+        };
+        const filteredProjects = allProjects.filter(function (project) {
+            const projectTrackId = String(project.trackId).trim().toLowerCase();
+            const matchById = projectTrackId === target;
+            const matchByName = trackNameToId[target] && projectTrackId === trackNameToId[target];
+            return matchById || matchByName;
+        });
+        projectsContainer.innerHTML = '';
+        if (filteredProjects.length === 0) {
+            projectsContainer.innerHTML = '<p class="no-projects">No projects found for this track.</p>';
+            return;
+        }
+        filteredProjects.forEach(function (project) {
+            projectsContainer.innerHTML += createProjectCard(project);
+        });
+    } catch (error) {
+        projectsContainer.innerHTML = '<p class="error-msg">Error loading projects.</p>';
+    }
 }
 loadProjects();
 // ================= CREATE CARD =================
 function createProjectCard(project) {
     let stars = '';
-    if (project.difficulty === 'Easy') {
+    if (project.level === 'Easy') {
         stars = `
             <i class="fa-solid fa-star"></i>
             <i class="fa-regular fa-star"></i>
             <i class="fa-regular fa-star"></i>
         `;
-    } else if (project.difficulty === 'Medium') {
+    } else if (project.level === 'Medium') {
         stars = `
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -75,8 +83,8 @@ function createProjectCard(project) {
         <div class="project-card">
             <div class="project-image">
                 <img src="${project.image}" alt="${project.title}">
-                <span class="difficulty ${project.difficulty.toLowerCase()}">
-                    ${project.difficulty}
+                <span class="difficulty ${project.level.toLowerCase()}">
+                    ${project.level}
                 </span>
             </div>
             <div class="project-content">
@@ -93,6 +101,8 @@ function createProjectCard(project) {
                         </div>
                     </div>
                     <div class="skills">
+                    <p class="str">Needed Skills 👇🏻</p>
+                    <br>
                         ${project.skills.map(function (skill) {
                             return `<span class="skill">${skill}</span>`;
                         }).join('')}
