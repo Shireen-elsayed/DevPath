@@ -75,257 +75,256 @@
       "username": "naema",
       "email": "naema@gmail.com",
       "password": "naema*658",
-      "track": "Frontend",
+      "track": "Data Analysis",
       "level": "Beginner",
       "avatar": "",
-      "overallScore": 25,
+      "overallScore": 19,
       "skills": [
         {
           "id": 1,
-          "name": "HTML",
+          "name": "Python",
           "lessons": [
             {
-              "title": "HTML Introduction",
+              "title": "Python Syntax Basics",
               "completed": true
             },
             {
-              "title": "HTML Elements & Tags",
+              "title": "Data Types & Structures",
               "completed": true
             },
             {
-              "title": "Forms & Inputs",
+              "title": "Control Flow & Functions",
               "completed": true
             },
             {
-              "title": "Tables",
+              "title": "File Handling",
               "completed": true
             },
             {
-              "title": "Semantic HTML",
+              "title": "List Comprehensions",
               "completed": true
             },
             {
-              "title": "Accessibility Basics",
+              "title": "Working with Libraries",
               "completed": true
             }
           ]
         },
         {
           "id": 2,
-          "name": "CSS",
+          "name": "Statistics",
           "lessons": [
             {
-              "title": "CSS Selectors & Specificity",
+              "title": "Descriptive Statistics",
               "completed": true
             },
             {
-              "title": "Box Model",
+              "title": "Probability Basics",
               "completed": true
             },
             {
-              "title": "Flexbox",
+              "title": "Distributions",
               "completed": true
             },
             {
-              "title": "CSS Grid",
-              "completed": true
+              "title": "Hypothesis Testing",
+              "completed": false
             },
             {
-              "title": "Positioning & Display",
-              "completed": true
+              "title": "Correlation & Regression",
+              "completed": false
             },
             {
-              "title": "Animations & Transitions",
-              "completed": true
+              "title": "Sampling Methods",
+              "completed": false
             }
           ]
         },
         {
           "id": 3,
-          "name": "Responsive Design",
+          "name": "NumPy",
           "lessons": [
             {
-              "title": "Media Queries",
+              "title": "NumPy Arrays Basics",
               "completed": false
             },
             {
-              "title": "Mobile-First Design",
+              "title": "Array Operations",
               "completed": false
             },
             {
-              "title": "Flexbox for Responsive Layouts",
+              "title": "Indexing & Slicing",
               "completed": false
             },
             {
-              "title": "CSS Grid for Responsive Layouts",
+              "title": "Broadcasting",
               "completed": false
             },
             {
-              "title": "Responsive Images",
+              "title": "Linear Algebra with NumPy",
               "completed": false
             },
             {
-              "title": "Testing Across Devices",
+              "title": "Random Module",
               "completed": false
             }
           ]
         },
         {
           "id": 4,
-          "name": "JavaScript",
+          "name": "Pandas",
           "lessons": [
             {
-              "title": "JS Fundamentals & Syntax",
+              "title": "DataFrames & Series",
               "completed": false
             },
             {
-              "title": "Variables & Data Types",
+              "title": "Reading/Writing Data",
               "completed": false
             },
             {
-              "title": "Functions & Scope",
+              "title": "Data Cleaning",
               "completed": false
             },
             {
-              "title": "DOM Manipulation",
+              "title": "Filtering & Grouping",
               "completed": false
             },
             {
-              "title": "Events & Event Listeners",
+              "title": "Merging & Joining",
               "completed": false
             },
             {
-              "title": "Async JS (Promises & Fetch)",
+              "title": "Time Series with Pandas",
               "completed": false
             }
           ]
         },
         {
           "id": 5,
-          "name": "Git & GitHub",
+          "name": "Data Visualization",
           "lessons": [
             {
-              "title": "Git Basics (init, add, commit)",
+              "title": "Matplotlib Basics",
               "completed": false
             },
             {
-              "title": "Branching & Merging",
+              "title": "Seaborn for Statistical Plots",
               "completed": false
             },
             {
-              "title": "Remote Repos & GitHub",
+              "title": "Chart Types & When to Use Them",
               "completed": false
             },
             {
-              "title": "Pull Requests & Code Review",
+              "title": "Customizing Plots",
               "completed": false
             },
             {
-              "title": "Resolving Merge Conflicts",
+              "title": "Interactive Viz with Plotly",
               "completed": false
             },
             {
-              "title": "Git Workflows",
+              "title": "Dashboards",
               "completed": false
             }
           ]
         },
         {
           "id": 6,
-          "name": "TypeScript",
+          "name": "SQL",
           "lessons": [
             {
-              "title": "TypeScript Basics & Types",
+              "title": "SQL Basics",
               "completed": false
             },
             {
-              "title": "Interfaces & Type Aliases",
+              "title": "Joins & Relationships",
               "completed": false
             },
             {
-              "title": "Functions & Generics",
+              "title": "Aggregate Functions",
               "completed": false
             },
             {
-              "title": "Classes in TypeScript",
+              "title": "Window Functions",
               "completed": false
             },
             {
-              "title": "Working with tsconfig",
+              "title": "Query Optimization",
               "completed": false
             },
             {
-              "title": "TypeScript with React",
+              "title": "SQL for Data Analysis",
               "completed": false
             }
           ]
         },
         {
           "id": 7,
-          "name": "React",
+          "name": "Excel",
           "lessons": [
             {
-              "title": "Components & JSX",
+              "title": "Excel Basics",
               "completed": false
             },
             {
-              "title": "Props & State",
+              "title": "Formulas & Functions",
               "completed": false
             },
             {
-              "title": "Hooks (useState, useEffect)",
+              "title": "PivotTables",
               "completed": false
             },
             {
-              "title": "Conditional Rendering & Lists",
+              "title": "Data Cleaning in Excel",
               "completed": false
             },
             {
-              "title": "Forms in React",
+              "title": "Charts in Excel",
               "completed": false
             },
             {
-              "title": "Context API & State Management",
+              "title": "VLOOKUP/XLOOKUP",
               "completed": false
             }
           ]
         },
         {
           "id": 8,
-          "name": "REST API",
+          "name": "Power BI",
           "lessons": [
             {
-              "title": "REST Principles & HTTP Methods",
+              "title": "Power BI Interface",
               "completed": false
             },
             {
-              "title": "Fetch API & Axios",
+              "title": "Importing & Transforming Data",
               "completed": false
             },
             {
-              "title": "Handling JSON Responses",
+              "title": "DAX Basics",
               "completed": false
             },
             {
-              "title": "Authentication with APIs",
+              "title": "Building Visualizations",
               "completed": false
             },
             {
-              "title": "Error Handling",
+              "title": "Dashboards & Reports",
               "completed": false
             },
             {
-              "title": "Building a Simple API Client",
+              "title": "Publishing & Sharing",
               "completed": false
             }
           ]
         }
       ],
       "completedSkillIds": [
-        "HTML",
-        "CSS"
+        "Python"
       ],
-      "xpEarned": 1200,
+      "xpEarned": 900,
       "xpNextReward": 0,
       "streakDays": 1,
       "streakWeek": [
@@ -358,8 +357,8 @@
           "done": false
         }
       ],
-      "weeklyGoalDone": 0,
-      "weeklyGoalTotal": 0,
+      "weeklyGoalDone": 7,
+      "weeklyGoalTotal": 7,
       "dailyGoalMinutesDone": 0,
       "dailyGoalMinutesTotal": 0,
       "quizProgress": {
@@ -371,19 +370,19 @@
         "problemsTotalToday": 0
       },
       "currentModule": {
-        "skillId": "Responsive Design",
-        "skillName": "Responsive Design",
-        "progressPercent": 0,
+        "skillId": "Statistics",
+        "skillName": "Statistics",
+        "progressPercent": 50,
         "nextLesson": {
-          "title": "Media Queries",
+          "title": "Hypothesis Testing",
           "durationMinutes": 30
         },
         "upNext": {
-          "title": "Mobile-First Design",
+          "title": "Correlation & Regression",
           "durationMinutes": 30
         }
       },
-      "id": "xfnbeAgVwk0",
+      "id": "PhABiSpyU8w",
       "lastWeeklyReset": "2026-07-27"
     }
   ],

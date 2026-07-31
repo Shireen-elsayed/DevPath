@@ -244,6 +244,9 @@ function addLessonEvents() {
 }
 
 async function updateLesson(skillIndex, lessonIndex, completed) {
+  console.log("updateLesson fired");
+  
+  checkWeeklyReset();
   checkWeeklyReset();
   const roadmapSkill = currRoadmap.skills[skillIndex];
   const roadmapLesson = roadmapSkill.lessons[lessonIndex];
@@ -268,17 +271,23 @@ async function updateLesson(skillIndex, lessonIndex, completed) {
   userLesson.completed = completed;
 
   // Calculate completed lessons count and update weekly goal progress
-  const completedLessons = currUser.skills.reduce((total, skill) => {
-    return (
-      total +
-      skill.lessons.filter((lesson) => lesson.completed).length
-    );
-  }, 0);
+  console.log("completed =", completed);
 
-  currUser.weeklyGoalDone = Math.min(
-    completedLessons,
-    currUser.weeklyGoalTotal
+const completedLessons = currUser.skills.reduce((total, skill) => {
+  return (
+    total +
+    skill.lessons.filter((lesson) => lesson.completed).length
   );
+}, 0);
+
+currUser.weeklyGoalDone = Math.min(
+  completedLessons,
+  currUser.weeklyGoalTotal
+);
+currUser.weeklyGoalTotal = 7;
+
+console.log("completedLessons =", completedLessons);
+console.log("weeklyGoalDone =", currUser.weeklyGoalDone);
 
   if (calcSkillProgress(roadmapSkill) === 100) {
     if (!currUser.completedSkillIds.includes(roadmapSkill.title)) {

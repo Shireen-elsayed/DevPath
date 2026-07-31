@@ -240,7 +240,7 @@ registerFormElement.addEventListener("submit", async function (e) {
       { day: "Sun", done: false },
     ],
     weeklyGoalDone: 0,
-    weeklyGoalTotal: 0,
+weeklyGoalTotal: 7,
     dailyGoalMinutesDone:0,
     dailyGoalMinutesTotal:0,
     quizProgress:{
