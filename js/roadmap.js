@@ -16,8 +16,8 @@ async function loadRoadmap() {
   
   renderHeader(currRoadmap);
   renderTimeline(currRoadmap.skills, currUser, currRoadmap);
-  renderOvarallProgress(currRoadmap);
-  renderModulesDone(currRoadmap);
+  // renderOvarallProgress(currRoadmap);
+  // renderModulesDone(currRoadmap);
   renderLessonsDone(currRoadmap.skills, currRoadmap);
   renderSkillProgress(currRoadmap.skills);
   renderCurrSkill();
@@ -343,8 +343,8 @@ currUser.streakWeek.filter(
 ).length;
 
 
-  renderOvarallProgress(currRoadmap);
-  renderModulesDone(currRoadmap);
+  // renderOvarallProgress(currRoadmap);
+  // renderModulesDone(currRoadmap);
   renderLessonsDone(currRoadmap.skills, currRoadmap);
   renderSkillProgress(currRoadmap.skills);
   renderCurrSkill();

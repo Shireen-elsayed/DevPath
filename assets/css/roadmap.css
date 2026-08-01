@@ -727,9 +727,9 @@ h1 {
 }
 
 @media (min-width: 768px) {
-   .cards {
+   /* .cards {
       grid-template-columns: repeat(3, 1fr);
-   }
+   } */
 
    .progress-status {
       display: flex;
