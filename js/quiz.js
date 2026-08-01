@@ -2,7 +2,7 @@ const questionsContainer = document.getElementById("questionsContainer");
 const quizForm = document.getElementById("quizForm");
 const trackName = document.getElementById("trackName");
 const questionCount = document.getElementById("questionCount");
-const passScore = 3;
+const passScore = 4;
 
 let questions = [];
 
@@ -27,9 +27,6 @@ async function loadQuestions() {
     questions = allQuestions.filter(
       (question) => question.trackId === Number(track.id),
     );
-    // console.log("Track ID:", selectedTrack);
-    // console.log("Questions:", questions);
-    // console.log("Questions Count:", questions.length);
 
     questionCount.textContent = `${questions.length} Questions`;
 
@@ -150,21 +147,21 @@ quizForm.addEventListener("submit", async function (e) {
   }
 
   //  to make all lessons checked in completed skill
-   currUser.skills = currUser.skills.map((skill) => {
-     if (
-       completedSkillIds.includes(skill.name) &&
-       Array.isArray(skill.lessons)
-     ) {
-       return {
-         ...skill,
-         lessons: skill.lessons.map((lesson) => ({
-           ...lesson,
-           completed: true,
-         })),
-       };
-     }
-     return skill;
-   });
+  currUser.skills = currUser.skills.map((skill) => {
+    if (
+      completedSkillIds.includes(skill.name) &&
+      Array.isArray(skill.lessons)
+    ) {
+      return {
+        ...skill,
+        lessons: skill.lessons.map((lesson) => ({
+          ...lesson,
+          completed: true,
+        })),
+      };
+    }
+    return skill;
+  });
 
   const response = await fetch(`http://localhost:3000/users/${userId}`, {
     method: "PATCH",
@@ -173,7 +170,7 @@ quizForm.addEventListener("submit", async function (e) {
     },
     body: JSON.stringify({
       completedSkillIds,
-      skills:currUser.skills,
+      skills: currUser.skills,
     }),
   });
 

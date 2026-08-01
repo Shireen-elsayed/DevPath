@@ -13,7 +13,7 @@ async function loadRoadmap() {
   currUser = await fetch(`http://localhost:3000/users/${userId}`).then((res) =>
     res.json(),
   );
-  
+
   renderHeader(currRoadmap);
   renderTimeline(currRoadmap.skills, currUser, currRoadmap);
   renderOvarallProgress(currRoadmap);
@@ -40,7 +40,6 @@ function isLessonCompletedForUser(skillTitle, lessonTitle) {
   const userLesson = getUserLesson(skillTitle, lessonTitle);
   return userLesson ? !!userLesson.completed : false;
 }
-
 
 // => put header according to your track
 function renderHeader(roadmap) {
@@ -267,16 +266,15 @@ async function updateLesson(skillIndex, lessonIndex, completed) {
   if (userLesson.completed === completed) return;
   userLesson.completed = completed;
   const completedLessons = currUser.skills.reduce((total, skill) => {
-  return (
-    total +
-    skill.lessons.filter((lesson) => lesson.completed).length
-  );
-}, 0);
+    return total + skill.lessons.filter((lesson) => lesson.completed).length;
+  }, 0);
 
-currUser.weeklyGoalDone = Math.min(
-  completedLessons,
-  currUser.weeklyGoalTotal
-);
+  currUser.weeklyGoalTotal ??= 7;
+
+  currUser.weeklyGoalDone = Math.min(
+    completedLessons,
+    currUser.weeklyGoalTotal,
+  );
 
   if (calcSkillProgress(roadmapSkill) === 100) {
     if (!currUser.completedSkillIds.includes(roadmapSkill.title)) {
@@ -291,57 +289,52 @@ currUser.weeklyGoalDone = Math.min(
     currUser.xpEarned = Math.max(0, currUser.xpEarned - 100);
   }
   // Update overall score
-currUser.overallScore = calcOverallProgress(currRoadmap);
+  currUser.overallScore = calcOverallProgress(currRoadmap);
 
-// Update current module
-const currentSkill = currRoadmap.skills.find(
-  (skill) => !currUser.completedSkillIds.includes(skill.title)
-);
+  // Update current module
+  const currentSkill = currRoadmap.skills.find(
+    (skill) => !currUser.completedSkillIds.includes(skill.title),
+  );
 
-if (currentSkill) {
-  currUser.currentModule = {
-    skillId: currentSkill.title,
-    skillName: currentSkill.title,
-    progressPercent: calcSkillProgress(currentSkill),
-    nextLesson: {
-      title:
-        currentSkill.lessons.find((l) => !isLessonCompletedForUser(currentSkill.title, l.title))
-          ?.title || "",
-      durationMinutes: 30,
-    },
-    upNext: {
-      title:
-        currentSkill.lessons.filter(
-          (l) => !isLessonCompletedForUser(currentSkill.title, l.title)
-        )[1]?.title || "",
-      durationMinutes: 30,
-    },
-  };
-}
-const today = new Date().toLocaleDateString("en-US", {
-  weekday: "short",
-});
-
-if (!currUser.streakWeek) currUser.streakWeek = [];
-
-const todayObj = currUser.streakWeek.find(
-  (d) => d.day === today
-);
-
-if (todayObj) {
-  todayObj.done = true;
-} else {
-  currUser.streakWeek.push({
-    day: today,
-    done: true,
+  if (currentSkill) {
+    currUser.currentModule = {
+      skillId: currentSkill.title,
+      skillName: currentSkill.title,
+      progressPercent: calcSkillProgress(currentSkill),
+      nextLesson: {
+        title:
+          currentSkill.lessons.find(
+            (l) => !isLessonCompletedForUser(currentSkill.title, l.title),
+          )?.title || "",
+        durationMinutes: 30,
+      },
+      upNext: {
+        title:
+          currentSkill.lessons.filter(
+            (l) => !isLessonCompletedForUser(currentSkill.title, l.title),
+          )[1]?.title || "",
+        durationMinutes: 30,
+      },
+    };
+  }
+  const today = new Date().toLocaleDateString("en-US", {
+    weekday: "short",
   });
-}
 
-currUser.streakDays =
-currUser.streakWeek.filter(
-(d)=>d.done
-).length;
+  if (!currUser.streakWeek) currUser.streakWeek = [];
 
+  const todayObj = currUser.streakWeek.find((d) => d.day === today);
+
+  if (todayObj) {
+    todayObj.done = true;
+  } else {
+    currUser.streakWeek.push({
+      day: today,
+      done: true,
+    });
+  }
+
+  currUser.streakDays = currUser.streakWeek.filter((d) => d.done).length;
 
   renderOvarallProgress(currRoadmap);
   renderModulesDone(currRoadmap);
@@ -349,25 +342,24 @@ currUser.streakWeek.filter(
   renderSkillProgress(currRoadmap.skills);
   renderCurrSkill();
   renderRoadmapResult();
-  
 
   const response = await fetch(`http://localhost:3000/users/${currUser.id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
     },
-   body: JSON.stringify({
-  skills: currUser.skills,
-  completedSkillIds: currUser.completedSkillIds,
-  xpEarned: currUser.xpEarned,
-  overallScore: currUser.overallScore,
-  currentModule: currUser.currentModule,
-  streakDays: currUser.streakDays,
-  streakWeek: currUser.streakWeek,
-  weeklyGoalDone: currUser.weeklyGoalDone,
-  weeklyGoalTotal: currUser.weeklyGoalTotal,
-  lastWeeklyReset: currUser.lastWeeklyReset,
-}),
+    body: JSON.stringify({
+      skills: currUser.skills,
+      completedSkillIds: currUser.completedSkillIds,
+      xpEarned: currUser.xpEarned,
+      overallScore: currUser.overallScore,
+      currentModule: currUser.currentModule,
+      streakDays: currUser.streakDays,
+      streakWeek: currUser.streakWeek,
+      weeklyGoalDone: currUser.weeklyGoalDone,
+      weeklyGoalTotal: currUser.weeklyGoalTotal,
+      lastWeeklyReset: currUser.lastWeeklyReset,
+    }),
   });
   console.log(response.status);
   const data = await response.json();
@@ -379,7 +371,7 @@ function calcSkillProgress(skill) {
   if (allLessons === 0) return 0;
   let doneLessons = 0;
   skill.lessons.forEach((lesson) => {
-    if (isLessonCompletedForUser(skill.title,lesson.title)) doneLessons++;
+    if (isLessonCompletedForUser(skill.title, lesson.title)) doneLessons++;
   });
   let skillProgress = Math.round((doneLessons / allLessons) * 100);
   return skillProgress;
@@ -455,7 +447,6 @@ async function renderMotivationMessage() {
   document.getElementById("motivation-message").textContent =
     `✨${messages[randomIndex].message}✨`;
 }
-
 
 function renderRoadmapResult() {
   const section = document.getElementById("roadmap-result");
@@ -542,7 +533,7 @@ links.forEach((link) => {
 function checkWeeklyReset() {
   const today = new Date();
 
-  // بداية الأسبوع يوم الاتنين
+  // the week starts from Monday.
   const monday = new Date(today);
   const day = monday.getDay();
   const diff = day === 0 ? -6 : 1 - day;
@@ -557,17 +548,6 @@ function checkWeeklyReset() {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 const logoutBtn = document.querySelector(".log-out a");
 
 logoutBtn.addEventListener("click", function (e) {
@@ -579,40 +559,34 @@ logoutBtn.addEventListener("click", function (e) {
     icon: "warning",
     showCancelButton: true,
     confirmButtonText: "Yes, Log out",
-    cancelButtonText: "Cancel"
+    cancelButtonText: "Cancel",
   }).then((result) => {
-
     if (result.isConfirmed) {
-
       const currentUserId = localStorage.getItem("currentUserId");
 
       fetch(`http://localhost:3000/users/${currentUserId}`, {
-        method: "DELETE"
+        method: "DELETE",
       })
-      .then(() => {
+        .then(() => {
+          localStorage.removeItem("currentUserId");
 
-        localStorage.removeItem("currentUserId");
-
-        Swal.fire({
-          icon: "success",
-          title: "Logged Out!",
-          text: "You have been logged out successfully.",
-          timer: 1500,
-          showConfirmButton: false
-        }).then(() => {
-          window.location.href = "../pages/login.html";
+          Swal.fire({
+            icon: "success",
+            title: "Logged Out!",
+            text: "You have been logged out successfully.",
+            timer: 1500,
+            showConfirmButton: false,
+          }).then(() => {
+            window.location.href = "../index.html";
+          });
+        })
+        .catch(() => {
+          Swal.fire({
+            icon: "error",
+            title: "Error",
+            text: "Logout failed.",
+          });
         });
-
-      })
-      .catch(() => {
-        Swal.fire({
-          icon: "error",
-          title: "Error",
-          text: "Logout failed."
-        });
-      });
-
     }
-
   });
 });

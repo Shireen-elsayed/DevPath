@@ -139,19 +139,6 @@ function closeDetails(button) {
     overlay.classList.remove('show');
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 const logoutBtn = document.querySelector(".log-out a");
 
 logoutBtn.addEventListener("click", function (e) {
@@ -184,7 +171,7 @@ logoutBtn.addEventListener("click", function (e) {
           timer: 1500,
           showConfirmButton: false
         }).then(() => {
-          window.location.href = "../pages/login.html";
+          window.location.href = "../index.html";
         });
 
       })

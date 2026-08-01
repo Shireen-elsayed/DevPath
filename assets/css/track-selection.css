@@ -258,10 +258,6 @@ body {
 }
 
 @media (min-width: 768px) {
-   /* .track-cards {
-      grid-template-columns: repeat(auto-fit,
-            minmax(280px, 1fr));
-   } */
 
    .not-sure-card {
       width: 750px;
@@ -272,12 +268,7 @@ body {
    }
 }
 
-@media (min-width: 992px) {
-   /* .track-cards {
-      grid-template-columns: repeat(3, 1fr);
-
-   } */
-}
+@media (min-width: 992px) {}
 
 @media (min-width: 1200px) {}
 

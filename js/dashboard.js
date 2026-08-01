@@ -2,6 +2,12 @@ const links = document.querySelectorAll(".links-sidebar nav ul li");
 const clock = document.querySelector(".clock");
 const sidebar = document.querySelector(".sidebar");
 const menuToggle = document.querySelector(".mobile-menu-toggle");
+
+// =========================================
+// CONSTANTS
+// =========================================
+const WEEKLY_GOAL_TOTAL = 7;
+
 // =========================================
 // SIDEBAR TOGGLE
 // Open and close the sidebar on mobile devices
@@ -11,6 +17,7 @@ if (menuToggle && sidebar) {
     sidebar.classList.toggle("open");
   });
 }
+
 // =========================================
 // SIDEBAR ACTIVE LINKS
 // Highlight the selected navigation link
@@ -24,6 +31,7 @@ links.forEach((link) => {
     }
   });
 });
+
 // =========================================
 // WEEK DATE HELPER
 // Generate the current week's dates
@@ -49,6 +57,7 @@ function getCurrentWeekDates(startDay = 1) {
   }
   return week;
 }
+
 // =========================================
 // STREAK DAYS
 // Display the user's learning streak
@@ -68,11 +77,12 @@ function renderStreakDays(streakWeek = []) {
     dayEl.innerHTML = `
       <span class="day-letter">${weekDay.day}</span>
       <span class="day-date">${weekDay.date}</span>
-      <div class="day-circle">${isDone ? "✓" : (weekDay.isToday ? "●" : "")}</div>
+      <div class="day-circle">${isDone ? "✓" : weekDay.isToday ? "●" : ""}</div>
     `;
     container.appendChild(dayEl);
   });
 }
+
 // =========================================
 // WEEK CALENDAR
 // Render the weekly learning calendar
@@ -88,10 +98,10 @@ function renderWeekCalendar(streakWeek = []) {
     const dayEl = document.createElement("div");
     dayEl.className = "week-day";
     if (isDone) {
-  dayEl.classList.add("completed");
-} else if (weekDay.isToday) {
-  dayEl.classList.add("today");
-}
+      dayEl.classList.add("completed");
+    } else if (weekDay.isToday) {
+      dayEl.classList.add("today");
+    }
     let iconClass = "fa-regular fa-circle";
     if (isDone) iconClass = "fa-solid fa-check";
     else if (weekDay.isToday) iconClass = "fa-solid fa-circle-dot";
@@ -103,6 +113,7 @@ function renderWeekCalendar(streakWeek = []) {
     container.appendChild(dayEl);
   });
 }
+
 // =========================================
 // RECOMMENDED COURSES
 // Display recommended courses based on the user's track
@@ -113,10 +124,8 @@ function renderRecommended(recommended = [], userTrack, currentSkill) {
   container.innerHTML = "";
 
   const filtered = recommended.filter(
-  (r) =>
-    r.track === userTrack &&
-    r.skill === currentSkill
-);
+    (r) => r.track === userTrack && r.skill === currentSkill,
+  );
 
   if (filtered.length === 0) {
     container.innerHTML = `<p>لا توجد اقتراحات متاحة لهذا التراك حالياً</p>`;
@@ -124,21 +133,22 @@ function renderRecommended(recommended = [], userTrack, currentSkill) {
   }
 
   const iconMap = {
-    css:     { class: "css-icon",  fa: "fa-brands fa-css3-alt" },
-    html:    { class: "html-icon", fa: "fa-brands fa-html5" },
-    js:      { class: "js-icon",   fa: "fa-brands fa-js" },
-    code:    { class: "js-icon",   fa: "fa-solid fa-code" },
-    node:    { class: "node-icon", fa: "fa-brands fa-node-js" },
-    sql:     { class: "sql-icon",  fa: "fa-solid fa-database" },
-    figma:   { class: "figma-icon", fa: "fa-brands fa-figma" },
+    css: { class: "css-icon", fa: "fa-brands fa-css3-alt" },
+    html: { class: "html-icon", fa: "fa-brands fa-html5" },
+    js: { class: "js-icon", fa: "fa-brands fa-js" },
+    code: { class: "js-icon", fa: "fa-solid fa-code" },
+    node: { class: "node-icon", fa: "fa-brands fa-node-js" },
+    sql: { class: "sql-icon", fa: "fa-solid fa-database" },
+    figma: { class: "figma-icon", fa: "fa-brands fa-figma" },
     flutter: { class: "flutter-icon", fa: "fa-solid fa-mobile-screen" },
-    python:  { class: "python-icon", fa: "fa-brands fa-python" },
+    python: { class: "python-icon", fa: "fa-brands fa-python" },
   };
 
   filtered.forEach((item) => {
     const icon = iconMap[item.icon] || iconMap.code;
     const card = document.createElement("div");
     card.className = "rec-card";
+    card.style.cursor = "pointer"; // إشارة بصرية إنه قابل للدوس
     card.innerHTML = `
       <div class="rec-card-icon ${icon.class}">
         <i class="${icon.fa}"></i>
@@ -147,26 +157,31 @@ function renderRecommended(recommended = [], userTrack, currentSkill) {
       <p class="rec-meta">${item.type} • ${item.meta}</p>
       <div class="rec-tag">${item.title.split(" ")[0]}</div>
     `;
+
+    // فتح الرابط في تاب جديدة عند الدوس
+    card.addEventListener("click", () => {
+      if (item.link && item.link !== "#") {
+        window.open(item.link, "_blank", "noopener,noreferrer");
+      }
+    });
+
     container.appendChild(card);
   });
 }
+
 // =========================================
 // UPCOMING PROJECTS
 // Display projects related to the user's learning track
 // =========================================
-function renderUpcomingProjects(projects = [], userTrack, currentSkill) {
+function renderUpcomingProjects(projects = [], userTrack, learnedSkills = []) {
   const container = document.querySelector(".projects-showcase");
   if (!container) return;
   container.innerHTML = "";
- 
   const filtered = projects.filter(
-  (p) =>
-    p.track === userTrack &&
-    p.skill === currentSkill
-);
-// console.log("Filtered:", filtered);
+    (p) => p.track === userTrack && learnedSkills.includes(p.skill),
+  );
   if (filtered.length === 0) {
-    container.innerHTML = `<p>لا توجد مشاريع متاحة لهذا التراك حالياً</p>`;
+    container.innerHTML = `<p>No projects are currently available for this track.</p>`;
     return;
   }
   const iconMap = {
@@ -205,13 +220,14 @@ function renderUpcomingProjects(projects = [], userTrack, currentSkill) {
     container.appendChild(card);
   });
 }
+
 // =========================================
 // CURRENT LEARNING MODULE
 // Get the current module or calculate the next available one
 // =========================================
 function getEffectiveModule(currentUser, roadmaps) {
-  const roadmap = roadmaps.find((r) => r.id === currentUser.track); // r.track -> r.id
-  const roadmapSkillNames = roadmap ? roadmap.skills.map((s) => s.title) : []; // s.name -> s.title
+  const roadmap = roadmaps.find((r) => r.id === currentUser.track);
+  const roadmapSkillNames = roadmap ? roadmap.skills.map((s) => s.title) : [];
 
   const existingModule = currentUser.currentModule;
   const isModuleValid =
@@ -222,7 +238,7 @@ function getEffectiveModule(currentUser, roadmaps) {
   }
 
   const completed = currentUser.completedSkillIds || [];
-  const nextSkill = roadmap?.skills.find((s) => !completed.includes(s.title)); // s.name -> s.title
+  const nextSkill = roadmap?.skills.find((s) => !completed.includes(s.title));
 
   if (!nextSkill) {
     return null;
@@ -230,23 +246,19 @@ function getEffectiveModule(currentUser, roadmaps) {
 
   return {
     skillId: nextSkill.title, // مفيش id للسكيل في الشكل الجديد، فهنستخدم العنوان كمعرّف
-    skillName: nextSkill.title, // s.name -> s.title
-    progressPercent:
-currentUser.currentModule?.progressPercent ?? 0,
-    nextLesson:
-currentUser.currentModule?.nextLesson ??
-{
-title:"",
-durationMinutes:30
-},
-    upNext:
-currentUser.currentModule?.upNext ??
-{
-title:"",
-durationMinutes:30
-},
+    skillName: nextSkill.title,
+    progressPercent: currentUser.currentModule?.progressPercent ?? 0,
+    nextLesson: currentUser.currentModule?.nextLesson ?? {
+      title: "",
+      durationMinutes: 30,
+    },
+    upNext: currentUser.currentModule?.upNext ?? {
+      title: "",
+      durationMinutes: 30,
+    },
   };
 }
+
 // =========================================
 // PROGRESS CHART
 // Initialize the doughnut progress chart
@@ -258,11 +270,24 @@ function initChart() {
   if (!ctx || typeof Chart === "undefined") return null;
   progressChart = new Chart(ctx, {
     type: "doughnut",
-    data: { datasets: [{ data: [0, 100], backgroundColor: ["#8b5cf6", "#2a2a3d"], borderWidth: 0 }] },
-    options: { cutout: "75%", rotation: -90, plugins: { legend: { display: false }, tooltip: { enabled: false } } },
+    data: {
+      datasets: [
+        {
+          data: [0, 100],
+          backgroundColor: ["#8b5cf6", "#2a2a3d"],
+          borderWidth: 0,
+        },
+      ],
+    },
+    options: {
+      cutout: "75%",
+      rotation: -90,
+      plugins: { legend: { display: false }, tooltip: { enabled: false } },
+    },
   });
   return progressChart;
 }
+
 // =========================================
 // FETCH JSON DATA
 // Generic helper to load JSON from the server
@@ -272,6 +297,7 @@ async function fetchJSON(url) {
   if (!response.ok) throw new Error(`Unable to load: ${url}`);
   return response.json();
 }
+
 // =========================================
 // LOCAL STORAGE
 // Store the current user id if it doesn't exist
@@ -279,8 +305,73 @@ async function fetchJSON(url) {
 if (!localStorage.getItem("currentUserId")) {
   localStorage.setItem("currentUserId", "1");
 }
-console.log(localStorage.getItem("currentUserId"));
 
+// =========================================
+// OPEN YOUTUBE SEARCH
+// Helper to open a YouTube search in a new tab
+// =========================================
+function openYoutubeSearch(query) {
+  const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+
+// =========================================
+// LOG OUT
+// Clear user session and redirect to login
+// =========================================
+// const logoutBtn = document.querySelector(".log-out");
+
+// if (logoutBtn) {
+//   logoutBtn.addEventListener("click", () => {
+//     localStorage.removeItem("currentUser");
+//     localStorage.removeItem("currentUserId");
+//     window.location.href = "../pages/login.html";
+//   });
+// }
+
+
+const logoutBtn = document.querySelector(".log-out a");
+
+logoutBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  Swal.fire({
+    title: "Are you sure?",
+    text: "Do you want to log out?",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonText: "Yes, Log out",
+    cancelButtonText: "Cancel",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      const currentUserId = localStorage.getItem("currentUserId");
+
+      fetch(`http://localhost:3000/users/${currentUserId}`, {
+        method: "DELETE",
+      })
+        .then(() => {
+          localStorage.removeItem("currentUserId");
+
+          Swal.fire({
+            icon: "success",
+            title: "Logged Out!",
+            text: "You have been logged out successfully.",
+            timer: 1500,
+            showConfirmButton: false,
+          }).then(() => {
+            window.location.href = "../index.html";
+          });
+        })
+        .catch(() => {
+          Swal.fire({
+            icon: "error",
+            title: "Error",
+            text: "Logout failed.",
+          });
+        });
+    }
+  });
+});
 
 // =========================================
 // DASHBOARD INITIALIZATION
@@ -295,34 +386,32 @@ async function initDashboard() {
       fetchJSON("http://localhost:3000/upcomingProjects"),
       fetchJSON("http://localhost:3000/roadmaps"),
     ]);
-// =========================================
-// LOCAL STORAGE
-// Store the current user id if it doesn't exist
-// =========================================
-// Get the current logged-in user from Local Storage
+
+    // Get the current logged-in user from Local Storage
     const currentUserId = String(localStorage.getItem("currentUserId"));
     const currentUser = users.find((u) => String(u.id) === currentUserId);
-    console.log(currentUser);
-console.log(currentUser.weeklyGoalDone);
-console.log(currentUser.weeklyGoalTotal);
-// Stop execution if the user doesn't exist
+
+    // Stop execution if the user doesn't exist
     if (!currentUser) {
       console.warn("لم يتم العثور على المستخدم");
       renderStreakDays([]);
       renderWeekCalendar([]);
       return;
     }
-// Update the progress chart
+
+    // Update the progress chart
     const percent = Number(currentUser.overallScore) || 0;
     const chart = progressChart || initChart();
     if (chart) {
       chart.data.datasets[0].data = [percent, Math.max(0, 100 - percent)];
       chart.update();
     }
-// Display the progress percentage
+
+    // Display the progress percentage
     const percentText = document.querySelector(".percent-text");
     if (percentText) percentText.textContent = `${percent}%`;
-// Select dashboard elements
+
+    // Select dashboard elements
     let level = document.querySelector(".level");
     let userName = document.querySelector(".username");
     let track = document.querySelector(".track");
@@ -338,20 +427,32 @@ console.log(currentUser.weeklyGoalTotal);
     let secondlesson = document.querySelector(".secondlesson");
     let lesson_duration = document.querySelector(".lesson-duration");
     let second_duration = document.querySelector(".second-duration");
-// Helper function to safely update text content
-    const setText = (el, value) => { if (el) el.innerHTML = value; };
-// Helper function to safely update text content
+
+    // Helper function to safely update text content
+    const setText = (el, value) => {
+      if (el) el.innerHTML = value;
+    };
+
     setText(level, currentUser.level);
     setText(userName, currentUser.username);
     setText(track, currentUser.track);
-    setText(completedModule, `${currentUser.completedSkillIds?.length ?? 0} / ${currentUser.skills?.length ?? 0}`);
+    setText(
+      completedModule,
+      `${currentUser.completedSkillIds?.length ?? 0} / ${currentUser.skills?.length ?? 0}`,
+    );
     setText(valuexp, currentUser.xpEarned ?? 0);
-setText(numberstreak, `${currentUser.streakDays ?? 0} Days`);
-   setText(numberweakgoals, `${currentUser.weeklyGoalDone ?? 0} / ${currentUser.weeklyGoalTotal ?? 0}`);
-// Determine which module the user should continue
+    setText(numberstreak, `${currentUser.streakDays ?? 0} Days`);
+
+    // Weekly Goal: always shown out of a fixed total of 7, never taken from data
+    setText(
+      numberweakgoals,
+      `${Math.min(currentUser.weeklyGoalDone ?? 0, WEEKLY_GOAL_TOTAL)} / ${WEEKLY_GOAL_TOTAL}`,
+    );
+
+    // Determine which module the user should continue
     const effectiveModule = getEffectiveModule(currentUser, roadmaps);
-const currentSkill = effectiveModule?.skillName || "";
-// Determine which module the user should continue
+    const currentSkill = effectiveModule?.skillName || "";
+
     if (effectiveModule) {
       setText(namecourse, `${effectiveModule.skillName} Basics`);
       setText(course_track, `${currentUser.track} track`);
@@ -363,11 +464,17 @@ const currentSkill = effectiveModule?.skillName || "";
 
       if (effectiveModule.nextLesson) {
         setText(lesson_name, effectiveModule.nextLesson.title);
-        setText(lesson_duration, `${effectiveModule.nextLesson.durationMinutes} min`);
+        setText(
+          lesson_duration,
+          `${effectiveModule.nextLesson.durationMinutes} min`,
+        );
       }
       if (effectiveModule.upNext) {
         setText(secondlesson, effectiveModule.upNext.title);
-        setText(second_duration, `${effectiveModule.upNext.durationMinutes} min`);
+        setText(
+          second_duration,
+          `${effectiveModule.upNext.durationMinutes} min`,
+        );
       }
     } else {
       setText(namecourse, "All skills completed 🎉");
@@ -376,57 +483,67 @@ const currentSkill = effectiveModule?.skillName || "";
 
     if (clock) {
       const hour = new Date().getHours();
-      let greeting = hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening";
-      clock.innerHTML = `${greeting}, ${currentUser.username}`;
+      let greeting =
+        hour < 12
+          ? "Good morning"
+          : hour < 18
+            ? "Good afternoon"
+            : "Good evening";
+      clock.innerHTML = `${greeting}, ${currentUser.username} 👋`;
     }
 
     renderStreakDays(currentUser.streakWeek || []);
     renderWeekCalendar(currentUser.streakWeek || []);
-    renderRecommended(
-  recommended,
-  currentUser.track,
-  currentSkill
-);
 
-renderUpcomingProjects(
-  upcomingProjects,
-  currentUser.track,
-  currentSkill
-);
+    renderRecommended(recommended, currentUser.track, currentSkill);
 
+    // Upcoming Projects: show projects for any skill the user has started
+    // (at least one completed lesson), not just fully completed skills.
+    const startedSkillNames = (currentUser.skills || [])
+      .filter((skill) => skill.lessons?.some((l) => l.completed))
+      .map((skill) => skill.name);
 
+    const learnedSkillNames = [
+      ...new Set([
+        ...(currentUser.completedSkillIds || []),
+        ...startedSkillNames,
+        ...(currentSkill ? [currentSkill] : []),
+      ]),
+    ];
 
+    renderUpcomingProjects(
+      upcomingProjects,
+      currentUser.track,
+      learnedSkillNames,
+    );
 
-
-
-
+    // btns continue learning
     const continueBtn = document.querySelector(".continue-btn");
 
-if (continueBtn) {
-  continueBtn.addEventListener("click", () => {
-    localStorage.setItem("selectedSkillId", effectiveModule.skillId);
-    window.location.href = "../pages/roadmap.html";
-  });
-}
-const nextLessonCard = document.getElementsByClassName("lesson-item")[0];
+    if (continueBtn) {
+      continueBtn.addEventListener("click", () => {
+        localStorage.setItem("selectedSkillId", effectiveModule.skillId);
+        window.location.href = "../pages/roadmap.html";
+      });
+    }
 
-if (nextLessonCard) {
-  nextLessonCard.addEventListener("click", () => {
-    localStorage.setItem("selectedSkillId", effectiveModule.skillId);
-    localStorage.setItem("selectedLessonTitle", effectiveModule.nextLesson.title);
-    window.location.href = "../pages/roadmap.html";
-  });
-}
-const nextLessonCardTwo = document.getElementsByClassName("lesson-item")[1];
-if (nextLessonCardTwo) {
-  nextLessonCardTwo.addEventListener("click", () => {
-    localStorage.setItem("selectedSkillId", effectiveModule.skillId);
-    localStorage.setItem("selectedLessonTitle", effectiveModule.upNext.title);
-    window.location.href = "../pages/roadmap.html"; 
-  });
-}
+    const nextLessonCard = document.getElementsByClassName("lesson-item")[0];
+    if (nextLessonCard && effectiveModule?.nextLesson) {
+      nextLessonCard.addEventListener("click", () => {
+        openYoutubeSearch(
+          `${effectiveModule.skillName} ${effectiveModule.nextLesson.title} tutorial`,
+        );
+      });
+    }
 
-
+    const nextLessonCardTwo = document.getElementsByClassName("lesson-item")[1];
+    if (nextLessonCardTwo && effectiveModule?.upNext) {
+      nextLessonCardTwo.addEventListener("click", () => {
+        openYoutubeSearch(
+          `${effectiveModule.skillName} ${effectiveModule.upNext.title} tutorial`,
+        );
+      });
+    }
   } catch (error) {
     console.error("Dashboard loading error:", error);
     const percentText = document.querySelector(".percent-text");
@@ -434,109 +551,7 @@ if (nextLessonCardTwo) {
     renderStreakDays([]);
     renderWeekCalendar([]);
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 initChart();
 initDashboard();
-
-
-
-
-
-
-
-
-
-
-
-const logoutBtn = document.querySelector(".log-out a");
-
-logoutBtn.addEventListener("click", function (e) {
-  e.preventDefault();
-
-  Swal.fire({
-    title: "Are you sure?",
-    text: "Do you want to log out?",
-    icon: "warning",
-    showCancelButton: true,
-    confirmButtonText: "Yes, Log out",
-    cancelButtonText: "Cancel"
-  }).then((result) => {
-
-    if (result.isConfirmed) {
-
-      const currentUserId = localStorage.getItem("currentUserId");
-
-      fetch(`http://localhost:3000/users/${currentUserId}`, {
-        method: "DELETE"
-      })
-      .then(() => {
-
-        localStorage.removeItem("currentUserId");
-
-        Swal.fire({
-          icon: "success",
-          title: "Logged Out!",
-          text: "You have been logged out successfully.",
-          timer: 1500,
-          showConfirmButton: false
-        }).then(() => {
-          window.location.href = "../pages/login.html";
-        });
-
-      })
-      .catch(() => {
-        Swal.fire({
-          icon: "error",
-          title: "Error",
-          text: "Logout failed."
-        });
-      });
-
-    }
-
-  });
-});

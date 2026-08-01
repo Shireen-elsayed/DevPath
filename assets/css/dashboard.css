@@ -1153,10 +1153,13 @@ aside {
     transform: none;
   }
 
-  .upgrade-pro,
-  .log-out {
+  .upgrade-pro {
     display: none;
   }
+
+    .log-out {
+      margin-left: 20px;
+    }
 
   .mobile-menu-toggle {
     display: inline-flex;

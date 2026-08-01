@@ -238,29 +238,30 @@ registerFormElement.addEventListener("submit", async function (e) {
       { day: "Sun", done: false },
     ],
     weeklyGoalDone: 0,
-    weeklyGoalTotal: 0,
-    dailyGoalMinutesDone:0,
-    dailyGoalMinutesTotal:0,
-    quizProgress:{
-      questionsDoneToday:0,
-      questionsTotalToday:0
+    weeklyGoalTotal: 7,
+    dailyGoalMinutesDone: 0,
+    dailyGoalMinutesTotal: 0,
+    quizProgress: {
+      questionsDoneToday: 0,
+      questionsTotalToday: 0,
     },
-    codePracticeProgress:{
-      problemsDoneToday:0,
-      problemsTotalToday:0
+    codePracticeProgress: {
+      problemsDoneToday: 0,
+      problemsTotalToday: 0,
     },
-     currentModule: {
-        skillId: 0,
-        skillName: "",
-        progressPercent: 0,
-        nextLesson: {
-          title: "",
-          durationMinutes: 0
-        },
-        upNext: {
-          title: "",
-          durationMinutes: 0
-        }}
+    currentModule: {
+      skillId: 0,
+      skillName: "",
+      progressPercent: 0,
+      nextLesson: {
+        title: "",
+        durationMinutes: 0,
+      },
+      upNext: {
+        title: "",
+        durationMinutes: 0,
+      },
+    },
   };
   const response = await fetch("http://localhost:3000/users", {
     method: "POST",
@@ -286,8 +287,8 @@ registerFormElement.addEventListener("submit", async function (e) {
   //   text: "Welcome to DevPath 🎉",
   //   timer: 1500,
   //   showConfirmButton: false,
- // }).then(function () {
+  // }).then(function () {
 
-window.location.replace("../pages/track-selection.html");
- // });
+  window.location.replace("../pages/track-selection.html");
+  // });
 });
