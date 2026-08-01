@@ -275,10 +275,13 @@ aside {
       transform: none !important;
    }
 
-   .upgrade-pro,
-   .log-out {
+   .upgrade-pro {
       display: none;
    }
+
+      .log-out {
+         margin-left: 20px;
+      }
 
    .main-content {
       margin-left: 0;

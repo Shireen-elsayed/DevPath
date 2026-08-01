@@ -5,6 +5,7 @@ trackCards.forEach((track) => {
   track.addEventListener("click", () => {
     const userId = localStorage.getItem("currentUserId"); // Saved after login
     const selectedTrack = track.dataset.track;
+    const selectedLevel = track.dataset.level.trim();
 
     //get all roadmaps
     fetch("http://localhost:3000/roadmaps")
@@ -16,6 +17,12 @@ trackCards.forEach((track) => {
       })
       .then((roadmaps) => {
         //find selected roadmap
+        console.log("selectedTrack:", selectedTrack);
+        console.log("roadmaps:", roadmaps);
+        console.log(
+          "roadmap ids:",
+          roadmaps.map((r) => r.id),
+        );
         const myRoadmap = roadmaps.find(
           (roadmap) => roadmap.id === selectedTrack,
         );
@@ -29,7 +36,7 @@ trackCards.forEach((track) => {
           name: skill.title,
           lessons: skill.lessons.map((lesson) => ({
             title: lesson.title,
-              completed:false,
+            completed: false,
           })),
         }));
 
@@ -41,6 +48,7 @@ trackCards.forEach((track) => {
           },
           body: JSON.stringify({
             track: selectedTrack,
+            level: selectedLevel,
             skills: userSkills,
           }),
         });
